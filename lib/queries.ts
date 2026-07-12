@@ -1,5 +1,5 @@
 /**
- * Data-access layer — the only place raw Supabase queries should be written.
+ * Data-access layer, the only place raw Supabase queries should be written.
  * Every function filters by site_id via getCurrentSiteId() to enforce
  * multi-tenant isolation. Never bypass this by writing queries elsewhere.
  */
@@ -133,7 +133,7 @@ export async function getCategories(): Promise<Category[]> {
 
 /**
  * Categories that have at least one published post, with their post counts.
- * Used to drive the navbar "Categories" dropdown — empty categories are hidden.
+ * Used to drive the navbar "Categories" dropdown, empty categories are hidden.
  */
 export async function getCategoriesWithPostCounts(): Promise<
   Array<Category & { postCount: number }>

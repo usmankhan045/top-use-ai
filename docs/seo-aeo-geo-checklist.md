@@ -8,9 +8,9 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 ### Metadata (every page)
 
-- [x] Title template `%s | SpendWiseCents` via root layout metadata
+- [x] Title template `%s | Explained AI Tools` via root layout metadata
 - [x] Default `description` from `siteConfig.tagline`
-- [x] `metadataBase` set to `https://spendwisecents.com` for absolute URL resolution
+- [x] `metadataBase` set to `https://explainedaitools.com` for absolute URL resolution
 - [x] Canonical `alternates.canonical` on every page (layout default `/`, overridden per route)
 - [x] OpenGraph `siteName`, `type`, `locale`, default `og:image` (`/og-default.jpg`)
 - [x] Twitter card `summary_large_image` default with fallback image
@@ -59,9 +59,9 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 ### Search Console & Bing Webmaster
 
 1. **Google Search Console**
-   - Add property for `spendwisecents.com`
+   - Add property for `explainedaitools.com`
    - Verify via DNS TXT record or HTML file in `/public/`
-   - Submit `https://spendwisecents.com/sitemap.xml`
+   - Submit `https://explainedaitools.com/sitemap.xml`
    - Monitor Core Web Vitals report after launch
 
 2. **Bing Webmaster Tools**
@@ -91,10 +91,10 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 ### Twitter/X Account
 
-- Create `@spendwisecents` on X (if not already done)
+- Create `@explainedaitools` on X (if not already done)
 - Add to `siteConfig.social` and update the Twitter card metadata:
   ```ts
-  twitter: { card: "summary_large_image", creator: "@spendwisecents" }
+  twitter: { card: "summary_large_image", creator: "@explainedaitools" }
   ```
 
 ### Core Web Vitals
@@ -105,7 +105,7 @@ Run Lighthouse after deploying to Vercel:
 npm install -g lighthouse
 
 # Run against production URL
-lighthouse https://spendwisecents.com --output=html --output-path=lighthouse-report.html
+lighthouse https://explainedaitools.com --output=html --output-path=lighthouse-report.html
 ```
 
 Target scores: **Performance ≥ 90, Accessibility ≥ 95, Best Practices = 100, SEO = 100**

@@ -93,36 +93,8 @@ create index idx_printables_site  on printables(site_id);
 create index idx_subscribers_site on subscribers(site_id);
 create index idx_contact_site     on contact_messages(site_id);
 
--- ── Seed: SpendWiseCents site ──────────────────────────────────────────────
-
-insert into sites (slug, domain, name, niche, deploy_url)
-values (
-  'spendwisecents',
-  'spendwisecents.com',
-  'SpendWiseCents',
-  'Personal finance & budgeting for women',
-  'https://spendwisecents.vercel.app'
-);
-
--- ── Seed: Categories ───────────────────────────────────────────────────────
-
-insert into categories (site_id, slug, name, description)
-select
-  s.id,
-  c.slug,
-  c.name,
-  c.description
-from sites s
-cross join (values
-  ('family-budget',      'Family Budgeting',          'Budgeting tips and systems for families and moms'),
-  ('single-mom-money',   'Single Mom Money',           'Financial guidance for single mothers managing on their own'),
-  ('college-budget',     'College Budgeting',          'Money tips for college students living on a tight budget'),
-  ('low-income-budget',  'Low Income Budgeting',       'Practical budgeting when money is really tight'),
-  ('first-job-finance',  'First Job Finance',          'What to do with your money when you''re just starting out'),
-  ('couples-money',      'Couples & Money',            'How couples can manage money together without fighting'),
-  ('saving-money',       'Saving Money',               'Simple strategies to save more on everyday spending'),
-  ('debt-payoff',        'Debt Payoff',                'Plans and motivation for paying off debt faster'),
-  ('budgeting-basics',   'Budgeting Basics',           'Foundational budgeting concepts for beginners'),
-  ('printables',         'Free Printables',            'Free budget worksheets, trackers, and planners')
-) as c(slug, name, description)
-where s.slug = 'spendwisecents';
+-- ── Seed: sites + categories ────────────────────────────────────────────────
+-- This migration defines the shared schema only. Per-site rows (the site + its
+-- categories) are seeded separately so this file stays tenant-agnostic:
+--   • Template:  docs/templates/new-site-seed.sql
+--   • This site: docs/templates/generated-seed.sql (explained-ai-tools)

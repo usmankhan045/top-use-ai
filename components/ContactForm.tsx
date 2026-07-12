@@ -54,7 +54,7 @@ export function ContactForm() {
         <div>
           <p className="font-medium text-text">Message received!</p>
           <p className="text-sm text-muted mt-0.5">
-            Thanks for reaching out. I&rsquo;ll get back to you within 1–3 business days.
+            Thanks for reaching out. I&rsquo;ll get back to you within 1 to 3 business days.
           </p>
         </div>
       </div>

@@ -39,11 +39,11 @@ curl -H "Authorization: Bearer $TOKEN" http://localhost:3000/api/admin/sites
   "sites": [
     {
       "id": "uuid",
-      "slug": "spendwisecents",
-      "domain": "spendwisecents.com",
-      "name": "SpendWiseCents",
-      "niche": "Personal finance & budgeting for women",
-      "deploy_url": "https://spendwisecents.vercel.app",
+      "slug": "explained-ai-tools",
+      "domain": "explainedaitools.com",
+      "name": "Explained AI Tools",
+      "niche": "AI tool reviews, comparisons, and how-tos for making money with AI",
+      "deploy_url": "https://explained-ai-tools.vercel.app",
       "theme_config": null,
       "created_at": "2024-01-01T00:00:00Z"
     }
@@ -61,7 +61,7 @@ Register a new site. Use when launching site #2+.
   "slug": "frugalmom",
   "domain": "frugalmom.com",
   "name": "FrugalMom",
-  "niche": "Budget living for moms",
+  "niche": "Indoor plant care guides",
   "deploy_url": "https://frugalmom.vercel.app",
   "theme_config": {}
 }
@@ -139,15 +139,15 @@ Create a post.
 ```json
 {
   "site_id": "uuid (optional, defaults to current site)",
-  "title": "How to Budget on $30k a Year",
-  "slug": "budget-30k-year",
+  "title": "Best AI Writing Tools in 2026",
+  "slug": "best-ai-writing-tools",
   "content": "## Introduction\n...",
   "excerpt": "Short teaser text",
   "quick_answer": "Yes, it is possible with the 50/30/20 rule.",
   "category_id": "uuid | null",
   "audience_tags": ["families", "low-income"],
   "status": "draft",
-  "seo_title": "Budgeting on $30,000 a Year | SpendWiseCents",
+  "seo_title": "Jasper vs Copy.ai: Which AI Writer Wins? | Explained AI Tools",
   "seo_description": "Practical guide to making $30k stretch...",
   "faq_items": [
     { "question": "Is $30k a livable wage?", "answer": "It depends on..." }
@@ -221,7 +221,7 @@ curl -H "Authorization: Bearer $TOKEN" \
   "slug": "start-here",
   "title": "Start Here",
   "content": "## Welcome\n...",
-  "seo_title": "Start Here | SpendWiseCents",
+  "seo_title": "Start Here | Explained AI Tools",
   "seo_description": "New to the site? Begin here."
 }
 ```
@@ -251,9 +251,9 @@ curl -H "Authorization: Bearer $TOKEN" \
 ```json
 {
   "site_id": "uuid (optional)",
-  "slug": "debt-payoff",
-  "name": "Debt Payoff",
-  "description": "Plans and motivation for paying off debt faster"
+  "slug": "ai-video-audio",
+  "name": "AI Video & Audio",
+  "description": "AI video tools, faceless video, and voice / TTS"
 }
 ```
 
@@ -275,8 +275,8 @@ curl -H "Authorization: Bearer $TOKEN" \
 ```json
 {
   "site_id": "uuid (optional)",
-  "slug": "monthly-budget-tracker",
-  "title": "Monthly Budget Tracker",
+  "slug": "weekly-content-planner",
+  "title": "Weekly Content Planner",
   "description": "Track every dollar with this printable sheet",
   "file_url": "https://example.com/tracker.pdf",
   "thumbnail_url": "https://example.com/tracker-thumb.jpg",
@@ -325,8 +325,8 @@ curl -X POST \
 **Response** `201`
 ```json
 {
-  "url": "https://xxxx.supabase.co/storage/v1/object/public/media/spendwisecents/1700000000-image.jpg",
-  "path": "spendwisecents/1700000000-image.jpg"
+  "url": "https://xxxx.supabase.co/storage/v1/object/public/media/explained-ai-tools/1700000000-image.jpg",
+  "path": "explained-ai-tools/1700000000-image.jpg"
 }
 ```
 
@@ -380,10 +380,10 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
   "sites": [
     {
       "id": "uuid",
-      "slug": "spendwisecents",
-      "name": "SpendWiseCents",
-      "domain": "spendwisecents.com",
-      "deploy_url": "https://spendwisecents.vercel.app",
+      "slug": "explained-ai-tools",
+      "name": "Explained AI Tools",
+      "domain": "explainedaitools.com",
+      "deploy_url": "https://explained-ai-tools.vercel.app",
       "summary": {
         "post_count": 25,
         "published_post_count": 20,
@@ -397,8 +397,8 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
       "posts": [
         {
           "id": "uuid",
-          "slug": "budget-30k-year",
-          "title": "How to Budget on $30k a Year",
+          "slug": "best-ai-writing-tools",
+          "title": "Best AI Writing Tools in 2026",
           "status": "published",
           "word_count": 1845,
           "has_faq": true,
@@ -407,11 +407,11 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
           "seo_title": "...",
           "seo_description": "...",
           "audience_tags": ["families"],
-          "category_slug": "budgeting-basics"
+          "category_slug": "ai-tool-reviews"
         }
       ],
       "pages": [ { "id": "uuid", "slug": "start-here", "title": "Start Here", "word_count": 600, "has_seo_title": true, "has_seo_description": true } ],
-      "printables": [ { "id": "uuid", "slug": "monthly-budget-tracker", "title": "Monthly Budget Tracker", "has_description": true } ]
+      "printables": [ { "id": "uuid", "slug": "weekly-content-planner", "title": "Weekly Content Planner", "has_description": true } ]
     }
   ]
 }
@@ -429,7 +429,7 @@ Every site must expose this endpoint to receive cross-site cache purge signals.
 ```json
 {
   "secret": "REVALIDATION_SECRET value",
-  "paths": ["/blog", "/blog/some-post-slug", "/category/budgeting-basics"]
+  "paths": ["/blog", "/blog/some-post-slug", "/category/ai-tool-reviews"]
 }
 ```
 

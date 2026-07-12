@@ -57,20 +57,16 @@ export default function TermsOfUsePage() {
               2. Intellectual Property
             </h2>
             <p className="mb-4 text-sm">
-              All content on the Site, including but not limited to articles, guides,
-              printable worksheets, images, graphics, logos, and the overall site
-              design, is owned by {siteConfig.name} or used under license. All rights
-              are reserved.
-            </p>
-            <p className="mb-4 text-sm">
-              You may not reproduce, modify, distribute, sell, or create derivative
-              works from any content on this Site without our express prior written
-              permission.
+              All content on the Site, including but not limited to articles, reviews,
+              comparisons, guides, images, graphics, logos, and the overall site design,
+              is owned by {siteConfig.name} or used under license. All rights are reserved.
             </p>
             <p className="text-sm">
-              Free printable worksheets and templates downloaded from the Site are
-              licensed for your personal, non-commercial use only. You may not resell,
-              redistribute, or repackage them in any form without written permission.
+              You may not reproduce, modify, distribute, sell, or create derivative
+              works from any content on this Site without our express prior written
+              permission. Product names, logos, and trademarks of the AI tools we review
+              belong to their respective owners and are used for identification and
+              commentary only.
             </p>
           </section>
 

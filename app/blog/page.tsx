@@ -14,11 +14,11 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Practical budgeting guides, honest money advice, and real-life strategies for every financial situation.",
+    "Hands-on AI tool reviews, side-by-side comparisons, and how-to guides, plus practical ways to make money with AI.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog",
-    description: "Practical budgeting guides, honest money advice, and real-life strategies for every financial situation.",
+    description: "Hands-on AI tool reviews, side-by-side comparisons, and how-to guides, plus practical ways to make money with AI.",
     url: "/blog",
     type: "website",
   },
@@ -48,7 +48,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
       getPublishedPostCount(),
     ]);
   } catch {
-    // DB not yet configured — show empty state
+    // DB not yet configured, show empty state
   }
 
   const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
@@ -70,13 +70,13 @@ export default async function BlogIndexPage({ searchParams }: Props) {
             id="blog-heading"
             className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
           >
-            Practical guides.
+            Reviews &amp; how-tos.
             <br className="hidden sm:block" />
-            No filler.
+            No hype.
           </h1>
           <p className="text-lg text-muted leading-relaxed max-w-xl">
-            Budgeting strategies, money advice, and honest takes, all written
-            for real life, not ideal scenarios.
+            Hands-on AI tool reviews, honest comparisons, and step-by-step
+            guides, including real ways to make money with AI.
           </p>
         </Container>
       </section>

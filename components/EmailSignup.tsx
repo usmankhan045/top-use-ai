@@ -9,11 +9,11 @@ interface EmailSignupProps {
   title?: string;
   description?: string;
   ctaLabel?: string;
-  /** "inline" — input and button side by side (good for hero).
-   *  "stacked" — input above button (good for narrow columns / footer). */
+  /** "inline", input and button side by side (good for hero).
+   *  "stacked", input above button (good for narrow columns / footer). */
   layout?: "inline" | "stacked";
-  /** "light" — for use on the white/paper background (default).
-   *  "dark"  — for use on the primary-teal footer. */
+  /** "light", for use on the white/paper background (default).
+   *  "dark", for use on the primary-teal footer. */
   theme?: "light" | "dark";
 }
 
@@ -73,7 +73,7 @@ export function EmailSignup({
         <div>
           <p className="font-medium text-sm">You&rsquo;re in!</p>
           <p className={cn("text-sm mt-0.5", isDark ? "text-white/70" : "text-muted")}>
-            Check your inbox for the Budget Starter Kit.
+            Check your inbox to confirm your subscription.
           </p>
         </div>
       </div>

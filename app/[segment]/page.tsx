@@ -11,7 +11,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import { cn } from "@/lib/utils";
 
-// Only the slugs in siteConfig are valid — anything else returns 404.
+// Only the slugs in siteConfig are valid, anything else returns 404.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -125,7 +125,7 @@ export default async function SegmentHubPage({
             {intro.paragraphs[0]}
           </p>
           <p className="mt-5 text-xs font-mono text-muted/60 uppercase tracking-wide">
-            SpendWiseCents Editorial
+            {siteConfig.name} Editorial
           </p>
         </Container>
       </section>
@@ -145,7 +145,7 @@ export default async function SegmentHubPage({
         </section>
       )}
 
-      {/* ── Where to start — 3 quick links ──────────────────────────────── */}
+      {/* ── Where to start, 3 quick links ──────────────────────────────── */}
       <section
         className="py-14 sm:py-16 bg-primary/[0.03]"
         aria-labelledby="quick-links-heading"

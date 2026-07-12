@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site.config";
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = `https://${siteConfig.domain}`;
 
-  const disallow = ["/api/", "/admin/"];
+  const disallow = ["/api/", "/admin/", "/go/"];
 
   return {
     rules: [
@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow,
       },
-      // AI training and inference crawlers — explicitly permitted
+      // AI training and inference crawlers, explicitly permitted
       {
         userAgent: "GPTBot",
         allow: "/",

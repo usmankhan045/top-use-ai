@@ -141,7 +141,13 @@ export default function PrivacyPolicyPage() {
                 className="text-primary underline underline-offset-3 hover:opacity-80"
               >
                 adssettings.google.com
-              </a>.
+              </a>. For full details, see our{" "}
+              <Link
+                href="/cookie-policy"
+                className="text-primary underline underline-offset-3 hover:opacity-80"
+              >
+                Cookie Policy
+              </Link>.
             </p>
           </section>
 
@@ -163,8 +169,8 @@ export default function PrivacyPolicyPage() {
               Email Communications
             </h2>
             <p className="text-sm">
-              When you subscribe to our newsletter, we may send you budgeting tips, new
-              posts, free resources, and occasional promotional messages. You can
+              When you subscribe to our newsletter, we may send you AI tool tips, new
+              reviews and guides, and occasional promotional messages. You can
               unsubscribe at any time using the link in any email we send. After
               unsubscribing, we will stop sending marketing emails promptly.
             </p>

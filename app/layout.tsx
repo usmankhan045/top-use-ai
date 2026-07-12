@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
-import { getCategoriesWithPostCounts } from "@/lib/queries";
+import { getCategories } from "@/lib/queries";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -47,21 +47,23 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Drives the navbar "Categories" dropdown. Falls back to [] if DB is unconfigured.
+  // Drives the navbar "Categories" dropdown. Uses ALL categories (not just those
+  // with posts) so the site's topic structure is visible from launch, before any
+  // post is published. Falls back to [] if the DB is unconfigured.
   let categories: { slug: string; name: string }[] = [];
   try {
-    categories = (await getCategoriesWithPostCounts()).map(({ slug, name }) => ({
+    categories = (await getCategories()).map(({ slug, name }) => ({
       slug,
       name,
     }));
   } catch {
-    // DB not yet configured — render nav without the Categories dropdown
+    // DB not yet configured, render nav without the Categories dropdown
   }
 
   return (
     <html lang="en" className={`${fonts.variables} h-full`}>
       <head>
-        {/* Inject theme CSS vars — change siteConfig.theme.colors to restyle the whole site */}
+        {/* Inject theme CSS vars, change siteConfig.theme.colors to restyle the whole site */}
         <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
         <JsonLd data={[websiteSchema(), organizationSchema()]} />
       </head>

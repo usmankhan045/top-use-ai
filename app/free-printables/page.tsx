@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-// ── Thumbnail placeholder — lines motif matching the PrintableCallout icon ────
+// ── Thumbnail placeholder, lines motif matching the PrintableCallout icon ────
 
 function PrintableThumbnailPlaceholder() {
   return (

@@ -1,27 +1,26 @@
-import { Fraunces, Public_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { siteConfig } from "./site.config";
 
-// next/font requires static imports — dynamic font loading is not supported.
+// next/font requires static imports, dynamic font loading is not supported.
 // When adapting for a new site:
 //   1. Add the new Google Font import above.
 //   2. Instantiate it below with the correct options.
 //   3. Add an entry to FONT_MAP keyed by the exact font name in siteConfig.theme.fonts.
 //   4. Update siteConfig.theme.fonts to reference that key.
 
-const fraunces = Fraunces({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  axes: ["SOFT", "WONK"],  // variable axes: SOFT softens letterform angles
   variable: "--font-display",
   display: "swap",
 });
 
-const publicSans = Public_Sans({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-mono",
@@ -29,9 +28,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 const FONT_MAP: Record<string, { variable: string; className: string }> = {
-  "Fraunces":      fraunces,
-  "Public Sans":   publicSans,
-  "IBM Plex Mono": ibmPlexMono,
+  "Space Grotesk": spaceGrotesk,
+  "Inter":         inter,
+  "JetBrains Mono": jetBrainsMono,
 };
 
 export function getSiteFonts() {

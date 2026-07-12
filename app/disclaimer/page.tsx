@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site.config";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: `Financial disclaimer, affiliate disclosure, and earnings disclaimer for ${siteConfig.name}.`,
+  description: `Editorial disclaimer, affiliate disclosure, and advertising disclosure for ${siteConfig.name}.`,
   alternates: { canonical: "/disclaimer" },
   openGraph: { url: "/disclaimer", type: "website" },
   robots: { index: false },
@@ -26,27 +26,26 @@ export default function DisclaimerPage() {
 
           <section>
             <h2 className="font-display text-xl font-semibold text-text mb-5">
-              Financial Disclaimer
+              Editorial Disclaimer
             </h2>
             <p className="mb-4 text-sm">
               The content published on {siteConfig.name} ({siteConfig.domain}) is intended
-              for educational and informational purposes only. Nothing on this site
-              constitutes financial, investment, legal, or tax advice, and nothing should
-              be interpreted as a recommendation to buy, sell, or hold any financial
-              product or security.
+              for general educational and informational purposes only. Our reviews,
+              comparisons, ratings, and how-to guides reflect our own hands-on testing,
+              research, and opinions at the time of writing.
             </p>
             <p className="mb-4 text-sm">
-              The owner of {siteConfig.name} is not a licensed financial advisor, broker,
-              investment advisor, or tax professional. Content on this site reflects
-              personal experience, general research, and publicly available information.
-              It is not tailored to your individual financial situation, goals, risk
-              tolerance, or tax circumstances.
+              AI tools change constantly. Features, pricing, plan limits, model quality,
+              and terms of service can change without notice, and a tool we recommend today
+              may look different tomorrow. Always verify current details, capabilities, and
+              pricing on the tool provider&rsquo;s own website before signing up or paying.
             </p>
             <p className="text-sm">
-              Your financial situation is unique. Before making any significant financial
-              decision, including changes to your budget, savings strategy, investment
-              approach, debt repayment plan, or tax filings, please consult a qualified,
-              licensed professional who can evaluate your specific circumstances.
+              Nothing on this site is professional, legal, financial, or business advice,
+              and results from using any tool or following any guide will vary based on
+              your skills, effort, niche, and market. You are responsible for how you use
+              any tool we mention, including complying with its terms of service and any
+              laws that apply to AI-generated content.
             </p>
           </section>
 
@@ -76,17 +75,18 @@ export default function DisclaimerPage() {
               Earnings Disclaimer
             </h2>
             <p className="mb-4 text-sm">
-              Any examples of financial results, debt payoff amounts, or savings figures
-              mentioned on {siteConfig.name} represent individual experiences or illustrative
-              scenarios. They should not be interpreted as typical, average, or guaranteed
-              results.
+              Some of our content covers ways to make money with AI, including side
+              hustles, content creation, and digital products. Any income figures, earnings
+              examples, or results mentioned on {siteConfig.name} represent individual
+              experiences or illustrative scenarios. They should not be interpreted as
+              typical, average, or guaranteed results.
             </p>
             <p className="text-sm">
-              Personal finance outcomes vary significantly based on individual income,
-              expenses, debt levels, life circumstances, consistency of effort, and many
-              other factors outside our control. {siteConfig.name} makes no guarantee,
-              express or implied, that you will achieve any specific financial outcome
-              by following the information or strategies described on this site.
+              Your results depend on many factors outside our control, including your
+              skills, effort, niche, audience, market conditions, and the tools and
+              platforms you use. {siteConfig.name} makes no guarantee, express or implied,
+              that you will earn any specific amount, or any money at all, by following the
+              information or strategies described on this site.
             </p>
           </section>
 
@@ -124,9 +124,10 @@ export default function DisclaimerPage() {
               warranties of any kind. We make reasonable efforts to ensure that
               information is accurate and up to date, but we make no representations
               or warranties regarding completeness, accuracy, reliability, or suitability
-              for any particular purpose. Financial laws, regulations, and best practices
-              change over time. Content may become outdated. Always verify information
-              through current, authoritative sources before relying on it.
+              for any particular purpose. AI tools, their features, and their pricing
+              change quickly, so content may become outdated. Always verify information
+              through the tool provider&rsquo;s own current, authoritative sources before
+              relying on it.
             </p>
           </section>
 

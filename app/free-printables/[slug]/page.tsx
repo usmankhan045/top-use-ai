@@ -52,8 +52,7 @@ export async function generateMetadata({
         title,
         description,
         url: `/free-printables/${slug}`,
-        type: "website",
-        ...(printable.thumbnail_url && {
+        type: "website", ...(printable.thumbnail_url && {
           images: [{ url: printable.thumbnail_url, width: 600, height: 800, alt: title }],
         }),
       },
@@ -63,7 +62,7 @@ export async function generateMetadata({
   }
 }
 
-// ── Thumbnail placeholder — matches grid page motif ───────────────────────────
+// ── Thumbnail placeholder, matches grid page motif ───────────────────────────
 
 function PrintableThumbnailPlaceholder({ className }: { className?: string }) {
   return (

@@ -1,4 +1,4 @@
-# Content Guidelines — SpendWiseCents
+# Content Guidelines — Explained AI Tools
 
 These guidelines keep every article consistent, scannable, and optimised for both readers and AI discovery tools (Google AI Overviews, ChatGPT, Perplexity).
 
@@ -36,12 +36,12 @@ Each H2 section covers one idea completely before moving to the next. If you fin
 Open every article — and every section — with the direct answer to the question the reader came with. Explanation, context, and caveats follow.
 
 **Good:**
-> Zero-based budgeting means assigning every dollar of your income to a specific category until you reach zero. You don't spend down to zero — every dollar has a job.
+> Jasper is best for teams that need on-brand marketing copy at scale, and its output quality justifies the price. Solo creators on a budget should start with Rytr or Copy.ai's free plan instead.
 >
-> Here's how it works in practice…
+> Here's how the two compare in practice…
 
 **Not good:**
-> Many budgeting methods exist, and over the years financial experts have developed a variety of systems. One of the most popular is zero-based budgeting, which was pioneered by…
+> There are many AI writing tools on the market today, and over the past few years the space has evolved rapidly with a wide variety of options. One of the most well-known is Jasper, which was originally launched as…
 
 ### Quick Answer box
 
@@ -124,16 +124,16 @@ Remove on sight:
 ### seo_title format
 
 ```
-[Primary keyword] | SpendWiseCents
+[Primary keyword] | Explained AI Tools
 ```
 
-Example: `How to Budget on $30,000 a Year | SpendWiseCents`
+Example: `Jasper vs Copy.ai: Which AI Writer Wins? | Explained AI Tools`
 
 ### seo_description format
 
 Lead with what the reader gets. Include the primary keyword. End with a benefit or call to action.
 
-Example: `Step-by-step budgeting guide for a $30,000 income — categories, percentages, and a zero-based template you can use today.`
+Example: `We tested Jasper and Copy.ai on the same brief — here's which AI writer produced better copy, and which is the better value.`
 
 ### slug format
 
@@ -144,18 +144,9 @@ Example: `Step-by-step budgeting guide for a $30,000 income — categories, perc
 
 ---
 
-## Audience tagging
+## Categories, not audience hubs
 
-Use `audience_tags` to tag posts for the correct hub pages. A post can have multiple tags.
-
-| Tag value | Hub page |
-|---|---|
-| `families` | /budgeting-for-moms |
-| `single-mom` | /single-mom-budget |
-| `college-student` | /college-student-budget |
-| `low-income` | /budget-on-low-income |
-| `first-job` | /first-job-budget |
-| `couples` | /couples-budget |
+This site is organized by tool category, not audience, so there are **no audience hub pages** (`audienceSegments` is empty in `lib/site.config.ts`). The `audience_tags` field is therefore unused — assign every post a `category_id` instead. See the 6 categories in `CLAUDE.md` and the topic architecture in `docs/AI-Tools-Site-Blueprint.md`.
 
 ---
 

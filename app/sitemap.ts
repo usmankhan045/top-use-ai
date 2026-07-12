@@ -12,8 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    ...(siteConfig.features.printables
+    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 }, ...(siteConfig.features.printables
       ? [{ url: `${BASE_URL}/free-printables`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.7 }]
       : []),
     { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
@@ -30,7 +29,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  // Dynamic: posts, categories, printables — fall back to empty if DB not configured
+  // Dynamic: posts, categories, printables, fall back to empty if DB not configured
   let postRoutes: MetadataRoute.Sitemap = [];
   let categoryRoutes: MetadataRoute.Sitemap = [];
   let printableRoutes: MetadataRoute.Sitemap = [];
@@ -74,10 +73,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   return [
-    ...staticRoutes,
-    ...hubRoutes,
-    ...postRoutes,
-    ...categoryRoutes,
-    ...printableRoutes,
+    ...staticRoutes, ...hubRoutes, ...postRoutes, ...categoryRoutes, ...printableRoutes,
   ];
 }

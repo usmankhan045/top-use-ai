@@ -9,7 +9,7 @@ import { Container } from "@/components/ui";
 
 type CategoryLink = { slug: string; name: string };
 
-// Icons as tiny SVGs — no package dependency needed for two shapes.
+// Icons as tiny SVGs, no package dependency needed for two shapes.
 function MenuIcon({ className }: { className?: string }) {
   return (
     <svg

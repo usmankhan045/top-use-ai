@@ -1,47 +1,41 @@
 # Publish All Pending Posts
 
-Write, create printables for, and publish all 10 SpendWiseCents content priority posts.
+Write and publish a batch of Explained AI Tools blog posts (reviews, comparisons, how-tos).
 
 ## How to use
 
 ```
-/publish-all-posts
-/publish-all-posts 02        # publish specific post number
-/publish-all-posts 02 03 05  # publish specific posts
+/publish-all-posts            # publish every pending post in the queue
+/publish-all-posts 02         # publish a specific queue number
+/publish-all-posts 02 03 05   # publish specific ones
 ```
 
-## Current Status (update as posts are published)
+This is a **blog-only** site — no printables. Each post is content-only.
 
-| # | Post | Printable | Status |
+## Starter queue
+
+Content strategy is still TBD. This starter queue is seeded from the Tier 1 sub-niches in
+`docs/AI-Tools-Site-Blueprint.md`. **Validate each keyword in Pinterest Trends + the Ads
+planner (US/CA/UK) before committing**, then edit titles/slugs and add rows as you plan.
+
+| # | Post (title → slug) | Category | Status |
 |---|---|---|---|
-| 01 | free-biweekly-budget-template | biweekly-budget-template.pdf | ✅ Published |
-| 02 | free-monthly-budget-template-printable | monthly-budget-template.pdf | pending |
-| 03 | 100-envelope-challenge-printable | 100-envelope-challenge-printable.pdf | pending |
-| 04 | free-budget-binder-printables | budget-binder-starter-pack.pdf | pending |
-| 05 | sinking-funds-explained | sinking-fund-tracker.pdf | pending |
-| 06 | cash-envelope-system-beginners | cash-envelope-printable.pdf | pending |
-| 07 | how-to-budget-on-low-income | low-income-budget-worksheet.pdf | pending |
-| 08 | 52-week-savings-challenge | 52-week-savings-challenge.pdf | pending |
-| 09 | grocery-budget-family-of-4 | grocery-budget-planner.pdf | pending |
-| 10 | free-debt-payoff-tracker-printable | debt-snowball-tracker.pdf | pending |
+| 01 | Best AI Writing Tools in 2026 → best-ai-writing-tools | ai-writing-content | pending |
+| 02 | Jasper vs Copy.ai → jasper-vs-copyai | ai-tool-reviews | pending |
+| 03 | 11 AI Side Hustles You Can Start This Weekend → ai-side-hustles | make-money-with-ai | pending |
+| 04 | How to Start a Faceless YouTube Channel With AI → faceless-youtube-with-ai | ai-video-audio | pending |
+| 05 | Best AI Art Generators in 2026 → best-ai-art-generators | ai-image-design | pending |
+| 06 | AI for Beginners: Where to Start → ai-for-beginners | ai-guides-how-tos | pending |
 
 ## Process for each post
 
-For each pending post number, run `/write-post <number>` which handles:
-1. Writing the full blog post content
-2. Creating the printable HTML + converting to PDF
-3. Publishing both to Supabase
+For each pending queue item, run `/write-post "<title> — <keyword> — <category-slug>"`, which:
+1. Writes the full blog post content (answer-first, GEO blocks, FAQ, affiliate disclosure)
+2. Publishes it to Supabase (site_id `7635559c-2c64-4d76-8b3b-1c69e4a412f8`)
 
-## Internal link targets (for cross-linking)
-Once posts are published, link between them using these slugs:
-- `/blog/free-biweekly-budget-template` ✅
-- `/blog/free-monthly-budget-template-printable`
-- `/blog/sinking-funds-explained`
-- `/blog/100-envelope-challenge-printable`
-- `/blog/free-budget-binder-printables`
-- `/blog/how-to-budget-on-low-income`
-- `/blog/free-debt-payoff-tracker-printable`
+After publishing, update the Status column above and cross-link related posts
+(`/blog/<slug>`) so every post links to at least 2 others.
 
-## All printable specs
-Full specs for each printable are documented in `SpendWiseCents_Content_Strategy.docx`.
-The canonical printable reference implementation is `public/printables/biweekly-budget-template.html`.
+## Reference
+Category architecture, sub-niche priority tiers, and the affiliate program map:
+`docs/AI-Tools-Site-Blueprint.md`.

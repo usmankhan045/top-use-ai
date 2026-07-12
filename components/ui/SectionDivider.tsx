@@ -2,8 +2,8 @@ import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 interface SectionDividerProps extends HTMLAttributes<HTMLDivElement> {
-  /** "plain" — a single ruled line (default).
-   *  "titled" — the label sits centered between two rules, like a ledger section header. */
+  /** "plain", a single ruled line (default).
+   *  "titled", the label sits centered between two rules, like a ledger section header. */
   variant?: "plain" | "titled";
   label?: string;
   /** Extra vertical spacing around the divider */
@@ -20,8 +20,7 @@ export function SectionDivider({
   variant = "plain",
   label,
   spacing = "md",
-  className,
-  ...props
+  className, ...props
 }: SectionDividerProps) {
   if (variant === "titled" && label) {
     return (
@@ -49,7 +48,7 @@ export function SectionDivider({
       {...props}
     >
       <Rule />
-      {/* A single tally mark centered in the rule — a nod to the counting gesture */}
+      {/* A single tally mark centered in the rule, a nod to the counting gesture */}
       <span
         className="font-mono text-muted/50 text-xs shrink-0 select-none leading-none"
         aria-hidden

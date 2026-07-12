@@ -78,7 +78,7 @@ export default async function CategoryArchivePage({
   try {
     posts = await getPublishedPosts({ categoryId: category.id, limit: 50 });
   } catch {
-    // DB error — show empty state
+    // DB error, show empty state
   }
 
   return (

@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
-// The 3px left border is the "ledger tab" — a direct reference to the colored
+// The 3px left border is the "ledger tab", a direct reference to the colored
 // tab dividers in physical accounting ledgers. Every card is a record entry.
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
@@ -16,8 +16,7 @@ export function Card({
   variant = "ledger",
   compact = false,
   className,
-  children,
-  ...props
+  children, ...props
 }: CardProps) {
   return (
     <div

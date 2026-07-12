@@ -7,7 +7,7 @@ function getEnv(key: string): string {
   return value;
 }
 
-// Lazy singletons — clients are created on first use, not at module load.
+// Lazy singletons, clients are created on first use, not at module load.
 // This lets the build succeed without .env vars, and avoids duplicate clients.
 let _supabase: SupabaseClient | null = null;
 let _supabaseAdmin: SupabaseClient | null = null;

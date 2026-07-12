@@ -36,8 +36,7 @@ export function articleSchema(post: Post) {
     "@type": "Article",
     headline: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
-    url,
-    ...(post.featured_image_url && { image: post.featured_image_url }),
+    url, ...(post.featured_image_url && { image: post.featured_image_url }),
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
     author: {
@@ -85,7 +84,7 @@ function cleanMarkdown(text: string): string {
  * Build HowTo schema for genuine step-by-step guides only. Returns null for any
  * post that isn't structured as a procedure, so list-style posts never emit it.
  * Two recognized shapes:
- *   A) ≥2 H2 headings of the form "## Step N — Title" (step text = following paragraph)
+ *   A) ≥2 H2 headings of the form "## Step N, Title" (step text = following paragraph)
  *   B) an H2 containing "step-by-step" followed by an ordered list of "**Bold lead.** detail" items
  */
 export function howToSchema(post: Post): object | null {
@@ -94,8 +93,8 @@ export function howToSchema(post: Post): object | null {
   const lines = md.split("\n");
   const steps: Array<{ name: string; text: string }> = [];
 
-  // Strategy A — "## Step N — Title" headings
-  const stepHeadingRe = /^##\s+Step\s+\d+\s*[—–:\-]\s*(.+?)\s*$/i;
+  // Strategy A, "## Step N, Title" headings
+  const stepHeadingRe = /^##\s+Step\s+\d+\s*[,  :\-]\s*(.+?)\s*$/i;
   const headings: Array<{ name: string; line: number }> = [];
   lines.forEach((ln, i) => {
     const m = ln.match(stepHeadingRe);
@@ -118,7 +117,7 @@ export function howToSchema(post: Post): object | null {
     }
   }
 
-  // Strategy B — ordered list under a "step-by-step" H2
+  // Strategy B, ordered list under a "step-by-step" H2
   if (steps.length < 2) {
     const startIdx = lines.findIndex((ln) => /^##\s+.*step-by-step/i.test(ln));
     if (startIdx !== -1) {
@@ -141,8 +140,7 @@ export function howToSchema(post: Post): object | null {
   return {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: post.seo_title ?? post.title,
-    ...((post.seo_description ?? post.excerpt) && {
+    name: post.seo_title ?? post.title, ...((post.seo_description ?? post.excerpt) && {
       description: post.seo_description ?? post.excerpt ?? undefined,
     }),
     step: steps.map((s, i) => ({
@@ -163,8 +161,7 @@ export function digitalDocumentSchema(printable: {
   return {
     "@context": "https://schema.org",
     "@type": "DigitalDocument",
-    name: printable.title,
-    ...(printable.description && { description: printable.description }),
+    name: printable.title, ...(printable.description && { description: printable.description }),
     url,
     isAccessibleForFree: true,
     publisher: {

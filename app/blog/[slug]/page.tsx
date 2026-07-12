@@ -57,14 +57,12 @@ export async function generateMetadata({
         url: `/blog/${slug}`,
         publishedTime: post.published_at ?? undefined,
         modifiedTime: post.updated_at,
-        authors: [siteConfig.name],
-        ...(ogImage && { images: ogImage }),
+        authors: [siteConfig.name], ...(ogImage && { images: ogImage }),
       },
       twitter: {
         card: "summary_large_image",
         title,
-        description,
-        ...(post.featured_image_url && { images: [post.featured_image_url] }),
+        description, ...(post.featured_image_url && { images: [post.featured_image_url] }),
       },
     };
   } catch {
@@ -106,14 +104,11 @@ export default async function BlogPostPage({
     articleSchema(post),
     breadcrumbSchema([
       { name: "Home", slug: "/" },
-      { name: "Blog", slug: "/blog" },
-      ...(post.categories
+      { name: "Blog", slug: "/blog" }, ...(post.categories
         ? [{ name: post.categories.name, slug: `/category/${post.categories.slug}` }]
         : []),
       { name: post.title, slug: `/blog/${post.slug}` },
-    ]),
-    ...(hasFaq && post.faq_items.length > 0 ? [faqSchema(post.faq_items)] : []),
-    ...(howTo ? [howTo] : []),
+    ]), ...(hasFaq && post.faq_items.length > 0 ? [faqSchema(post.faq_items)] : []), ...(howTo ? [howTo] : []),
   ];
 
   return (
@@ -181,7 +176,7 @@ export default async function BlogPostPage({
       {/* ── Article body ───────────────────────────────────────────────────── */}
       <article className="py-12 sm:py-16">
         <Container width="narrow">
-          {/* Quick Answer box — AEO answer-first pattern */}
+          {/* Quick Answer box, AEO answer-first pattern */}
           {post.quick_answer && (
             <div
               className="mb-10 border-l-4 border-success rounded-r-xl bg-success/[0.06] p-5 sm:p-6"

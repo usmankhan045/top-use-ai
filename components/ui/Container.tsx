@@ -2,9 +2,9 @@ import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
-  /** "default" — 72rem max-width for most pages.
-   *  "narrow"  — 48rem for reading-focused content (articles, legal pages).
-   *  "wide"    — 90rem for dashboards or printable grids. */
+  /** "default", 72rem max-width for most pages.
+   *  "narrow", 48rem for reading-focused content (articles, legal pages).
+   *  "wide", 90rem for dashboards or printable grids. */
   width?: "default" | "narrow" | "wide";
 }
 
@@ -17,8 +17,7 @@ const widthClasses = {
 export function Container({
   width = "default",
   className,
-  children,
-  ...props
+  children, ...props
 }: ContainerProps) {
   return (
     <div
