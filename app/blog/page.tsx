@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { getPublishedPosts, getPublishedPostCount } from "@/lib/queries";
-import {
-  Container,
-  Tag,
-  Card,
-  CardTitle,
-  CardBody,
-  SectionDivider,
-} from "@/components/ui";
-import { cn } from "@/lib/utils";
+import { getPublishedPosts } from "@/lib/queries";
+import { Container, Tag } from "@/components/ui";
+import { BlogList, type BlogListPost } from "@/components/BlogList";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -26,34 +18,25 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-const POSTS_PER_PAGE = 12;
-
-type Props = {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-};
-
-export default async function BlogIndexPage({ searchParams }: Props) {
-  const { page: pageParam } = await searchParams;
-  const currentPage = Math.max(
-    1,
-    parseInt(typeof pageParam === "string" ? pageParam : "1", 10) || 1
-  );
-  const offset = (currentPage - 1) * POSTS_PER_PAGE;
-
-  let posts: Awaited<ReturnType<typeof getPublishedPosts>> = [];
-  let total = 0;
+export default async function BlogIndexPage() {
+  // No searchParams: fetch every published post once so this route can be
+  // fully prerendered (static + ISR) instead of server-rendered per request.
+  // Pagination is handled client-side via BlogList's progressive reveal.
+  let rawPosts: Awaited<ReturnType<typeof getPublishedPosts>> = [];
   try {
-    [posts, total] = await Promise.all([
-      getPublishedPosts({ limit: POSTS_PER_PAGE, offset }),
-      getPublishedPostCount(),
-    ]);
+    rawPosts = await getPublishedPosts();
   } catch {
     // DB not yet configured, show empty state
   }
 
-  const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
-  const hasPrev = currentPage > 1;
-  const hasNext = currentPage < totalPages;
+  const posts: BlogListPost[] = rawPosts.map((p) => ({
+    id: p.id,
+    slug: p.slug,
+    title: p.title,
+    excerpt: p.excerpt,
+    publishedAt: p.published_at,
+    categoryName: p.categories?.name ?? null,
+  }));
 
   return (
     <main className="flex-1">
@@ -94,87 +77,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
               </p>
             </div>
           ) : (
-            <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {posts.map((post) => (
-                  <Link
-                    key={post.id}
-                    href={`/blog/${post.slug}`}
-                    className="group block h-full focus-visible:outline-none"
-                  >
-                    <Card
-                      className={cn(
-                        "h-full flex flex-col",
-                        "transition-all duration-200",
-                        "group-hover:shadow-md group-hover:-translate-y-0.5",
-                        "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
-                      )}
-                    >
-                      {post.categories && (
-                        <Tag variant="default" className="mb-3 self-start">
-                          {post.categories.name}
-                        </Tag>
-                      )}
-                      <CardTitle
-                        as="h2"
-                        className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
-                      >
-                        {post.title}
-                      </CardTitle>
-                      {post.excerpt && (
-                        <CardBody className="flex-1 line-clamp-3 text-sm">
-                          {post.excerpt}
-                        </CardBody>
-                      )}
-                      {post.published_at && (
-                        <p className="mt-4 text-xs font-mono text-muted/60 uppercase tracking-wide">
-                          {new Date(post.published_at).toLocaleDateString(
-                            "en-US",
-                            {
-                              month: "short",
-                              day: "numeric",
-                              year: "numeric",
-                            }
-                          )}
-                        </p>
-                      )}
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-
-              {/* Pagination */}
-              {totalPages > 1 && (
-                <>
-                  <SectionDivider spacing="md" />
-                  <div className="flex items-center justify-between">
-                    {hasPrev ? (
-                      <Link
-                        href={`/blog?page=${currentPage - 1}`}
-                        className="text-sm font-medium text-primary hover:underline underline-offset-4"
-                      >
-                        ← Previous
-                      </Link>
-                    ) : (
-                      <span />
-                    )}
-                    <p className="text-xs font-mono text-muted uppercase tracking-wide">
-                      Page {currentPage} of {totalPages}
-                    </p>
-                    {hasNext ? (
-                      <Link
-                        href={`/blog?page=${currentPage + 1}`}
-                        className="text-sm font-medium text-primary hover:underline underline-offset-4"
-                      >
-                        Next →
-                      </Link>
-                    ) : (
-                      <span />
-                    )}
-                  </div>
-                </>
-              )}
-            </>
+            <BlogList posts={posts} />
           )}
         </Container>
       </section>

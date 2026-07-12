@@ -12,6 +12,10 @@ import {
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site.config";
 
+// Statically prerender the homepage but refresh it hourly so newly published
+// posts and categories appear without a redeploy (ISR).
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Explained AI Tools: Honest AI Tool Reviews & How-Tos",
