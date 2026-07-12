@@ -105,7 +105,10 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-black/[0.07]">
+    {/* Opaque background (not translucent + backdrop-blur): a sticky blurred
+        header re-composites the whole viewport behind it on every scroll frame,
+        which is the main cause of scroll jank on long pages. */}
+    <header className="sticky top-0 z-50 bg-background border-b border-black/[0.07]">
       <Container>
         <div className="flex items-center justify-between h-16 gap-6">
 
