@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budget Binder Starter Pack — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; }
+
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: avoid; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.page-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-right { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.fill-field { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.fill-label { font-size: 6.5pt; text-transform: uppercase; color: rgba(255,255,255,0.78); letter-spacing: 0.3px; font-family: 'Lato', Arial, sans-serif; }
+.fill-line { border-bottom: 1px solid rgba(255,255,255,0.7); width: 1.2in; height: 14px; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-left { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.page-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; }
+
+.body { margin: 6px 0.42in 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 6px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 5px 10px; }
+.sh-income { background: #C4826E; }
+.sh-fixed  { background: #7A9E7E; }
+.sh-variable { background: #A89080; }
+.sh-savings { background: #8B7BA0; }
+.sh-debt { background: #6B8FAE; }
+.sh-summary { background: #4A6B4E; }
+
+.row { display: grid; grid-template-columns: 1fr 0.75in; padding: 4px 10px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.row:last-child { border-bottom: none; }
+.row.odd  { background: #FAF7F2; }
+.row.even { background: #F5F0EA; }
+.row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.row-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.8pt; color: #3D3530; }
+.row.total-row .row-label { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+.field-cell { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-size: 7.5pt; color: #8A7A6A; font-family: 'Lato', Arial, sans-serif; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+.row.total-row .field-line { border-bottom: 2px solid #7A9E7E; }
+
+.summary-bar { background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 8px; }
+.sum-cell { display: flex; flex-direction: column; gap: 3px; }
+.sum-label { font-size: 6pt; color: rgba(255,255,255,0.70); text-transform: uppercase; font-family: 'Lato', Arial, sans-serif; }
+.sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; font-size: 9pt; font-weight: 700; min-height: 22px; font-family: 'Lato', Arial, sans-serif; display: flex; align-items: center; padding: 0 6px; }
+.sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 10px 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 5px; }
+.notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+
+/* Bill Tracker */
+.bill-header-row { display: grid; grid-template-columns: 2fr 1in 0.9in 0.7in 0.5in; background: #7A9E7E; padding: 5px 10px; }
+.bill-col-hdr { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.3px; }
+.bill-row { display: grid; grid-template-columns: 2fr 1in 0.9in 0.7in 0.5in; padding: 3.5px 10px; border-bottom: 1px solid rgba(0,0,0,0.04); align-items: center; }
+.bill-row.odd  { background: #FAF7F2; }
+.bill-row.even { background: #F5F0EA; }
+.bill-row.total-bill { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.bill-cell { font-size: 7pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; }
+.bill-cell.total-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+.b-line { border-bottom: 1px solid #C4B5A5; height: 11px; display: block; width: 90%; }
+.b-chk { width: 10px; height: 10px; border: 1.2px solid #C4B5A5; border-radius: 2px; display: inline-block; }
+
+/* Sinking Fund Grid */
+.fund-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.1in; }
+.fund-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; }
+.fund-hdr { background: #8B7BA0; padding: 5px 10px; }
+.fund-hdr-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #fff; }
+.fund-hdr-sub { font-family: 'Lato', Arial, sans-serif; font-size: 6pt; color: rgba(255,255,255,0.82); margin-top: 1px; }
+.fund-body { padding: 5px 10px 7px; background: #FAF7F2; }
+.fund-row { display: flex; justify-content: space-between; align-items: flex-end; padding: 3px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.fund-row:last-of-type { border-bottom: none; }
+.fund-label { font-size: 7pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; }
+.fund-fline { width: 1.1in; border-bottom: 1px solid #C4B5A5; height: 11px; }
+.fund-prog-bg { background: #E8DFF0; border-radius: 3px; height: 6px; margin-top: 5px; width: 100%; }
+
+/* Savings Goals */
+.goal-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; margin-bottom: 8px; }
+.goal-hdr { background: #8B7BA0; padding: 6px 12px; }
+.goal-hdr-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; }
+.goal-hdr-sub { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.82); margin-top: 2px; }
+.goal-body { display: grid; grid-template-columns: 1fr 0.85in; background: #FAF7F2; }
+.goal-fields { padding: 8px 10px 8px 12px; display: flex; flex-direction: column; gap: 5px; }
+.goal-field { display: flex; align-items: flex-end; gap: 6px; }
+.goal-field-label { font-size: 7.5pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; width: 1.15in; flex-shrink: 0; }
+.goal-field-line { flex: 1; border-bottom: 1px solid #C4B5A5; height: 13px; }
+.goal-thermo { padding: 8px 10px; display: flex; flex-direction: column; align-items: center; gap: 3px; border-left: 1px solid #DDD5C8; }
+.thermo-lbl { font-size: 5.5pt; color: #8A7A6A; font-family: 'Lato', Arial, sans-serif; text-align: center; text-transform: uppercase; letter-spacing: 0.2px; }
+.thermo-segs { display: flex; flex-direction: column-reverse; gap: 2px; }
+.thermo-seg { width: 24px; height: 10px; border: 1px solid #C4B5A5; border-radius: 2px; background: #F5F0EA; }
+.thermo-bulb { width: 26px; height: 26px; border-radius: 50%; border: 2px solid #8B7BA0; background: #8B7BA0; margin-top: 2px; }
+
+/* Debt Snowball */
+.debt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.1in; }
+.debt-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; }
+.debt-hdr { background: #6B8FAE; padding: 5px 10px; }
+.debt-hdr-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #fff; }
+.debt-hdr-sub { font-family: 'Lato', Arial, sans-serif; font-size: 6pt; color: rgba(255,255,255,0.82); margin-top: 1px; }
+.debt-body { padding: 5px 10px 7px; background: #FAF7F2; }
+.debt-frow { display: flex; justify-content: space-between; align-items: flex-end; padding: 3px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.debt-frow:last-of-type { border-bottom: none; }
+.debt-flabel { font-size: 7pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; }
+.debt-fline { width: 1.1in; border-bottom: 1px solid #C4B5A5; height: 11px; }
+.debt-segs { display: flex; gap: 2px; margin-top: 6px; }
+.debt-seg { width: 13px; height: 8px; border: 1px solid #C4B5A5; border-radius: 1px; background: #F5F0EA; }
+
+/* Grocery Budget */
+.groc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.12in; }
+.groc-section { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; margin-bottom: 6px; }
+.groc-hdr { background: #A89080; padding: 5px 10px; }
+.groc-hdr-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; }
+.groc-row { display: grid; grid-template-columns: 1.6fr 0.8in 0.8in; padding: 4px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center; }
+.groc-row:last-child { border-bottom: none; }
+.groc-row.odd  { background: #FAF7F2; }
+.groc-row.even { background: #F5F0EA; }
+.groc-row.groc-col-hdr-row { background: rgba(168,144,128,0.08); }
+.groc-label { font-size: 7.5pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; }
+.groc-col-hdr { font-size: 6.5pt; font-weight: 700; color: #A89080; font-family: 'Lato', Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.3px; }
+.groc-total { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; }
+.groc-total .groc-label { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.4px; }
+
+/* Notes Page */
+.notes-big { border: 1px solid #E0C4B8; border-radius: 7px; background: #F2DDD5; padding: 8px 12px; margin-bottom: 8px; }
+.notes-big-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 600; color: #C4826E; margin-bottom: 5px; }
+.notes-big-line { border-bottom: 1px solid #D4B4A8; height: 18px; }
+.notes-proud { border: 1px solid #B5C9B7; border-radius: 7px; background: #EAF2EB; padding: 8px 12px; margin-bottom: 8px; }
+.notes-proud-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 600; color: #4A6B4E; margin-bottom: 5px; }
+.notes-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+/* Tips box (soft-blush helper box used to fill page bottoms) */
+.tips { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 7px 12px 8px; }
+.tips-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; padding-left: 11px; }
+.tips ul { margin-top: 2px; }
+.tips-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 16px; }
+.tips li { list-style: none; font-family: 'Lato', Arial, sans-serif; font-size: 7pt; color: #3D3530; line-height: 1.35; padding-left: 11px; position: relative; }
+.tips li::before { content: "🌿"; position: absolute; left: 0; top: 0; font-size: 5.5pt; }
+
+/* Roomier rows on budget pages (pages 2-4) so content fills the page */
+.page-roomy .row { padding: 6.5px 10px; }
+.page-roomy .field-line { height: 16px; }
+.page-roomy .section { margin-bottom: 8px; }
+
+/* Roomier bill rows (page 5) */
+.page-bills .bill-row { padding: 8px 10px; }
+.page-bills .b-line { height: 14px; }
+.page-bills .notes-line { height: 20px; }
+.page-bills .tips li { line-height: 1.55; }
+
+/* Roomier sinking-fund boxes (page 6) */
+.page-funds .fund-grid { gap: 0.14in; }
+.page-funds .fund-body { padding: 7px 10px 9px; }
+.page-funds .fund-row { padding: 4.5px 0; }
+.page-funds .fund-fline { height: 13px; }
+.page-funds .fund-prog-bg { height: 8px; margin-top: 7px; }
+
+/* Roomier savings-goal boxes (page 7) */
+.page-goals .goal-box { margin-bottom: 10px; }
+.page-goals .goal-fields { gap: 8px; padding: 11px 10px 11px 12px; }
+.page-goals .goal-field-line { height: 15px; }
+.page-goals .thermo-seg { height: 12px; }
+
+/* Roomier debt boxes (page 8) */
+.page-debt .debt-grid { gap: 0.16in; }
+.page-debt .debt-body { padding: 9px 10px 11px; }
+.page-debt .debt-frow { padding: 6.5px 0; }
+.page-debt .debt-fline { height: 14px; }
+.page-debt .debt-seg { height: 11px; }
+.page-debt .tips li { line-height: 1.55; }
+
+/* Roomier grocery rows (page 9) */
+.page-groc .groc-row { padding: 8.5px 10px; }
+.page-groc .field-line { height: 16px; }
+.page-groc .notes-line { height: 19px; }
+.page-groc .tips li { line-height: 1.55; }
+
+/* Roomier reflection boxes (page 10) */
+.page-notes .notes-big-line { height: 26px; }
+.page-notes .notes-big { padding: 10px 12px; }
+.page-notes .notes-proud { padding: 10px 12px; }
+.page-notes .tips li { line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ PAGE 1 — COVER ═══════════════════════ -->
+<div class="page" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FAF7F2;">
+
+  <!-- Corner botanical: top-left -->
+  <svg style="position:absolute;top:0.32in;left:0.32in;width:1.25in;opacity:0.28;" viewBox="0 0 90 90" fill="none">
+    <line x1="12" y1="78" x2="78" y2="12" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M28 62 C16 54 3 52 0 46 C10 46 22 52 28 62Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M52 38 C60 26 72 20 76 14 C68 16 58 26 52 38Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M38 52 C28 42 16 40 12 34 C20 34 30 42 38 52Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="0.8"/>
+    <circle cx="80" cy="10" r="4" fill="#C4826E"/>
+  </svg>
+
+  <!-- Corner botanical: top-right -->
+  <svg style="position:absolute;top:0.32in;right:0.32in;width:1.25in;opacity:0.28;" viewBox="0 0 90 90" fill="none">
+    <line x1="78" y1="78" x2="12" y2="12" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M62 62 C74 54 87 52 90 46 C80 46 68 52 62 62Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M38 38 C30 26 18 20 14 14 C22 16 32 26 38 38Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="10" cy="10" r="4" fill="#C4826E"/>
+  </svg>
+
+  <!-- Corner botanical: bottom-left -->
+  <svg style="position:absolute;bottom:0.32in;left:0.32in;width:1.25in;opacity:0.28;" viewBox="0 0 90 90" fill="none">
+    <line x1="12" y1="12" x2="78" y2="78" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M28 28 C16 36 3 38 0 44 C10 44 22 38 28 28Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M52 52 C60 64 72 70 76 76 C68 74 58 64 52 52Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="80" cy="80" r="4" fill="#C4826E"/>
+  </svg>
+
+  <!-- Corner botanical: bottom-right -->
+  <svg style="position:absolute;bottom:0.32in;right:0.32in;width:1.25in;opacity:0.28;" viewBox="0 0 90 90" fill="none">
+    <line x1="78" y1="12" x2="12" y2="78" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M62 28 C74 36 87 38 90 44 C80 44 68 38 62 28Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M38 52 C30 64 18 70 14 76 C22 74 32 64 38 52Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="10" cy="80" r="4" fill="#C4826E"/>
+  </svg>
+
+  <!-- Central cover content -->
+  <div style="text-align:center;width:5.8in;">
+    <div style="border:2px solid #B5C9B7;border-radius:14px;padding:0.5in 0.65in 0.48in;background:rgba(255,255,255,0.62);">
+      <div style="font-family:'Lato',Arial,sans-serif;font-size:7pt;letter-spacing:3px;text-transform:uppercase;color:#7A9E7E;margin-bottom:0.16in;">SpendWiseCents.com Presents</div>
+      <div style="border-top:1px solid #DDD5C8;margin-bottom:0.2in;"></div>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:40pt;font-weight:700;color:#4A6B4E;letter-spacing:3px;line-height:1.0;margin-bottom:0.04in;">BUDGET</div>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:40pt;font-weight:700;color:#4A6B4E;letter-spacing:3px;line-height:1.0;margin-bottom:0.18in;">BINDER</div>
+      <div style="font-family:'Lato',Arial,sans-serif;font-size:11pt;font-style:italic;color:#C4826E;margin-bottom:0.22in;">Taking control of my money</div>
+      <div style="border-top:1px solid #DDD5C8;margin-bottom:0.24in;"></div>
+      <div style="display:flex;justify-content:center;gap:0.55in;">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:5px;">
+          <div style="font-family:'Lato',Arial,sans-serif;font-size:7pt;text-transform:uppercase;letter-spacing:1.5px;color:#7A9E7E;">Name</div>
+          <div style="border-bottom:1.5px solid #C4826E;width:2.1in;height:20px;"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:5px;">
+          <div style="font-family:'Lato',Arial,sans-serif;font-size:7pt;text-transform:uppercase;letter-spacing:1.5px;color:#7A9E7E;">Year</div>
+          <div style="border-bottom:1.5px solid #C4826E;width:1in;height:20px;"></div>
+        </div>
+      </div>
+      <div style="margin-top:0.26in;font-family:'Playfair Display',Georgia,serif;font-size:8.5pt;font-style:italic;color:#8A7A6A;">10-Page Complete Budget Starter Pack</div>
+    </div>
+  </div>
+
+  <div style="position:absolute;bottom:0.26in;font-family:'Lato',Arial,sans-serif;font-size:7pt;font-style:italic;color:#B0A090;">Free Printable — Print as many copies as you need 🌿</div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 2 — MONTHLY OVERVIEW ═══════════════════════ -->
+<div class="page page-roomy">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">MONTHLY BUDGET<br>PLANNER</div>
+      <div class="subtitle">Full-month spending plan</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Plan every dollar before the month begins — compare income vs. all expenses</span>
+    <span class="page-tag">PAGE 2 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">Monthly Income</div>
+          <div class="row odd"><span class="row-label">Primary Job Take-Home</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Secondary / Side Income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Child Support / Benefits</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-fixed">Fixed Expenses</div>
+          <div class="row odd"><span class="row-label">Rent / Mortgage</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Car Payment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Car Insurance</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Health Insurance</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Phone Bill</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Internet / Cable</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Electric / Gas / Water</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Subscriptions</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Fixed</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-debt">Debt Payments</div>
+          <div class="row odd"><span class="row-label">Credit Card 1</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Credit Card 2</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Student Loan</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Medical / Personal Loan</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Debt</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="section">
+          <div class="section-header sh-variable">Variable Spending</div>
+          <div class="row odd"><span class="row-label">Groceries</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Gas / Transportation</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Dining Out / Takeout</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Entertainment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Clothing</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Personal Care</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Kids / School</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Household / Cleaning</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Medical / Pharmacy</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Miscellaneous</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Variable</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-savings">Savings &amp; Goals</div>
+          <div class="row odd"><span class="row-label">Emergency Fund</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Sinking Funds</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Retirement / 401k</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Savings Goal</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Savings</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="affirmation">"Every dollar I give a job brings me closer to the life I'm building."</div>
+        <div class="notes">
+          <div class="notes-title">Monthly Notes</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="summary-bar">
+      <div class="sum-cell"><div class="sum-label">Total Income</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Fixed + Debt</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Variable + Savings</div><div class="sum-value">$</div></div>
+      <div class="sum-cell highlight"><div class="sum-label">Left Over</div><div class="sum-value">$</div></div>
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Make This Month Easier</div>
+      <ul class="tips-grid">
+        <li>Give every dollar a job before the month starts — even a "fun money" line counts.</li>
+        <li>List your bills by due date so nothing surprises you mid-month.</li>
+        <li>If "Left Over" is negative, trim one variable line before you trim savings.</li>
+        <li>Pay yourself first: send savings the day your paycheck lands.</li>
+        <li>Round expenses up — a little cushion beats coming up short.</li>
+        <li>Revisit this page weekly; a budget is a plan you adjust, not a test you fail.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 3 — PAYCHECK 1 TRACKER ═══════════════════════ -->
+<div class="page page-roomy">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">BIWEEKLY BUDGET<br>TRACKER</div>
+      <div class="subtitle">Paycheck 1 of 2</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Pay Date</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Take-Home Amount</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Budget for bills + spending due during your first paycheck period</span>
+    <span class="page-tag">PAGE 3 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">This Paycheck</div>
+          <div class="row odd"><span class="row-label">Take-Home Pay</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Income This Period</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Available</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-fixed">Bills Due This Period</div>
+          <div class="row odd"><span class="row-label">Rent / Mortgage</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Car Payment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Car Insurance</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Health Insurance</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Phone Bill</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Internet / Utilities</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Subscriptions</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Fixed Bill</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Bills</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-debt">Debt Payments</div>
+          <div class="row odd"><span class="row-label">Credit Card 1 (minimum)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Student Loan</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Other Debt</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Debt</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="section">
+          <div class="section-header sh-variable">Variable Spending</div>
+          <div class="row odd"><span class="row-label">Groceries</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Gas / Transportation</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Dining Out / Takeout</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Entertainment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Clothing / Personal Care</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Kids / School</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Household / Cleaning</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Medical / Pharmacy</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Miscellaneous</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Variable</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-savings">Savings &amp; Goals</div>
+          <div class="row odd"><span class="row-label">Emergency Fund</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Sinking Funds</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Other Savings</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Savings</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="affirmation">"I am spending with intention and saving with purpose."</div>
+        <div class="notes">
+          <div class="notes-title">Notes for This Paycheck</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="summary-bar">
+      <div class="sum-cell"><div class="sum-label">Take-Home Pay</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Bills + Debt</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Variable + Savings</div><div class="sum-value">$</div></div>
+      <div class="sum-cell highlight"><div class="sum-label">Left Over</div><div class="sum-value">$</div></div>
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Stretching Your First Paycheck</div>
+      <ul class="tips-grid">
+        <li>Cover the bills due before your next payday first — rent and utilities lead.</li>
+        <li>Split big monthly bills across both paychecks so neither one feels brutal.</li>
+        <li>Move grocery and gas money to cash or a separate account to avoid overspending.</li>
+        <li>Whatever's left over, name it now — savings, debt, or a sinking fund.</li>
+        <li>Set a bill-pay reminder two days before each due date.</li>
+        <li>A small win this paycheck builds momentum for the next.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 4 — PAYCHECK 2 TRACKER ═══════════════════════ -->
+<div class="page page-roomy">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">BIWEEKLY BUDGET<br>TRACKER</div>
+      <div class="subtitle">Paycheck 2 of 2</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Pay Date</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Take-Home Amount</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Budget for bills + spending due during your second paycheck period</span>
+    <span class="page-tag">PAGE 4 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">This Paycheck</div>
+          <div class="row odd"><span class="row-label">Take-Home Pay</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Income This Period</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Available</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-fixed">Bills Due This Period</div>
+          <div class="row odd"><span class="row-label">Rent / Mortgage</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Electric / Gas / Water</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Car Payment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Phone Bill</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Internet / Streaming</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Childcare / Daycare</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Gym / Memberships</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other Fixed Bill</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Bills</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-debt">Debt Payments</div>
+          <div class="row odd"><span class="row-label">Credit Card 2 (minimum)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Medical / Personal Loan</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Extra Debt Payment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Debt</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="section">
+          <div class="section-header sh-variable">Variable Spending</div>
+          <div class="row odd"><span class="row-label">Groceries</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Gas / Transportation</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Dining Out / Takeout</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Entertainment</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Clothing / Personal Care</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Kids / School</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Household / Cleaning</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Medical / Pharmacy</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Miscellaneous</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Variable</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="section">
+          <div class="section-header sh-savings">Savings &amp; Goals</div>
+          <div class="row odd"><span class="row-label">Emergency Fund</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Sinking Funds</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Other Savings</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">Total Savings</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+        <div class="affirmation">"Small consistent steps lead to big financial freedom."</div>
+        <div class="notes">
+          <div class="notes-title">Notes for This Paycheck</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="summary-bar">
+      <div class="sum-cell"><div class="sum-label">Take-Home Pay</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Bills + Debt</div><div class="sum-value">$</div></div>
+      <div class="sum-cell"><div class="sum-label">Variable + Savings</div><div class="sum-value">$</div></div>
+      <div class="sum-cell highlight"><div class="sum-label">Left Over</div><div class="sum-value">$</div></div>
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Finishing the Month Strong</div>
+      <ul class="tips-grid">
+        <li>Compare both paychecks side by side — did the month balance out?</li>
+        <li>Send any leftover straight to your emergency fund or smallest debt.</li>
+        <li>Watch the bills that only hit once a quarter — set aside a little each pay.</li>
+        <li>If you overspent one category, adjust next month instead of beating yourself up.</li>
+        <li>Celebrate every bill paid on time — that's real progress.</li>
+        <li>Carry one lesson from this month into your next plan.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 5 — BILL PAYMENT TRACKER ═══════════════════════ -->
+<div class="page page-bills">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">MONTHLY BILL<br>PAYMENT TRACKER</div>
+      <div class="subtitle">Never miss a due date again</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Check off each bill as you pay it — track auto-pay so nothing slips through</span>
+    <span class="page-tag">PAGE 5 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="section">
+      <div class="bill-header-row">
+        <div class="bill-col-hdr">Bill Name</div>
+        <div class="bill-col-hdr">Amount Due</div>
+        <div class="bill-col-hdr">Due Date</div>
+        <div class="bill-col-hdr">Auto-Pay?</div>
+        <div class="bill-col-hdr">Paid ✓</div>
+      </div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row odd"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row even"><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-line"></span></div><div class="bill-cell"><span class="b-chk"></span></div><div class="bill-cell"><span class="b-chk"></span></div></div>
+      <div class="bill-row total-bill">
+        <div class="bill-cell total-label">Total Bills This Month:</div>
+        <div class="bill-cell" style="display:flex;align-items:flex-end;gap:2px;"><span style="font-size:7pt;color:#8A7A6A;">$</span><span class="b-line" style="width:0.8in;border-bottom:2px solid #7A9E7E;"></span></div>
+        <div class="bill-cell"></div><div class="bill-cell"></div><div class="bill-cell"></div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.14in;margin-top:8px;">
+      <div class="notes">
+        <div class="notes-title">Notes</div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+      </div>
+      <div class="tips">
+        <div class="tips-title">Never Miss a Due Date</div>
+        <ul style="display:grid;grid-template-columns:1fr;gap:3px;">
+          <li>Turn on auto-pay for fixed bills — then check the box here to confirm.</li>
+          <li>Line up due dates close to your paydays when you can.</li>
+          <li>Call providers and ask to move a due date — most will say yes.</li>
+          <li>Keep a one-month buffer so a late paycheck never means a late fee.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 6 — SINKING FUND TRACKER ═══════════════════════ -->
+<div class="page page-funds">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">SINKING FUND<br>TRACKER</div>
+      <div class="subtitle">Save a little each month for big irregular expenses</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Name each fund, set your target, and track how much you've saved toward it</span>
+    <span class="page-tag">PAGE 6 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="fund-grid">
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #1</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #2</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #3</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #4</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #5</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #6</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #7</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+      <div class="fund-box">
+        <div class="fund-hdr"><div class="fund-hdr-title">Sinking Fund #8</div><div class="fund-hdr-sub">Fund Name: ___________________________</div></div>
+        <div class="fund-body">
+          <div class="fund-row"><span class="fund-label">Monthly Goal</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Total Target</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Amount Saved</span><span class="fund-fline"></span></div>
+          <div class="fund-row"><span class="fund-label">Remaining</span><span class="fund-fline"></span></div>
+          <div class="fund-prog-bg"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="affirmation" style="margin-top:8px;">"Sinking funds turn financial surprises into planned expenses."</div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Popular Sinking Funds to Start</div>
+      <ul class="tips-grid">
+        <li>Car repairs &amp; maintenance — set aside $25–50 a month.</li>
+        <li>Christmas &amp; gifts — divide your target by 12 and save monthly.</li>
+        <li>Annual insurance or registration renewals.</li>
+        <li>Back-to-school clothes and supplies.</li>
+        <li>Medical &amp; dental copays.</li>
+        <li>Holidays, birthdays, and travel.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 7 — SAVINGS GOALS ═══════════════════════ -->
+<div class="page page-goals">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">SAVINGS GOALS</div>
+      <div class="subtitle">Track your biggest financial targets</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Fill in each goal, set your target, and shade the thermometer as you save</span>
+    <span class="page-tag">PAGE 7 OF 10</span>
+  </div>
+  <div class="body">
+
+    <div class="goal-box">
+      <div class="goal-hdr">
+        <div class="goal-hdr-title">Goal #1</div>
+        <div class="goal-hdr-sub">Goal Name: _________________________________________________</div>
+      </div>
+      <div class="goal-body">
+        <div class="goal-fields">
+          <div class="goal-field"><span class="goal-field-label">Target Amount</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Amount Saved So Far</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Monthly Contribution</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Deadline / Target Date</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Why This Goal Matters</span><div class="goal-field-line"></div></div>
+        </div>
+        <div class="goal-thermo">
+          <div class="thermo-lbl">Shade as<br>you save</div>
+          <div class="thermo-segs">
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div>
+          </div>
+          <div class="thermo-bulb"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="goal-box">
+      <div class="goal-hdr">
+        <div class="goal-hdr-title">Goal #2</div>
+        <div class="goal-hdr-sub">Goal Name: _________________________________________________</div>
+      </div>
+      <div class="goal-body">
+        <div class="goal-fields">
+          <div class="goal-field"><span class="goal-field-label">Target Amount</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Amount Saved So Far</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Monthly Contribution</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Deadline / Target Date</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Why This Goal Matters</span><div class="goal-field-line"></div></div>
+        </div>
+        <div class="goal-thermo">
+          <div class="thermo-lbl">Shade as<br>you save</div>
+          <div class="thermo-segs">
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div>
+          </div>
+          <div class="thermo-bulb"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="goal-box">
+      <div class="goal-hdr">
+        <div class="goal-hdr-title">Goal #3</div>
+        <div class="goal-hdr-sub">Goal Name: _________________________________________________</div>
+      </div>
+      <div class="goal-body">
+        <div class="goal-fields">
+          <div class="goal-field"><span class="goal-field-label">Target Amount</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Amount Saved So Far</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Monthly Contribution</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Deadline / Target Date</span><div class="goal-field-line"></div></div>
+          <div class="goal-field"><span class="goal-field-label">Why This Goal Matters</span><div class="goal-field-line"></div></div>
+        </div>
+        <div class="goal-thermo">
+          <div class="thermo-lbl">Shade as<br>you save</div>
+          <div class="thermo-segs">
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div>
+          </div>
+          <div class="thermo-bulb"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="affirmation">"I am building wealth one intentional dollar at a time."</div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Reach Your Goals Faster</div>
+      <ul class="tips-grid">
+        <li>Make goals specific: "$1,000 emergency fund by December" beats "save more."</li>
+        <li>Automate a small transfer the day you get paid — you won't miss it.</li>
+        <li>Shade one block each time you hit a milestone; seeing progress keeps you going.</li>
+        <li>Funnel windfalls — tax refunds, bonuses, rebates — straight to a goal.</li>
+        <li>Build a starter emergency fund before chasing bigger goals.</li>
+        <li>Write down why each goal matters; your "why" carries you through.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 8 — DEBT SNOWBALL TRACKER ═══════════════════════ -->
+<div class="page page-debt">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">DEBT SNOWBALL<br>TRACKER</div>
+      <div class="subtitle">Pay smallest balance first — build momentum</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">List debts smallest to largest — shade blocks as you pay each one down</span>
+    <span class="page-tag">PAGE 8 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="debt-grid">
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #1</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #2</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #3</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #4</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #5</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="debt-box">
+        <div class="debt-hdr"><div class="debt-hdr-title">Debt #6</div><div class="debt-hdr-sub">Creditor: ______________________________</div></div>
+        <div class="debt-body">
+          <div class="debt-frow"><span class="debt-flabel">Starting Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Current Balance</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Interest Rate</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Minimum Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-frow"><span class="debt-flabel">Extra Payment</span><span class="debt-fline"></span></div>
+          <div class="debt-segs">
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+            <div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div><div class="debt-seg"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="affirmation" style="margin-top:8px;">"Every payment is one step closer to the freedom I deserve."</div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">How the Snowball Works</div>
+      <ul class="tips-grid">
+        <li>List debts smallest balance to largest — ignore interest rate for now.</li>
+        <li>Pay the minimum on every debt so nothing falls behind.</li>
+        <li>Throw every extra dollar at the smallest balance until it's gone.</li>
+        <li>Roll that payment onto the next debt — the snowball grows bigger.</li>
+        <li>Shade a block for every $50 or $100 you knock down.</li>
+        <li>Each paid-off debt is proof you can do this — keep the momentum.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 9 — GROCERY BUDGET ═══════════════════════ -->
+<div class="page page-groc">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">GROCERY BUDGET<br>PLANNER</div>
+      <div class="subtitle">Weekly grocery spending by category</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Monthly Budget</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Budget by category, then track actual spending each week — totals help you stay on target</span>
+    <span class="page-tag">PAGE 9 OF 10</span>
+  </div>
+  <div class="body">
+    <div class="groc-section">
+      <div class="groc-hdr"><div class="groc-hdr-title">Weekly Grocery Tracker</div></div>
+      <div class="groc-row groc-col-hdr-row">
+        <div class="groc-col-hdr">Category</div>
+        <div class="groc-col-hdr">Budget</div>
+        <div class="groc-col-hdr">Actual</div>
+      </div>
+      <div class="groc-row odd"><span class="groc-label">Produce (Fruits &amp; Vegetables)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Meat, Poultry &amp; Seafood</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Dairy &amp; Eggs</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Bread, Grains &amp; Pasta</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Canned &amp; Dry Goods</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Frozen Foods</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Snacks &amp; Beverages</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Household / Cleaning</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Baby / Kids Items</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Personal Care / Toiletries</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Coffee / Specialty Drinks</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row even"><span class="groc-label">Pet Food &amp; Supplies</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row odd"><span class="groc-label">Other</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      <div class="groc-row groc-total">
+        <span class="groc-label">TOTAL GROCERY SPENDING</span>
+        <div class="field-cell"><span class="dollar-sign">$</span><div class="field-line" style="border-bottom:2px solid #7A9E7E;"></div></div>
+        <div class="field-cell"><span class="dollar-sign">$</span><div class="field-line" style="border-bottom:2px solid #C4826E;"></div></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.12in;margin-top:6px;">
+      <div class="notes">
+        <div class="notes-title">Grocery List Reminders</div>
+        <div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div>
+        <div class="notes-line"></div><div class="notes-line"></div>
+      </div>
+      <div>
+        <div class="summary-bar" style="grid-template-columns:1fr 1fr;margin-top:0;">
+          <div class="sum-cell"><div class="sum-label">Monthly Budget</div><div class="sum-value">$</div></div>
+          <div class="sum-cell highlight"><div class="sum-label">Over / Under</div><div class="sum-value">$</div></div>
+        </div>
+        <div class="affirmation" style="margin-top:8px;">"Meal planning is the best coupon I have."</div>
+      </div>
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Stretch Your Grocery Budget</div>
+      <ul class="tips-grid">
+        <li>Plan meals around what's on sale and already in your pantry.</li>
+        <li>Shop with a list and a full stomach to skip impulse buys.</li>
+        <li>Buy store brands — they're often the same product for less.</li>
+        <li>Cook once, eat twice: double recipes and freeze the extra.</li>
+        <li>Check the unit price, not just the sticker price.</li>
+        <li>Keep a few cheap, filling staples on hand: beans, rice, oats, eggs.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════ PAGE 10 — MONTHLY NOTES & GOALS ═══════════════════════ -->
+<div class="page page-notes">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+  <div class="header">
+    <div>
+      <div class="page-title">MONTHLY NOTES<br>&amp; GOALS</div>
+      <div class="subtitle">Reflect, review, and reset for next month</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Month</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Year</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+  <div class="subheader">
+    <span class="subheader-left">Use this page at month-end to reflect on wins, adjust, and set intentions for next month</span>
+    <span class="page-tag">PAGE 10 OF 10</span>
+  </div>
+  <div class="body">
+
+    <div class="notes-big">
+      <div class="notes-big-title">This month I want to:</div>
+      <div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div>
+      <div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div>
+      <div class="notes-big-line"></div><div class="notes-big-line"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.14in;">
+      <div class="notes-big">
+        <div class="notes-big-title">What I spent too much on:</div>
+        <div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div>
+      </div>
+      <div class="notes-big">
+        <div class="notes-big-title">What I will cut next month:</div>
+        <div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div><div class="notes-big-line"></div>
+      </div>
+    </div>
+
+    <div class="notes-proud">
+      <div class="notes-proud-title">I am proud of:</div>
+      <div class="notes-big-line" style="border-bottom:1px solid #B5C9B7;"></div>
+      <div class="notes-big-line" style="border-bottom:1px solid #B5C9B7;"></div>
+      <div class="notes-big-line" style="border-bottom:1px solid #B5C9B7;"></div>
+      <div class="notes-big-line" style="border-bottom:1px solid #B5C9B7;"></div>
+    </div>
+
+    <div class="tips" style="margin-top:8px;">
+      <div class="tips-title">Set Up Next Month for Success</div>
+      <ul class="tips-grid">
+        <li>Pick one money goal for next month and write it where you'll see it.</li>
+        <li>Schedule a 20-minute budget date before the 1st to plan ahead.</li>
+        <li>Top up any sinking fund that ran low this month.</li>
+        <li>Cancel one subscription you forgot you were paying for.</li>
+        <li>Note any irregular bills coming up so they don't catch you off guard.</li>
+        <li>Carry forward what worked — keep the habits that helped.</li>
+      </ul>
+    </div>
+    <div class="affirmation" style="margin-top:8px;">"I am not behind — I am exactly where I need to be, and I am moving forward."</div>
+
+  </div>
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>

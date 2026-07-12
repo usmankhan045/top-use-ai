@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>100 Envelope Savings Challenge — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter landscape; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2D2D2D;
+  background: #FAF7F2;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.page {
+  width: 11in;
+  height: 8.5in;
+  background: #FAF7F2;
+  position: relative;
+  overflow: hidden;
+}
+.botanical {
+  position: absolute;
+  top: 0.25in;
+  right: 0.30in;
+  width: 0.75in;
+  opacity: 0.22;
+  z-index: 2;
+  pointer-events: none;
+}
+.header {
+  background: #7A9E7E;
+  border-radius: 8px 8px 0 0;
+  margin: 0.38in 0.42in 0;
+  padding: 6px 14px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.header-subtitle {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+  font-style: italic;
+  color: rgba(255,255,255,0.78);
+  margin-top: 2px;
+}
+.header-fields {
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+}
+.hfield-line {
+  width: 72pt;
+  border-bottom: 1.5px solid rgba(255,255,255,0.7);
+  height: 13pt;
+}
+.subheader {
+  background: #B5C9B7;
+  margin: 0 0.42in;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subheader-text {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+  font-style: italic;
+  color: #2D2D2D;
+}
+.subheader-tag {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4A6B4E;
+  letter-spacing: 0.3px;
+}
+.body { margin: 5px 0.42in 0; }
+.main-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 0.14in;
+}
+.grid-title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8A7A6A;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.circles-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 3px;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid #C4B5A5;
+  background: #FAF7F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7pt;
+  font-weight: 700;
+  color: #7A9E7E;
+}
+.sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.section {
+  border-radius: 7px;
+  border: 1px solid #DDD5C8;
+  overflow: hidden;
+}
+.section-header {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: #fff;
+  padding: 4px 9px;
+  letter-spacing: 0.2px;
+}
+.sh-milestone { background: #7A9E7E; }
+.sh-goal      { background: #C4826E; }
+.sh-variation { background: #8B7BA0; }
+.srow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 9px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.srow:last-child { border-bottom: none; }
+.srow.odd  { background: #FAF7F2; }
+.srow.even { background: #F5F0EA; }
+.srow-check { font-size: 7.5pt; color: #A89080; margin-right: 4px; flex-shrink: 0; }
+.srow-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.8pt;
+  color: #3D3530;
+  flex: 1;
+}
+.srow-value {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.8pt;
+  font-weight: 700;
+  color: #C4826E;
+  flex-shrink: 0;
+}
+.srow-line {
+  flex: 1;
+  border-bottom: 1px solid #C4B5A5;
+  height: 11px;
+  margin-left: 4px;
+}
+.dollar-pfx {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.8pt;
+  color: #8A7A6A;
+  flex-shrink: 0;
+}
+.affirmation {
+  background: #B5C9B7;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7pt;
+  font-style: italic;
+  color: #3D5C40;
+  text-align: center;
+}
+.summary-bar {
+  background: #4A6B4E;
+  border-radius: 7px;
+  padding: 7px 0.14in;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 5px;
+}
+.sum-cell { text-align: center; }
+.sum-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6pt;
+  color: rgba(255,255,255,0.70);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: block;
+  margin-bottom: 3px;
+}
+.sum-value {
+  background: rgba(255,255,255,0.92);
+  border-radius: 4px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: 700;
+  color: #2D2D2D;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+}
+.sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+.footer {
+  position: absolute;
+  bottom: 0.14in;
+  left: 0.42in;
+  right: 0.42in;
+  border-top: 1px solid #DDD5C8;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-style: italic;
+  color: #B0A090;
+}
+.footer-right {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  color: #7A9E7E;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">100 ENVELOPE SAVINGS CHALLENGE</div>
+      <div class="header-subtitle">Save $5,050 in 100 days — your visual progress tracker</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield">
+        <span class="hfield-label">START DATE</span>
+        <div class="hfield-line"></div>
+      </div>
+      <div class="hfield">
+        <span class="hfield-label">END DATE</span>
+        <div class="hfield-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Color each circle when you save that dollar amount — every completed circle brings you closer to $5,050 🌿</span>
+    <span class="subheader-tag">SAVE $5,050</span>
+  </div>
+
+  <div class="body">
+    <div class="main-grid">
+
+      <div class="circles-col">
+        <div class="grid-title">Color each circle as you save that amount</div>
+        <div class="circles-grid">
+          <div class="circle">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+          <div class="circle">5</div>
+          <div class="circle">6</div>
+          <div class="circle">7</div>
+          <div class="circle">8</div>
+          <div class="circle">9</div>
+          <div class="circle">10</div>
+          <div class="circle">11</div>
+          <div class="circle">12</div>
+          <div class="circle">13</div>
+          <div class="circle">14</div>
+          <div class="circle">15</div>
+          <div class="circle">16</div>
+          <div class="circle">17</div>
+          <div class="circle">18</div>
+          <div class="circle">19</div>
+          <div class="circle">20</div>
+          <div class="circle">21</div>
+          <div class="circle">22</div>
+          <div class="circle">23</div>
+          <div class="circle">24</div>
+          <div class="circle">25</div>
+          <div class="circle">26</div>
+          <div class="circle">27</div>
+          <div class="circle">28</div>
+          <div class="circle">29</div>
+          <div class="circle">30</div>
+          <div class="circle">31</div>
+          <div class="circle">32</div>
+          <div class="circle">33</div>
+          <div class="circle">34</div>
+          <div class="circle">35</div>
+          <div class="circle">36</div>
+          <div class="circle">37</div>
+          <div class="circle">38</div>
+          <div class="circle">39</div>
+          <div class="circle">40</div>
+          <div class="circle">41</div>
+          <div class="circle">42</div>
+          <div class="circle">43</div>
+          <div class="circle">44</div>
+          <div class="circle">45</div>
+          <div class="circle">46</div>
+          <div class="circle">47</div>
+          <div class="circle">48</div>
+          <div class="circle">49</div>
+          <div class="circle">50</div>
+          <div class="circle">51</div>
+          <div class="circle">52</div>
+          <div class="circle">53</div>
+          <div class="circle">54</div>
+          <div class="circle">55</div>
+          <div class="circle">56</div>
+          <div class="circle">57</div>
+          <div class="circle">58</div>
+          <div class="circle">59</div>
+          <div class="circle">60</div>
+          <div class="circle">61</div>
+          <div class="circle">62</div>
+          <div class="circle">63</div>
+          <div class="circle">64</div>
+          <div class="circle">65</div>
+          <div class="circle">66</div>
+          <div class="circle">67</div>
+          <div class="circle">68</div>
+          <div class="circle">69</div>
+          <div class="circle">70</div>
+          <div class="circle">71</div>
+          <div class="circle">72</div>
+          <div class="circle">73</div>
+          <div class="circle">74</div>
+          <div class="circle">75</div>
+          <div class="circle">76</div>
+          <div class="circle">77</div>
+          <div class="circle">78</div>
+          <div class="circle">79</div>
+          <div class="circle">80</div>
+          <div class="circle">81</div>
+          <div class="circle">82</div>
+          <div class="circle">83</div>
+          <div class="circle">84</div>
+          <div class="circle">85</div>
+          <div class="circle">86</div>
+          <div class="circle">87</div>
+          <div class="circle">88</div>
+          <div class="circle">89</div>
+          <div class="circle">90</div>
+          <div class="circle">91</div>
+          <div class="circle">92</div>
+          <div class="circle">93</div>
+          <div class="circle">94</div>
+          <div class="circle">95</div>
+          <div class="circle">96</div>
+          <div class="circle">97</div>
+          <div class="circle">98</div>
+          <div class="circle">99</div>
+          <div class="circle">100</div>
+        </div>
+      </div>
+
+      <div class="sidebar-col">
+        <div class="section">
+          <div class="section-header sh-milestone">Progress Milestones</div>
+          <div class="srow odd"><span class="srow-check">☐</span><span class="srow-label">Envelopes 1–31</span><span class="srow-value">$500 saved</span></div>
+          <div class="srow even"><span class="srow-check">☐</span><span class="srow-label">Envelopes 32–44</span><span class="srow-value">$1,000 saved</span></div>
+          <div class="srow odd"><span class="srow-check">☐</span><span class="srow-label">Envelopes 45–62</span><span class="srow-value">$2,000 saved</span></div>
+          <div class="srow even"><span class="srow-check">☐</span><span class="srow-label">Envelopes 63–77</span><span class="srow-value">$3,000 saved</span></div>
+          <div class="srow odd"><span class="srow-check">☐</span><span class="srow-label">Envelopes 78–89</span><span class="srow-value">$4,000 saved</span></div>
+          <div class="srow even"><span class="srow-check">☐</span><span class="srow-label">Envelope 100</span><span class="srow-value">$5,050! 🎉</span></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-goal">My Goal</div>
+          <div class="srow odd"><span class="srow-label">Goal Name</span><div class="srow-line"></div></div>
+          <div class="srow even"><span class="srow-label">I am saving this for</span><div class="srow-line"></div></div>
+          <div class="srow odd"><span class="srow-label">Target Date</span><div class="srow-line"></div></div>
+          <div class="srow even"><span class="srow-label">Total Saved So Far</span><span class="dollar-pfx">$</span><div class="srow-line"></div></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-variation">Challenge Variations</div>
+          <div class="srow odd"><span class="srow-label">Mini (÷10): $0.10–$10</span><span class="srow-value">= $505</span></div>
+          <div class="srow even"><span class="srow-label">Low Income (÷2): $0.50–$50</span><span class="srow-value">= $2,525</span></div>
+          <div class="srow odd"><span class="srow-label">Double (×2): $2–$200</span><span class="srow-value">= $10,100</span></div>
+        </div>
+
+        <div class="affirmation">"Small steps. Consistent action. Big savings." 🌿</div>
+      </div>
+    </div>
+
+    <div class="summary-bar">
+      <div class="sum-cell">
+        <span class="sum-label">Envelopes Completed</span>
+        <div class="sum-value">_____ / 100</div>
+      </div>
+      <div class="sum-cell highlight">
+        <span class="sum-label">Total Saved</span>
+        <div class="sum-value">$__________</div>
+      </div>
+      <div class="sum-cell">
+        <span class="sum-label">Days Remaining</span>
+        <div class="sum-value">__________</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+
+</div>
+</body>
+</html>

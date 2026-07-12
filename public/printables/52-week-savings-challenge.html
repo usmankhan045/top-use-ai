@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>52-Week Savings Challenge Tracker — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; }
+
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.page-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-right { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.fill-field { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.fill-label { font-size: 6.5pt; text-transform: uppercase; color: rgba(255,255,255,0.78); letter-spacing: 0.3px; font-family: 'Lato', Arial, sans-serif; }
+.fill-line { border-bottom: 1px solid rgba(255,255,255,0.7); width: 1.2in; height: 14px; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-left { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.page-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; }
+
+.body { margin: 5px 0.42in 0; }
+
+.main-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 0.1in; }
+
+.quarter-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.06in; }
+
+.quarter-col { border-radius: 5px; overflow: hidden; border: 1px solid #DDD5C8; }
+
+.q-label { font-family: 'Playfair Display', Georgia, serif; font-size: 6.5pt; font-weight: 600; color: #fff; padding: 4px 6px; text-align: center; letter-spacing: 0.3px; }
+.q1-label { background: #7A9E7E; }
+.q2-label { background: #C4826E; }
+.q3-label { background: #8B7BA0; }
+.q4-label { background: #6B8FAE; }
+
+.week-cell { padding: 3px 5px 4px; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.week-cell:last-child { border-bottom: none; }
+.wk-cell-q1 { background: #FAF7F2; }
+.wk-cell-q2 { background: #F2DDD5; }
+.wk-cell-q3 { background: #EBF2EC; }
+.wk-cell-q4 { background: #F5EFE8; }
+
+.wk-num { font-size: 5.5pt; font-weight: 700; text-transform: uppercase; color: #8A7A6A; letter-spacing: 0.2px; font-family: 'Lato', Arial, sans-serif; line-height: 1.3; }
+.wk-row { display: flex; justify-content: space-between; align-items: baseline; }
+.wk-amt { font-size: 9pt; font-weight: 700; color: #2D2D2D; font-family: 'Lato', Arial, sans-serif; line-height: 1.2; }
+.wk-done { font-size: 6pt; color: #7A9E7E; font-family: 'Lato', Arial, sans-serif; }
+.wk-total { font-size: 5.5pt; font-style: italic; color: #8A7A6A; font-family: 'Lato', Arial, sans-serif; line-height: 1.3; }
+
+.sidebar { display: flex; flex-direction: column; gap: 6px; }
+
+.sb-section { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.sb-hdr { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #fff; padding: 4px 8px; letter-spacing: 0.3px; }
+.sb-hdr-green { background: #7A9E7E; }
+.sb-hdr-rose  { background: #C4826E; }
+.sb-body { padding: 5px 8px; background: #FAF7F2; }
+.sb-row { font-size: 7pt; color: #2D2D2D; font-family: 'Lato', Arial, sans-serif; padding: 2.5px 0; border-bottom: 1px solid rgba(0,0,0,0.05); line-height: 1.3; }
+.sb-row:last-child { border-bottom: none; }
+.sb-ver { font-size: 6.5pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; padding: 2.5px 0; border-bottom: 1px solid rgba(0,0,0,0.05); line-height: 1.3; }
+.sb-ver:last-child { border-bottom: none; }
+
+.sb-fields { border-radius: 7px; border: 1px solid #DDD5C8; padding: 6px 8px; background: #FAF7F2; display: flex; flex-direction: column; gap: 7px; }
+.sb-field-label { font-size: 6.5pt; color: #3D3530; font-family: 'Lato', Arial, sans-serif; margin-bottom: 2px; }
+.sb-field-line { border-bottom: 1px solid #C4B5A5; height: 13px; width: 100%; }
+
+.sb-affirmation { background: #B5C9B7; border-radius: 5px; padding: 7px 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 7pt; font-style: italic; color: #3D5C40; text-align: center; line-height: 1.5; }
+
+.summary-bar { background: #4A6B4E; border-radius: 7px; padding: 0.08in 0.12in; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 7px; }
+.sum-cell { display: flex; flex-direction: column; gap: 3px; }
+.sum-label { font-size: 6pt; color: rgba(255,255,255,0.70); text-transform: uppercase; font-family: 'Lato', Arial, sans-serif; }
+.sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; font-size: 8pt; font-weight: 700; min-height: 20px; font-family: 'Lato', Arial, sans-serif; display: flex; align-items: center; padding: 0 6px; color: #2D2D2D; }
+.sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left  { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="page-title">52-WEEK SAVINGS<br>CHALLENGE</div>
+      <div class="subtitle">Save $1 in week 1 · $2 in week 2 · ... · $52 in week 52</div>
+    </div>
+    <div class="header-right">
+      <div class="fill-field"><div class="fill-label">Start Date</div><div class="fill-line"></div></div>
+      <div class="fill-field"><div class="fill-label">Bank / Account</div><div class="fill-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-left">Save $1,378 this year — check off each week as you go 🌿</span>
+    <span class="page-tag">SAVINGS TRACKER</span>
+  </div>
+
+  <div class="body">
+    <div class="main-grid">
+
+      <!-- ── TRACKER TABLE ── -->
+      <div>
+        <div class="quarter-grid">
+
+          <!-- Q1: Weeks 1–13 -->
+          <div class="quarter-col">
+            <div class="q-label q1-label">Q1 — Jan / Mar</div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 1</div><div class="wk-row"><span class="wk-amt">$1</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 2</div><div class="wk-row"><span class="wk-amt">$2</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $3</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 3</div><div class="wk-row"><span class="wk-amt">$3</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $6</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 4</div><div class="wk-row"><span class="wk-amt">$4</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $10</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 5</div><div class="wk-row"><span class="wk-amt">$5</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $15</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 6</div><div class="wk-row"><span class="wk-amt">$6</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $21</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 7</div><div class="wk-row"><span class="wk-amt">$7</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $28</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 8</div><div class="wk-row"><span class="wk-amt">$8</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $36</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 9</div><div class="wk-row"><span class="wk-amt">$9</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $45</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 10</div><div class="wk-row"><span class="wk-amt">$10</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $55</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 11</div><div class="wk-row"><span class="wk-amt">$11</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $66</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 12</div><div class="wk-row"><span class="wk-amt">$12</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $78</div></div>
+            <div class="week-cell wk-cell-q1"><div class="wk-num">WEEK 13</div><div class="wk-row"><span class="wk-amt">$13</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $91 ✓Q1</div></div>
+          </div>
+
+          <!-- Q2: Weeks 14–26 -->
+          <div class="quarter-col">
+            <div class="q-label q2-label">Q2 — Apr / Jun</div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 14</div><div class="wk-row"><span class="wk-amt">$14</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $105</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 15</div><div class="wk-row"><span class="wk-amt">$15</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $120</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 16</div><div class="wk-row"><span class="wk-amt">$16</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $136</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 17</div><div class="wk-row"><span class="wk-amt">$17</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $153</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 18</div><div class="wk-row"><span class="wk-amt">$18</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $171</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 19</div><div class="wk-row"><span class="wk-amt">$19</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $190</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 20</div><div class="wk-row"><span class="wk-amt">$20</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $210</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 21</div><div class="wk-row"><span class="wk-amt">$21</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $231</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 22</div><div class="wk-row"><span class="wk-amt">$22</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $253</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 23</div><div class="wk-row"><span class="wk-amt">$23</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $276</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 24</div><div class="wk-row"><span class="wk-amt">$24</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $300</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 25</div><div class="wk-row"><span class="wk-amt">$25</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $325</div></div>
+            <div class="week-cell wk-cell-q2"><div class="wk-num">WEEK 26</div><div class="wk-row"><span class="wk-amt">$26</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $351 ✓Q2</div></div>
+          </div>
+
+          <!-- Q3: Weeks 27–39 -->
+          <div class="quarter-col">
+            <div class="q-label q3-label">Q3 — Jul / Sep</div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 27</div><div class="wk-row"><span class="wk-amt">$27</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $378</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 28</div><div class="wk-row"><span class="wk-amt">$28</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $406</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 29</div><div class="wk-row"><span class="wk-amt">$29</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $435</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 30</div><div class="wk-row"><span class="wk-amt">$30</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $465</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 31</div><div class="wk-row"><span class="wk-amt">$31</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $496</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 32</div><div class="wk-row"><span class="wk-amt">$32</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $528</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 33</div><div class="wk-row"><span class="wk-amt">$33</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $561</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 34</div><div class="wk-row"><span class="wk-amt">$34</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $595</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 35</div><div class="wk-row"><span class="wk-amt">$35</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $630</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 36</div><div class="wk-row"><span class="wk-amt">$36</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $666</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 37</div><div class="wk-row"><span class="wk-amt">$37</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $703</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 38</div><div class="wk-row"><span class="wk-amt">$38</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $741</div></div>
+            <div class="week-cell wk-cell-q3"><div class="wk-num">WEEK 39</div><div class="wk-row"><span class="wk-amt">$39</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $780 ✓Q3</div></div>
+          </div>
+
+          <!-- Q4: Weeks 40–52 -->
+          <div class="quarter-col">
+            <div class="q-label q4-label">Q4 — Oct / Dec</div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 40</div><div class="wk-row"><span class="wk-amt">$40</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $820</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 41</div><div class="wk-row"><span class="wk-amt">$41</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $861</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 42</div><div class="wk-row"><span class="wk-amt">$42</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $903</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 43</div><div class="wk-row"><span class="wk-amt">$43</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $946</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 44</div><div class="wk-row"><span class="wk-amt">$44</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $990</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 45</div><div class="wk-row"><span class="wk-amt">$45</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,035</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 46</div><div class="wk-row"><span class="wk-amt">$46</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,081</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 47</div><div class="wk-row"><span class="wk-amt">$47</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,128</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 48</div><div class="wk-row"><span class="wk-amt">$48</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,176</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 49</div><div class="wk-row"><span class="wk-amt">$49</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,225</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 50</div><div class="wk-row"><span class="wk-amt">$50</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,275</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 51</div><div class="wk-row"><span class="wk-amt">$51</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,326</div></div>
+            <div class="week-cell wk-cell-q4"><div class="wk-num">WEEK 52</div><div class="wk-row"><span class="wk-amt">$52</span><span class="wk-done">☐ Done</span></div><div class="wk-total">Total: $1,378 🎉</div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── SIDEBAR ── -->
+      <div class="sidebar">
+
+        <div class="sb-section">
+          <div class="sb-hdr sb-hdr-green">MILESTONES</div>
+          <div class="sb-body">
+            <div class="sb-row">☐ Week 14 → $105</div>
+            <div class="sb-row">☐ Week 26 → $351</div>
+            <div class="sb-row">☐ Week 39 → $780</div>
+            <div class="sb-row">☐ Week 52 → $1,378 🎉</div>
+          </div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-hdr sb-hdr-rose">VERSIONS</div>
+          <div class="sb-body">
+            <div class="sb-ver">Standard: $1–$52</div>
+            <div class="sb-ver">Reverse: $52–$1</div>
+            <div class="sb-ver">Mini: $0.50–$26</div>
+            <div class="sb-ver">Double: $2–$104</div>
+          </div>
+        </div>
+
+        <div class="sb-fields">
+          <div>
+            <div class="sb-field-label">I have saved:</div>
+            <div class="sb-field-line"></div>
+          </div>
+          <div>
+            <div class="sb-field-label">My money goal:</div>
+            <div class="sb-field-line"></div>
+          </div>
+        </div>
+
+        <div class="sb-affirmation">"Start with $1.<br>End with $1,378." 🌿</div>
+
+      </div>
+    </div>
+
+    <!-- Summary bar -->
+    <div class="summary-bar">
+      <div class="sum-cell">
+        <div class="sum-label">Weeks Completed</div>
+        <div class="sum-value">___ / 52</div>
+      </div>
+      <div class="sum-cell">
+        <div class="sum-label">Total Saved</div>
+        <div class="sum-value">$</div>
+      </div>
+      <div class="sum-cell highlight">
+        <div class="sum-label">On Track?</div>
+        <div class="sum-value">Yes / No</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>

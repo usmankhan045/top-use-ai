@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Grocery Budget Planner — SpendWiseCents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2D2D2D;
+  background: #FAF7F2;
+  -webkit-print-color-adjust: exact;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  background: #FAF7F2;
+  position: relative;
+  overflow: hidden;
+  page-break-after: avoid;
+}
+
+/* ── Header ── */
+.header {
+  background: #7A9E7E;
+  border-radius: 8px 8px 0 0;
+  margin: 0.38in 0.42in 0;
+  padding: 8px 14px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.header-subtitle {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: rgba(255,255,255,0.78);
+  margin-top: 2px;
+}
+.header-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+  min-width: 1.7in;
+}
+.hfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+.hfield-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+  letter-spacing: 0.5px;
+}
+.hfield-line {
+  width: 1.55in;
+  border-bottom: 1.2px solid rgba(255,255,255,0.65);
+  height: 14px;
+}
+
+/* ── Subheader ── */
+.subheader {
+  background: #B5C9B7;
+  margin: 0 0.42in;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-fields {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.sfield {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+}
+.sfield-label {
+  font-weight: 700;
+  color: #2D2D2D;
+}
+.sfield-prefix {
+  color: #8A7A6A;
+}
+.sfield-line {
+  width: 0.5in;
+  border-bottom: 1.2px solid #7A9E7E;
+  height: 12px;
+}
+.sub-tag {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4A6B4E;
+  letter-spacing: 0.5px;
+}
+
+/* ── Body ── */
+.body {
+  margin: 5px 0.42in 0;
+}
+
+/* ── Section blocks ── */
+.section {
+  margin-bottom: 4px;
+  border-radius: 7px;
+  border: 1px solid #DDD5C8;
+  overflow: hidden;
+}
+.section-header {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 10px;
+}
+.sh-mealplan { background: #7A9E7E; }
+.sh-shoplist { background: #A89080; }
+.sh-tracker  { background: #4A6B4E; }
+.sh-pantry   { background: #8B7BA0; }
+.sh-notes    { background: #6B8FAE; }
+
+/* ── Meal Plan Grid ── */
+.meal-grid {
+  display: grid;
+  grid-template-columns: 0.52in repeat(7, 1fr);
+}
+.day-header {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-align: center;
+  padding: 3px 2px;
+  background: #EDE8E0;
+  border-left: 1px solid #DDD5C8;
+  color: #3D3530;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.day-header-empty {
+  background: transparent;
+  border-left: none;
+}
+.row-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+.rl-breakfast { background: #C4826E; }
+.rl-lunch     { background: #A89080; }
+.rl-dinner    { background: #7A9E7E; }
+.meal-cell {
+  border-left: 1px solid #DDD5C8;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  height: 0.61in;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 4px 4px;
+}
+.meal-cell-line {
+  width: 100%;
+  border-bottom: 1px solid #C4B5A5;
+}
+.bg-bkfst  { background: #FAF7F2; }
+.bg-lunch  { background: #F2DDD5; }
+.bg-dinner { background: #EBF2EC; }
+
+/* ── Shopping List ── */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.shop-col {
+  border-left: 1px solid #DDD5C8;
+  overflow: hidden;
+}
+.shop-col:first-child { border-left: none; }
+.shop-col-head {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  background: #EDE8E0;
+  padding: 4px 5px;
+  color: #3D3530;
+  border-bottom: 1px solid #DDD5C8;
+  text-align: center;
+}
+.shop-items { padding: 3px 0 0; }
+.shop-line {
+  border-bottom: 1px solid #C4B5A5;
+  height: 14px;
+  margin: 0 5px 1px;
+}
+.shop-est {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 5px 4px;
+  border-top: 1px solid #DDD5C8;
+  background: rgba(0,0,0,0.03);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  color: #4A6B4E;
+}
+.shop-est-line {
+  flex: 1;
+  border-bottom: 1.5px solid #7A9E7E;
+  height: 11px;
+}
+
+/* ── Affirmation ── */
+.affirmation {
+  background: #B5C9B7;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: #3D5C40;
+}
+
+/* ── Budget Tracker ── */
+.tracker-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tracker-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-right: 1px solid #DDD5C8;
+}
+.trac-cell {
+  padding: 8px 10px 6px;
+  background: #FAF7F2;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.trac-cell:nth-child(odd)  { border-right: 1px solid rgba(0,0,0,0.05); }
+.trac-cell:nth-child(3),
+.trac-cell:nth-child(4)    { border-bottom: none; }
+.trac-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  color: #8A7A6A;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 5px;
+}
+.trac-field {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+.dollar { font-size: 7.5pt; color: #8A7A6A; }
+.trac-line {
+  flex: 1;
+  border-bottom: 1.5px solid #7A9E7E;
+  height: 15px;
+}
+.tracker-right {
+  background: #F2DDD5;
+  padding: 7px 10px 8px;
+}
+.tr-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: #C4826E;
+  margin-bottom: 5px;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.5pt;
+  color: #3D3530;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(196,164,138,0.3);
+}
+.check-item:last-child { border-bottom: none; }
+.cbox {
+  width: 10px;
+  height: 10px;
+  border: 1.2px solid #A89080;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Pantry & Freezer Check ── */
+.pantry-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pantry-col {
+  border-left: 1px solid #DDD5C8;
+  padding: 6px 10px 7px;
+  background: #FAF7F2;
+}
+.pantry-col:first-child { border-left: none; }
+.pantry-col:nth-child(2) { background: #F5F0EA; }
+.pantry-col-head {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: #6B5A7A;
+  margin-bottom: 5px;
+}
+.pantry-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.2pt;
+  color: #3D3530;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(139,123,160,0.18);
+}
+.pantry-item:last-child { border-bottom: none; }
+.pbox {
+  width: 9px;
+  height: 9px;
+  border: 1.2px solid #8B7BA0;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Price Compare + Notes row ── */
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 0.14in;
+}
+.price-body { padding: 0; }
+.price-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+.price-head {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  background: #EDE8E0;
+  color: #3D3530;
+  padding: 4px 6px;
+  border-bottom: 1px solid #DDD5C8;
+  border-left: 1px solid #DDD5C8;
+}
+.price-head:first-child { border-left: none; }
+.price-cell {
+  padding: 4px 6px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-left: 1px solid #DDD5C8;
+  min-height: 19px;
+  display: flex;
+  align-items: flex-end;
+}
+.price-cell:nth-child(3n+1) { border-left: none; }
+.price-grid > .price-cell:nth-child(6n+4),
+.price-grid > .price-cell:nth-child(6n+5),
+.price-grid > .price-cell:nth-child(6n+6) { background: #F5F0EA; }
+.price-line {
+  width: 100%;
+  border-bottom: 1px solid #C4B5A5;
+  height: 11px;
+}
+.price-dollar { font-size: 7pt; color: #8A7A6A; margin-right: 2px; }
+.notes-box {
+  background: #F2DDD5;
+  border: 1px solid #E0C4B8;
+  border-radius: 7px;
+  padding: 6px 10px 7px;
+}
+.notes-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: #C4826E;
+  margin-bottom: 5px;
+}
+.notes-line {
+  border-bottom: 1px solid #D4B4A8;
+  height: 16px;
+}
+
+/* ── Footer ── */
+.footer {
+  position: absolute;
+  bottom: 0.14in;
+  left: 0.42in;
+  right: 0.42in;
+  border-top: 1px solid #DDD5C8;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  font-style: italic;
+  color: #B0A090;
+}
+.footer-right {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  color: #7A9E7E;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Botanical SVG -->
+  <svg style="position:absolute;top:0.25in;right:0.30in;width:0.75in;opacity:0.22;z-index:2;" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <div class="header-title">Weekly Grocery Budget Planner</div>
+      <div class="header-subtitle">Plan your meals · Shop smarter · Save more every week</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield">
+        <div class="hfield-label">Week of</div>
+        <div class="hfield-line"></div>
+      </div>
+      <div class="hfield">
+        <div class="hfield-label">Store(s)</div>
+        <div class="hfield-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subheader -->
+  <div class="subheader">
+    <div class="sub-fields">
+      <div class="sfield">
+        <span class="sfield-label">Budget:</span>
+        <span class="sfield-prefix">$</span>
+        <div class="sfield-line"></div>
+      </div>
+      <div class="sfield">
+        <span class="sfield-label">Last Week:</span>
+        <span class="sfield-prefix">$</span>
+        <div class="sfield-line"></div>
+      </div>
+      <div class="sfield">
+        <span class="sfield-label">Difference:</span>
+        <span class="sfield-prefix">$</span>
+        <div class="sfield-line"></div>
+      </div>
+    </div>
+    <div class="sub-tag">2026 Planner</div>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+
+    <!-- SECTION 1: Meal Plan Grid -->
+    <div class="section">
+      <div class="section-header sh-mealplan">🗓️ This Week's Meal Plan</div>
+      <div class="meal-grid">
+        <!-- Header row -->
+        <div class="day-header day-header-empty"></div>
+        <div class="day-header">Mon</div>
+        <div class="day-header">Tue</div>
+        <div class="day-header">Wed</div>
+        <div class="day-header">Thu</div>
+        <div class="day-header">Fri</div>
+        <div class="day-header">Sat</div>
+        <div class="day-header">Sun</div>
+        <!-- Breakfast row -->
+        <div class="row-label rl-breakfast">Breakfast</div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-bkfst"><div class="meal-cell-line"></div></div>
+        <!-- Lunch row -->
+        <div class="row-label rl-lunch">Lunch</div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-lunch"><div class="meal-cell-line"></div></div>
+        <!-- Dinner row -->
+        <div class="row-label rl-dinner">Dinner</div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+        <div class="meal-cell bg-dinner"><div class="meal-cell-line"></div></div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Shopping List -->
+    <div class="section">
+      <div class="section-header sh-shoplist">🛒 Shopping List</div>
+      <div class="shop-grid">
+        <!-- Produce -->
+        <div class="shop-col">
+          <div class="shop-col-head">🥦 Produce</div>
+          <div class="shop-items">
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+          </div>
+          <div class="shop-est">Est: $<div class="shop-est-line"></div></div>
+        </div>
+        <!-- Protein -->
+        <div class="shop-col">
+          <div class="shop-col-head">🥩 Protein</div>
+          <div class="shop-items">
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+          </div>
+          <div class="shop-est">Est: $<div class="shop-est-line"></div></div>
+        </div>
+        <!-- Dairy -->
+        <div class="shop-col">
+          <div class="shop-col-head">🥛 Dairy</div>
+          <div class="shop-items">
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+          </div>
+          <div class="shop-est">Est: $<div class="shop-est-line"></div></div>
+        </div>
+        <!-- Pantry -->
+        <div class="shop-col">
+          <div class="shop-col-head">🥫 Pantry</div>
+          <div class="shop-items">
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+          </div>
+          <div class="shop-est">Est: $<div class="shop-est-line"></div></div>
+        </div>
+        <!-- Frozen -->
+        <div class="shop-col">
+          <div class="shop-col-head">🧊 Frozen</div>
+          <div class="shop-items">
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+            <div class="shop-line"></div>
+          </div>
+          <div class="shop-est">Est: $<div class="shop-est-line"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Affirmation -->
+    <div class="affirmation">"A little planning saves a lot of money." 🌿</div>
+
+    <!-- SECTION 3: Budget Tracker -->
+    <div class="section">
+      <div class="section-header sh-tracker">💰 Budget Tracker</div>
+      <div class="tracker-body">
+        <div class="tracker-left">
+          <div class="trac-cell">
+            <div class="trac-label">Estimated Total</div>
+            <div class="trac-field"><span class="dollar">$</span><div class="trac-line"></div></div>
+          </div>
+          <div class="trac-cell">
+            <div class="trac-label">Actual Spent</div>
+            <div class="trac-field"><span class="dollar">$</span><div class="trac-line"></div></div>
+          </div>
+          <div class="trac-cell">
+            <div class="trac-label">Saved vs Budget</div>
+            <div class="trac-field"><span class="dollar">$</span><div class="trac-line"></div></div>
+          </div>
+          <div class="trac-cell">
+            <div class="trac-label">Trips to Store</div>
+            <div class="trac-field"><div class="trac-line"></div></div>
+          </div>
+        </div>
+        <div class="tracker-right">
+          <div class="tr-title">💡 Money-Saving Reminders</div>
+          <div class="check-item"><div class="cbox"></div> Check pantry before shopping</div>
+          <div class="check-item"><div class="cbox"></div> Shop the weekly sales first</div>
+          <div class="check-item"><div class="cbox"></div> Buy store brand when possible</div>
+          <div class="check-item"><div class="cbox"></div> Stick to the list!</div>
+          <div class="check-item"><div class="cbox"></div> Avoid shopping hungry</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: Pantry & Freezer Check -->
+    <div class="section">
+      <div class="section-header sh-pantry">🧺 Pantry &amp; Freezer Check — shop your kitchen first</div>
+      <div class="pantry-body">
+        <div class="pantry-col">
+          <div class="pantry-col-head">Staples to use up</div>
+          <div class="pantry-item"><div class="pbox"></div> Rice / pasta / grains</div>
+          <div class="pantry-item"><div class="pbox"></div> Canned beans &amp; tomatoes</div>
+          <div class="pantry-item"><div class="pbox"></div> Sauces &amp; condiments</div>
+          <div class="pantry-item"><div class="pbox"></div> Snacks &amp; cereal</div>
+        </div>
+        <div class="pantry-col">
+          <div class="pantry-col-head">Freezer to use up</div>
+          <div class="pantry-item"><div class="pbox"></div> Meat / poultry / fish</div>
+          <div class="pantry-item"><div class="pbox"></div> Frozen veggies &amp; fruit</div>
+          <div class="pantry-item"><div class="pbox"></div> Bread / leftovers</div>
+          <div class="pantry-item"><div class="pbox"></div> Ready meals</div>
+        </div>
+        <div class="pantry-col">
+          <div class="pantry-col-head">Running low — restock</div>
+          <div class="pantry-item"><div class="pbox"></div> ____________________</div>
+          <div class="pantry-item"><div class="pbox"></div> ____________________</div>
+          <div class="pantry-item"><div class="pbox"></div> ____________________</div>
+          <div class="pantry-item"><div class="pbox"></div> ____________________</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: Price Compare + Notes -->
+    <div class="bottom-row">
+      <div class="section price-body">
+        <div class="section-header sh-notes">🏷️ Price Tracker — compare before you buy</div>
+        <div class="price-grid">
+          <div class="price-head">Item</div>
+          <div class="price-head">Store A</div>
+          <div class="price-head">Store B</div>
+          <div class="price-cell"><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+          <div class="price-cell"><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+          <div class="price-cell"><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+          <div class="price-cell"><span class="price-dollar">$</span><div class="price-line"></div></div>
+        </div>
+      </div>
+      <div class="notes-box">
+        <div class="notes-title">📝 Notes &amp; Reminders</div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-left">Free Printable — Print as many copies as you need 🌿</div>
+    <div class="footer-right">SpendWiseCents.com</div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>

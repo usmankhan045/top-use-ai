@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ─── Theme bridge ────────────────────────────────────────────────────────────
+   CSS custom properties are injected at runtime by the root layout via
+   generateThemeCSS() (lib/theme.ts). The @theme block maps those runtime
+   values → Tailwind 4 utilities: bg-primary, text-accent, font-display, etc.
+   Changing siteConfig.theme.* and rebuilding restyles the entire site.
+   ─────────────────────────────────────────────────────────────────────────── */
+@theme inline {
+  --color-primary:    var(--color-primary);
+  --color-accent:     var(--color-accent);
+  --color-background: var(--color-background);
+  --color-text:       var(--color-text);
+  --color-muted:      var(--color-muted);
+  --color-success:    var(--color-success);
+
+  --font-display: var(--font-display);
+  --font-body:    var(--font-body);
+  --font-mono:    var(--font-mono);
+
+  --radius: var(--radius);
+}
+
+/* ─── Base styles ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+code, pre, kbd, samp {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+/* ─── Signature element: Stamp ────────────────────────────────────────────────
+   The stamp utility is the site's single signature design element.
+   The 1.5px offset box-shadow references a rubber stamp that landed slightly
+   off-register — the visible impression of a repeated, deliberate act.
+   Uses currentColor so it adapts to any text color variant without extra vars.
+   @utility is valid here because "stamp" is a plain alphanumeric class name.
+   ─────────────────────────────────────────────────────────────────────────── */
+@utility stamp {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ─── Ledger divider line ────────────────────────────────────────────────────
+   Regular CSS class (not @utility) because it uses ::after pseudo-element.
+   Applied via className="ledger-line" in SectionDivider when no label is set.
+   ─────────────────────────────────────────────────────────────────────────── */
+.ledger-line::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-muted) 15%,
+    var(--color-muted) 85%,
+    transparent
+  );
+  opacity: 0.25;
+  margin-top: 0.25rem;
+}
