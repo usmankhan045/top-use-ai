@@ -393,7 +393,7 @@ export default async function HomePage() {
               <div className="mt-7 flex flex-wrap gap-3">
                 <Button size="lg">
                   <Link href="/blog" className="contents">
-                    Read the reviews
+                    Explore AI tools
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg">
