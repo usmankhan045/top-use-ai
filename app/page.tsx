@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getPublishedPosts, getCategoriesWithPostCounts, type Post } from "@/lib/queries";
 import {
   Button,
@@ -18,7 +19,7 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Explained AI Tools: Honest AI Tool Reviews & How-Tos",
+    absolute: "Top Use AI: Honest AI Tool Reviews & How-Tos",
   },
   description:
     "Independent, hands-on reviews and comparisons of the best AI tools for writing, images, video, and business, plus practical guides to making money with AI. Tested, not hyped.",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "/",
     type: "website",
-    title: "Explained AI Tools: Honest AI Tool Reviews & How-Tos",
+    title: "Top Use AI: Honest AI Tool Reviews & How-Tos",
     description:
       "Hands-on AI tool reviews, side-by-side comparisons, and real ways to make money with AI. Tested, not hyped.",
   },
@@ -285,15 +286,30 @@ function PostCard({ post }: { post: Post }) {
   const isPlaceholder = post.id.startsWith("ph-");
   const href = isPlaceholder ? "/blog" : post.slug.startsWith("#") ? post.slug : `/blog/${post.slug}`;
   return (
-    <Link href={href} className="group block h-full focus-visible:outline-none">
+    <Link
+      href={href}
+      aria-label={post.title}
+      className="group block h-full focus-visible:outline-none"
+    >
       <Card
         className={cn(
-          "h-full flex flex-col",
+          "h-full flex flex-col overflow-hidden",
           "transition-all duration-200",
           "group-hover:shadow-md group-hover:-translate-y-0.5",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
+        {post.featured_image_url && (
+          <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+            <Image
+              src={post.featured_image_url}
+              alt=""
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw"
+              className="object-cover"
+            />
+          </div>
+        )}
         {/* Category stamp */}
         {post.categories && (
           <Tag variant="default" className="mb-3 self-start">

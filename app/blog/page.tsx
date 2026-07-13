@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getPublishedPosts } from "@/lib/queries";
 import { Container, Tag } from "@/components/ui";
 import { BlogList, type BlogListPost } from "@/components/BlogList";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -36,10 +38,25 @@ export default async function BlogIndexPage() {
     excerpt: p.excerpt,
     publishedAt: p.published_at,
     categoryName: p.categories?.name ?? null,
+    featuredImage: p.featured_image_url ?? null,
   }));
 
   return (
     <main className="flex-1">
+      <JsonLd
+        data={[
+          collectionPageSchema({
+            path: "/blog",
+            name: "Blog",
+            description:
+              "Hands-on AI tool reviews, side-by-side comparisons, and how-to guides, plus practical ways to make money with AI.",
+          }),
+          breadcrumbSchema([
+            { name: "Home", slug: "/" },
+            { name: "Blog", slug: "/blog" },
+          ]),
+        ]}
+      />
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <section
         className="bg-gradient-to-b from-primary/[0.07] via-primary/[0.03] to-background pt-10 pb-10"

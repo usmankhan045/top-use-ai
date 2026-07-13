@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getCategories,
   getCategoryBySlug,
@@ -14,7 +15,8 @@ import {
   CardBody,
 } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 
@@ -84,11 +86,18 @@ export default async function CategoryArchivePage({
   return (
     <main className="flex-1">
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", slug: "/" },
-          { name: "Blog", slug: "/blog" },
-          { name: category.name, slug: `/category/${category.slug}` },
-        ])}
+        data={[
+          collectionPageSchema({
+            path: `/category/${category.slug}`,
+            name: category.name,
+            description: category.description,
+          }),
+          breadcrumbSchema([
+            { name: "Home", slug: "/" },
+            { name: "Blog", slug: "/blog" },
+            { name: category.name, slug: `/category/${category.slug}` },
+          ]),
+        ]}
       />
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <section
@@ -96,6 +105,13 @@ export default async function CategoryArchivePage({
         aria-labelledby="category-heading"
       >
         <Container>
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Blog", href: "/blog" },
+              { name: category.name, href: `/category/${category.slug}` },
+            ]}
+          />
           <Tag variant="primary" className="mb-5">
             Category
           </Tag>
@@ -141,16 +157,28 @@ export default async function CategoryArchivePage({
                   <Link
                     key={post.id}
                     href={`/blog/${post.slug}`}
+                    aria-label={post.title}
                     className="group block h-full focus-visible:outline-none"
                   >
                     <Card
                       className={cn(
-                        "h-full flex flex-col",
+                        "h-full flex flex-col overflow-hidden",
                         "transition-all duration-200",
                         "group-hover:shadow-md group-hover:-translate-y-0.5",
                         "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
                       )}
                     >
+                      {post.featured_image_url && (
+                        <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+                          <Image
+                            src={post.featured_image_url}
+                            alt=""
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover"
+                          />
+                        </div>
+                      )}
                       <CardTitle
                         as="h2"
                         className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"

@@ -11,9 +11,14 @@ type AudienceSegmentDef = {
 };
 
 export const siteConfig = {
+  // Internal DB key, matches the `sites.slug` row in Supabase used to resolve
+  // site_id. Do NOT change without updating the DB row; it is invisible to users
+  // and search engines, so the public rename to "Top Use AI" does not touch it.
   slug: "explained-ai-tools",
-  domain: "explainedaitools.com",
-  name: "Explained AI Tools",
+  // Canonical host. The apex (topuseai.com) 308-redirects to www, so www is the
+  // canonical origin used for metadataBase, canonicals, OG URLs, sitemap, robots.
+  domain: "www.topuseai.com",
+  name: "Top Use AI",
   tagline: "AI tools, reviewed and explained",
   niche: "AI tool reviews, comparisons, and how-tos for making money with AI",
 
@@ -29,8 +34,8 @@ export const siteConfig = {
   // Surfaced in the legal pages, footer, and about page. Set these per site so
   // the boilerplate legal copy carries the right brand, domain, and emails.
   contact: {
-    email: "contact@explainedaitools.com",       // general / terms contact
-    privacyEmail: "privacy@explainedaitools.com", // privacy + data requests
+    email: "contact@topuseai.com",       // general / terms contact
+    privacyEmail: "privacy@topuseai.com", // privacy + data requests
   },
   legal: {
     lastUpdated: "July 12, 2026", // shown at the top of each legal page
@@ -39,7 +44,7 @@ export const siteConfig = {
       "We publish independent AI tool reviews and may earn affiliate commissions. This is not professional advice.",
   },
   brand: {
-    monogram: "EA",   // 2-letter mark used in avatar / quote blocks
+    monogram: "TU",   // 2-letter mark used in avatar / quote blocks
     foundedYear: 2026, // used in the footer copyright line
   },
 
@@ -77,7 +82,7 @@ export const siteConfig = {
   ],
 
   social: {
-    pinterest: "https://pinterest.com/explainedaitools",
+    pinterest: "https://pinterest.com/topuseai",
   },
 
   // AUDIENCE SEGMENTS, drives hub pages via a single dynamic route.

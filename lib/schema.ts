@@ -7,14 +7,46 @@ export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${BASE_URL}/#website`,
     name: siteConfig.name,
     url: BASE_URL,
     description: siteConfig.tagline,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${BASE_URL}/blog?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
+    publisher: { "@id": `${BASE_URL}/#organization` },
+    inLanguage: "en-US",
+    // No SearchAction: the site has no on-page search endpoint, so declaring a
+    // sitelinks searchbox would promise a feature that doesn't exist.
+  };
+}
+
+/** CollectionPage for archive routes (blog index, category pages). */
+export function collectionPageSchema(opts: {
+  path: string;
+  name: string;
+  description?: string | null;
+}) {
+  const url = `${BASE_URL}${opts.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": url,
+    url,
+    name: opts.name, ...(opts.description && { description: opts.description }),
+    isPartOf: { "@id": `${BASE_URL}/#website` },
+    publisher: { "@id": `${BASE_URL}/#organization` },
+    inLanguage: "en-US",
+  };
+}
+
+/** AboutPage schema for /about. */
+export function aboutPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    url: `${BASE_URL}/about`,
+    name: `About ${siteConfig.name}`,
+    isPartOf: { "@id": `${BASE_URL}/#website` },
+    mainEntity: { "@id": `${BASE_URL}/#organization` },
+    inLanguage: "en-US",
   };
 }
 
@@ -22,32 +54,52 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${BASE_URL}/#organization`,
     name: siteConfig.name,
     url: BASE_URL,
     description: siteConfig.niche,
+    // Publisher logo is required for Article rich results. Points at the 512x512
+    // app icon, which Next serves at /icon.png.
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/icon.png`,
+      width: 512,
+      height: 512,
+    },
     sameAs: [siteConfig.social.pinterest],
   };
 }
 
 export function articleSchema(post: Post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
+  // Always emit an image (required for article rich results). Falls back to the
+  // site OG default when a post has no featured image of its own.
+  const image = post.featured_image_url ?? `${BASE_URL}/og-default.jpg`;
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
-    url, ...(post.featured_image_url && { image: post.featured_image_url }),
+    url,
+    image,
+    inLanguage: "en-US",
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
     author: {
       "@type": "Organization",
       name: siteConfig.name,
-      url: BASE_URL,
+      url: `${BASE_URL}/about`,
     },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/icon.png`,
+        width: 512,
+        height: 512,
+      },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };

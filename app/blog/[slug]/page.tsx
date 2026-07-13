@@ -17,6 +17,7 @@ import {
 } from "@/components/ui";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { articleSchema, faqSchema, breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
@@ -43,9 +44,9 @@ export async function generateMetadata({
     if (!post) return {};
     const title = post.seo_title ?? post.title;
     const description = post.seo_description ?? post.excerpt ?? undefined;
-    const ogImage = post.featured_image_url
-      ? [{ url: post.featured_image_url, width: 1200, height: 630, alt: title }]
-      : undefined;
+    // Always resolve a share image: the post's featured image, else the site OG
+    // default, so every post has a non-generic og:image/twitter:image.
+    const shareImage = post.featured_image_url ?? "/og-default.jpg";
     return {
       title,
       description,
@@ -57,12 +58,14 @@ export async function generateMetadata({
         url: `/blog/${slug}`,
         publishedTime: post.published_at ?? undefined,
         modifiedTime: post.updated_at,
-        authors: [siteConfig.name], ...(ogImage && { images: ogImage }),
+        authors: [siteConfig.name],
+        images: [{ url: shareImage, width: 1200, height: 630, alt: title }],
       },
       twitter: {
         card: "summary_large_image",
         title,
-        description, ...(post.featured_image_url && { images: [post.featured_image_url] }),
+        description,
+        images: [shareImage],
       },
     };
   } catch {
@@ -120,6 +123,19 @@ export default async function BlogPostPage({
         aria-labelledby="post-title"
       >
         <Container width="narrow">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Blog", href: "/blog" }, ...(post.categories
+                ? [
+                    {
+                      name: post.categories.name,
+                      href: `/category/${post.categories.slug}`,
+                    },
+                  ]
+                : []),
+            ]}
+          />
           <div className="flex flex-wrap gap-2 mb-5">
             {post.categories && (
               <Link href={`/category/${post.categories.slug}`}>
@@ -154,6 +170,18 @@ export default async function BlogPostPage({
                 day: "numeric",
                 year: "numeric",
               })}
+              {post.updated_at &&
+                new Date(post.updated_at).toDateString() !==
+                  new Date(post.published_at).toDateString() && (
+                  <>
+                    {" · Updated "}
+                    {new Date(post.updated_at).toLocaleDateString("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </>
+                )}
             </p>
           )}
         </Container>
