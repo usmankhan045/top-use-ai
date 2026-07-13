@@ -1,16 +1,19 @@
+import Image from "next/image";
 import { siteConfig } from "@/lib/site.config";
 
 const { author } = siteConfig;
 
-function InitialsAvatar({ size }: { size: "sm" | "lg" }) {
-  const dim = size === "lg" ? "w-14 h-14 text-lg" : "w-9 h-9 text-xs";
+function Avatar({ size }: { size: "sm" | "lg" }) {
+  const px = size === "lg" ? 56 : 36;
+  const dim = size === "lg" ? "w-14 h-14" : "w-9 h-9";
   return (
-    <span
-      className={`shrink-0 ${dim} rounded-full bg-primary/15 border-2 border-primary/20 flex items-center justify-center font-display font-bold text-primary`}
-      aria-hidden
-    >
-      {author.initials}
-    </span>
+    <Image
+      src={author.avatar}
+      alt={author.name}
+      width={px}
+      height={px}
+      className={`shrink-0 ${dim} rounded-full object-cover border-2 border-primary/20`}
+    />
   );
 }
 
@@ -18,7 +21,7 @@ function InitialsAvatar({ size }: { size: "sm" | "lg" }) {
 export function AuthorByline() {
   return (
     <div className="flex items-center gap-3">
-      <InitialsAvatar size="sm" />
+      <Avatar size="sm" />
       <p className="text-sm text-text">
         <span className="text-muted">By </span>
         <a
@@ -40,7 +43,7 @@ export function AuthorBio() {
   return (
     <aside className="mt-14 border border-black/[0.08] rounded-xl bg-primary/[0.03] p-6 sm:p-7">
       <div className="flex flex-col sm:flex-row gap-5 items-start">
-        <InitialsAvatar size="lg" />
+        <Avatar size="lg" />
         <div className="space-y-2">
           <p className="text-xs font-mono uppercase tracking-wide text-primary">
             About the author

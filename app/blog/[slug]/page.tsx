@@ -194,16 +194,18 @@ export default async function BlogPostPage({
 
       {/* ── Featured image ─────────────────────────────────────────────────── */}
       {post.featured_image_url && (
-        <div className="relative w-full aspect-[16/7] overflow-hidden bg-primary/[0.05]">
-          <Image
-            src={post.featured_image_url}
-            alt={post.title}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-        </div>
+        <Container width="narrow" className="mt-2">
+          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl bg-primary/[0.05]">
+            <Image
+              src={post.featured_image_url}
+              alt={post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+          </div>
+        </Container>
       )}
 
       {/* ── Article body ───────────────────────────────────────────────────── */}

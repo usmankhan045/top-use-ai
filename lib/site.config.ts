@@ -57,6 +57,7 @@ export const siteConfig = {
     name: "Muhammad Usman",
     initials: "MU",
     role: "Founder & Lead Reviewer",
+    avatar: "/author-muhammad-usman.jpg", // 640x640 headshot in /public
     linkedin: "https://www.linkedin.com/in/muhammadusman80/",
     // Short bio, kept honest: he owns and runs the site and tests every tool.
     bio: "Muhammad Usman is the founder and lead reviewer at Top Use AI. He builds and runs the site, and personally signs up for and tests every AI tool it covers, from writing and image generators to video, voice, and automation tools. He writes up what actually works, what to skip, and where a free option does the job just as well, so beginners can pick and profit from the right tools without the hype.",

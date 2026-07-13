@@ -40,6 +40,25 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: [
           {
+            // Pragmatic CSP: locks down framing, base-uri, objects, and form
+            // targets while allowing the inlined theme <style>, Next hydration
+            // scripts, JSON-LD, and Supabase-hosted images/queries the app uses.
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "img-src 'self' data: https://*.supabase.co",
+              "script-src 'self' 'unsafe-inline'",
+              "style-src 'self' 'unsafe-inline'",
+              "font-src 'self' data:",
+              "connect-src 'self' https://*.supabase.co",
+              "frame-ancestors 'self'",
+              "base-uri 'self'",
+              "form-action 'self'",
+              "object-src 'none'",
+              "upgrade-insecure-requests",
+            ].join("; "),
+          },
+          {
             key: "Strict-Transport-Security",
             value: "max-age=63072000; includeSubDomains; preload",
           },

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site.config";
 import { getPageBySlug } from "@/lib/queries";
 import { Container, Tag, SectionDivider, Card } from "@/components/ui";
@@ -104,12 +105,13 @@ export default async function AboutPage() {
           <SectionDivider variant="titled" label="Our story" spacing="sm" />
 
           <div className="mt-10 flex flex-col sm:flex-row gap-8 items-start">
-            <div
-              className="shrink-0 w-20 h-20 rounded-full bg-primary/15 border-2 border-primary/20 flex items-center justify-center"
-              aria-hidden
-            >
-              <span className="font-display text-2xl font-bold text-primary">{siteConfig.author.initials}</span>
-            </div>
+            <Image
+              src={siteConfig.author.avatar}
+              alt={siteConfig.author.name}
+              width={80}
+              height={80}
+              className="shrink-0 w-20 h-20 rounded-full object-cover border-2 border-primary/20"
+            />
 
             <div className="space-y-4 text-text/85 leading-relaxed">
               <p

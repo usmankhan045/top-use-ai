@@ -58,6 +58,7 @@ export function personSchema() {
     "@id": `${BASE_URL}/#person`,
     name: siteConfig.author.name,
     url: `${BASE_URL}/about`,
+    image: `${BASE_URL}${siteConfig.author.avatar}`,
     jobTitle: siteConfig.author.role,
     description: siteConfig.author.bio,
     worksFor: { "@id": `${BASE_URL}/#organization` },
@@ -105,6 +106,7 @@ export function articleSchema(post: Post) {
       "@id": `${BASE_URL}/#person`,
       name: siteConfig.author.name,
       url: `${BASE_URL}/about`,
+      image: `${BASE_URL}${siteConfig.author.avatar}`,
       sameAs: [siteConfig.author.linkedin],
     },
     publisher: {
