@@ -48,6 +48,20 @@ export const siteConfig = {
     foundedYear: 2026, // used in the footer copyright line
   },
 
+  // ── AUTHOR / E-E-A-T IDENTITY ────────────────────────────────────────────
+  // The named human behind the reviews. Drives the visible byline + author bio
+  // on every post and the Person JSON-LD (author on BlogPosting, mainEntity on
+  // the About page). A real, verifiable author is the strongest Experience /
+  // Expertise signal under Google's 2025 Quality Rater Guidelines.
+  author: {
+    name: "Muhammad Usman",
+    initials: "MU",
+    role: "Founder & Lead Reviewer",
+    linkedin: "https://www.linkedin.com/in/muhammadusman80/",
+    // Short bio, kept honest: he owns and runs the site and tests every tool.
+    bio: "Muhammad Usman is the founder and lead reviewer at Top Use AI. He builds and runs the site, and personally signs up for and tests every AI tool it covers, from writing and image generators to video, voice, and automation tools. He writes up what actually works, what to skip, and where a free option does the job just as well, so beginners can pick and profit from the right tools without the hype.",
+  },
+
   theme: {
     colors: {
       primary:    "#0369A1", // Azure, sky-blue deep enough to carry white text; nav, buttons

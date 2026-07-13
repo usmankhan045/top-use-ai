@@ -50,6 +50,21 @@ export function aboutPageSchema() {
   };
 }
 
+/** The named human author behind the reviews (E-E-A-T Person entity). */
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}/#person`,
+    name: siteConfig.author.name,
+    url: `${BASE_URL}/about`,
+    jobTitle: siteConfig.author.role,
+    description: siteConfig.author.bio,
+    worksFor: { "@id": `${BASE_URL}/#organization` },
+    sameAs: [siteConfig.author.linkedin],
+  };
+}
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -86,9 +101,11 @@ export function articleSchema(post: Post) {
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
     author: {
-      "@type": "Organization",
-      name: siteConfig.name,
+      "@type": "Person",
+      "@id": `${BASE_URL}/#person`,
+      name: siteConfig.author.name,
       url: `${BASE_URL}/about`,
+      sameAs: [siteConfig.author.linkedin],
     },
     publisher: {
       "@type": "Organization",
