@@ -18,6 +18,7 @@ import {
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline, AuthorBio } from "@/components/Author";
 import { articleSchema, faqSchema, breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
@@ -184,6 +185,10 @@ export default async function BlogPostPage({
                 )}
             </p>
           )}
+
+          <div className="mt-6">
+            <AuthorByline />
+          </div>
         </Container>
       </section>
 
@@ -248,6 +253,9 @@ export default async function BlogPostPage({
               </div>
             </section>
           )}
+
+          {/* Author bio, reinforces E-E-A-T at the end of the article */}
+          <AuthorBio />
         </Container>
       </article>
 

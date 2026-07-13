@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site.config";
 import { getPageBySlug } from "@/lib/queries";
 import { Container, Tag, SectionDivider, Card } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { aboutPageSchema } from "@/lib/schema";
+import { aboutPageSchema, personSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -77,7 +77,7 @@ export default async function AboutPage() {
 
   return (
     <main className="flex-1">
-      <JsonLd data={aboutPageSchema()} />
+      <JsonLd data={[aboutPageSchema(), personSchema()]} />
 
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <section
@@ -108,7 +108,7 @@ export default async function AboutPage() {
               className="shrink-0 w-20 h-20 rounded-full bg-primary/15 border-2 border-primary/20 flex items-center justify-center"
               aria-hidden
             >
-              <span className="font-display text-2xl font-bold text-primary">{siteConfig.brand.monogram}</span>
+              <span className="font-display text-2xl font-bold text-primary">{siteConfig.author.initials}</span>
             </div>
 
             <div className="space-y-4 text-text/85 leading-relaxed">
@@ -116,7 +116,7 @@ export default async function AboutPage() {
                 id="founder-heading"
                 className="font-display text-xl font-semibold text-text"
               >
-                We&rsquo;re the {siteConfig.name} editorial team.
+                I&rsquo;m {siteConfig.author.name}, founder of {siteConfig.name}.
               </p>
 
               <p className="text-sm sm:text-base">
@@ -127,28 +127,39 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-sm sm:text-base">
-                So we built the site we wished existed. We sign up, run the same real tasks
+                So I built the site I wished existed. I sign up, run the same real tasks
                 through every tool, and score them on the things that matter: output
                 quality, ease of use, speed, and whether the price is worth it. When there&rsquo;s
-                a free or cheaper alternative that does the job, we say so.
+                a free or cheaper alternative that does the job, I say so.
               </p>
 
               <p className="text-sm sm:text-base">
-                We also go a step further than most review sites: we show you how to
+                I also go a step further than most review sites: I show you how to
                 actually earn with these tools, from AI side hustles to faceless video and
                 digital products, with the honest costs, effort, and catches spelled out.
                 No get-rich-quick hype.
               </p>
 
               <p className="text-sm sm:text-base">
-                Some of our links are affiliate links, which is how we keep the site free.
-                They never change our scores or our picks. We only recommend tools we&rsquo;d
-                use ourselves, and we&rsquo;ll always tell you when something isn&rsquo;t worth it.
+                Some of my links are affiliate links, which is how I keep the site free.
+                They never change my scores or my picks. I only recommend tools I&rsquo;d
+                use myself, and I&rsquo;ll always tell you when something isn&rsquo;t worth it.
               </p>
 
-              <p className="font-medium text-text">
-                The {siteConfig.name} Editorial Team
-              </p>
+              <div className="pt-1">
+                <p className="font-medium text-text">{siteConfig.author.name}</p>
+                <p className="text-sm text-muted">
+                  {siteConfig.author.role}, {siteConfig.name}
+                </p>
+                <a
+                  href={siteConfig.author.linkedin}
+                  target="_blank"
+                  rel="author noopener noreferrer"
+                  className="inline-flex items-center mt-2 text-sm font-medium text-primary hover:underline underline-offset-4"
+                >
+                  Connect on LinkedIn →
+                </a>
+              </div>
             </div>
           </div>
         </Container>
