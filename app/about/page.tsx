@@ -9,7 +9,7 @@ import { aboutPageSchema, personSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `The story behind ${siteConfig.name}: who we are, how we test AI tools, and why we built it.`,
+  description: `The story behind ${siteConfig.name}: who runs it, how I test AI tools, and why I built it.`,
   alternates: { canonical: "/about" },
   openGraph: { url: "/about", type: "website" },
 };
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 const DEFAULT_INTRO =
-  `${siteConfig.name} exists because there's a new AI tool every week, endless hype, and very little honest, hands-on testing. We use the tools ourselves, score them fairly, and tell you which ones are actually worth your time and money.`;
+  `${siteConfig.name} exists because there's a new AI tool every week, endless hype, and very little honest, hands-on testing. I use the tools myself, score them fairly, and tell you which ones are actually worth your time and money.`;
 
 // What we cover, the six content pillars. Static so the page never depends on
 // the DB being seeded; each links to its /category archive.
@@ -122,7 +122,7 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-sm sm:text-base">
-                {siteConfig.name} started with a simple frustration: most &ldquo;best AI
+                {siteConfig.name}{" "}started with a simple frustration: most &ldquo;best AI
                 tool&rdquo; lists are thin, out of date, or quietly stuffed with whatever
                 pays the highest commission. The screenshots are from the marketing site.
                 Nobody actually opened the app.
@@ -194,7 +194,7 @@ Nine topics, one goal.
                 aria-label={`Browse ${pillar.name}`}
               >
                 <Card
-                  className="h-full flex flex-col gap-2 transition-all duration-200 group-hover:shadow-md group-hover:-translate-y-0.5 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
+                  className="h-full flex flex-col gap-2 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
                 >
                   <Tag variant="primary" className="self-start">{pillar.name}</Tag>
                   <p className="text-sm text-text font-medium leading-snug mt-0.5">
@@ -225,7 +225,7 @@ Nine topics, one goal.
             {([
               {
                 title: "Reviews from actually using the tool",
-                body: "We sign up, run real tasks, and screenshot what we see. Every score reflects hands-on use, not a marketing page.",
+                body: "I sign up, run real tasks, and screenshot what I see. Every score reflects hands-on use, not a marketing page.",
               },
               {
                 title: "Comparisons that give a clear pick",
@@ -237,11 +237,11 @@ Nine topics, one goal.
               },
               {
                 title: "Beginner-friendly explanations",
-                body: "No jargon walls. We explain what a tool does, who it's for, and whether you actually need it, in plain language.",
+                body: "No jargon walls. I explain what a tool does, who it's for, and whether you actually need it, in plain language.",
               },
               {
                 title: "Transparent affiliate disclosure",
-                body: "Some links earn us a commission at no cost to you. It never changes our scores, and we say so clearly on every review.",
+                body: "Some links earn me a commission at no cost to you. It never changes my scores, and I say so clearly on every review.",
               },
             ] as const).map((item) => (
               <li key={item.title} className="flex gap-4">
@@ -268,8 +268,8 @@ Nine topics, one goal.
             <p className="text-xs text-muted leading-relaxed">
               <span className="font-medium text-text">Affiliate disclosure: </span>
               {siteConfig.name} is reader-supported. Some links on this site are affiliate
-              links, and we may earn a commission if you sign up or buy through them, at no
-              extra cost to you. This never influences our reviews, scores, or
+              links, and I may earn a commission if you sign up or buy through them, at no
+              extra cost to you. This never influences my reviews, scores, or
               recommendations.{" "}
               <Link
                 href="/disclaimer"

@@ -65,19 +65,19 @@ export const siteConfig = {
 
   theme: {
     colors: {
-      primary:    "#0369A1", // Azure, sky-blue deep enough to carry white text; nav, buttons
-      accent:     "#F59E0B", // Signal Amber, warm highlight against the cool blues
-      background: "#F6FAFD", // Sky Paper, barely-there blue-tinted white; light and airy
-      text:       "#0F1B2A", // Deep Navy Ink, near-black with a blue undertone
-      muted:      "#5B7183", // Slate, cool blue-gray for secondary text and rules
-      success:    "#10B981", // Emerald, positive states, verified badges
+      primary:    "#22202E", // Graphite, near-black primary; panels, buttons, footer
+      accent:     "#D6FF3F", // Electric Lime, the single loud note; carries the whole identity
+      background: "#FBFAF6", // Warm Paper, off-white with a faint warm cast; the daylight ground
+      text:       "#17161F", // Graphite Ink, one step darker than primary so links stay legible
+      muted:      "#5C5A68", // Slate, warm-leaning grey for secondary text and rules
+      success:    "#2F8F5B", // Deep Green, kept away from the accent so it still reads as a signal
     },
     fonts: {
-      display: "Space Grotesk", // geometric, lightly technical serif-free display; modern AI vibe
-      body:    "Inter",         // clean, highly legible workhorse for long-form reading
-      mono:    "JetBrains Mono",// crisp coding mono for tags, stamps, model names
+      display: "Bricolage Grotesque", // chunky variable grotesque; carries the oversized headlines
+      body:    "Hanken Grotesk",      // warm, highly legible workhorse for long-form reading
+      mono:    "Geist Mono",          // crisp mono for stamps, tags, and model names
     },
-    radius: "0.75rem",
+    radius: "0.9rem",
   },
 
   nav: [
@@ -97,7 +97,7 @@ export const siteConfig = {
   ],
 
   social: {
-    pinterest: "https://pinterest.com/topuseai",
+    pinterest: "https://www.pinterest.com/topuseai/",
   },
 
   // AUDIENCE SEGMENTS, drives hub pages via a single dynamic route.

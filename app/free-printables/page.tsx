@@ -64,8 +64,7 @@ function PrintableCard({ printable }: { printable: Printable }) {
         className={cn(
           "bg-white rounded-xl border border-black/[0.07] shadow-sm overflow-hidden",
           "flex flex-col h-full",
-          "transition-all duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5",
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
@@ -104,7 +103,7 @@ function PrintableCard({ printable }: { printable: Printable }) {
             </Tag>
           )}
 
-          <h2 className="font-display text-base font-semibold text-text leading-snug group-hover:text-primary transition-colors line-clamp-2">
+          <h2 className="font-display text-base font-semibold text-text leading-snug group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition line-clamp-2">
             {printable.title}
           </h2>
 

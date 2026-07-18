@@ -1,8 +1,9 @@
 import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
-// The 3px left border is the "ledger tab", a direct reference to the colored
-// tab dividers in physical accounting ledgers. Every card is a record entry.
+// The 5px left border is the "tab", a strip of electric lime down the edge of
+// the card. It is the one place the accent appears at card scale, so a grid of
+// cards reads as a set of tabbed records rather than a wall of white boxes.
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   /** "ledger" (default) adds the 3px primary-color left tab.
@@ -21,10 +22,16 @@ export function Card({
   return (
     <div
       className={cn(
-        "bg-white rounded-xl",
-        "border border-black/[0.07]",
-        "shadow-sm",
-        variant === "ledger" && "border-l-[3px] border-l-primary",
+        "bg-white rounded-[var(--radius)]",
+        // A 2px outline plus a solid un-blurred offset shadow, so the card reads
+        // as a physical card lying on the paper ground rather than a soft panel.
+        "border-2 border-black/[0.09]",
+        "shadow-[3px_3px_0_rgba(34,32,46,0.07)]",
+        // Lift on hover, driven by a `group` on the wrapping link where present.
+        "transition duration-200",
+        "group-hover:-translate-x-0.5 group-hover:-translate-y-0.5",
+        "group-hover:shadow-[6px_6px_0_var(--color-text)] group-hover:border-text",
+        variant === "ledger" && "border-l-[5px] border-l-accent",
         compact ? "p-4" : "p-6",
         className
       )}

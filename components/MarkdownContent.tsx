@@ -25,7 +25,7 @@ function InlinePrintable({ slug }: { slug: string }) {
 const mdxComponents = {
   h2: ({ children, ...props }: ComponentPropsWithoutRef<"h2">) => (
     <h2
-      className="font-display text-2xl sm:text-3xl font-bold text-text mt-12 mb-4 leading-snug"
+      className="font-display text-2xl sm:text-3xl font-extrabold text-text mt-12 mb-4 leading-snug"
       {...props}
     >
       {children}
@@ -33,7 +33,7 @@ const mdxComponents = {
   ),
   h3: ({ children, ...props }: ComponentPropsWithoutRef<"h3">) => (
     <h3
-      className="font-display text-xl font-semibold text-text mt-8 mb-3 leading-snug"
+      className="font-display text-xl font-extrabold text-text mt-8 mb-3 leading-snug"
       {...props}
     >
       {children}
@@ -86,7 +86,9 @@ const mdxComponents = {
   a: ({ children, href, ...props }: ComponentPropsWithoutRef<"a">) => (
     <a
       href={href}
-      className="text-primary underline underline-offset-2 hover:opacity-80 transition-opacity"
+      // Graphite is the body text color too, so color alone cannot mark a link.
+      // The lime underline carries it, and the hover fills the whole word.
+      className="text-text font-medium underline decoration-2 decoration-accent underline-offset-2 hover:bg-accent transition-colors"
       {...props}
     >
       {children}
@@ -94,27 +96,27 @@ const mdxComponents = {
   ),
   blockquote: ({ children, ...props }: ComponentPropsWithoutRef<"blockquote">) => (
     <blockquote
-      className="border-l-4 border-primary/30 pl-5 py-1 my-7 text-muted italic rounded-r-lg bg-primary/[0.03]"
+      className="border-l-[6px] border-accent pl-5 py-2 my-7 text-text/85 italic rounded-r-lg bg-primary/[0.03]"
       {...props}
     >
       {children}
     </blockquote>
   ),
   table: ({ children, ...props }: ComponentPropsWithoutRef<"table">) => (
-    <div className="overflow-x-auto mb-7 rounded-xl border border-black/[0.08]">
+    <div className="overflow-x-auto mb-7 rounded-[var(--radius)] border-2 border-text">
       <table className="w-full text-sm border-collapse" {...props}>
         {children}
       </table>
     </div>
   ),
   thead: ({ children, ...props }: ComponentPropsWithoutRef<"thead">) => (
-    <thead className="bg-primary/[0.07]" {...props}>
+    <thead className="bg-primary text-white" {...props}>
       {children}
     </thead>
   ),
   th: ({ children, ...props }: ComponentPropsWithoutRef<"th">) => (
     <th
-      className="border-b border-black/[0.08] px-4 py-3 text-left font-semibold text-text text-xs uppercase tracking-wide"
+      className="border-b-2 border-text px-4 py-3 text-left stamp text-white"
       {...props}
     >
       {children}
@@ -135,7 +137,7 @@ const mdxComponents = {
     <img
       src={src}
       alt={alt ?? ""}
-      className="rounded-xl w-full my-7 border border-black/[0.06]"
+      className="rounded-[var(--radius)] w-full my-7 border-2 border-text hard-sm"
       loading="lazy"
       {...props}
     />

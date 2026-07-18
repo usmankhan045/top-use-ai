@@ -30,8 +30,8 @@ export default function AffiliateDisclosurePage() {
               <p className="text-sm">
                 <span className="font-medium text-text">In short: </span>
                 {siteConfig.name} is reader-supported. Some links on this site are affiliate
-                links, and we may earn a commission when you sign up or buy through them, at
-                no extra cost to you. This never changes our reviews, scores, or picks.
+                links, and I may earn a commission when you sign up or buy through them, at
+                no extra cost to you. This never changes my reviews, scores, or picks.
               </p>
             </div>
           </section>
@@ -74,18 +74,18 @@ export default function AffiliateDisclosurePage() {
 
           <section>
             <h2 className="font-display text-xl font-semibold text-text mb-5">
-              Our Editorial Independence
+              Editorial Independence
             </h2>
             <p className="mb-4 text-sm">
-              Affiliate relationships do not influence our opinions, ratings, or
-              recommendations. We test tools hands-on and score them on the same criteria
+              Affiliate relationships do not influence my opinions, ratings, or
+              recommendations. I test tools hands-on and score them on the same criteria
               regardless of whether a company has an affiliate program or what it pays.
-              When a free or cheaper alternative is the better choice, we say so, even if it
-              earns us less or nothing at all.
+              When a free or cheaper alternative is the better choice, I say so, even if it
+              earns me less or nothing at all.
             </p>
             <p className="text-sm">
-              We only recommend tools we believe are genuinely useful to our readers. If we
-              think a product isn&rsquo;t worth it, we&rsquo;ll tell you, affiliate program
+              I only recommend tools I believe are genuinely useful to readers. If I
+              think a product isn&rsquo;t worth it, I&rsquo;ll tell you, affiliate program
               or not.
             </p>
           </section>

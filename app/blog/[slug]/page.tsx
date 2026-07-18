@@ -152,7 +152,7 @@ export default async function BlogPostPage({
 
           <h1
             id="post-title"
-            className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight mb-5"
+            className="font-display text-[2.4rem] sm:text-5xl lg:text-[3.4rem] font-extrabold text-text leading-[1.02] tracking-tight text-balance mb-5"
           >
             {post.title}
           </h1>
@@ -164,7 +164,7 @@ export default async function BlogPostPage({
           )}
 
           {post.published_at && (
-            <p className="text-xs font-mono text-muted/60 uppercase tracking-wide">
+            <p className="stamp text-muted/70">
               Published{" "}
               {new Date(post.published_at).toLocaleDateString("en-US", {
                 month: "long",
@@ -195,7 +195,7 @@ export default async function BlogPostPage({
       {/* ── Featured image ─────────────────────────────────────────────────── */}
       {post.featured_image_url && (
         <Container width="narrow" className="mt-2">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl bg-primary/[0.05]">
+          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[var(--radius)] border-2 border-text hard-ink bg-primary/[0.05]">
             <Image
               src={post.featured_image_url}
               alt={post.title}
@@ -211,14 +211,17 @@ export default async function BlogPostPage({
       {/* ── Article body ───────────────────────────────────────────────────── */}
       <article className="py-12 sm:py-16">
         <Container width="narrow">
-          {/* Quick Answer box, AEO answer-first pattern */}
+          {/* Quick Answer box, AEO answer-first pattern.
+              The most extracted part of the page, so it gets the full card
+              treatment: ink outline, hard shadow, and a lime tab down the left
+              edge to mark it as the payoff. */}
           {post.quick_answer && (
             <div
-              className="mb-10 border-l-4 border-success rounded-r-xl bg-success/[0.06] p-5 sm:p-6"
+              className="mb-10 border-2 border-text border-l-[6px] border-l-accent rounded-[var(--radius)] bg-white p-5 sm:p-6 hard-sm"
               role="note"
               aria-label="Quick answer"
             >
-              <p className="stamp text-success mb-3">Quick Answer</p>
+              <p className="stamp text-text mb-3">Quick Answer</p>
               <p className="text-text leading-relaxed font-medium">
                 {post.quick_answer}
               </p>
@@ -237,7 +240,7 @@ export default async function BlogPostPage({
               <SectionDivider variant="titled" label="FAQ" spacing="sm" />
               <h2
                 id="faq-heading"
-                className="font-display text-2xl font-bold text-text mt-6 mb-8"
+                className="font-display text-2xl font-extrabold text-text mt-6 mb-8"
               >
                 Frequently Asked Questions
               </h2>
@@ -271,7 +274,7 @@ export default async function BlogPostPage({
             <SectionDivider variant="titled" label="Keep reading" spacing="sm" />
             <h2
               id="related-heading"
-              className="font-display text-2xl font-bold text-text mt-6 mb-8"
+              className="font-display text-2xl font-extrabold text-text mt-6 mb-8"
             >
               Related guides
             </h2>
@@ -285,9 +288,7 @@ export default async function BlogPostPage({
                   <Card
                     className={cn(
                       "h-full flex flex-col",
-                      "transition-all duration-200",
-                      "group-hover:shadow-md group-hover:-translate-y-0.5",
-                      "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
+                      "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
                     )}
                   >
                     {related.categories && (
@@ -297,7 +298,7 @@ export default async function BlogPostPage({
                     )}
                     <CardTitle
                       as="h3"
-                      className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
+                      className="text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
                     >
                       {related.title}
                     </CardTitle>
@@ -306,7 +307,7 @@ export default async function BlogPostPage({
                         {related.excerpt}
                       </CardBody>
                     )}
-                    <p className="mt-4 text-xs font-mono text-primary font-medium tracking-wide uppercase">
+                    <p className="mt-4 stamp text-muted group-hover:text-text transition-colors">
                       Read →
                     </p>
                   </Card>

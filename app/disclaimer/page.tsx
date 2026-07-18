@@ -120,7 +120,7 @@ export default function DisclaimerPage() {
               No Warranties
             </h2>
             <p className="text-sm">
-              All content on {siteConfig.name} is provided &ldquo;as is&rdquo; without
+              All content on {siteConfig.name}{" "}is provided &ldquo;as is&rdquo; without
               warranties of any kind. We make reasonable efforts to ensure that
               information is accurate and up to date, but we make no representations
               or warranties regarding completeness, accuracy, reliability, or suitability

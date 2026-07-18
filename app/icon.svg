@@ -1,17 +1,26 @@
-<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0B84C4"/>
-      <stop offset="1" stop-color="#044A72"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <!-- Single bold, centered AI sparkle: reads cleanly down to 16px -->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top Use AI">
+  <!--
+    The mark is the site's scorecard reduced to two shapes: an open gauge ring
+    and the aperture at its centre. It carries the same idea as the post covers
+    (a dial with one lime arc) and the header logo (a circle punched out of a
+    graphite tile), so the favicon, the nav mark and the cover art all read as
+    one brand.
+
+    Deliberately only two shapes, both heavy. At 16px a thin arc or a third
+    element silts up into a smudge. The gap in the ring sits at the lower right,
+    which keeps the silhouette asymmetric and so still recognisable at tab size,
+    where a plain centred circle would look like every other favicon.
+  -->
+  <rect width="512" height="512" rx="128" fill="#22202E"/>
+
+  <!-- Open gauge ring: 270°, from 6 o'clock round to 3 o'clock. -->
   <path
-    d="M256 72
-       C280 186 326 232 440 256
-       C326 280 280 326 256 440
-       C232 326 186 280 72 256
-       C186 232 232 186 256 72 Z"
-    fill="#ffffff"/>
+    d="M256 406 A150 150 0 1 1 406 256"
+    fill="none"
+    stroke="#D6FF3F"
+    stroke-width="56"
+    stroke-linecap="round"/>
+
+  <!-- The aperture. -->
+  <circle cx="256" cy="256" r="62" fill="#D6FF3F"/>
 </svg>

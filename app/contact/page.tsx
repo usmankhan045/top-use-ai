@@ -69,7 +69,7 @@ export default function ContactPage() {
                     What we can&rsquo;t help with
                   </p>
                   <p className="text-sm">
-                    We&rsquo;re not affiliated with the tools we review and can&rsquo;t
+                    I&rsquo;m not affiliated with the tools I review and can&rsquo;t
                     provide account support, billing help, or technical support for them.
                     For those, please contact the tool&rsquo;s own support team.
                   </p>

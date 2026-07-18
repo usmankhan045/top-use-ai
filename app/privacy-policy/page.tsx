@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
               Third-Party Services
             </h2>
             <p className="mb-5 text-sm">
-              We use the following third-party services to operate and improve
+              We use the following third-party services to operate and improve{" "}
               {siteConfig.name}. Each has its own privacy policy governing how it handles
               your data.
             </p>

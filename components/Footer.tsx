@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site.config";
 import { Container } from "@/components/ui";
+import { BrandMark } from "@/components/BrandMark";
 
 // Pinterest SVG, inlined to avoid package dependency.
 function PinterestIcon({ className }: { className?: string }) {
@@ -18,25 +19,36 @@ function PinterestIcon({ className }: { className?: string }) {
   );
 }
 
-export function Footer() {
+type CategoryLink = { slug: string; name: string };
+
+export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-primary text-white">
       <Container>
 
-        {/* ── Main grid ──────────────────────────────────────────────────── */}
-        <div className="py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
+        {/* ── Main grid ──────────────────────────────────────────────────────
+            Link lists run in two sub-columns rather than one tall stack. A
+            single column of seven links was what made this footer twice as
+            tall as it needed to be. */}
+        <div className="pt-8 pb-6 grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 lg:gap-x-12">
 
-          {/* Column 1: Brand */}
-          <div>
+          {/* Column 1: Brand. Spans the full width on small screens so the two
+              link lists can sit side by side beneath it. */}
+          <div className="col-span-2 lg:col-span-1">
             <Link
               href="/"
-              className="font-display text-2xl font-bold text-white hover:opacity-80 transition-opacity inline-block mb-2"
+              className="flex items-center gap-2.5 hover:opacity-80 transition-opacity mb-2 w-fit"
             >
-              {siteConfig.name}
+              {/* Same mark as the header and the favicon, inverted for the
+                  graphite ground. */}
+              <BrandMark size={26} ground="dark" className="shrink-0" />
+              <span className="font-display text-2xl font-extrabold text-white tracking-tight">
+                {siteConfig.name}
+              </span>
             </Link>
-            <p className="text-white/65 text-sm leading-relaxed mb-5">
+            <p className="text-white/65 text-sm leading-relaxed mb-4">
               {siteConfig.tagline}
             </p>
 
@@ -58,15 +70,15 @@ export function Footer() {
 
           {/* Column 2: Navigation */}
           <div>
-            <p className="font-mono text-[0.65rem] font-medium tracking-[0.12em] uppercase text-white/40 mb-4">
+            <p className="stamp text-white/40 mb-3">
               Navigation
             </p>
-            <ul className="space-y-2.5">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
               {siteConfig.footerLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/65 hover:text-white transition-colors"
+                    className="text-sm text-white/65 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -75,20 +87,25 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Explore, situation hubs for quick navigation */}
+          {/* Column 3: Browse. Previously an "Explore" list that rendered a
+              single "Blog" link, because printables are off and there are no
+              audience segments — one live link next to a seven-link column,
+              which is what left the dead space. Carrying the categories here
+              balances the row and gives every category an internal link from
+              every page. */}
           <div>
-            <p className="font-mono text-[0.65rem] font-medium tracking-[0.12em] uppercase text-white/40 mb-4">
-              Explore
+            <p className="stamp text-white/40 mb-3">
+              Browse
             </p>
-            <ul className="space-y-2.5">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
               <li>
-                <Link href="/blog" className="text-sm text-white/65 hover:text-white transition-colors">
-                  Blog
+                <Link href="/blog" className="text-sm text-white/65 hover:text-accent transition-colors">
+                  All posts
                 </Link>
               </li>
               {siteConfig.features.printables && (
                 <li>
-                  <Link href="/free-printables" className="text-sm text-white/65 hover:text-white transition-colors">
+                  <Link href="/free-printables" className="text-sm text-white/65 hover:text-accent transition-colors">
                     Free Printables
                   </Link>
                 </li>
@@ -97,9 +114,19 @@ export function Footer() {
                 <li key={seg.slug}>
                   <Link
                     href={`/${seg.slug}`}
-                    className="text-sm text-white/65 hover:text-white transition-colors"
+                    className="text-sm text-white/65 hover:text-accent transition-colors"
                   >
                     {seg.label}
+                  </Link>
+                </li>
+              ))}
+              {categories.map((cat) => (
+                <li key={cat.slug}>
+                  <Link
+                    href={`/category/${cat.slug}`}
+                    className="text-sm text-white/65 hover:text-accent transition-colors"
+                  >
+                    {cat.name}
                   </Link>
                 </li>
               ))}
@@ -109,7 +136,7 @@ export function Footer() {
         </div>
 
         {/* ── Bottom bar ─────────────────────────────────────────────────── */}
-        <div className="border-t border-white/10 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/35">
+        <div className="border-t border-white/10 py-3 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-white/35">
           <p>© {year} {siteConfig.name}. All rights reserved.</p>
           <p>{siteConfig.legal.disclaimer}</p>
         </div>

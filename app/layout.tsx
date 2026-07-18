@@ -70,7 +70,7 @@ export default async function RootLayout({
       <body className="flex flex-col min-h-full antialiased bg-background text-text">
         <Header categories={categories} />
         {children}
-        <Footer />
+        <Footer categories={categories} />
       </body>
     </html>
   );

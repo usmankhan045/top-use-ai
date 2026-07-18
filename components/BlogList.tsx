@@ -43,9 +43,7 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
             <Card
               className={cn(
                 "h-full flex flex-col overflow-hidden",
-                "transition-all duration-200",
-                "group-hover:shadow-md group-hover:-translate-y-0.5",
-                "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
+                "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
               )}
             >
               {post.featuredImage && (
@@ -64,9 +62,18 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
                   {post.categoryName}
                 </Tag>
               )}
+              {/* The cover art already carries the headline, so showing it again
+                  here just repeats it. Hide it visually rather than dropping it:
+                  the text stays in the DOM as the card's heading and the link's
+                  accessible name, which is what search and screen readers read.
+                  Text baked into a PNG is invisible to both. */}
               <CardTitle
                 as="h2"
-                className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
+                className={cn(
+                  post.featuredImage
+                    ? "sr-only"
+                    : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
+                )}
               >
                 {post.title}
               </CardTitle>
@@ -76,7 +83,7 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
                 </CardBody>
               )}
               {post.publishedAt && (
-                <p className="mt-4 text-xs font-mono text-muted/60 uppercase tracking-wide">
+                <p className="mt-4 stamp text-muted/70">
                   {new Date(post.publishedAt).toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
@@ -96,11 +103,11 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
             <button
               type="button"
               onClick={() => setVisible((v) => v + PAGE_SIZE)}
-              className="rounded-full border border-primary/40 px-6 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-primary/[0.06] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="rounded-full border-2 border-text bg-white px-6 py-2.5 text-sm font-semibold text-text transition hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text"
             >
               Show more
             </button>
-            <p className="text-xs font-mono text-muted uppercase tracking-wide">
+            <p className="stamp text-muted">
               Showing {shown.length} of {posts.length}
             </p>
           </div>

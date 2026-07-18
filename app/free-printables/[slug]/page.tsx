@@ -97,8 +97,7 @@ function RelatedPrintableCard({ printable }: { printable: Printable }) {
         className={cn(
           "bg-white rounded-xl border border-black/[0.07] shadow-sm overflow-hidden",
           "flex gap-4 p-4 items-center",
-          "transition-all duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5",
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
@@ -121,7 +120,7 @@ function RelatedPrintableCard({ printable }: { printable: Printable }) {
         <div className="flex-1 min-w-0">
           <CardTitle
             as="h3"
-            className="text-sm leading-snug mb-0.5 line-clamp-2 group-hover:text-primary transition-colors"
+            className="text-sm leading-snug mb-0.5 line-clamp-2 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
           >
             {printable.title}
           </CardTitle>

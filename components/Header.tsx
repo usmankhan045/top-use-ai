@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { siteConfig, navLinks } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui";
+import { BrandMark } from "@/components/BrandMark";
 
 type CategoryLink = { slug: string; name: string };
 
@@ -115,10 +116,14 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
           {/* ── Logo ─────────────────────────────────────────────────────── */}
           <Link
             href="/"
-            className="font-display text-xl font-bold text-primary shrink-0 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2.5 shrink-0 hover:opacity-80 transition-opacity"
             aria-label={`${siteConfig.name} home`}
           >
-            {siteConfig.name}
+            {/* Purely decorative: the site name beside it carries the label. */}
+            <BrandMark size={28} ground="light" className="shrink-0" />
+            <span className="font-display text-xl font-extrabold text-text tracking-tight">
+              {siteConfig.name}
+            </span>
           </Link>
 
           {/* ── Desktop nav ──────────────────────────────────────────────── */}
@@ -133,7 +138,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                   className={cn(
                     "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-150",
                     isActive
-                      ? "text-primary bg-primary/8"
+                      ? "text-text bg-accent"
                       : "text-muted hover:text-text hover:bg-black/[0.04]"
                   )}
                 >
@@ -158,7 +163,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                         className={cn(
                           "flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-150",
                           isCategoryActive || catOpen
-                            ? "text-primary bg-primary/8"
+                            ? "text-text bg-accent"
                             : "text-muted hover:text-text hover:bg-black/[0.04]"
                         )}
                         aria-haspopup="true"
@@ -191,7 +196,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                                   className={cn(
                                     "block px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                                     active
-                                      ? "text-primary bg-primary/8"
+                                      ? "text-text bg-accent"
                                       : "text-text hover:bg-black/[0.04]"
                                   )}
                                 >
@@ -250,7 +255,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                     className={cn(
                       "px-3 py-3 rounded-xl text-base font-medium transition-colors",
                       isActive
-                        ? "text-primary bg-primary/8"
+                        ? "text-text bg-accent"
                         : "text-text hover:bg-black/[0.04]"
                     )}
                   >
@@ -269,7 +274,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                         className={cn(
                           "flex items-center justify-between px-3 py-3 rounded-xl text-base font-medium transition-colors",
                           isCategoryActive
-                            ? "text-primary bg-primary/8"
+                            ? "text-text bg-accent"
                             : "text-text hover:bg-black/[0.04]"
                         )}
                         aria-expanded={mobileCatOpen}
@@ -293,7 +298,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
                                 className={cn(
                                   "px-3 py-2.5 rounded-lg text-[15px] font-medium transition-colors",
                                   active
-                                    ? "text-primary bg-primary/8"
+                                    ? "text-text bg-accent"
                                     : "text-muted hover:text-text hover:bg-black/[0.04]"
                                 )}
                               >

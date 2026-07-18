@@ -41,9 +41,9 @@ const PLACEHOLDER_POSTS: Post[] = [
   {
     id: "ph-1",
     slug: "best-ai-writing-tools",
-    title: "Best AI Writing Tools in 2026: 7 We Actually Tested",
+    title: "Best AI Writing Tools in 2026: 7 I Actually Tested",
     excerpt:
-      "We ran the same brief through seven popular AI writers and scored them on output quality, editing time, and price. Here's which one earned the top spot, and which to skip.",
+      "I ran the same brief through seven popular AI writers and scored them on output quality, editing time, and price. Here's which one earned the top spot, and which to skip.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -58,7 +58,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "jasper-vs-copyai",
     title: "Jasper vs Copy.ai: Which AI Writer Wins for Marketers?",
     excerpt:
-      "Two of the biggest names in AI copywriting, head to head. We compare output, templates, pricing, and the free plans so you know which fits your workflow before you pay.",
+      "Two of the biggest names in AI copywriting, head to head. I compare output, templates, pricing, and the free plans so you know which fits your workflow before you pay.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -73,7 +73,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "ai-side-hustles",
     title: "11 AI Side Hustles You Can Start This Weekend (With $0)",
     excerpt:
-      "No audience and no budget? These beginner-friendly AI side hustles need nothing but free tools and a few hours. We break down the setup, the realistic pay, and the catch for each.",
+      "No audience and no budget? These beginner-friendly AI side hustles need nothing but free tools and a few hours. I break down the setup, the realistic pay, and the catch for each.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -88,7 +88,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "faceless-youtube-with-ai",
     title: "How to Start a Faceless YouTube Channel With AI (Step by Step)",
     excerpt:
-      "Script, voiceover, and visuals, all made with AI and no camera. Here's the exact stack we'd use to publish a faceless video this week, plus what it actually costs.",
+      "Script, voiceover, and visuals, all made with AI and no camera. Here's the exact stack I'd use to publish a faceless video this week, plus what it actually costs.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -106,7 +106,7 @@ const PLACEHOLDER_POSTS: Post[] = [
 // A miniature AI-tool "review card." It does the one job a hero must do here:
 // show a first-time visitor *exactly* what this site is, independent, scored,
 // hands-on reviews of AI tools. The faint offset card behind it nods to the
-// stack of tools we compare side by side.
+// stack of tools compared side by side.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Rating criteria, each scored out of 5, reads like a real review scorecard.
@@ -137,23 +137,23 @@ function ScoreDots({ score }: { score: number }) {
 function ToolReviewCard() {
   return (
     <div className="relative w-full max-w-sm mx-auto lg:mx-0">
-      {/* Second card, peeking out behind, "one of many tools we compare" */}
+      {/* Second card, peeking out behind, "one of many tools compared" */}
       <div
         aria-hidden
-        className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-white/70 border border-black/[0.06] shadow-sm rotate-[2deg]"
+        className="absolute inset-0 translate-x-3 translate-y-3 rounded-[22px] bg-white/70 border-2 border-text/15 rotate-[2deg]"
       />
 
-      {/* Review card */}
-      <div className="relative rounded-2xl bg-white border border-black/[0.08] shadow-xl shadow-primary/10 overflow-hidden">
+      {/* Review card, carrying the hard ink shadow that anchors the design */}
+      <div className="relative rounded-[22px] bg-white border-2 border-text hard-ink overflow-hidden">
         {/* Header strip */}
         <div className="bg-primary px-5 py-3.5 flex items-center justify-between">
           <div>
-            <p className="font-display text-white font-semibold text-base leading-none">
+            <p className="font-display text-white font-extrabold text-base leading-none">
               AI Writer Pro
             </p>
             <p className="stamp text-white/60 mt-1.5">AI Writing &amp; Content</p>
           </div>
-          <span className="stamp text-white/90 border border-white/40 rounded-[3px] px-2 py-[3px]">
+          <span className="stamp bg-accent text-text rounded-[3px] px-2 py-[3px]">
             Review
           </span>
         </div>
@@ -174,13 +174,14 @@ function ToolReviewCard() {
           ))}
         </div>
 
-        {/* Verdict, the payoff of a review */}
-        <div className="bg-success/[0.1] border-t-2 border-success/30 px-5 py-3.5 flex items-center justify-between">
+        {/* Verdict, the payoff of a review. The one full-bleed hit of electric
+            lime on the page, so the eye lands on the score last. */}
+        <div className="bg-accent border-t-2 border-text px-5 py-3.5 flex items-center justify-between">
           <div>
-            <p className="stamp text-success leading-none">Our verdict</p>
-            <p className="text-xs text-muted mt-1.5">Best for solo creators</p>
+            <p className="stamp text-text leading-none">My verdict</p>
+            <p className="text-xs text-text/70 mt-1.5">Best for solo creators</p>
           </div>
-          <span className="font-display text-2xl font-bold text-success tabular-nums">
+          <span className="font-display text-2xl font-extrabold text-text tabular-nums">
             4.5
           </span>
         </div>
@@ -197,7 +198,7 @@ const VALUE_PROPS: { icon: "review" | "compare" | "money"; title: string; body: 
   {
     icon: "review",
     title: "Hands-on reviews",
-    body: "We actually use each tool before we rank it. Real screenshots, real limits, and honest pros and cons, never press-release fluff.",
+    body: "I actually use each tool before I rank it. Real screenshots, real limits, and honest pros and cons, never press-release fluff.",
   },
   {
     icon: "compare",
@@ -263,9 +264,7 @@ function CategoryCard({
         variant="plain"
         className={cn(
           "h-full flex flex-col gap-2",
-          "transition-all duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5 group-hover:border-primary/30",
-          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
         )}
       >
         <Tag variant="primary" className="self-start">{category.name}</Tag>
@@ -274,7 +273,7 @@ function CategoryCard({
             {category.description}
           </p>
         )}
-        <p className="mt-auto pt-3 text-xs font-mono text-primary/70 font-medium tracking-wide uppercase">
+        <p className="mt-auto pt-3 stamp text-muted group-hover:text-text transition-colors">
           {category.postCount} {category.postCount === 1 ? "post" : "posts"} →
         </p>
       </Card>
@@ -294,9 +293,7 @@ function PostCard({ post }: { post: Post }) {
       <Card
         className={cn(
           "h-full flex flex-col overflow-hidden",
-          "transition-all duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5",
-          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
         )}
       >
         {post.featured_image_url && (
@@ -317,10 +314,15 @@ function PostCard({ post }: { post: Post }) {
           </Tag>
         )}
 
-        {/* Title */}
+        {/* Title. Hidden visually when the cover art carries it, but kept in the
+            DOM so search engines and screen readers still get the headline. */}
         <CardTitle
           as="h3"
-          className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
+          className={cn(
+            post.featured_image_url
+              ? "sr-only"
+              : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
+          )}
         >
           {post.title}
         </CardTitle>
@@ -333,7 +335,7 @@ function PostCard({ post }: { post: Post }) {
         )}
 
         {/* Read link */}
-        <p className="mt-4 text-xs font-mono text-primary font-medium tracking-wide uppercase">
+        <p className="mt-4 stamp text-muted group-hover:text-text transition-colors">
           Read →
         </p>
       </Card>
@@ -386,20 +388,26 @@ export default async function HomePage() {
 
             {/* Left, the promise */}
             <div className="min-w-0 max-w-xl">
-              <p className="stamp text-primary mb-5 flex items-center gap-2">
-                <span className="h-px w-6 bg-primary/40" aria-hidden />
+              <p className="stamp text-text mb-5 flex items-center gap-2.5">
+                <span className="h-2 w-6 rounded-full bg-accent" aria-hidden />
                 Independent AI tool reviews &amp; guides
               </p>
 
               <h1
                 id="hero-heading"
-                className="font-display text-4xl sm:text-5xl lg:text-[3.1rem] font-bold text-text leading-[1.05] tracking-tight text-balance"
+                className="font-display text-[2.6rem] sm:text-5xl lg:text-[3.5rem] font-extrabold text-text leading-[1] tracking-tight text-balance"
               >
                 The AI tools worth your money,{" "}
-                <em className="not-italic text-primary">tested</em>, not hyped.
+                {/* The rotated mark is an inline-block, which introduces a line
+                    break opportunity before the comma. Tying them together in a
+                    nowrap span keeps the punctuation attached to the word. */}
+                <span className="whitespace-nowrap">
+                  <em className="not-italic accent-mark">tested</em>,
+                </span>{" "}
+                not hyped.
               </h1>
 
-              <p className="mt-5 text-lg text-muted leading-relaxed max-w-lg">
+              <p className="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-lg">
                 {siteConfig.name} reviews and compares the best AI tools for writing,
                 images, video, and business, then shows you how to turn them into real
                 income. Hands-on scores, honest pros and cons, and clear picks for your
@@ -439,18 +447,18 @@ export default async function HomePage() {
       {/* ══════════════════════════════════════════════════════════════════
           § WHAT YOU GET, first-sight clarity, three plain promises.
       ══════════════════════════════════════════════════════════════════ */}
-      <section className="py-14 sm:py-16 border-y border-black/[0.06]" aria-label="What you get here">
+      <section className="py-14 sm:py-16 border-y-2 border-black/[0.08]" aria-label="What you get here">
         <Container>
           <div className="grid gap-6 sm:grid-cols-3">
             {VALUE_PROPS.map((vp) => (
               <div key={vp.title} className="flex flex-col">
                 <span
-                  className="w-11 h-11 rounded-xl bg-primary/[0.08] text-primary flex items-center justify-center mb-4"
+                  className="w-11 h-11 rounded-xl bg-accent text-text flex items-center justify-center mb-4"
                   aria-hidden
                 >
                   <ValueIcon name={vp.icon} />
                 </span>
-                <h2 className="font-display text-lg font-semibold text-text mb-1.5">
+                <h2 className="font-display text-lg font-bold text-text mb-1.5">
                   {vp.title}
                 </h2>
                 <p className="text-sm text-muted leading-relaxed">{vp.body}</p>
@@ -473,7 +481,7 @@ export default async function HomePage() {
             <div className="mt-10">
               <h2
                 id="categories-heading"
-                className="font-display text-3xl sm:text-4xl font-bold text-text mb-3"
+                className="font-display text-3xl sm:text-4xl font-extrabold text-text mb-3"
               >
                 Find your topic.
               </h2>
@@ -491,7 +499,7 @@ export default async function HomePage() {
               <div className="mt-8 text-center">
                 <Link
                   href="/blog"
-                  className="text-sm text-primary font-medium hover:underline underline-offset-4"
+                  className="text-sm text-text font-semibold hover:underline underline-offset-4 decoration-2 decoration-accent"
                 >
                   Browse all posts →
                 </Link>
@@ -510,7 +518,7 @@ export default async function HomePage() {
             <div>
               <h2
                 id="posts-heading"
-                className="font-display text-3xl sm:text-4xl font-bold text-text"
+                className="font-display text-3xl sm:text-4xl font-extrabold text-text"
               >
                 Latest from the blog
               </h2>
@@ -520,7 +528,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/blog"
-              className="text-sm text-primary font-medium hover:underline underline-offset-4 shrink-0"
+              className="text-sm text-text font-semibold hover:underline underline-offset-4 decoration-2 decoration-accent shrink-0"
             >
               View all →
             </Link>
@@ -565,23 +573,30 @@ export default async function HomePage() {
 
           <div className="mt-10 text-center">
             <div
-              className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/20 mx-auto mb-6 flex items-center justify-center"
-              aria-hidden
+              className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-text mx-auto mb-6"
             >
-              <span className="font-display text-xl font-bold text-primary">{siteConfig.brand.monogram}</span>
+              {/* The named reviewer, not a brand monogram. A quote signed by a
+                  real person needs that person's face above it. */}
+              <Image
+                src={siteConfig.author.avatar}
+                alt={siteConfig.author.name}
+                fill
+                sizes="64px"
+                className="object-cover"
+              />
             </div>
 
-            <blockquote className="font-display text-xl sm:text-2xl font-medium text-text leading-relaxed mb-6 max-w-lg mx-auto">
-              &ldquo;There&rsquo;s a new AI tool every week and a lot of hype to match. We
-              built {siteConfig.name} to cut through it, testing the tools ourselves so you
+            <blockquote className="font-display text-xl sm:text-2xl font-bold text-text leading-relaxed mb-6 max-w-lg mx-auto">
+              &ldquo;There&rsquo;s a new AI tool every week and a lot of hype to match. I
+              built {siteConfig.name}{" "}to cut through it, testing every tool myself so you
               can pick the right one and put it to work.&rdquo;
             </blockquote>
 
             <p
               id="about-heading"
-              className="font-mono text-xs uppercase tracking-widest text-muted mb-8"
+              className="stamp text-muted mb-8"
             >
-              The {siteConfig.name} Team
+              {siteConfig.author.name} · {siteConfig.author.role}
             </p>
 
             <Button variant="outline">

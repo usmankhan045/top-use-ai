@@ -50,12 +50,12 @@ function Label({ children }: { children: React.ReactNode }) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const palette = [
-  { token: "primary",    name: "Ledger Teal",   hex: siteConfig.theme.colors.primary,    textClass: "text-white" },
-  { token: "accent",     name: "Ink Amber",      hex: siteConfig.theme.colors.accent,     textClass: "text-white" },
-  { token: "background", name: "Bond Paper",     hex: siteConfig.theme.colors.background, textClass: "text-text" },
-  { token: "text",       name: "Ledger Ink",     hex: siteConfig.theme.colors.text,       textClass: "text-white" },
-  { token: "muted",      name: "Ruled Line",     hex: siteConfig.theme.colors.muted,      textClass: "text-white" },
-  { token: "success",    name: "Balance Green",  hex: siteConfig.theme.colors.success,    textClass: "text-white" },
+  { token: "primary",    name: "Graphite",      hex: siteConfig.theme.colors.primary,    textClass: "text-white" },
+  { token: "accent",     name: "Electric Lime",  hex: siteConfig.theme.colors.accent,     textClass: "text-text" },
+  { token: "background", name: "Warm Paper",     hex: siteConfig.theme.colors.background, textClass: "text-text" },
+  { token: "text",       name: "Graphite Ink",   hex: siteConfig.theme.colors.text,       textClass: "text-white" },
+  { token: "muted",      name: "Slate",          hex: siteConfig.theme.colors.muted,      textClass: "text-white" },
+  { token: "success",    name: "Deep Green",     hex: siteConfig.theme.colors.success,    textClass: "text-white" },
 ] as const;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -162,7 +162,7 @@ export default function StyleGuidePage() {
           {/* Body scale */}
           <div className="space-y-4 mb-10 p-6 bg-white rounded-xl border border-black/[0.07]">
             <div>
-              <Label>font-body · text-lg · Public Sans</Label>
+              <Label>font-body · text-lg · Hanken Grotesk</Label>
               <p className="text-lg text-text leading-relaxed">
                 Money is just a series of small decisions made repeatedly. That&rsquo;s it.
                 You don&rsquo;t need to be a spreadsheet person to budget. You just need
@@ -187,7 +187,7 @@ export default function StyleGuidePage() {
 
           {/* Mono scale */}
           <div className="space-y-3 p-6 bg-primary/[0.04] rounded-xl border border-primary/20">
-            <Label>font-mono · IBM Plex Mono · numbers, tags, ledger entries</Label>
+            <Label>font-mono · Geist Mono · numbers, tags, metadata</Label>
             <div className="space-y-2">
               <p className="font-mono text-base text-primary">
                 Income:   $3,240.00
@@ -222,7 +222,7 @@ export default function StyleGuidePage() {
         {/* ── 3. Signature Element: The Stamp Tag ──────────────────────────── */}
         <Section
           title="03: Signature Element: The Stamp Tag"
-          note="IBM Plex Mono · uppercase · letter-spacing 0.12em · 1px border · box-shadow 1.5px 1.5px 0 currentColor"
+          note="Geist Mono · uppercase · letter-spacing 0.12em · 1px border · box-shadow 1.5px 1.5px 0 currentColor"
         >
           <Card variant="plain" className="mb-6">
             <p className="text-sm text-muted mb-4 leading-relaxed">
@@ -282,7 +282,7 @@ export default function StyleGuidePage() {
                       Families &amp; Moms
                     </span>
                     <div className="flex flex-col gap-0.5 mt-2">
-                      <p className="font-mono text-[10px] text-muted">↑ font: IBM Plex Mono</p>
+                      <p className="font-mono text-[10px] text-muted">↑ font: Geist Mono</p>
                       <p className="font-mono text-[10px] text-muted">↑ uppercase, 0.12em tracking</p>
                       <p className="font-mono text-[10px] text-muted">↑ 1px border in currentColor</p>
                       <p className="font-mono text-[10px] text-muted">↑ shadow: 1.5px 1.5px 0 currentColor</p>

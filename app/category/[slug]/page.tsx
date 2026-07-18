@@ -163,9 +163,7 @@ export default async function CategoryArchivePage({
                     <Card
                       className={cn(
                         "h-full flex flex-col overflow-hidden",
-                        "transition-all duration-200",
-                        "group-hover:shadow-md group-hover:-translate-y-0.5",
-                        "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
+                      "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
                       )}
                     >
                       {post.featured_image_url && (
@@ -179,9 +177,15 @@ export default async function CategoryArchivePage({
                           />
                         </div>
                       )}
+                      {/* Hidden visually when the cover art carries the headline,
+                          but kept in the DOM for search and screen readers. */}
                       <CardTitle
                         as="h2"
-                        className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
+                        className={cn(
+                          post.featured_image_url
+                            ? "sr-only"
+                            : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
+                        )}
                       >
                         {post.title}
                       </CardTitle>

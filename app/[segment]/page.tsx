@@ -52,8 +52,7 @@ function PostCard({ post }: { post: Post }) {
       <Card
         className={cn(
           "h-full flex flex-col",
-          "transition-all duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5",
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
@@ -64,7 +63,7 @@ function PostCard({ post }: { post: Post }) {
         )}
         <CardTitle
           as="h3"
-          className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
+          className="text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
         >
           {post.title}
         </CardTitle>
@@ -169,8 +168,7 @@ export default async function SegmentHubPage({
                 <Card
                   className={cn(
                     "h-full flex flex-col gap-3",
-                    "transition-all duration-200",
-                    "group-hover:shadow-md group-hover:-translate-y-0.5",
+                    "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text",
                     "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
                   )}
                 >
@@ -301,12 +299,11 @@ export default async function SegmentHubPage({
                   <Card
                     className={cn(
                       "h-full flex flex-col gap-2",
-                      "transition-all duration-200",
-                      "group-hover:shadow-md group-hover:-translate-y-0.5",
+                      "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text",
                       "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
                     )}
                   >
-                    <p className="font-display text-base font-semibold text-text group-hover:text-primary transition-colors">
+                    <p className="font-display text-base font-semibold text-text group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition">
                       {resource.name}
                     </p>
                     <p className="text-sm text-muted leading-relaxed flex-1">

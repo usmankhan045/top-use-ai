@@ -120,7 +120,7 @@ export default function TermsOfUsePage() {
               6. User Submissions
             </h2>
             <p className="text-sm">
-              If you submit content to us, such as a contact form message, you grant
+              If you submit content to us, such as a contact form message, you grant{" "}
               {siteConfig.name} a non-exclusive, royalty-free license to use, store, and
               reproduce that content for the sole purpose of operating the Site and
               responding to your inquiry. You represent that you own or have the right

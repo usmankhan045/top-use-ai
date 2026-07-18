@@ -1,4 +1,4 @@
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Hanken_Grotesk, Geist_Mono } from "next/font/google";
 import { siteConfig } from "./site.config";
 
 // next/font requires static imports, dynamic font loading is not supported.
@@ -8,29 +8,29 @@ import { siteConfig } from "./site.config";
 //   3. Add an entry to FONT_MAP keyed by the exact font name in siteConfig.theme.fonts.
 //   4. Update siteConfig.theme.fonts to reference that key.
 
-const spaceGrotesk = Space_Grotesk({
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
+  weight: ["600", "700", "800"],
   variable: "--font-display",
   display: "swap",
 });
 
-const inter = Inter({
+const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
 });
 
-const jetBrainsMono = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
   variable: "--font-mono",
   display: "swap",
 });
 
 const FONT_MAP: Record<string, { variable: string; className: string }> = {
-  "Space Grotesk": spaceGrotesk,
-  "Inter":         inter,
-  "JetBrains Mono": jetBrainsMono,
+  "Bricolage Grotesque": bricolageGrotesque,
+  "Hanken Grotesk":      hankenGrotesk,
+  "Geist Mono":          geistMono,
 };
 
 export function getSiteFonts() {

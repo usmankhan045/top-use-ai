@@ -1,9 +1,9 @@
 // ── Tag, the site's signature design element ─────────────────────────────────
 //
-// IBM Plex Mono · uppercase · 0.12em letter-spacing · 1px border · 3px radius
-// The 1.5px offset box-shadow (shadow-[1.5px_1.5px_0_currentColor]) references
-// a rubber stamp that didn't land perfectly, the visible impression of a
-// repeated, deliberate act. This is "budgeting as calm ritual" made visible.
+// Geist Mono · uppercase · 0.12em letter-spacing · 1px border · 3px radius
+// The 1.5px offset box-shadow (shadow-[1.5px_1.5px_0_currentColor]) is the
+// small-scale echo of the hard-ink shadow on panels and cards: the same solid,
+// un-blurred offset, sized down to badge scale.
 //
 // Uses currentColor throughout so every variant needs only a text+border class.
 
@@ -19,7 +19,9 @@ interface TagProps extends HTMLAttributes<HTMLSpanElement> {
 const variantClasses: Record<TagVariant, string> = {
   default: "text-muted  border-muted",
   primary: "text-primary border-primary",
-  accent:  "text-accent  border-accent",
+  // Electric lime as text would sit at roughly 1.3:1 on white, so the accent
+  // variant fills instead of outlines: lime ground, ink text and ink border.
+  accent:  "bg-accent text-text border-text",
   success: "text-success border-success",
 };
 
