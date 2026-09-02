@@ -1,10 +1,10 @@
 @AGENTS.md
 
-# Explained AI Tools — Project Guide for Claude
+# Top Use AI — Project Guide for Claude
 
 ## What This Project Is
 
-Explained AI Tools (explainedaitools.com) is an independent AI-tools review and how-to blog for the US / Canada / UK. It publishes hands-on reviews, head-to-head comparisons, and beginner-friendly guides, plus practical "make money with AI" content. The business model is: SEO- and Pinterest-driven blog posts → email list growth → affiliate revenue (primary) + AdSense (secondary) + own digital products (later).
+Top Use AI (topuseai.com, canonical host www.topuseai.com) is an independent AI-tools review and how-to blog for the US / Canada / UK. It publishes hands-on reviews, head-to-head comparisons, and beginner-friendly guides, plus practical "make money with AI" content. The business model is: SEO- and Pinterest-driven blog posts → email list growth → affiliate revenue (primary) + AdSense (secondary) + own digital products (later).
 
 **This is a blog-only site.** There are NO printables (that feature lives on a separate site). `features.printables` is `false`, so `/free-printables` 404s and its nav/footer/sitemap entries are hidden.
 
@@ -12,7 +12,7 @@ Explained AI Tools (explainedaitools.com) is an independent AI-tools review and 
 
 **Supabase project ID:** `ruucexzgebbehjcrinhj`
 
-**Site slug in DB:** `explained-ai-tools` · **site_id:** `7635559c-2c64-4d76-8b3b-1c69e4a412f8`
+**Site slug in DB:** `explained-ai-tools` (legacy slug, do not change; the live domain is topuseai.com) · **site_id:** `7635559c-2c64-4d76-8b3b-1c69e4a412f8`
 
 The strategic blueprint (categories, sub-niches, affiliate programs) lives in `docs/AI-Tools-Site-Blueprint.md`.
 
@@ -76,6 +76,17 @@ Everything flows from `lib/site.config.ts` (theme/nav/brand) and `lib/fonts.ts` 
 
 ---
 
+## Writing & Research Standards
+
+**Before writing or researching any post, read `docs/WRITING-PLAYBOOK.md`.** It
+covers source tiers, price and licence verification, the house voice, GEO
+techniques that measurably work, internal linking rules, and the pre-publish
+checklist. The core rule: never publish a fact not verified at its source.
+
+Key tooling:
+- `scrapling-py scripts/research/verify_pricing.py <tool>` — verify vendor pricing
+- `node scripts/publishing/publish-due.js --list` — inspect the publish queue
+
 ## Blog Post Structure (GEO + SEO Rules)
 
 Every blog post must follow this structure:
@@ -136,6 +147,9 @@ Full 24-tool program table with rates/cookies: `docs/AI-Tools-Site-Blueprint.md`
 | components/MarkdownContent.tsx | Renders post content |
 | supabase/migrations/ | DB schema |
 | docs/AI-Tools-Site-Blueprint.md | Category architecture, sub-niches, affiliate programs |
+| docs/WRITING-PLAYBOOK.md | Research + writing standards (read before writing) |
+| scripts/research/verify_pricing.py | Verify vendor pricing before publishing |
+| scripts/publishing/publish-due.js | Scheduled publishing queue |
 
 ---
 

@@ -34,6 +34,24 @@ const nextConfig: NextConfig = {
   // Security + SEO response headers for every route. Hardens the site (HSTS,
   // MIME-sniffing, clickjacking, referrer/permissions) without a strict CSP,
   // which would risk breaking the inlined theme <style> and third-party embeds.
+  // Printables created remotely through HQ live in Supabase Storage rather than
+  // in this repo. A `fallback` rewrite only runs when no static file matched, so
+  // the printables committed under public/printables keep being served straight
+  // from the CDN, and only the ones that aren't there fall through to storage.
+  // Both end up at /printables/<slug>.pdf, so the split is invisible to visitors
+  // and no printable ever needs a commit or a redeploy.
+  async rewrites() {
+    return {
+      fallback: [
+        {
+          source: "/printables/:path*",
+          destination:
+            "https://ruucexzgebbehjcrinhj.supabase.co/storage/v1/object/public/printables/explained-ai-tools/:path*",
+        },
+      ],
+    };
+  },
+
   async headers() {
     return [
       {

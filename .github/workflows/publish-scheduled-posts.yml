@@ -1,0 +1,54 @@
+name: Publish scheduled posts
+
+# Posts are stored as drafts with a future published_at. This flips them to
+# published once that date arrives. Site queries filter on status only, so a
+# draft stays invisible until this runs.
+on:
+  schedule:
+    # 13:00 UTC daily — ~9am ET / 6am PT / 2pm BST, inside US/CA/UK morning.
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "List what would publish without changing anything"
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish-scheduled-posts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Publish due posts
+        id: publish
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          node scripts/publishing/publish-due.js \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      # Next.js caches pages, so a DB change alone may not appear until a
+      # rebuild. Only redeploy when something was actually published.
+      - name: Trigger redeploy
+        if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "No VERCEL_DEPLOY_HOOK_URL set; skipping redeploy."
+            echo "Add it in repo Settings > Secrets if your host caches pages."
+            exit 0
+          fi
+          curl -fsS -X POST "$HOOK" && echo "Redeploy triggered."
