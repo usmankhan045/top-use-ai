@@ -4,7 +4,15 @@
  *   node scripts/generate-covers.js              # every published post
  *   node scripts/generate-covers.js --missing    # only posts without a /covers/ image
  *   node scripts/generate-covers.js --slug=foo   # a single post
+ *   node scripts/generate-covers.js --drafts     # include scheduled drafts
  *   node scripts/generate-covers.js --write-db   # also point featured_image_url at the new file
+ *
+ * Covers must exist *before* a post goes live, so the routine run is:
+ *
+ *   node scripts/generate-covers.js --drafts --missing --write-db
+ *
+ * Scheduled drafts are included by default when --missing is used, because a
+ * post that publishes itself on a cron has no later chance to get a cover.
  *
  * Requires playwright (dev-only, not a runtime dependency):
  *   npm i -D playwright && npx playwright install chromium
@@ -45,6 +53,10 @@ const args = process.argv.slice(2);
 const ONLY_MISSING = args.includes('--missing');
 const WRITE_DB = args.includes('--write-db');
 const ONE_SLUG = (args.find(a => a.startsWith('--slug=')) || '').split('=')[1];
+// Drafts are scheduled posts that a cron will publish unattended, so their
+// covers have to be rendered ahead of time. --missing implies --drafts: the
+// whole point of a backfill is to leave nothing without a cover.
+const INCLUDE_DRAFTS = args.includes('--drafts') || ONLY_MISSING || Boolean(ONE_SLUG);
 
 // ── Brand tokens ─────────────────────────────────────────────────────────────
 // Kept in sync with lib/site.config.ts by hand: this script runs outside the
@@ -268,9 +280,9 @@ function loadEnv() {
   const db = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
 
   let query = db.from('posts')
-    .select('slug,title,featured_image_url,categories(name)')
-    .eq('site_id', SITE_ID)
-    .eq('status', 'published');
+    .select('slug,title,featured_image_url,status,categories(name)')
+    .eq('site_id', SITE_ID);
+  if (!INCLUDE_DRAFTS) query = query.eq('status', 'published');
   if (ONE_SLUG) query = query.eq('slug', ONE_SLUG);
 
   const { data: posts, error } = await query.order('published_at', { ascending: false });
@@ -293,7 +305,7 @@ function loadEnv() {
     await page.setContent(html(post), { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
     await page.screenshot({ path: path.join(OUT_DIR, post.slug + '.png') });
-    console.log('✓', post.slug);
+    console.log('✓', post.slug, post.status === 'draft' ? '(scheduled)' : '');
   }
   await browser.close();
 
