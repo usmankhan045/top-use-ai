@@ -56,6 +56,19 @@ jobs:
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '0' }}
         run: node scripts/publishing/publish-due.js
 
+      # A post that just went live can unblock forward links that were removed
+      # while it was still a draft (see docs/PENDING-INTERNAL-LINKS.md), and a
+      # newly published post can itself link to something still scheduled. Run
+      # after publishing so either case surfaces here rather than in an audit.
+      # Reports only — a broken link should not fail an otherwise good publish.
+      - name: Check internal links
+        if: always()
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/publishing/check-internal-links.js
+
       # Next.js caches pages, so a DB change alone stays invisible until the
       # page regenerates. On-demand revalidation touches only the handful of
       # paths a new post affects — a deploy hook would rebuild all ~675 pages
