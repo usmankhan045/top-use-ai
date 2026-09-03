@@ -6,8 +6,8 @@ import { generateThemeCSS } from "@/lib/theme";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { websiteSchema, organizationSchema } from "@/lib/schema";
-import { getCategories } from "@/lib/queries";
+import { websiteSchema, organizationSchema, personSchema } from "@/lib/schema";
+import { getCategoriesWithPostCounts } from "@/lib/queries";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Drives the navbar "Categories" dropdown. Uses ALL categories (not just those
-  // with posts) so the site's topic structure is visible from launch, before any
-  // post is published. Falls back to [] if the DB is unconfigured.
+  // Drives the navbar "Categories" dropdown. Only categories with at least one
+  // published post, so the nav never links to an empty archive page. Falls back
+  // to [] if the DB is unconfigured.
   let categories: { slug: string; name: string }[] = [];
   try {
-    categories = (await getCategories()).map(({ slug, name }) => ({
+    categories = (await getCategoriesWithPostCounts()).map(({ slug, name }) => ({
       slug,
       name,
     }));
@@ -65,7 +65,10 @@ export default async function RootLayout({
       <head>
         {/* Inject theme CSS vars, change siteConfig.theme.colors to restyle the whole site */}
         <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
-        <JsonLd data={[websiteSchema(), organizationSchema()]} />
+        {/* Site-wide entity graph. Emitted on every page so that per-page schema
+            (BlogPosting author/publisher/isPartOf) can reference these by @id
+            instead of duplicating them. */}
+        <JsonLd data={[websiteSchema(), organizationSchema(), personSchema()]} />
       </head>
       <body className="flex flex-col min-h-full antialiased bg-background text-text">
         <Header categories={categories} />

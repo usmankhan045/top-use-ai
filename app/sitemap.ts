@@ -1,6 +1,10 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site.config";
-import { getPublishedPosts, getCategories, getPrintables } from "@/lib/queries";
+import {
+  getPublishedPosts,
+  getCategoriesWithPostCounts,
+  getPrintables,
+} from "@/lib/queries";
 
 const BASE_URL = `https://${siteConfig.domain}`;
 
@@ -47,7 +51,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   try {
-    const categories = await getCategories();
+    // Only categories that actually have published posts. An empty category
+    // page renders "no posts yet", so submitting it is a soft-404 signal.
+    const categories = await getCategoriesWithPostCounts();
     categoryRoutes = categories.map((cat) => ({
       url: `${BASE_URL}/category/${cat.slug}`,
       lastModified: now,

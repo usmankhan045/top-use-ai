@@ -44,10 +44,15 @@ export async function generateMetadata({
     const description =
       category.description ??
       `Browse all ${category.name} articles on ${siteConfig.name}.`;
+    // A category with no published posts renders a "coming soon" placeholder.
+    // Indexing that is a soft-404 signal, so noindex it until it has content.
+    // follow stays on so the crawler still walks the nav from here.
+    const posts = await getPublishedPosts({ categoryId: category.id, limit: 1 });
+    const isEmpty = posts.length === 0;
     return {
       title,
       description,
-      alternates: { canonical: `/category/${slug}` },
+      alternates: { canonical: `/category/${slug}` }, ...(isEmpty && { robots: { index: false, follow: true } }),
       openGraph: {
         title,
         description,

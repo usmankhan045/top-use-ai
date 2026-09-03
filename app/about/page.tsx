@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site.config";
 import { getPageBySlug } from "@/lib/queries";
 import { Container, Tag, SectionDivider, Card } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { aboutPageSchema, personSchema } from "@/lib/schema";
+import { aboutPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -78,7 +78,7 @@ export default async function AboutPage() {
 
   return (
     <main className="flex-1">
-      <JsonLd data={[aboutPageSchema(), personSchema()]} />
+      <JsonLd data={[aboutPageSchema()]} />
 
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <section

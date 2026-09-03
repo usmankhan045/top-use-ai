@@ -1,7 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { PrintableCallout } from "@/components/ui";
-import type { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 function expandShortcodes(content: string): string {
   return content.replace(
@@ -22,10 +22,35 @@ function InlinePrintable({ slug }: { slug: string }) {
   );
 }
 
+/** Derive a stable anchor id from heading text, matching lib/schema.ts's
+ *  headingSlug so ItemList item URLs point at real in-page anchors. */
+function headingSlug(children: ReactNode): string | undefined {
+  const text = extractText(children);
+  if (!text) return undefined;
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 60);
+}
+
+/** Flatten a React node tree to its plain text, for slug generation. */
+function extractText(node: ReactNode): string {
+  if (node === null || node === undefined || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(extractText).join("");
+  if (typeof node === "object" && "props" in (node as object)) {
+    return extractText((node as { props?: { children?: ReactNode } }).props?.children);
+  }
+  return "";
+}
+
 const mdxComponents = {
   h2: ({ children, ...props }: ComponentPropsWithoutRef<"h2">) => (
     <h2
-      className="font-display text-2xl sm:text-3xl font-extrabold text-text mt-12 mb-4 leading-snug"
+      id={headingSlug(children)}
+      className="font-display text-2xl sm:text-3xl font-extrabold text-text mt-12 mb-4 leading-snug scroll-mt-24"
       {...props}
     >
       {children}
@@ -33,7 +58,8 @@ const mdxComponents = {
   ),
   h3: ({ children, ...props }: ComponentPropsWithoutRef<"h3">) => (
     <h3
-      className="font-display text-xl font-extrabold text-text mt-8 mb-3 leading-snug"
+      id={headingSlug(children)}
+      className="font-display text-xl font-extrabold text-text mt-8 mb-3 leading-snug scroll-mt-24"
       {...props}
     >
       {children}
@@ -83,17 +109,30 @@ const mdxComponents = {
       {children}
     </em>
   ),
-  a: ({ children, href, ...props }: ComponentPropsWithoutRef<"a">) => (
-    <a
-      href={href}
-      // Graphite is the body text color too, so color alone cannot mark a link.
-      // The lime underline carries it, and the hover fills the whole word.
-      className="text-text font-medium underline decoration-2 decoration-accent underline-offset-2 hover:bg-accent transition-colors"
-      {...props}
-    >
-      {children}
-    </a>
-  ),
+  a: ({ children, href, ...props }: ComponentPropsWithoutRef<"a">) => {
+    // Outbound links are commercial by default on a review site: every vendor we
+    // name is a tool we may earn on, whether or not the affiliate link is wired
+    // up yet. So anything off-site gets rel="sponsored" (Google's own tag for
+    // paid/affiliate links) plus noopener/noreferrer, and opens in a new tab.
+    // Same-origin links (/blog/..., /go/... which redirects out) keep default
+    // behaviour so internal PageRank flows normally.
+    const isExternal = /^https?:\/\//i.test(href ?? "");
+    return (
+      <a
+        href={href}
+        // Graphite is the body text color too, so color alone cannot mark a link.
+        // The lime underline carries it, and the hover fills the whole word.
+        className="text-text font-medium underline decoration-2 decoration-accent underline-offset-2 hover:bg-accent transition-colors"
+        {...(isExternal && {
+          rel: "sponsored noopener noreferrer",
+          target: "_blank",
+        })}
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  },
   blockquote: ({ children, ...props }: ComponentPropsWithoutRef<"blockquote">) => (
     <blockquote
       className="border-l-[6px] border-accent pl-5 py-2 my-7 text-text/85 italic rounded-r-lg bg-primary/[0.03]"

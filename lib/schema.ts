@@ -86,11 +86,21 @@ export function organizationSchema() {
   };
 }
 
+/** Resolve any image reference to an absolute URL. Google's structured data
+ *  guidelines require absolute URLs; a stored value like "/covers/x.png" fails
+ *  Article image eligibility silently, so relative paths get the origin added. */
+function absoluteUrl(path: string): string {
+  return /^https?:\/\//i.test(path) ? path : `${BASE_URL}${path}`;
+}
+
 export function articleSchema(post: Post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
   // Always emit an image (required for article rich results). Falls back to the
   // site OG default when a post has no featured image of its own.
-  const image = post.featured_image_url ?? `${BASE_URL}/og-default.jpg`;
+  const image = absoluteUrl(post.featured_image_url ?? "/og-default.jpg");
+  const wordCount = post.content
+    ? post.content.trim().split(/\s+/).length
+    : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -101,25 +111,21 @@ export function articleSchema(post: Post) {
     inLanguage: "en-US",
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
-    author: {
-      "@type": "Person",
-      "@id": `${BASE_URL}/#person`,
-      name: siteConfig.author.name,
-      url: `${BASE_URL}/about`,
-      image: `${BASE_URL}${siteConfig.author.avatar}`,
-      sameAs: [siteConfig.author.linkedin],
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: BASE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${BASE_URL}/icon.png`,
-        width: 512,
-        height: 512,
+    // Reference the site-wide entities by @id rather than duplicating them.
+    // Both are emitted on every page by the root layout, so the references
+    // resolve in-document and Google sees one canonical Person/Organization
+    // instead of one orphaned copy per post.
+    author: { "@id": `${BASE_URL}/#person` },
+    publisher: { "@id": `${BASE_URL}/#organization` },
+    isPartOf: { "@id": `${BASE_URL}/#website` }, ...(wordCount && { wordCount }), ...(post.categories && { articleSection: post.categories.name }),
+    // The quick answer is the block written to be extracted, so point
+    // speakable at it explicitly.
+    ...(post.quick_answer && {
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["h1", ".quick-answer"],
       },
-    },
+    }),
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   };
 }
@@ -151,74 +157,73 @@ function cleanMarkdown(text: string): string {
     .trim();
 }
 
+/** Slugify heading text into an anchor id. Must match headingSlug in
+ *  components/MarkdownContent.tsx so ItemList URLs resolve to real anchors. */
+function headingSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 60);
+}
+
 /**
- * Build HowTo schema for genuine step-by-step guides only. Returns null for any
- * post that isn't structured as a procedure, so list-style posts never emit it.
- * Two recognized shapes:
- *   A) ≥2 H2 headings of the form "## Step N, Title" (step text = following paragraph)
- *   B) an H2 containing "step-by-step" followed by an ordered list of "**Bold lead.** detail" items
+ * Build ItemList schema for genuine ranked listicles ("best X" posts), which is
+ * the one list type Google still rewards with carousel treatment. Returns null
+ * unless the post really is a ranked list, so comparisons and explainers never
+ * emit it.
+ *
+ * HowTo was removed deliberately: Google retired HowTo rich results, and a
+ * HowToStep list carries no extraction advantage over the same steps as plain
+ * markdown, so it was maintenance surface (fragile regex step-parsing) for no
+ * benefit.
+ *
+ * Recognized shape: a "best/top" title, plus >= 3 H2 sections shaped
+ * "ToolName: what it's best for", which is the house listicle format. The
+ * colon is what separates a tool section from a prose section, since
+ * "Key takeaways" and "Which X should you choose?" never carry one.
  */
-export function howToSchema(post: Post): object | null {
+export function itemListSchema(post: Post): object | null {
   const md = post.content ?? "";
   if (!md) return null;
-  const lines = md.split("\n");
-  const steps: Array<{ name: string; text: string }> = [];
+  // Only ranked "best of" listicles qualify, not head-to-head comparisons.
+  const title = post.title ?? "";
+  if (!/\b(best|top)\b/i.test(title)) return null;
+  if (/\bvs\.?\b/i.test(title)) return null;
 
-  // Strategy A, "## Step N, Title" headings
-  const stepHeadingRe = /^##\s+Step\s+\d+\s*[,  :\-]\s*(.+?)\s*$/i;
-  const headings: Array<{ name: string; line: number }> = [];
-  lines.forEach((ln, i) => {
-    const m = ln.match(stepHeadingRe);
-    if (m) headings.push({ name: m[1].trim(), line: i });
-  });
-  if (headings.length >= 2) {
-    for (const h of headings) {
-      let text = "";
-      for (let j = h.line + 1; j < lines.length; j++) {
-        const t = lines[j].trim();
-        if (!t) {
-          if (text) break;
-          continue;
-        }
-        if (t.startsWith("#")) break;
-        if (t.startsWith("{{")) continue;
-        text += (text ? " " : "") + t;
-      }
-      steps.push({ name: cleanMarkdown(h.name), text: cleanMarkdown(text) || cleanMarkdown(h.name) });
-    }
+  const items: Array<{ name: string; anchor: string }> = [];
+  for (const ln of md.split("\n")) {
+    const m = ln.match(/^##\s+(.+?)\s*$/);
+    if (!m) continue;
+    const heading = cleanMarkdown(m[1]);
+    // A tool section reads "ToolName: what it's best for". Prose sections
+    // ("Key takeaways", "Quick comparison") have no colon, so they drop out.
+    const colon = heading.indexOf(":");
+    if (colon < 1) continue;
+    const name = heading.slice(0, colon).trim();
+    // Tool names are short; anything longer is a sentence, not a product.
+    if (!name || name.length > 40) continue;
+    if (/[?]/.test(name)) continue;
+    // The anchor must be built from the FULL heading, since that is what
+    // MarkdownContent slugifies into the id.
+    items.push({ name, anchor: headingSlug(heading) });
   }
 
-  // Strategy B, ordered list under a "step-by-step" H2
-  if (steps.length < 2) {
-    const startIdx = lines.findIndex((ln) => /^##\s+.*step-by-step/i.test(ln));
-    if (startIdx !== -1) {
-      const olItemRe = /^\s*\d+\.\s+\*\*(.+?)\*\*\s*(.*)$/;
-      for (let j = startIdx + 1; j < lines.length; j++) {
-        const ln = lines[j];
-        if (/^##\s/.test(ln)) break; // next section
-        const m = ln.match(olItemRe);
-        if (m) {
-          const name = cleanMarkdown(m[1]).replace(/[.:]$/, "");
-          const text = cleanMarkdown(`${m[1]} ${m[2] ?? ""}`);
-          steps.push({ name, text: text || name });
-        }
-      }
-    }
-  }
+  if (items.length < 3) return null;
 
-  if (steps.length < 2) return null;
-
+  const url = `${BASE_URL}/blog/${post.slug}`;
   return {
     "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: post.seo_title ?? post.title, ...((post.seo_description ?? post.excerpt) && {
-      description: post.seo_description ?? post.excerpt ?? undefined,
-    }),
-    step: steps.map((s, i) => ({
-      "@type": "HowToStep",
+    "@type": "ItemList",
+    name: post.seo_title ?? post.title,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
       position: i + 1,
-      name: s.name,
-      text: s.text,
+      name: item.name,
+      url: `${url}#${item.anchor}`,
     })),
   };
 }

@@ -19,7 +19,7 @@ import { MarkdownContent } from "@/components/MarkdownContent";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AuthorByline, AuthorBio } from "@/components/Author";
-import { articleSchema, faqSchema, breadcrumbSchema, howToSchema } from "@/lib/schema";
+import { articleSchema, faqSchema, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 
@@ -102,7 +102,9 @@ export default async function BlogPostPage({
   }
 
   const hasFaq = post.faq_items && post.faq_items.length > 0;
-  const howTo = howToSchema(post);
+  // ItemList earns carousel treatment on ranked "best X" listicles; returns
+  // null for comparisons and explainers, so it only fires where it applies.
+  const itemList = itemListSchema(post);
 
   const schemas = [
     articleSchema(post),
@@ -112,7 +114,7 @@ export default async function BlogPostPage({
         ? [{ name: post.categories.name, slug: `/category/${post.categories.slug}` }]
         : []),
       { name: post.title, slug: `/blog/${post.slug}` },
-    ]), ...(hasFaq && post.faq_items.length > 0 ? [faqSchema(post.faq_items)] : []), ...(howTo ? [howTo] : []),
+    ]), ...(hasFaq && post.faq_items.length > 0 ? [faqSchema(post.faq_items)] : []), ...(itemList ? [itemList] : []),
   ];
 
   return (
@@ -217,7 +219,7 @@ export default async function BlogPostPage({
               edge to mark it as the payoff. */}
           {post.quick_answer && (
             <div
-              className="mb-10 border-2 border-text border-l-[6px] border-l-accent rounded-[var(--radius)] bg-white p-5 sm:p-6 hard-sm"
+              className="quick-answer mb-10 border-2 border-text border-l-[6px] border-l-accent rounded-[var(--radius)] bg-white p-5 sm:p-6 hard-sm"
               role="note"
               aria-label="Quick answer"
             >

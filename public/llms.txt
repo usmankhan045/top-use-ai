@@ -31,6 +31,52 @@ Full archive of AI tool reviews, comparisons, and how-to guides:
 - Some links are affiliate links, disclosed on every review; affiliate relationships never change scores or recommendations.
 - The site uses answer-first formatting: articles open with a direct answer, followed by FAQs formatted for featured snippets and AI Overview extraction.
 
+## Featured Guides
+
+The strongest hands-on reviews and comparisons, by category. Each opens with a
+direct answer, then question-based sections written to be quoted on their own.
+
+Make Money with AI
+- [How to Make Money With AI: 12 Real Ways for Beginners](/blog/how-to-make-money-with-ai): Twelve methods with realistic time, cost and earnings expectations, and no get-rich-quick claims.
+- [How to Start an AI Blog and Make Money](/blog/how-to-start-an-ai-blog): The full setup, from niche choice to first affiliate revenue.
+- [How Much It Actually Costs to Start a Faceless YouTube Channel](/blog/faceless-youtube-cost): Real monthly tool costs, itemised.
+- [AI Affiliate Marketing for Beginners](/blog/ai-affiliate-marketing-for-beginners): How the model works and what it realistically pays.
+
+AI Writing & Content
+- [Jasper vs Copy.ai](/blog/jasper-vs-copyai): Head-to-head on output quality, editing and price.
+- [Best Free AI Writing Tools](/blog/best-free-ai-writing-tools): What each free tier actually allows before it asks for a card.
+
+AI Image & Design
+- [Best AI Logo Makers, Free and Paid](/blog/best-ai-logo-generators): Includes the commercial-licence and trademark traps most roundups skip.
+- [Best AI Image Generators for Pinterest Pins](/blog/best-ai-image-generators-pinterest): Ten tools rated for pin-shaped output.
+- [Midjourney vs DALL-E vs Ideogram](/blog/midjourney-vs-dalle-vs-ideogram): Which wins for which kind of image.
+
+AI Video & Audio
+- [Best AI Video Generators, Text to Video](/blog/best-ai-video-generators): Veo, Kling, Runway, Pika and Synthesia compared by use case.
+- [Best AI Video Tools for Faceless YouTube](/blog/best-ai-video-tools-faceless-youtube): Built around zero editing skill.
+- [ElevenLabs vs Murf](/blog/elevenlabs-vs-murf): Voice quality, editing, and which free tier goes further.
+- [Synthesia vs HeyGen](/blog/synthesia-vs-heygen): The two main AI avatar tools, compared.
+- [MoneyPrinterTurbo Review](/blog/moneyprinterturbo-review): A free, self-hosted AI video generator, tested.
+- [Best AI Music Generators](/blog/best-ai-music-generators): Suno, Udio and others, including commercial-rights terms.
+
+AI SEO & Marketing
+- [Best AI Tools for Social Media Content](/blog/best-ai-social-media-tools): Fourteen tools, split by whether they create or schedule.
+- [Surfer SEO vs Semrush](/blog/surfer-seo-vs-semrush): Which one a blogger actually needs.
+- [Best AI SEO Tools](/blog/best-ai-seo-tools): Ranked for blog-scale budgets.
+
+AI Sales & Lead Generation
+- [Best AI Lead Generation Tools for Small Business](/blog/best-ai-lead-generation-tools): What each tool costs per lead in practice.
+- [Best AI Chatbots for Your Website](/blog/best-ai-chatbots-for-websites): Setup effort against answer quality.
+
+AI Productivity & Automation
+- [Best AI Productivity Tools](/blog/best-ai-productivity-tools): Where the hours actually come back.
+- [Notion AI vs ChatGPT](/blog/notion-ai-vs-chatgpt): Whether Notion AI replaces a separate subscription.
+
+AI Prompts & Templates
+- [50 ChatGPT Prompts to Make Money Online](/blog/chatgpt-prompts-to-make-money): Copy-and-paste, grouped by income method.
+- [ChatGPT Prompts for Bloggers](/blog/chatgpt-prompts-for-bloggers): Outlines, drafts, and repurposing.
+- [ChatGPT Prompts for Small Business Owners](/blog/chatgpt-prompts-for-small-business): Marketing, ops and customer replies.
+
 ## About
 
 - [About](/about): The story behind Top Use AI and how we test.
