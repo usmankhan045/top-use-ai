@@ -5,10 +5,13 @@ name: Publish scheduled posts
 # draft stays invisible until this runs.
 #
 # The publisher is idempotent — status='draft' is itself the guard, so a post
-# already published can never be picked up twice. That is why this runs every
-# 30 minutes rather than once a day: GitHub's cron is best-effort and can be
-# delayed or skipped entirely under load. A daily run that misses its window
-# slips a full day; a half-hourly run catches up on the next tick.
+# already published can never be picked up twice. A run that finds nothing due
+# is a no-op, and a re-run after a failure is safe.
+#
+# Every queued post is scheduled for 13:00 UTC, so this runs once daily at
+# 13:15. The earlier 13:00 cron raced the posts it was meant to publish and
+# lost. If post times ever change, move this cron to match — it must stay
+# strictly LATER than the post time, never equal to it.
 #
 # Required repository secrets (Settings → Secrets and variables → Actions):
 #   SUPABASE_URL
@@ -17,7 +20,10 @@ name: Publish scheduled posts
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 min; catch-up is automatic
+    # Posts are all scheduled for 13:00 UTC. This fires at 13:15 — 15 minutes
+    # of slack absorbs GitHub's scheduling delay, so the post is always due by
+    # the time the run starts. One run a day, not 96.
+    - cron: "15 13 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
