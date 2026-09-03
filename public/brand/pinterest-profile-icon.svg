@@ -1,0 +1,9 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top Use AI">
+  <rect width="1024" height="1024" fill="#22202E"/>
+  <!-- Mark drawn directly in 1024 space, centred on (512,512).
+       Ring radius 300 + half stroke 56 = 356 outer, well inside the
+       ~445px circular-crop safe radius. -->
+  <path d="M512 812 A300 300 0 1 1 812 512"
+    fill="none" stroke="#D6FF3F" stroke-width="112" stroke-linecap="round"/>
+  <circle cx="512" cy="512" r="124" fill="#D6FF3F"/>
+</svg>

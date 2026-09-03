@@ -3,10 +3,21 @@ name: Publish scheduled posts
 # Posts are stored as drafts with a future published_at. This flips them to
 # published once that date arrives. Site queries filter on status only, so a
 # draft stays invisible until this runs.
+#
+# The publisher is idempotent — status='draft' is itself the guard, so a post
+# already published can never be picked up twice. That is why this runs every
+# 30 minutes rather than once a day: GitHub's cron is best-effort and can be
+# delayed or skipped entirely under load. A daily run that misses its window
+# slips a full day; a half-hourly run catches up on the next tick.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SUPABASE_URL
+#   SUPABASE_SERVICE_ROLE_KEY
+#   REVALIDATION_SECRET   (optional — without it, pages lag until ISR expires)
+
 on:
   schedule:
-    # 13:00 UTC daily — ~9am ET / 6am PT / 2pm BST, inside US/CA/UK morning.
-    - cron: "0 13 * * *"
+    - cron: "*/30 * * * *"   # every 30 min; catch-up is automatic
   workflow_dispatch:
     inputs:
       dry_run:
@@ -18,37 +29,62 @@ concurrency:
   group: publish-scheduled-posts
   cancel-in-progress: false
 
+permissions:
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Publish due posts
         id: publish
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: |
-          node scripts/publishing/publish-due.js \
-            ${{ inputs.dry_run && '--dry-run' || '' }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '0' }}
+        run: node scripts/publishing/publish-due.js
 
-      # Next.js caches pages, so a DB change alone may not appear until a
-      # rebuild. Only redeploy when something was actually published.
-      - name: Trigger redeploy
+      # Next.js caches pages, so a DB change alone stays invisible until the
+      # page regenerates. On-demand revalidation touches only the handful of
+      # paths a new post affects — a deploy hook would rebuild all ~675 pages
+      # and burn ISR quota for no gain.
+      - name: Revalidate affected pages
         if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
         env:
-          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          SECRET: ${{ secrets.REVALIDATION_SECRET }}
+          SITE: ${{ vars.SITE_URL || 'https://www.topuseai.com' }}
+          SLUGS: ${{ steps.publish.outputs.slugs }}
+          CATEGORIES: ${{ steps.publish.outputs.categories }}
+        # Explicit: the path-building below uses bash arrays.
+        shell: bash
         run: |
-          if [ -z "$HOOK" ]; then
-            echo "No VERCEL_DEPLOY_HOOK_URL set; skipping redeploy."
-            echo "Add it in repo Settings > Secrets if your host caches pages."
+          if [ -z "$SECRET" ]; then
+            echo "No REVALIDATION_SECRET set; skipping revalidation."
+            echo "Posts are published in the DB but pages may lag by up to an"
+            echo "hour until ISR expires. Add the secret in Settings > Secrets."
             exit 0
           fi
-          curl -fsS -X POST "$HOOK" && echo "Redeploy triggered."
+
+          # The post pages themselves, plus the listings that index them.
+          paths='"/","/blog"'
+          # read -a splits on IFS reliably; a bare `for x in $VAR` does not.
+          IFS=',' read -ra slug_list <<< "$SLUGS"
+          for slug in "${slug_list[@]}"; do
+            [ -n "$slug" ] && paths="$paths,\"/blog/$slug\""
+          done
+          IFS=',' read -ra cat_list <<< "$CATEGORIES"
+          for cat in "${cat_list[@]}"; do
+            [ -n "$cat" ] && paths="$paths,\"/category/$cat\""
+          done
+
+          echo "Revalidating: $paths"
+          curl -fsS -X POST "$SITE/api/revalidate" \
+            -H 'Content-Type: application/json' \
+            -d "{\"secret\":\"$SECRET\",\"paths\":[$paths]}"
+          echo "  Revalidated."
