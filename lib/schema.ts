@@ -192,25 +192,51 @@ export function itemListSchema(post: Post): object | null {
   if (!/\b(best|top)\b/i.test(title)) return null;
   if (/\bvs\.?\b/i.test(title)) return null;
 
+  // Prose sections that are never a product, whatever shape the heading takes.
+  const PROSE_H2 =
+    /^(key takeaways?|quick comparison|faq|frequently asked|verdict|conclusion|summary|methodology|pricing|comparison)\b/i;
+  // A product name is a proper noun, so a heading that opens with an article or
+  // other function word is prose ("The options compared", "A warning about
+  // VRAM", "How to actually use these"). This is what separates a bare tool
+  // heading like "Apollo" from a bare prose heading like "The tiers".
+  const PROSE_LEAD =
+    /^(the|a|an|our|your|my|how|what|which|who|why|when|where|is|are|can|do|does|should|will|would|if|for|about|note|warning|two|three|four|five|both|all|no|not)\b/i;
+
   const items: Array<{ name: string; anchor: string }> = [];
   for (const ln of md.split("\n")) {
     const m = ln.match(/^##\s+(.+?)\s*$/);
     if (!m) continue;
-    const heading = cleanMarkdown(m[1]);
-    // A tool section reads "ToolName: what it's best for". Prose sections
-    // ("Key takeaways", "Quick comparison") have no colon, so they drop out.
-    const colon = heading.indexOf(":");
-    if (colon < 1) continue;
-    const name = heading.slice(0, colon).trim();
-    // Tool names are short; anything longer is a sentence, not a product.
+    let heading = cleanMarkdown(m[1]);
+    // Ranked listicles number their sections ("## 1. ElevenLabs"); the rank is
+    // presentation, and position already carries it in the schema.
+    heading = heading.replace(/^\d+[.)]\s*/, "");
+    if (!heading || PROSE_H2.test(heading)) continue;
+    // Anything ending in a question is prose, not a product.
+    if (heading.endsWith("?")) continue;
+    if (PROSE_LEAD.test(heading)) continue;
+
+    // Tool sections appear in three house formats, so take the product name as
+    // whatever precedes the first separator:
+    //   "Kling: best free AI video generator"   (colon)
+    //   "Surfer SEO, best overall for bloggers" (comma)
+    //   "Apollo"                                (bare)
+    const name = heading.split(/\s*[:,–—]\s*/)[0].trim();
+    // Product names are short. Anything longer is a sentence.
     if (!name || name.length > 40) continue;
-    if (/[?]/.test(name)) continue;
-    // The anchor must be built from the FULL heading, since that is what
-    // MarkdownContent slugifies into the id.
-    items.push({ name, anchor: headingSlug(heading) });
+    // A bare heading of many words is prose, not a product name.
+    if (name.split(/\s+/).length > 5) continue;
+    // The anchor comes from the full ORIGINAL heading, which is what the
+    // renderer slugifies, rank prefix included.
+    items.push({ name, anchor: headingSlug(cleanMarkdown(m[1])) });
   }
 
+  // A real ranked listicle is mostly product sections. Explainers that happen to
+  // say "best" in the title ("Best Free SEO Tools" written as narrative advice)
+  // produce a couple of stray matches and would otherwise emit a nonsense
+  // carousel, so require product sections to dominate the post's H2s.
+  const h2Count = (md.match(/^##\s+/gm) ?? []).length;
   if (items.length < 3) return null;
+  if (items.length < h2Count / 2) return null;
 
   const url = `${BASE_URL}/blog/${post.slug}`;
   return {
