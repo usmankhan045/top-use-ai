@@ -20,7 +20,7 @@ from datetime import date
 
 # static=True uses a plain HTTP request (fast); static=False renders JS.
 TOOLS = {
-    "surfer":        ("https://surferseo.com/pricing/", False),
+    "surfer":        ("https://surferseo.com/pricing/", True),
     "semrush":       ("https://www.semrush.com/pricing/", False),
     "ahrefs":        ("https://ahrefs.com/pricing", False),
     "clearscope":    ("https://www.clearscope.io/pricing", False),
@@ -52,16 +52,32 @@ TOOLS = {
 
 PRICE_RES = [
     r"\$\s?[0-9][0-9,]*(?:\.[0-9]{2})?",   # $99, $1,499, $12.50
-    r"USD\s+[0-9][0-9,]*",                  # USD 39
+    r"USD\s+[0-9][0-9,]*",                  # USD 39  (currency first)
+    # Surfer and others render "49 USD per month" with no dollar sign, so the
+    # currency-suffix form has to be matched too or their real plan prices are
+    # invisible and only the "Saving $120" figures survive. That produced a
+    # confident, completely wrong answer, so keep both orders.
+    r"\b[0-9][0-9,]*(?:\.[0-9]{2})?\s?USD\b",  # 49 USD
     r"\b[0-9]+(?:\.[0-9]{2})?\s?(?:/|per\s)\s?mo\b",  # 99/mo
 ]
 QUOTE_RE = r"(?i)\b(book a demo|contact sales|request a demo|talk to sales|custom pricing|get a quote)\b"
 
+# Figures that sit next to these words are discounts, not prices. Vendors that
+# advertise "Saving $444" alongside a plan would otherwise contribute the
+# savings number to the price set and mask the real one.
+NOT_A_PRICE = r"(?i)(sav(?:e|ing|ings)|discount|off\b|was\b|worth|credit back|coupon)"
+
 
 def prices_in(text):
+    """Extract candidate prices, dropping figures that are plainly discounts."""
     found = []
     for rx in PRICE_RES:
-        found += re.findall(rx, text)
+        for m in re.finditer(rx, text):
+            # A "Saving $444" style figure is a discount; look just behind it.
+            before = text[max(0, m.start() - 28):m.start()]
+            if re.search(NOT_A_PRICE, before):
+                continue
+            found.append(m.group(0))
     cleaned = {re.sub(r"\s+", " ", f).strip() for f in found}
     # drop $0 and bare cents, which are almost always overage rates or noise
     return sorted(c for c in cleaned if not re.fullmatch(r"\$\s?0(\.00)?", c))
