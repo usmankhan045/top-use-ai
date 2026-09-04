@@ -8,6 +8,10 @@ This is the operational companion to `content-guidelines.md` (structure and
 formatting) and `CONTENT-STRATEGY.md` (topics and clusters). Read this one for
 **how to establish what is true and how to say it**.
 
+For Pinterest pins, read `PINTEREST-PLAYBOOK.md` instead. The house voice and
+the em dash rule apply there too, but pin design and pin copy have their own
+constraints.
+
 ---
 
 ## The one rule everything else serves

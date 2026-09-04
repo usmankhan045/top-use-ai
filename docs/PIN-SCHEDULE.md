@@ -1,5 +1,17 @@
 # Pinterest Pin Schedule and Prompts (40 Posts, 120 Pins)
 
+> **SUPERSEDED. Do not follow this document.**
+>
+> This was the original 120-pin plan, built on the old sky-blue palette and a
+> four-template design system. Both were retired in September 2026 after an
+> audit found the templates producing near-identical images.
+>
+> Current strategy: `PINTEREST-PLAYBOOK.md`.
+> Current pins: `PINTEREST-BATCH-1.md`, `-2`, `-3`.
+>
+> Kept only as a record of what was tried.
+
+
 Every published post gets 3 pins (A, B, C), each a different image and hook pointing to the same blog URL. The three pins of one post are spaced exactly 2 days apart (A, then +2 days B, then +2 days C), and each pin goes to a different relevant board. You post 6 fresh pins per day, always from 6 different posts, so no post appears twice on the same day.
 
 > Start "Day 1" only after the site is live on your domain and your Pinterest business account is set up (domain claimed, Rich Pins on, boards created). Pinterest needs a public URL. Generate images in ChatGPT with the prompts below.

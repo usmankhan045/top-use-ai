@@ -83,6 +83,15 @@ covers source tiers, price and licence verification, the house voice, GEO
 techniques that measurably work, internal linking rules, and the pre-publish
 checklist. The core rule: never publish a fact not verified at its source.
 
+**Before creating any Pinterest pin, read `docs/PINTEREST-PLAYBOOK.md`.** It
+covers the design rules, pin anatomy, headline shapes, scheduling and boards.
+The core rule: no two pins may share a design or a sentence structure, and
+every headline rests on a verified fact from the post's `quick_answer`.
+
+These rules are enforced, not advisory. A hook validates every
+`PINTEREST-BATCH-*.md` file on save and reports violations back. Check by hand
+with `node scripts/pinterest/validate-pins.js`.
+
 Key tooling:
 - `scrapling-py scripts/research/verify_pricing.py <tool>`: verify vendor pricing
 - `node scripts/publishing/publish-due.js --list`: inspect the publish queue
@@ -162,6 +171,11 @@ Full 24-tool program table with rates/cookies: `docs/AI-Tools-Site-Blueprint.md`
 | supabase/migrations/ | DB schema |
 | docs/AI-Tools-Site-Blueprint.md | Category architecture, sub-niches, affiliate programs |
 | docs/WRITING-PLAYBOOK.md | Research + writing standards (read before writing) |
+| docs/PINTEREST-PLAYBOOK.md | Pin design + copy standards (read before making pins) |
+| scripts/pinterest/validate-pins.js | Enforces the pin rules; run before publishing |
+| docs/PINTEREST-BATCH-1.md | Pins for days 6-15 (60 pins, ready to upload) |
+| docs/PINTEREST-BATCH-2.md | Pins for days 16-27 (72 pins) |
+| docs/PINTEREST-BATCH-3.md | Pins for days 28-40 (78 pins) |
 | scripts/research/verify_pricing.py | Verify vendor pricing before publishing |
 | scripts/publishing/publish-due.js | Scheduled publishing queue |
 
