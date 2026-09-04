@@ -1,385 +1,52 @@
-# Pinterest Batch 2 · Days 15-27
+# Pinterest Batch 2: Days 16 to 27
 
-78 pins. Continues directly from `PINTEREST-BATCH-1.md`.
+72 pins across twelve days, six a day. This batch leans into the traffic
+clusters: making money with AI, prompt collections, selling art and digital
+products, and blogging. Every pin is written from a verified fact in the post
+it links to, and every image prompt is composed individually.
 
-**Read the strategy, board list and the four design templates in Batch 1 first.**
-This file contains only the pins.
+**Batch 1 covers days 6 to 15** in `PINTEREST-BATCH-1.md`. Days 1 to 5 are
+already uploaded and archived in `PINTEREST-DONE-DAYS-1-5.md`.
 
----
-
-## What this batch covers
-
-| Days | Content |
+| | |
 |---|---|
-| 15-18 | B and C pins finishing posts 25-36 from Batch 1 |
-| 19-24 | Your money-cluster posts — the strongest Pinterest fit |
-| 25-27 | Tool roundups and prompt collections |
+| Pins | 72 |
+| Days | 16 to 27, six per day |
+| Posts covered | 36 |
+| Duplicate layouts | None |
+| Layouts per day | 6 distinct, every day |
 
-Days 19-24 introduce the posts that map most directly onto the keywords that
-returned autocomplete: side hustles, passive income, digital products, Etsy,
-wall art. These fill the three boards Batch 1 left empty.
+## How to use this
 
-**Publishing pattern is unchanged:** 6 pins per day. Pin A publishes on its day,
-pin B two days later, pin C four days later.
+Each pin has six copy blocks: title, description, alt text, board, link and the
+image prompt. Paste the prompt into your image tool, then paste the other five
+into Pinterest. Nothing needs filling in.
 
----
-
-## Boards used in this batch
-
-```
-Work From Home Ideas
-```
-```
-Faceless YouTube Ideas
-```
-```
-Free AI Tools
-```
-```
-AI Art & Wall Art
-```
-```
-Passive Income Ideas
-```
-```
-Blogging & SEO Tips
-```
+Where a post already had a pin in batch 1, this batch uses its next angle, so
+no reader sees the same claim twice.
 
 ---
 
-## DAY 15
-
-### 25B · Template B · `postiz-vs-paid-social-tools`
-
-**Title**
-```
-Social Media Tools Compared for Home Business
-```
-
-**Description**
-```
-Buffer free, Postiz Cloud and self-hosting compared on real monthly cost. Where each one genuinely wins for a small operation. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and social tool cost points
-```
-
-**Board**
-```
-Work From Home Ideas
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/postiz-vs-paid-social-tools
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "3" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "REAL COSTS".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"WAYS TO SCHEDULE
-SOCIAL POSTS AND
-WHAT EACH COSTS"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free plan, cloud plan, or run it yourself."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-FREE PLAN COVERS 3 CHANNELS / CLOUD REMOVES ALL SETUP / SELF HOSTING ADDS API FEES / COUNT CHANNELS FIRST
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
-
-### 26B · Template B · `local-ai-vs-paid-subscriptions`
-
-**Title**
-```
-Is Free AI Good Enough to Replace ChatGPT?
-```
-
-**Description**
-```
-A subscription costs around $480 over two years. Local AI is free forever. The honest quality gap, with real benchmark numbers. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and AI comparison points
-```
-
-**Board**
-```
-Free AI Tools
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "480" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "TWO YEAR COST".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"DOLLARS OVER TWO
-YEARS VERSUS FREE
-FOREVER"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Local is free. Frontier is better. Both true."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-LOCAL COSTS NOTHING EVER / FRONTIER WINS ON HARD TASKS / LOCAL HANDLES MOST DAILY WORK / PRIVACY IS THE REAL EDGE
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
-
-### 27B · Template B · `free-seo-tools-vs-paid`
-
-**Title**
-```
-What Paid SEO Tools Give You That Free Cannot
-```
-
-**Description**
-```
-Free tools cannot analyse competitors. That single limit is what a subscription actually buys. When it is worth paying. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and SEO tool comparison points
-```
-
-**Board**
-```
-Blogging & SEO Tips
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/free-seo-tools-vs-paid
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "1" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "THE REAL LIMIT".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"THING FREE SEO
-TOOLS SIMPLY
-CANNOT DO"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Your own site is free. Competitors are not."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-FREE COVERS YOUR OWN SITE / COMPETITOR DATA COSTS MONEY / FREE TIERS THROTTLE HARD / REAL DATA BEATS ESTIMATES
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
-
-### 28B · Template B · `voicebox-vs-elevenlabs-murf`
-
-**Title**
-```
-Free AI Voice vs Paid: What Actually Differs
-```
-
-**Description**
-```
-The free open-source tool grants commercial rights the paid free tiers do not. Quality, cost and consent compared honestly. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and voice tool comparison
-```
-
-**Board**
-```
-Faceless YouTube Ideas
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/voicebox-vs-elevenlabs-murf
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "3" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "LICENCE FIRST".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"THINGS TO CHECK
-BEFORE PICKING AN
-AI VOICE TOOL"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free tiers often forbid commercial use."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-CHECK THE FREE TIER RIGHTS / COMPARE MONTHLY LIMITS / TEST LONG FORM QUALITY / KNOW THE CONSENT RULES
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
-
-### 29B · Template A · `free-ai-image-generation-vs-paid`
-
-**Title**
-```
-Midjourney Has No Free Tier. Here Is What Does
-```
-
-**Description**
-```
-Midjourney starts at ten dollars with no free plan. Local generation is unlimited and free. The rights detail that decides it for sellers. Tested, not hyped.
-```
-
-**Alt text**
-```
-Dark navy infographic listing five free image generation options
-```
-
-**Board**
-```
-AI Art & Wall Art
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/free-ai-image-generation-vs-paid
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: solid deep graphite #22202E, full bleed.
-
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"MIDJOURNEY HAS
-NO FREE TIER.
-HERE IS WHAT DOES"
-The words "NO FREE TIER" highlighted in electric lime #D6FF3F.
-
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Run It Locally / Check Free Tiers / Read Ownership Terms / Compare Quality / Count Real Cost
-
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
-
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
-```
-
----
-
-### 30B · Template B · `free-ai-video-generators-open-source`
-
-**Title**
-```
-Free Video Tools: One Has No Licence At All
-```
-
-**Description**
-```
-Five open video generators compared. A popular option with thousands of stars grants no legal right to commercial use. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and video tool licence points
-```
-
-**Board**
-```
-Faceless YouTube Ideas
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/free-ai-video-generators-open-source
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "LICENCE AUDIT".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FREE VIDEO TOOLS
-CHECKED FOR
-COMMERCIAL USE"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Popularity is not permission."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE HAS NO LICENCE FILE / TWO ARE FULLY PERMISSIVE / ONE NEEDS DEVELOPER TOOLS / ALL FACE THE SAME POLICY
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
 
 ## DAY 16
 
-### 31B · Template B · `open-source-social-media-schedulers`
+### 31B · `open-source-social-media-schedulers`
+
+*Layout: quote card*
 
 **Title**
 ```
-Self Hosted Social Tools: What They Really Cost
+MIT With One-Time Pricing, or AGPL With More Networks
 ```
 
 **Description**
 ```
-Three open schedulers compared on licence and maintenance, plus the platform fees that make free more expensive than paid. Tested, not hyped.
+The two leading open-source social schedulers make opposite trades. Postiz covers 14 networks under AGPL-3.0 with 35,365 stars and active development. Mixpost's free version handles only 3 networks but uses the more permissive MIT licence with one-time pricing. Which matters depends entirely on whether you intend to resell what you build.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and self hosting cost points
+Pin comparing open source schedulers in two columns
 ```
 
 **Board**
@@ -394,45 +61,53 @@ https://www.topuseai.com/blog/open-source-social-media-schedulers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Let one element break its container and overlap the element beside it.
 
-Top left: a large numeral "3" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COMPARED".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"14 NETWORKS.
+OR 3 AND A
+BETTER LICENCE."
+The words "BETTER LICENCE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"OPEN SOCIAL
-SCHEDULERS AND
-WHAT THEY COST"
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Postiz covers 14 networks under AGPL-3.0. Mixpost's free version covers 3 but uses the more permissive MIT licence with one-time pricing above that.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free software plus paid platform access."
+SUPPORTING TEXT: as a loose vertical list, each line a slightly different size so the block reads as hand-set rather than templated:
+Postiz: 14 networks, AGPL-3.0
+Mixpost free: 3 networks, MIT
+Buffer free: 3 channels, hosted
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE LEADS ON NETWORKS / ONE IS MORE PERMISSIVE / ONE HAS AN ODD LICENCE / FREE PLANS OFTEN WIN
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Both compared at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 32B · Template B · `ollama-vs-lm-studio-free-ai-tools`
+### 32B · `ollama-vs-lm-studio-free-ai-tools`
+
+*Layout: photo strip band*
 
 **Title**
 ```
-Five Ways to Run AI Free, Compared
+One of These Hasn't Shipped Since February 2025
 ```
 
 **Description**
 ```
-Which local AI tool is easiest for beginners, which runs on any CPU, and which has not shipped a release in 19 months. Tested, not hyped.
+GPT4All appears on most free local AI roundups and has shipped no release since February 2025. Ollama and LM Studio are both actively maintained, with Ollama now offering an official desktop app that supersedes older Docker instructions. LM Studio is free for commercial use but has dropped Intel Mac support, which matters if your machine is older.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and local AI tool comparison
+Pin comparing local AI tools over a photo of a mechanical keyboard
 ```
 
 **Board**
@@ -447,45 +122,55 @@ https://www.topuseai.com/blog/ollama-vs-lm-studio-free-ai-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A horizontal photographic band, 45% of canvas height, sits across the upper third. Flat a deep muted teal #1E3A38 above and below, headline in the larger of the two areas. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COMPARED".
+PHOTOGRAPH: a graphics card held against a plain background. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"WAYS TO RUN AI
-ON YOUR OWN
-COMPUTER FREE"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THREE TOOLS.
+ONE LOOKS
+ABANDONED."
+The words "ABANDONED" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"One is easiest. One is effectively dead."
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+GPT4All has published no release since February 2025 and still appears on current recommendation lists. Ollama and LM Studio are both actively developed.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE HAS THE BEST INTERFACE / ONE HAS THE MOST MODELS / ONE IS FULLY OFFLINE / ONE HAS STOPPED SHIPPING
+SUPPORTING TEXT: as a single run-on paragraph with lime bullet dots between phrases:
+Ollama: official desktop app now
+LM Studio: easiest, commercial-free
+GPT4All: no release since Feb 2025
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Live comparison at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 33B · Template B · `best-free-seo-tools`
+### 33B · `best-free-seo-tools`
+
+*Layout: screenshot device*
 
 **Title**
 ```
-The SEO Stack That Costs Absolutely Nothing
+Four SEO Tools That Are Free Permanently, Not on Trial
 ```
 
 **Description**
 ```
-Search Console gives real data that paid tools only estimate. The complete free setup and what it genuinely covers. Tested, not hyped.
+Four SEO tools that are genuinely free permanently, with no trial and no credit card: Google Search Console, Bing Webmaster Tools, Ahrefs Webmaster Tools and Google Trends. Together they cover most blogging needs. Search Console in particular gives first-party data that no paid tool can replicate, because it comes from Google itself.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and free SEO stack benefits
+Pin listing free SEO tools over a photo of sticky notes on a window
 ```
 
 **Board**
@@ -500,45 +185,56 @@ https://www.topuseai.com/blog/best-free-seo-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat electric lime #D6FF3F around it, headline above. Stack the composition tight to the bottom edge, leaving the top open.
 
-Top left: a large numeral "4" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "ZERO COST".
+PHOTOGRAPH: a laptop showing a line chart trending up, screen dominant. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FREE TOOLS THAT
-COVER MOST OF
-BLOGGING SEO"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FOUR TOOLS.
+FREE FOREVER.
+NO TRIAL."
+The words "FREE FOREVER" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Real data beats estimated data."
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Search Console, Bing Webmaster Tools, Ahrefs Webmaster Tools and Google Trends cost nothing permanently and cover most of what a blogger actually needs.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-SEE ACTUAL SEARCH QUERIES / TRACK REAL POSITIONS / FIND TECHNICAL ERRORS / MONITOR AI SEARCH TRAFFIC
+SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
+Google Search Console
+Bing Webmaster Tools
+Ahrefs Webmaster Tools
+Google Trends
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+How to use each one, at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 34B · Template B · `best-free-ai-voice-tools-open-source`
+### 34B · `best-free-ai-voice-tools-open-source`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-Only Two Free Voice Tools Are Safe to Sell From
+The Free Voice Tool That Degrades Its Own Audio on Purpose
 ```
 
 **Description**
 ```
-Star counts do not predict usability. Which free voice tools permit commercial work, and which have licences that quietly forbid it. Tested, not hyped.
+ChatTTS appears on nearly every free AI voice list, and it deliberately degrades its own audio quality while prohibiting commercial use. Coqui, another regular recommendation, shut down in January 2024. The two genuinely safe free options are voicebox and GPT-SoVITS, both MIT licensed for weights as well as code.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and voice tool licence status
+Pin about AI voice tool limitations over a photo of an audio waveform
 ```
 
 **Board**
@@ -553,45 +249,50 @@ https://www.topuseai.com/blog/best-free-ai-voice-tools-open-source
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A hard diagonal edge running from top-left to bottom-right splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Top left: a large numeral "2" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "LICENCE SAFE".
+PHOTOGRAPH: a cassette tape on a plain concrete surface. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FREE VOICE TOOLS
-YOU CAN ACTUALLY
-SELL FROM"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT LOWERS
+ITS OWN
+QUALITY."
+The words "ON PURPOSE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"One popular option shut down entirely."
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+ChatTTS deliberately adds noise to its output and prohibits commercial use. It still appears on most free AI voice roundups. voicebox and GPT-SoVITS are the MIT alternatives.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-TWO ARE FULLY PERMISSIVE / ONE HAS NON COMMERCIAL WEIGHTS / ONE DEGRADES ITS OWN AUDIO / ONE NO LONGER EXISTS
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+What to use instead, at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 35B · Template A · `best-free-ai-image-generators-open-source`
+### 35B · `best-free-ai-image-generators-open-source`
+
+*Layout: oversized punctuation*
 
 **Title**
 ```
-The Most Recommended AI Image Tool Is Dead
+ComfyUI or Fooocus? Depends How Much You Want to Learn
 ```
 
 **Description**
 ```
-The tool most guides still lead with has not shipped since February 2025 and cannot run the current best model. What to use instead. Tested, not hyped.
+The two free AI image tools worth your time in 2026 sit at opposite ends of the effort curve. Fooocus gets you generating within ten minutes and hides almost every setting. ComfyUI exposes everything as a node graph and rewards the time you put in. Both are free and unlimited. AUTOMATIC1111, still the most-recommended, has been stalled since February 2025.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five current free image tools
+Pin comparing two free AI image tools in two columns
 ```
 
 **Board**
@@ -606,46 +307,58 @@ https://www.topuseai.com/blog/best-free-ai-image-generators-open-source
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 78% of the canvas height. The headline sits over it. Set the type unusually small against a lot of empty space.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"THE MOST
-RECOMMENDED AI
-IMAGE TOOL IS DEAD"
-The words "IS DEAD" highlighted in electric lime #D6FF3F.
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE IS POWERFUL.
+ONE IS EASY.
+PICK HONESTLY."
+The words "PICK HONESTLY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Check Last Release / Pick an Active Tool / Match Your VRAM / Read Model Licences / Start Simple
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+ComfyUI is the free image tool worth learning properly. Fooocus gets you generating in ten minutes with almost nothing to configure. Neither costs anything.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUPPORTING TEXT: each line on its own lime-underlined row:
+Fooocus: easiest start
+ComfyUI: worth learning
+Both free, both unlimited
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Both compared at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 36B · Template B · `best-free-ai-logo-generators`
+### 36B · `best-free-ai-logo-generators`
+
+*Layout: margin note*
 
 **Title**
 ```
-Only One Free Logo Maker Has No Paywall
+PNG Only, But Genuinely Yours
 ```
 
 **Description**
 ```
-Most free logo tools paywall the usable file or forbid commercial use. The one that does neither, and its single real limitation. Tested, not hyped.
+Shopify Logo Maker is the only free AI logo tool verified as both free to download and free to use commercially. The honest limitation is the file format: PNG only, no vector, which matters if you ever need signage or large-format print. We cover what to do about that, and why Microsoft Designer and Recraft's free tier are not usable for business at all.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and logo maker checks
+Pin comparing free logo tool licences as a checklist
 ```
 
 **Board**
 ```
-Passive Income Ideas
+AI Art & Wall Art
 ```
 
 **Link**
@@ -655,52 +368,61 @@ https://www.topuseai.com/blog/best-free-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: The headline occupies only the left 55% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
-Top left: a large numeral "1" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "VERIFIED FREE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FREE TO MAKE.
+FREE TO SELL.
+PNG ONLY."
+The words "PNG ONLY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"LOGO MAKER THAT
-IS FREE TO USE
-AND TO SELL"
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Shopify Logo Maker gives you full commercial rights at no cost. The real limitation is not the licence, it is that you get no vector file for large-format printing.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free download and free commercial rights are different."
+SUPPORTING TEXT: in two uneven columns, the left wider than the right:
+Shopify: free, commercial, PNG
+Microsoft Designer: no commercial use
+Recraft free: no ownership
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE IS GENUINELY FREE BOTH WAYS / TWO FORBID COMMERCIAL USE / VECTORS ALMOST ALWAYS COST / READ BEFORE YOU BRAND
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Workarounds and alternatives at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 17
 
-### 25C · Template C · `postiz-vs-paid-social-tools`
+### 25C · `postiz-vs-paid-social-tools`
+
+*Layout: before after*
 
 **Title**
 ```
-Social Media Ideas for Small Business Owners
+When Free Software Costs More Than Paid Software
 ```
 
 **Description**
 ```
-Which scheduling tool matches your channel count and budget, and the platform fees that change the answer. Tested, not hyped.
+There is a point where self-hosting costs more than paying someone else, and social scheduling passes it quickly. Postiz self-hosted lands near $68 a month with hosting and API fees included, against $29 for Postiz Cloud from the same project. Buffer's free plan covers most people entirely. Free software, higher total bill.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with social scheduling features in an icon grid
+Pin about self-hosting economics over a photo of an open ledger with a figure circled
 ```
 
 **Board**
 ```
-Work From Home Ideas
+Passive Income Ideas
 ```
 
 **Link**
@@ -710,43 +432,52 @@ https://www.topuseai.com/blog/postiz-vs-paid-social-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat a deep muted teal #1E3A38. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"SOCIAL MEDIA IDEAS
-FOR SMALL BUSINESS
-OWNERS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "COMPARED".
+PHOTOGRAPH: a receipt curling on a wooden table. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Schedule / Analytics / Approvals / Teams / Inbox / Reports
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"OWNING IT
+COSTS MORE
+THAN RENTING."
+The words "COSTS MORE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Postiz self-hosted runs near $68 a month against $29 for the same company's cloud plan. Free licence, higher bill. Worth knowing before you build the server.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "COUNT IT PROPERLY", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Honest comparison at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 26C · Template C · `local-ai-vs-paid-subscriptions`
+### 26C · `local-ai-vs-paid-subscriptions`
+
+*Layout: collage stack*
 
 **Title**
 ```
-AI Tools That Cost Nothing to Use Daily
+Nothing You Type Leaves the Machine
 ```
 
 **Description**
 ```
-Where free local AI genuinely competes with paid subscriptions, and where it clearly does not. Honest comparison. Tested, not hyped.
+The strongest argument for running AI locally is not the money, it is that nothing you type ever leaves your machine. No account, no upload, no message limits, and it works with the network off. Against ChatGPT Plus at $20, Claude Pro at $17 and Google AI Pro at $19.99, local costs nothing. We are equally clear about where it is genuinely weaker.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with everyday AI tasks in an icon grid
+Pin about private local AI over a photo of a laptop glowing in a dark room
 ```
 
 **Board**
@@ -761,43 +492,52 @@ https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat electric lime #D6FF3F behind. Headline sits in the clearest corner. Introduce one hard right-angled shape that interrupts the layout.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"AI TOOLS THAT COST
-NOTHING TO USE
-DAILY"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "FREE DAILY USE".
+PHOTOGRAPH: a mechanical keyboard shot from a low angle. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Summarise / Draft / Rewrite / Translate / Explain / Plan
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO ACCOUNT.
+NO UPLOAD.
+NO LIMIT."
+The words "NO UPLOAD" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Local AI is genuinely private in a way no subscription can match. Every conversation stays on your own disk, with no account and no message cap.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "FULLY PRIVATE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Setup walkthrough at topuseai.com
+
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 27C · Template C · `free-seo-tools-vs-paid`
+### 27C · `free-seo-tools-vs-paid`
+
+*Layout: stamp block*
 
 **Title**
 ```
-SEO Tool Ideas for Bloggers on a Budget
+When a $99 SEO Tool Actually Earns Its Money
 ```
 
 **Description**
 ```
-The free stack that answers most questions, and the specific moment paying starts to make sense. Tested, not hyped.
+There is one clear reason to pay for an SEO tool: competitor data. Free options work on properties you own or throttle you to a handful of daily queries. Semrush at $139, Ahrefs Lite at $129 and Surfer Standard at $99 all solve that, and little else you cannot get free. We are specific about when that gap is worth the money and when it is not.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with SEO tasks in an icon grid
+Pin about paid SEO tool value, set as a printed receipt
 ```
 
 **Board**
@@ -812,43 +552,50 @@ https://www.topuseai.com/blog/free-seo-tools-vs-paid
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The headline set inside a heavy solid warm off-white #FBFAF6 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Let one element break its container and overlap the element beside it.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"SEO TOOL IDEAS
-FOR BLOGGERS ON
-A BUDGET"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "BUDGET FIRST".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"PAY WHEN
+YOU NEED
+COMPETITOR DATA."
+The words "COMPETITOR DATA" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Rankings / Keywords / Audit / Backlinks / Speed / Trends
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Free tools work on sites you own. The moment you need to see what a rival ranks for, nothing free does it properly, and that is the honest case for paying.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "HONEST ANSWER", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Where the line sits, at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 28C · Template C · `voicebox-vs-elevenlabs-murf`
+### 28C · `voicebox-vs-elevenlabs-murf`
+
+*Layout: split contrast*
 
 **Title**
 ```
-Voiceover Ideas for Creators on a Budget
+Free Tiers That Cannot Legally Be Used for Work
 ```
 
 **Description**
 ```
-Free voice tools that permit selling, and the paid ones worth it for long-form narration. Tested, not hyped.
+ElevenLabs and Murf both offer free tiers, and neither licenses the output for commercial use. Murf states "No Commercial Rights" plainly. That makes them fine for testing and unusable for a monetised channel without paying. voicebox, MIT licensed and free, is the one option where free genuinely includes the right to sell.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with voiceover applications in an icon grid
+Pin about free tier restrictions set as a plain typographic statement
 ```
 
 **Board**
@@ -863,43 +610,50 @@ https://www.topuseai.com/blog/voicebox-vs-elevenlabs-murf
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in a warm clay #C9603F and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"VOICEOVER IDEAS
-FOR CREATORS ON
-A BUDGET"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "BUDGET FRIENDLY".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU CAN TRY IT.
+YOU CAN'T
+SELL IT."
+The words "CAN'T SELL IT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Shorts / Explainer / Audiobook / Podcast / Course / Dub
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Both major paid voice tools restrict commercial use on their free plans. Testing is fine. Publishing a monetised video with that audio is not.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BEFORE YOU PUBLISH", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The licence details at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 29C · Template B · `free-ai-image-generation-vs-paid`
+### 29C · `free-ai-image-generation-vs-paid`
+
+*Layout: circle cutout*
 
 **Title**
 ```
-Free Image Tools vs Paid: The Rights Question
+When Paying for AI Images Is Genuinely the Right Call
 ```
 
 **Description**
 ```
-Some free tiers keep rights over what you create. Which ones let you sell, and what local generation changes. Tested, not hyped.
+Free local AI image generation is genuinely unlimited, and it is not free of cost. You need a reasonable graphics card and a few hours to set things up. If you need a handful of images occasionally, Midjourney at $10 a month is the cheaper answer. We are specific about where the line falls, and about Leonardo's free tier keeping rights to your output.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and image rights points
+Pin about when to pay for AI images over a photo of framed prints leaning on a wall
 ```
 
 **Board**
@@ -914,45 +668,52 @@ https://www.topuseai.com/blog/free-ai-image-generation-vs-paid
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A large circular photo crop, 55% of the canvas width, sits in the upper-right, overlapping the headline. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Leave the top 20% almost empty; let the composition sit low.
 
-Top left: a large numeral "4" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "RIGHTS CHECK".
+PHOTOGRAPH: three framed abstract prints leaning against a white wall. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"THINGS TO CHECK
-BEFORE SELLING
-AI IMAGES"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"SOMETIMES
+PAYING IS
+THE SMART MOVE."
+The words "THE SMART MOVE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free tier does not always mean free rights."
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Local generation is free and unlimited, and it costs you setup time and hardware. If you need twenty images once, a subscription is cheaper than an afternoon.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-WHO OWNS THE OUTPUT / IS IT EXCLUSIVE TO YOU / ANY REVENUE THRESHOLD / MODEL VERSUS OUTPUT LICENCE
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BOTH SIDES", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The honest comparison at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 30C · Template C · `free-ai-video-generators-open-source`
+### 30C · `free-ai-video-generators-open-source`
+
+*Layout: full bleed photo*
 
 **Title**
 ```
-Faceless Video Tool Ideas Compared
+119,468 Stars and Actually Maintained
 ```
 
 **Description**
 ```
-Which open video generator suits a non-developer, which needs a terminal, and which you should avoid commercially. Tested, not hyped.
+Star count alone tells you nothing, because stars do not decay when a project dies. MoneyPrinterTurbo has 119,468 of them and, unlike several rivals, is still actively maintained and MIT licensed for commercial use. It runs on a normal laptop with no graphics card. The honest caveat about YouTube's inauthentic content policy is covered in full.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with video tool capabilities in an icon grid
+Pin about a maintained open source video tool over a photo of a ring light on a desk
 ```
 
 **Board**
@@ -967,45 +728,55 @@ https://www.topuseai.com/blog/free-ai-video-generators-open-source
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at across the lower third carries the headline. No frame, no border, the photo runs to all four edges. Stack the composition tight to the bottom edge, leaving the top open.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"FACELESS VIDEO
-TOOL IDEAS
-COMPARED"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "COMPARED".
+PHOTOGRAPH: a microphone arm casting a hard shadow on a wall. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Script / Footage / Voice / Subtitles / Music / Export
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"MIT LICENSED.
+STILL SHIPPING.
+RUNS ANYWHERE."
+The words "STILL SHIPPING" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+MoneyPrinterTurbo is the free AI video tool that is both properly licensed and actively developed. No GPU needed, and the output is legally yours to monetise.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "119,468 STARS", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Full review at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 18
 
-### 31C · Template C · `open-source-social-media-schedulers`
+### 31C · `open-source-social-media-schedulers`
+
+*Layout: offset photo card*
 
 **Title**
 ```
-Social Scheduling Ideas for Small Teams
+Own Your Scheduler, Own the Server Bill
 ```
 
 **Description**
 ```
-Which open scheduler fits your channel count, and when a free hosted plan beats running your own. Tested, not hyped.
+Self-hosting a social scheduler puts you beyond anyone else's pricing changes, and puts the server bill, the updates and the platform API fees squarely on you. X alone charges $0.200 for any post containing a URL. Postiz is the strongest open option at 14 networks. Buffer's free plan is still the right answer for most people.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with scheduling features in an icon grid
+Pin about self-hosting tradeoffs over a photo of an empty desk by a window
 ```
 
 **Board**
@@ -1020,43 +791,52 @@ https://www.topuseai.com/blog/open-source-social-media-schedulers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat electric lime #D6FF3F behind it. Headline overlaps the card's top-right edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"SOCIAL SCHEDULING
-IDEAS FOR SMALL
-TEAMS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "SELF HOSTED".
+PHOTOGRAPH: a chair pushed back from a desk. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Queue / Calendar / Approve / Analyse / Recycle / Reply
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU OWN IT.
+YOU ALSO
+HOST IT."
+The words "YOU ALSO HOST IT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Self-hosting means nobody can change your terms or price. It also means the server, the updates and the platform API fees are all yours to handle.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BOTH SIDES", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Real costs at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 32C · Template C · `ollama-vs-lm-studio-free-ai-tools`
+### 32C · `ollama-vs-lm-studio-free-ai-tools`
+
+*Layout: numbered rows*
 
 **Title**
 ```
-Beginner AI Setup Ideas for Your Laptop
+Easiest Start vs Most Control
 ```
 
 **Description**
 ```
-Getting a private AI assistant running without a terminal. Which app suits your machine and what to avoid. Tested, not hyped.
+LM Studio is the easiest way to run AI locally: a polished interface, almost nothing to configure, and free for commercial use. Ollama gives you a proper command line, an official desktop app and considerably more control. Both are genuinely free. We cover which suits a first attempt and which suits the fifth.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with local AI setup steps in an icon grid
+Pin comparing two local AI tools in two columns
 ```
 
 **Board**
@@ -1071,43 +851,50 @@ https://www.topuseai.com/blog/ollama-vs-lm-studio-free-ai-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: Content set as numbered rows with the numerals oversized in lime and the text small beside them, the whole block pushed to one side rather than centred. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"BEGINNER AI SETUP
-IDEAS FOR YOUR
-LAPTOP"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "NO TERMINAL".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE IS EASIER.
+ONE GIVES
+MORE CONTROL."
+The words "MORE CONTROL" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Install / Download / Chat / Offline / Private / Free
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+LM Studio hands you a polished interface and almost nothing to configure. Ollama gives you a proper command line and far more room to tinker. Both are free.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BOTH FREE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Pick one at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 33C · Template C · `best-free-seo-tools`
+### 33C · `best-free-seo-tools`
+
+*Layout: comparison columns*
 
 **Title**
 ```
-Free Blogging Tool Ideas for 2026
+What Free SEO Tools Genuinely Cannot Do
 ```
 
 **Description**
 ```
-The no-cost stack every blogger should set up first, and the throttled free tiers that are only good for spot checks. Tested, not hyped.
+Free SEO tools cover more than most guides admit, and there is one thing they genuinely cannot do: competitor data. Every free option either works only on sites you own or throttles you to a few queries a day. That is the real dividing line between free and paid, not features or polish. Google Search Console still gives you first-party data no paid tool has.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with free blogging tools in an icon grid
+Pin about the limits of free SEO tools, set in two columns
 ```
 
 **Board**
@@ -1122,43 +909,50 @@ https://www.topuseai.com/blog/best-free-seo-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"FREE BLOGGING
-TOOL IDEAS FOR
-2026"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "ALL FREE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FREE COVERS
+MOST OF IT.
+NOT ALL."
+The words "NOT ALL" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Console / Bing / Trends / Audit / Backlinks / AI Report
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Free tools work on sites you own. The one thing none of them replicate is competitor data, and that is the honest reason paid tools still exist.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "HONEST LIMITS", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Where the line falls, at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 34C · Template C · `best-free-ai-voice-tools-open-source`
+### 34C · `best-free-ai-voice-tools-open-source`
+
+*Layout: torn edge*
 
 **Title**
 ```
-AI Voice Ideas for Faceless Content
+Dead Since 2024, Still Recommended Everywhere
 ```
 
 **Description**
 ```
-Free voice generation compared on quality, languages and licensing. Which suits narration and which suits cloning. Tested, not hyped.
+Coqui shut down in January 2024. There is nobody left to license from, at any price, and it still appears on free AI voice tool lists published this year. XTTS-v2's weights are non-commercial. If you need free voice generation you can legally sell, voicebox and GPT-SoVITS are the two MIT options actually worth your time.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with AI voice applications in an icon grid
+Pin about discontinued AI tools set as a plain typographic statement
 ```
 
 **Board**
@@ -1173,43 +967,50 @@ https://www.topuseai.com/blog/best-free-ai-voice-tools-open-source
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: Two flat colour fields meeting along a rough torn-paper edge rather than a straight line. Headline on the larger field. Set the type unusually small against a lot of empty space.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"AI VOICE IDEAS
-FOR FACELESS
-CONTENT"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "FREE TOOLS".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THE COMPANY
+SHUT DOWN.
+THE LISTS DIDN'T."
+The words "SHUT DOWN" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Narration / Cloning / Dubbing / Shorts / Audiobook / Podcast
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Coqui closed in January 2024, which means no licence is available at any price. It still appears on free AI voice roundups written in 2026.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "CHECK THE DATE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Current, maintained picks at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 35C · Template B · `best-free-ai-image-generators-open-source`
+### 35C · `best-free-ai-image-generators-open-source`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-Free Image Tools That Are Actually Maintained
+Unlimited AI Images, No Credits, No Watermark
 ```
 
 **Description**
 ```
-Which open image tools still ship updates, which run the current best model, and how much video memory each needs. Tested, not hyped.
+Free AI image generators online ration you with daily credits, queues and watermarks. Running the same models locally removes all three: unlimited generations, no metering, no watermark, and nothing uploaded anywhere. ComfyUI is the tool worth learning and Fooocus the easiest start. The honest cost is setup time and a reasonable graphics card.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and image tool status points
+Pin about unlimited local image generation over a photo of framed prints on a wall
 ```
 
 **Board**
@@ -1224,50 +1025,57 @@ https://www.topuseai.com/blog/best-free-ai-image-generators-open-source
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat a deep muted teal #1E3A38 with the headline on the other. Introduce one hard right-angled shape that interrupts the layout.
 
-Top left: a large numeral "4" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "STILL ACTIVE".
+PHOTOGRAPH: an inkjet print half-emerged from a printer. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FREE IMAGE TOOLS
-THAT ARE ACTUALLY
-MAINTAINED"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO CREDITS.
+NO WATERMARK.
+NO QUEUE."
+The words "NO WATERMARK" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Star counts do not mean still shipping."
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Running Stable Diffusion or FLUX on your own machine means unlimited generations with nothing metered. The tradeoff is setup time and a graphics card.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE SHIPS EVERY WEEK / ONE IS EASIEST TO START / ONE HAS A REAL INSTALLER / ONE STOPPED IN 2025
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "RUNS LOCALLY", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Hardware and setup guide at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 36C · Template C · `best-free-ai-logo-generators`
+### 36C · `best-free-ai-logo-generators`
+
+*Layout: text top photo bottom*
 
 **Title**
 ```
-Branding Ideas for a New Small Business
+Read the Terms Before You Put That Logo on Anything
 ```
 
 **Description**
 ```
-Free logo tools compared on download rights, file formats and commercial terms, plus what you can actually trademark. Tested, not hyped.
+Generating a logo is the easy part. Owning it is not. Microsoft Designer prohibits commercial use entirely, and Recraft's free tier does not grant you ownership of what you make. Shopify Logo Maker is the only tool we verified as free to download and free to use commercially. Check this before the logo ends up on packaging.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with branding assets in an icon grid
+Pin about logo ownership over a photo of a notebook with a pen
 ```
 
 **Board**
 ```
-Passive Income Ideas
+AI Art & Wall Art
 ```
 
 **Link**
@@ -1277,45 +1085,55 @@ https://www.topuseai.com/blog/best-free-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The top 38% is a solid electric lime #D6FF3F panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Let one element break its container and overlap the element beside it.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"BRANDING IDEAS
-FOR A NEW SMALL
-BUSINESS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "FREE TOOLS".
+PHOTOGRAPH: a stack of art prints on brown paper. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Logo / Colours / Fonts / Icons / Social / Print
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU MADE IT.
+YOU MIGHT NOT
+OWN IT."
+The words "MIGHT NOT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Several popular free logo generators keep rights over what you create. Microsoft Designer bans commercial use. Recraft's free tier grants no ownership at all.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BEFORE YOU LAUNCH", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every licence checked at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
+
 
 ## DAY 19
 
-### 37A · Template A · `how-to-make-money-with-ai`
+### 37A · `how-to-make-money-with-ai`
+
+*Layout: object on ground*
 
 **Title**
 ```
-12 Realistic Ways to Make Money With AI
+Twelve Ways, and How Long Each Actually Takes
 ```
 
 **Description**
 ```
-Twelve income paths using AI tools, with honest notes on what each actually takes to start. No hype, no guaranteed income claims. Tested, not hyped.
+The most realistic beginner ways to make money with AI in 2026 treat it as a tool that speeds up work someone already pays for: faceless content, freelance writing, digital products, voiceovers and simple services for local businesses. Earnings vary enormously by effort and niche, and most of these take months rather than weeks to produce anything meaningful.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five AI income paths with lime accents
+Pin about making money with AI over a photo of coins stacked on concrete
 ```
 
 **Board**
@@ -1330,41 +1148,52 @@ https://www.topuseai.com/blog/how-to-make-money-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space in the bottom-left corner. Leave the top 20% almost empty; let the composition sit low.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"12 REALISTIC
-WAYS TO MAKE
-MONEY WITH AI"
-The words "REALISTIC" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a bank card face-down beside a phone. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Freelance Writing / Digital Products / Faceless Video / Print on Demand / Affiliate Content
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"TWELVE WAYS.
+NONE OF THEM
+OVERNIGHT."
+The words "NONE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+The realistic methods use AI to speed up real work: faceless content, freelance writing, digital products, voiceovers, small local services. Most take months to build.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "NO INCOME CLAIMS", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All twelve, honestly assessed, at topuseai.com
+
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 38A · Template D · `sell-ai-art-on-etsy`
+### 38A · `sell-ai-art-on-etsy`
+
+*Layout: photo strip band*
 
 **Title**
 ```
-Sell AI Art on Etsy: What Actually Sells
+Etsy Allows AI Art. With Two Conditions.
 ```
 
 **Description**
 ```
-Which AI art categories sell on Etsy, how to price them, and the licence checks to run before you list anything. Tested, not hyped.
+You can sell AI art on Etsy in 2026, provided you write your own prompts and disclose AI use in the listing. Reselling raw AI output with no creative direction of your own is not allowed. The realistic formats are instant-download printables and print on demand through a partner like Printful. We cover exactly how the disclosure should read.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated wall art pieces in a warm palette
+Pin about selling on Etsy over a photo of an inkjet print emerging from a printer
 ```
 
 **Board**
@@ -1379,41 +1208,52 @@ https://www.topuseai.com/blog/sell-ai-art-on-etsy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A horizontal photographic band, 58% of canvas height, sits across the upper third. Flat a warm clay #C9603F above and below, headline in the larger of the two areas. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"SELL AI ART ON
-ETSY"
-The word "SELL" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a gallery wall of small prints in mismatched frames. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "WHAT WORKS".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ALLOWED.
+IF YOU WROTE
+THE PROMPTS."
+The words "IF YOU WROTE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated wall art pieces in different styles: a minimal abstract print, a botanical illustration, a soft landscape, and a geometric composition, cohesive in a muted warm palette so the grid reads as one product collection.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+You must write your own prompts and disclose AI use in the listing. Reselling raw output with no creative direction is not permitted.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "ETSY POLICY", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The rules in full at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 39A · Template A · `sell-digital-products-with-ai`
+### 39A · `sell-digital-products-with-ai`
+
+*Layout: circle cutout*
 
 **Title**
 ```
-Digital Products You Can Make With Free Tools
+The Products That Sell Are Boring and Repeatable
 ```
 
 **Description**
 ```
-What sells as a digital download, how to make it with free AI tools, and where to list it. Tested, not hyped.
+The digital products that actually sell are simple and repeatable: prompt packs, printables, ebooks, Notion and Canva templates, planners and spreadsheets. AI helps you draft the copy, design the layout and generate artwork quickly, so you can test an idea cheaply before scaling it. Etsy gives you built-in traffic, Gumroad gives you more control.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five digital product types
+Pin about digital products over a photo of a notebook and laptop on a desk
 ```
 
 **Board**
@@ -1428,90 +1268,52 @@ https://www.topuseai.com/blog/sell-digital-products-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A large circular photo crop, 62% of the canvas width, sits in the lower-left, bleeding off the bottom. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"DIGITAL PRODUCTS
-YOU CAN MAKE
-WITH FREE TOOLS"
-The words "FREE TOOLS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: an open ledger with one figure circled. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Printables / Templates / Ebooks / Presets / Prompt Packs
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"SIMPLE SELLS.
+CLEVER
+USUALLY DOESN'T."
+The words "SIMPLE SELLS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Prompt packs, printables, ebooks, Notion and Canva templates, planners and spreadsheets. Unglamorous, repeatable, and people genuinely buy them.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "TEST CHEAPLY", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+How to build one this week at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 40A · Template A · `chatgpt-prompts-to-make-money`
+### 40A · `chatgpt-prompts-to-make-money`
+
+*Layout: collage stack*
 
 **Title**
 ```
-50 ChatGPT Prompts That Help You Earn
+50 Prompts, and the Honest Bit About What They Earn
 ```
 
 **Description**
 ```
-Fifty copy-and-paste prompts for freelancing, content and client work. Grouped by the income path they support. Tested, not hyped.
+Fifty ChatGPT prompts organised by what they actually help you sell: side hustle ideas, digital products, freelancing, content and affiliate marketing, and time-savers. They speed up work you are already doing rather than conjuring income from nothing. Copy one, add your own details, and the output becomes something you can sell. Every prompt is ready to paste.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five prompt categories for earning
-```
-
-**Board**
-```
-Free AI Tools
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: solid deep graphite #22202E, full bleed.
-
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"50 CHATGPT
-PROMPTS THAT
-HELP YOU EARN"
-The words "HELP YOU EARN" highlighted in electric lime #D6FF3F.
-
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Client Outreach / Content Ideas / Sales Copy / Product Names / Service Pricing
-
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
-
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
-```
-
----
-
-### 41A · Template A · `faceless-ai-side-hustles`
-
-**Title**
-```
-7 Faceless Side Hustles to Start This Weekend
-```
-
-**Description**
-```
-Seven income ideas that need no camera and no audience. What each takes to start and what it realistically pays. Tested, not hyped.
-```
-
-**Alt text**
-```
-Dark navy infographic listing five faceless side hustle ideas
+Pin about money-making prompts over a photo of a keyboard lit by a window
 ```
 
 **Board**
@@ -1521,46 +1323,117 @@ Passive Income Ideas
 
 **Link**
 ```
+https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a deep muted teal #1E3A38 behind. Headline sits in the clearest corner. Mirror the expected arrangement, put what would normally sit left on the right instead.
+
+PHOTOGRAPH: coins stacked in uneven columns on concrete. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"50 PROMPTS.
+ZERO INCOME
+PROMISES."
+The words "ZERO" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+These speed up work you already sell: writing, planning, marketing. Copy a prompt, add your details, and turn the output into something someone will pay for.
+
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "COPY AND PASTE", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All fifty, ready to copy, at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### 41A · `faceless-ai-side-hustles`
+
+*Layout: photo top text bottom*
+
+**Title**
+```
+Seven Side Hustles That Need No Camera
+```
+
+**Description**
+```
+A faceless AI side hustle is an income stream you run without showing your face or using your voice, with AI handling the writing, narration or visuals. The most beginner-friendly place to start is short-form video repurposing for Reels and TikTok, because it needs no website, no upfront money and one free afternoon to test properly.
+```
+
+**Alt text**
+```
+Pin about faceless side hustles over a photo of a phone on a tripod facing an empty chair
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
 https://www.topuseai.com/blog/faceless-ai-side-hustles
 ```
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: The top 55% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Stack the composition tight to the bottom edge, leaving the top open.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"7 FACELESS SIDE
-HUSTLES TO START
-THIS WEEKEND"
-The words "THIS WEEKEND" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a ring light switched off on a cluttered desk. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Faceless Video / Voiceover Work / Digital Products / Print on Demand / Blog Content
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO FACE.
+NO VOICE.
+NO STUDIO."
+The words "NO FACE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Short-form video repurposing is the easiest to start: no website, no upfront money, and one free afternoon is enough to test whether you like it.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "START THIS WEEKEND", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All seven explained at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 42A · Template D · `make-money-with-ai-art`
+### 42A · `make-money-with-ai-art`
+
+*Layout: offset photo card*
 
 **Title**
 ```
-7 Ways to Make Money With AI Art
+Every Marketplace Now Requires AI Disclosure
 ```
 
 **Description**
 ```
-Seven realistic income paths using AI-generated art, with the licence checks that decide whether you can legally sell. Tested, not hyped.
+You can make money from AI art in 2026 through printables and wall art, print on demand, Etsy digital downloads, stock images, design gigs, colouring books and custom commissions. Earnings are usually modest supplemental income rather than a salary. Every marketplace now requires you to disclose that the art is AI generated, and hiding it puts the listing and the account at risk.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated artworks arranged as a product collection
+Pin about selling AI art over a photo of framed prints leaning against a wall
 ```
 
 **Board**
@@ -1575,43 +1448,55 @@ https://www.topuseai.com/blog/make-money-with-ai-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat warm off-white #FBFAF6 behind it. Headline overlaps the card's bottom-right edge. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"7 WAYS TO MAKE
-MONEY WITH AI ART"
-The word "MONEY" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: three framed abstract prints leaning against a white wall. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "REALISTIC".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU MUST
+SAY IT'S AI.
+EVERYWHERE."
+The words "EVERYWHERE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated art pieces in different commercial styles: an abstract print, a botanical illustration, a minimal landscape, and a pattern design, cohesive in a muted warm palette so the grid reads as one sellable collection.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Etsy, the print-on-demand platforms and the stock sites all require you to disclose AI generation now. Hiding it risks the listing and the account.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "RULES CHANGED", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Seven routes explained at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
+
 
 ## DAY 20
 
-### 43A · Template A · `faceless-youtube-cost`
+### 43A · `faceless-youtube-cost`
+
+*Layout: before after*
 
 **Title**
 ```
-What a Faceless YouTube Channel Really Costs
+$0 to Start, $20 to $60 to Look Professional
 ```
 
 **Description**
 ```
-The honest monthly cost of running a faceless channel, from tools to stock footage. Where you can spend nothing and where you cannot. Tested, not hyped.
+You can launch a faceless YouTube channel for $0 using free AI tools, stock footage and CapCut. A setup that looks professional and can be monetised realistically costs $20 to $60 a month, driven mostly by a commercially licensed AI voice plan plus one video or editing tool. We break down exactly which line items matter and which you can skip.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five faceless channel cost items
+Pin about faceless channel costs over a photo of a receipt on a wooden table
 ```
 
 **Board**
@@ -1626,46 +1511,57 @@ https://www.topuseai.com/blog/faceless-youtube-cost
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat a warm clay #C9603F. Set the type unusually small against a lot of empty space.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"WHAT A FACELESS
-YOUTUBE CHANNEL
-REALLY COSTS"
-The words "REALLY COSTS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a phone on a tripod filming an empty chair. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Video Tools / Voiceover / Stock Footage / Music Licence / Thumbnails
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"START FREE.
+$20 TO $60
+TO LOOK GOOD."
+The words "$20 TO $60" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+A faceless channel genuinely launches for nothing with free tools, stock footage and CapCut. The monthly cost arrives when you need a commercially licensed voice.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "REAL NUMBERS", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Full cost breakdown at topuseai.com
+
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 44A · Template D · `best-ai-image-generators-pinterest`
+### 44A · `best-ai-image-generators-pinterest`
+
+*Layout: full bleed photo*
 
 **Title**
 ```
-Best AI Image Tools for Pinterest Pins
+The Only AI Image Tool That Gets Text Right
 ```
 
 **Description**
 ```
-Ten image generators compared for pin design, including which handle text inside images and which are genuinely free. Tested, not hyped.
+For Pinterest pins specifically, Ideogram is the best overall because it renders readable text directly inside the image, which is exactly what a pin needs and what most image models still fumble. Canva AI is the best genuinely free option, combining a usable free tier with pin templates, resizing and fonts in one editor. Midjourney makes the prettiest backgrounds and you add the text yourself.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated graphic designs in a warm palette
+Pin about AI image tools for Pinterest over a photo of a phone showing a feed
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -1675,41 +1571,52 @@ https://www.topuseai.com/blog/best-ai-image-generators-pinterest
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at centred vertically carries the headline. No frame, no border, the photo runs to all four edges. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"BEST AI IMAGE
-TOOLS FOR PINS"
-The word "BEST" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: an inkjet print half-emerged from a printer. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "10 COMPARED".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT ACTUALLY
+SPELLS THINGS
+CORRECTLY."
+The words "CORRECTLY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated graphic designs suitable for social posts: a bold typographic layout, an abstract background, a minimal icon composition, and a soft gradient card, cohesive in a muted warm palette so the grid reads as one design system.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Ideogram renders readable text inside the graphic, which is precisely what a pin needs. Midjourney makes prettier backgrounds and you will add the words elsewhere.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "FOR PIN TEXT", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Ten tools compared at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 45A · Template D · `midjourney-prompts-for-wall-art`
+### 45A · `midjourney-prompts-for-wall-art`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-30 Midjourney Prompts for Printable Wall Art
+Print Resolution Is Decided at the Prompt
 ```
 
 **Description**
 ```
-Thirty prompts for wall art you can print and sell, plus the aspect ratios and resolution settings that matter. Tested, not hyped.
+To prompt Midjourney for printable wall art, describe one clear subject, name a style and colour palette, then set a print aspect ratio like --ar 2:3 on V8.1. Generate an HD 2K image and export at the highest resolution available. Resolution is decided at the prompt, not afterwards, and getting it wrong means blurry prints. Thirty prompts included.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated wall art prints in a warm palette
+Pin about printable art prompts over a photo of framed prints leaning on a wall
 ```
 
 **Board**
@@ -1724,46 +1631,57 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat a deep muted teal #1E3A38 with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"30 PROMPTS FOR
-PRINTABLE WALL ART"
-The word "30 PROMPTS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a stack of art prints on brown paper. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "READY TO USE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"PRINTABLE ART
+STARTS WITH
+THE RATIO."
+The words "THE RATIO" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated wall art prints in different styles: an abstract shape study, a delicate botanical, a minimal horizon landscape, and a muted geometric composition, cohesive in a warm neutral palette so the grid reads as one gallery collection.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Set --ar 2:3 on V8.1, generate at HD 2K and export the highest resolution available. Getting this wrong means blurry prints and refund requests.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "FOR PRINTING", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Thirty prompts ready to copy at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 46A · Template A · `chatgpt-prompts-for-small-business`
+### 46A · `chatgpt-prompts-for-small-business`
+
+*Layout: screenshot device*
 
 **Title**
 ```
-40 ChatGPT Prompts for Small Business Owners
+Prompts for the Admin Nobody Wants to Do
 ```
 
 **Description**
 ```
-Forty copy-and-paste prompts grouped by task: marketing, customer service, operations and content. Tested, not hyped.
+About forty ChatGPT prompts for small business owners, grouped by marketing and social media, customer service and email, sales and outreach, operations and admin, and content writing. These handle the unglamorous work that quietly eats your week. Give each one your own details, and review every output before it reaches a customer.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five small business prompt categories
+Pin about business prompts over a photo of an empty desk in morning light
 ```
 
 **Board**
 ```
-Free AI Tools
+Work From Home Ideas
 ```
 
 **Link**
@@ -1773,41 +1691,52 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-small-business
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits dead centre with even margins. Flat electric lime #D6FF3F around it, headline above. Let one element break its container and overlap the element beside it.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"40 CHATGPT
-PROMPTS FOR SMALL
-BUSINESS OWNERS"
-The words "40 PROMPTS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: an empty desk by a window in morning light. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Marketing Copy / Customer Emails / Social Posts / Product Text / Operations
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THE BORING
+JOBS. DONE
+IN MINUTES."
+The words "IN MINUTES" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Customer replies, sales follow-ups, policy documents, social captions. The unglamorous work that eats a small business owner's week.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "COPY AND PASTE", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every prompt, ready to paste, at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 47A · Template A · `how-to-start-an-ai-blog`
+### 47A · `how-to-start-an-ai-blog`
+
+*Layout: text top photo bottom*
 
 **Title**
 ```
-How to Start a Blog That Actually Earns
+Six to Twelve Months Before It Earns Anything
 ```
 
 **Description**
 ```
-The realistic path from zero to a blog that makes money, with honest timelines and what each stage costs. Tested, not hyped.
+To start an AI blog in 2026, pick a specific niche, set up WordPress or a simple Next.js site, and use AI to plan outlines and speed up drafts while editing every post yourself. Traffic builds through SEO and Pinterest, and affiliate income and ads follow over six to twelve months. Anyone promising faster is selling a course.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five blog launch steps
+Pin about starting a blog over a photo of a laptop and coffee in morning light
 ```
 
 **Board**
@@ -1822,41 +1751,52 @@ https://www.topuseai.com/blog/how-to-start-an-ai-blog
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: The top 45% is a solid warm off-white #FBFAF6 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"HOW TO START A
-BLOG THAT
-ACTUALLY EARNS"
-The words "ACTUALLY EARNS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a notebook with a pen resting in the gutter. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Pick a Real Niche / Set Up Hosting / Write Your First Ten / Learn Basic SEO / Add Affiliate Links
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT WORKS.
+IN SIX TO
+TWELVE MONTHS."
+The words "SIX TO TWELVE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Pick a narrow niche, set up WordPress or Next.js, use AI for outlines and drafts, and edit everything yourself. Traffic comes from SEO and Pinterest, slowly.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "REALISTIC TIMELINE", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The full setup guide at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 48A · Template A · `ai-affiliate-marketing-for-beginners`
+### 48A · `ai-affiliate-marketing-for-beginners`
+
+*Layout: object on ground*
 
 **Title**
 ```
-Affiliate Marketing for Complete Beginners
+Affiliate Income Is Slower Than Anyone Admits
 ```
 
 **Description**
 ```
-How affiliate income actually works, which programmes accept beginners, and the realistic timeline to first commission. Tested, not hyped.
+AI affiliate marketing means using AI to research and draft content recommending products you actually trust, then earning commission when readers buy through your links. AI genuinely speeds up the writing. It does not speed up building an audience that trusts your recommendations. You still choose the products, check every claim, and disclose the links. Earnings vary widely and take time.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five affiliate marketing steps
+Pin about affiliate marketing over a photo of a laptop and coffee cup on a desk
 ```
 
 **Board**
@@ -1871,43 +1811,55 @@ https://www.topuseai.com/blog/ai-affiliate-marketing-for-beginners
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space in the bottom-left corner. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"AFFILIATE
-MARKETING FOR
-COMPLETE BEGINNERS"
-The words "BEGINNERS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a receipt curling on a wooden table. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Pick Your Niche / Join Real Programmes / Write Honest Reviews / Disclose Properly / Track What Converts
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT WORKS.
+IT JUST
+TAKES LONGER."
+The words "TAKES LONGER" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+AI drafts the content faster, and it does not shorten the part where readers learn to trust you. You still pick the products, verify the claims and disclose the links.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "NO INCOME CLAIMS", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+An honest beginner walkthrough at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
+
 
 ## DAY 21
 
-### 37B · Template B · `how-to-make-money-with-ai`
+### 37B · `how-to-make-money-with-ai`
+
+*Layout: circle cutout*
 
 **Title**
 ```
-Passive Income Ideas for Beginners in 2026
+AI Multiplies a Skill. It Doesn't Replace Having One.
 ```
 
 **Description**
 ```
-Realistic income paths you can start with free tools and no audience. What each requires and how long it actually takes. Tested, not hyped.
+Every genuinely workable way to earn with AI starts from a skill you already have. AI compresses the hours dramatically and supplies none of the judgement clients actually pay for. That is why the realistic list is faceless content, freelance writing, digital products, voiceovers and small local services, rather than anything fully automated.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and passive income starting points
+Pin about AI and skills over a photo of a keyboard lit by a window
 ```
 
 **Board**
@@ -1922,45 +1874,57 @@ https://www.topuseai.com/blog/how-to-make-money-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A large circular photo crop, 70% of the canvas width, sits in the upper-right, overlapping the headline. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Introduce one hard right-angled shape that interrupts the layout.
 
-Top left: a large numeral "12" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "BEGINNER FRIENDLY".
+PHOTOGRAPH: a bank card face-down beside a phone. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"REALISTIC INCOME
-IDEAS YOU CAN
-START THIS MONTH"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT MAKES YOU
+FASTER.
+NOT SKILLED."
+The words "NOT SKILLED" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"No audience needed. Free tools only."
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Every method that works starts from something you can already do. AI compresses the hours, and it cannot supply the judgement a client is paying for.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-START WITH ZERO BUDGET / NO EXPERIENCE REQUIRED / WORKS ALONGSIDE A JOB / HONEST TIME ESTIMATES
+SUPPORTING TEXT: as a loose vertical list, each line a slightly different size so the block reads as hand-set rather than templated:
+Faceless content
+Freelance writing
+Digital products
+Voiceover work
+Local business services
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Twelve realistic options at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 38B · Template A · `sell-ai-art-on-etsy`
+### 38B · `sell-ai-art-on-etsy`
+
+*Layout: photo strip band*
 
 **Title**
 ```
-Etsy Shop Ideas Using Digital Downloads
+Printables or Print on Demand?
 ```
 
 **Description**
 ```
-Digital products sell without shipping or stock. Which AI-made categories work on Etsy and what to check before listing. Tested, not hyped.
+The two realistic ways to sell AI art on Etsy work quite differently. Instant-download printables have no fulfilment at all and far more competition. Print on demand through a partner like Printful handles production and shipping while taking a margin. Both require you to write your own prompts and disclose AI use in the listing.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five Etsy digital product ideas
+Pin comparing Etsy selling formats in two columns
 ```
 
 **Board**
@@ -1975,41 +1939,55 @@ https://www.topuseai.com/blog/sell-ai-art-on-etsy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A horizontal photographic band, 55% of canvas height, sits across the upper third. Flat a deep muted teal #1E3A38 above and below, headline in the larger of the two areas. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"ETSY SHOP IDEAS
-USING DIGITAL
-DOWNLOADS"
-The words "DIGITAL" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a gallery wall of small prints in mismatched frames. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Wall Art Prints / Pattern Packs / Social Templates / Planner Pages / Clip Art Sets
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"DOWNLOAD.
+OR SHIP IT.
+DIFFERENT WORK."
+The words "DIFFERENT WORK" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Instant downloads have no fulfilment and heavy competition. Print-on-demand through Printful handles shipping and takes a cut of every sale.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+SUPPORTING TEXT: as a single run-on paragraph with lime bullet dots between phrases:
+Printables: no fulfilment, more competition
+Print on demand: Printful ships it
+Both need AI disclosure
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Both routes explained at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 39B · Template B · `sell-digital-products-with-ai`
+### 39B · `sell-digital-products-with-ai`
+
+*Layout: photo top text bottom*
 
 **Title**
 ```
-Passive Income From Digital Products
+Etsy for Traffic, Gumroad for Control
 ```
 
 **Description**
 ```
-Digital products sell repeatedly with no stock or shipping. What to make, how to price it, and which platform to use. Tested, not hyped.
+Where you sell a digital product changes the whole business. Etsy brings buyers who are already searching, and takes fees plus ownership of the customer relationship. Gumroad gives you the email list and the margin, and expects you to bring your own traffic. Most people should test on Etsy first and build on Gumroad second.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and digital product income points
+Pin comparing selling platforms in two columns
 ```
 
 **Board**
@@ -2024,98 +2002,55 @@ https://www.topuseai.com/blog/sell-digital-products-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: The top 42% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Set the type unusually small against a lot of empty space.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "MAKE ONCE".
+PHOTOGRAPH: an open ledger with one figure circled. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"DIGITAL PRODUCT
-IDEAS THAT SELL
-REPEATEDLY"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE BRINGS
+BUYERS. ONE
+LETS YOU BUILD."
+The words "LETS YOU BUILD" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"No stock. No shipping. No limits."
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Etsy has an audience already searching and takes fees plus your customer relationship. Gumroad gives you the list and expects you to bring the traffic.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-MAKE IT ONCE / SELL IT FOREVER / FREE TOOLS TO CREATE / MULTIPLE PLATFORMS
+SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
+Etsy: built-in search traffic
+Gumroad: you own the customer list
+Both worth testing first
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Both compared honestly at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 40B · Template B · `chatgpt-prompts-to-make-money`
+### 40B · `chatgpt-prompts-to-make-money`
+
+*Layout: offset photo card*
 
 **Title**
 ```
-ChatGPT Prompts for Side Hustle Income
+The Prompt Categories That Actually Pay
 ```
 
 **Description**
 ```
-Copy-and-paste prompts organised by income path, from freelancing to digital products. Tested, not hyped.
+Fifty ChatGPT prompts grouped into the five categories that genuinely connect to income: side hustle ideas, digital products, freelancing, content and affiliate marketing, and time-savers. The best starting point is whichever category already describes your work, because AI multiplies existing skill rather than replacing it. All fifty are copy-and-paste ready.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and prompt category benefits
-```
-
-**Board**
-```
-Free AI Tools
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
-
-Background: warm off-white #FBFAF6, full bleed.
-
-Top left: a large numeral "50" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COPY & PASTE".
-
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"PROMPTS TO HELP
-YOU EARN WITH
-AI TOOLS"
-
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Grouped by what you are trying to make."
-
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-READY TO COPY AND PASTE / GROUPED BY INCOME PATH / WORKS ON THE FREE PLAN / NO PROMPT SKILLS NEEDED
-
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
-```
-
----
-
-### 41B · Template B · `faceless-ai-side-hustles`
-
-**Title**
-```
-Side Hustle Ideas That Need No Camera
-```
-
-**Description**
-```
-Seven faceless income paths you can start at home this weekend, using free tools and no on-screen presence. Tested, not hyped.
-```
-
-**Alt text**
-```
-Off-white poster with large lime numeral and faceless hustle benefits
+Pin listing prompt categories as a handwritten notebook page
 ```
 
 **Board**
@@ -2125,50 +2060,126 @@ Passive Income Ideas
 
 **Link**
 ```
+https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat warm off-white #FBFAF6 behind it. Headline overlaps the card's top-left edge. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
+
+PHOTOGRAPH: coins stacked in uneven columns on concrete. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FIVE CATEGORIES.
+ONE OF THEM
+FITS YOU."
+The words "FITS YOU" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Side hustles, digital products, freelancing, content and marketing, and the time-savers that give you hours back. Start with whichever describes what you already do.
+
+SUPPORTING TEXT: each line on its own lime-underlined row:
+Side hustle ideas
+Digital products
+Freelancing and client work
+Content and affiliate
+Time-savers
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every prompt listed at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### 41B · `faceless-ai-side-hustles`
+
+*Layout: collage stack*
+
+**Title**
+```
+The One to Start With If You Only Have a Weekend
+```
+
+**Description**
+```
+If you have one free weekend and no budget, short-form video repurposing is the faceless side hustle to test first. No website, no upfront money, and free tools throughout. You will know within an afternoon whether the work suits you, which is worth far more than reading another list. The other six options are covered in full.
+```
+
+**Alt text**
+```
+Pin about starting a side hustle over a photo of a laptop open on a bed at night
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
 https://www.topuseai.com/blog/faceless-ai-side-hustles
 ```
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a warm clay #C9603F behind. Headline sits in the clearest corner. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Top left: a large numeral "7" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "NO CAMERA".
+PHOTOGRAPH: a laptop screen showing a video timeline, shot over the shoulder. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FACELESS SIDE
-HUSTLES TO START
-THIS WEEKEND"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE AFTERNOON.
+NO WEBSITE.
+NO UPFRONT COST."
+The words "NO UPFRONT COST" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"No face. No audience. No startup cost."
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Short-form video repurposing needs nothing but a free tool and existing content. It is the cheapest way to find out whether you enjoy this before committing months.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-NEVER SHOW YOUR FACE / START WITH FREE TOOLS / WORKS AROUND A JOB / SCALES WITHOUT YOU
+SUPPORTING TEXT: in two uneven columns, the left wider than the right:
+No website needed
+No money upfront
+One afternoon to test
+Free tools throughout
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Seven options ranked at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 42B · Template A · `make-money-with-ai-art`
+### 42B · `make-money-with-ai-art`
+
+*Layout: full bleed photo*
 
 **Title**
 ```
-Sell AI Art Without Design Skills
+Modest Supplemental Income, Not a Salary
 ```
 
 **Description**
 ```
-How people actually earn from AI art: prints, patterns, templates and licensing. Plus which models permit selling. Tested, not hyped.
+AI art income is real and usually modest. Seven routes genuinely work: printables and wall art, print on demand, Etsy digital downloads, stock images, design gigs, colouring books and custom commissions. Most people earn supplemental income rather than a replacement salary, and every platform now requires AI disclosure. We rate each on startup effort.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five AI art income methods
+Pin listing AI art income routes over a photo of a stack of prints on brown paper
 ```
 
 **Board**
@@ -2183,43 +2194,60 @@ https://www.topuseai.com/blog/make-money-with-ai-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Let one element break its container and overlap the element beside it.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"SELL AI ART
-WITHOUT DESIGN
-SKILLS"
-The words "WITHOUT" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: three framed abstract prints leaning against a white wall. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Wall Art Prints / Pattern Packs / Social Templates / Stock Images / Product Designs
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT PAYS.
+JUST NOT
+WHAT THEY SAY."
+The words "NOT WHAT THEY SAY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Seven genuine routes exist and most people earn supplemental money rather than a living. Printables and print-on-demand are the two with the gentlest start.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+SUPPORTING TEXT: as a loose vertical list, each line a slightly different size so the block reads as hand-set rather than templated:
+Printables and wall art
+Print on demand
+Etsy digital downloads
+Stock images
+Colouring books
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All seven compared at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
+
 
 ## DAY 22
 
-### 43B · Template B · `faceless-youtube-cost`
+### 43B · `faceless-youtube-cost`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-Start a Faceless Channel on a Small Budget
+The Voice Plan Is Where the Money Goes
 ```
 
 **Description**
 ```
-The real monthly cost of a faceless channel, and which parts you can genuinely do for free. Tested, not hyped.
+The biggest recurring cost in a faceless YouTube setup is not editing software or stock footage, it is a commercially licensed AI voice. Most free voice tiers explicitly exclude commercial use, so the moment you monetise, that becomes a required line item. Everything else can be free or close to it. The full breakdown covers each cost honestly.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and faceless channel budget points
+Pin about faceless channel budgets over a photo of a microphone lit from one side
 ```
 
 **Board**
@@ -2234,50 +2262,61 @@ https://www.topuseai.com/blog/faceless-youtube-cost
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat a deep muted teal #1E3A38 with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "REAL NUMBERS".
+PHOTOGRAPH: an audio waveform on a dark screen, photographed close. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"COSTS TO PLAN FOR
-BEFORE STARTING
-A FACELESS CHANNEL"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"MOST OF THE
+BUDGET IS
+ONE THING."
+The words "ONE THING" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Some parts are free. Some are not."
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Free voice tiers almost never include commercial rights. A licensed voice plan is the single biggest recurring cost in a faceless setup.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-TOOLS CAN BE FREE / MUSIC LICENSING COSTS / STOCK FOOTAGE VARIES / TIME IS THE REAL COST
+SUPPORTING TEXT: as a single run-on paragraph with lime bullet dots between phrases:
+AI voice, licensed: the main cost
+Video or editing tool: second
+Stock footage: often free
+CapCut: free
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every cost itemised at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 44B · Template A · `best-ai-image-generators-pinterest`
+### 44B · `best-ai-image-generators-pinterest`
+
+*Layout: screenshot device*
 
 **Title**
 ```
-Make Pinterest Graphics With Free AI Tools
+A Free Tool That Does Templates, Fonts and Resizing Together
 ```
 
 **Description**
 ```
-Which image generators handle text properly, which are free, and how to make pins that read at thumbnail size. Tested, not hyped.
+The best free AI image tool for Pinterest is Canva AI, because pin creation is rarely just image generation. You need a template, readable type, the right 2:3 crop and an export, and Canva does all of it in one editor on a genuinely usable free tier. Ideogram beats it on rendering text inside the image itself.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five pin design tools
+Pin about pin design tools over a screenshot of a design interface
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -2287,41 +2326,55 @@ https://www.topuseai.com/blog/best-ai-image-generators-pinterest
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits slightly above centre, bleeding off the right edge. Flat electric lime #D6FF3F around it, headline above. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"MAKE PINTEREST
-GRAPHICS WITH
-FREE AI TOOLS"
-The words "FREE" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: an inkjet print half-emerged from a printer. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Text on Image / Brand Colours / Vertical Format / Bold Headlines / Fast Batches
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE EDITOR.
+TEMPLATES,
+FONTS, SIZES."
+The words "ONE EDITOR" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Canva AI is the best free pick for pins because everything happens in one place. Generate, drop in a template, set the type, resize to 2:3 and export.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
+Ideogram: best text rendering
+Canva AI: best free, all-in-one
+Midjourney: best backgrounds
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All ten tested at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 45B · Template A · `midjourney-prompts-for-wall-art`
+### 45B · `midjourney-prompts-for-wall-art`
+
+*Layout: before after*
 
 **Title**
 ```
-Printable Wall Art Prompts That Actually Print
+One Subject, One Palette, One Style
 ```
 
 **Description**
 ```
-Thirty prompts plus the print settings most guides skip: aspect ratios, resolution and colour profiles. Tested, not hyped.
+The wall art that sells is simple enough to live with for years. Crowded prompts produce busy images nobody hangs above a sofa. Describe one clear subject, name a colour palette and a single style, then set --ar 2:3 on V8.1 and export at HD 2K. Thirty worked prompts included, each following that structure.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five wall art print considerations
+Pin about wall art composition over a photo of a stack of art prints
 ```
 
 **Board**
@@ -2336,46 +2389,61 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat warm off-white #FBFAF6. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"PRINTABLE WALL
-ART PROMPTS THAT
-ACTUALLY PRINT"
-The words "ACTUALLY PRINT" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a stack of art prints on brown paper. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Set the Aspect Ratio / Check Resolution / Pick a Palette / Avoid Text / Test One Print
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE SUBJECT.
+NOT THREE.
+THAT'S THE TRICK."
+The words "NOT THREE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Wall art works when it is simple enough to live on a wall for years. Crowded prompts produce busy images nobody wants above a sofa.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+SUPPORTING TEXT: each line on its own lime-underlined row:
+One clear subject
+Named colour palette
+One style, stated plainly
+--ar 2:3 on V8.1
+
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Thirty examples at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 46B · Template B · `chatgpt-prompts-for-small-business`
+### 46B · `chatgpt-prompts-for-small-business`
+
+*Layout: object on ground*
 
 **Title**
 ```
-Business Prompts That Save Hours Each Week
+Five Categories Covering Most of Your Week
 ```
 
 **Description**
 ```
-Forty ready prompts for the repetitive parts of running a small business. Copy, paste, adjust. Tested, not hyped.
+Small business prompts organised the way the work actually arrives: marketing and social media, customer service and email, sales and outreach, operations and admin, and content writing. Roughly forty in total, each ready to copy. The point is finding the right one in thirty seconds when a customer is waiting, rather than browsing.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and business prompt benefits
+Pin listing business prompt categories over a photo of a coffee cup beside a closed laptop
 ```
 
 **Board**
 ```
-Free AI Tools
+Work From Home Ideas
 ```
 
 **Link**
@@ -2385,45 +2453,57 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-small-business
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space across the top edge. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Top left: a large numeral "40" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COPY & PASTE".
+PHOTOGRAPH: a coffee cup beside a closed laptop. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"PROMPTS THAT SAVE
-SMALL BUSINESS
-OWNERS HOURS"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"MARKETING.
+SUPPORT. SALES.
+ADMIN. CONTENT."
+The words "ADMIN" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Grouped by the job you need done."
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Prompts organised the way a small business actually runs, so you can find the one you need in the moment rather than scrolling a list of fifty.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-READY TO COPY AND PASTE / GROUPED BY BUSINESS TASK / WORKS ON THE FREE PLAN / NO PROMPT SKILLS NEEDED
+SUPPORTING TEXT: in two uneven columns, the left wider than the right:
+Marketing and social
+Customer service and email
+Sales and outreach
+Operations and admin
+Content writing
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Full set at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 47B · Template B · `how-to-start-an-ai-blog`
+### 47B · `how-to-start-an-ai-blog`
+
+*Layout: text top photo bottom*
 
 **Title**
 ```
-Start a Blog With No Experience in 2026
+Publishing Unedited AI Drafts Is How Blogs Fail
 ```
 
 **Description**
 ```
-The steps that matter, the ones that do not, and an honest timeline for when a blog starts earning. Tested, not hyped.
+The fastest way to kill a new blog is publishing AI drafts unedited. They read as generic to humans and offer nothing Google has not already indexed a thousand times. AI is genuinely excellent for outlines, structure and first drafts. The editing pass, where you add real experience and verify every claim, is what makes a post worth ranking.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and blogging startup benefits
+Pin about editing AI content over a photo of a printed manuscript with highlighter marks
 ```
 
 **Board**
@@ -2438,45 +2518,56 @@ https://www.topuseai.com/blog/how-to-start-an-ai-blog
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: The top 38% is a solid graphite #22202E panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Introduce one hard right-angled shape that interrupts the layout.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "BEGINNER PATH".
+PHOTOGRAPH: a paperback opened face-down on a desk. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"STEPS TO START A
-BLOG THAT
-ACTUALLY EARNS"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"AI DRAFTS IT.
+YOU HAVE TO
+EDIT IT."
+The words "YOU HAVE TO" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"No experience needed. Honest timelines."
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Unedited AI content reads as generic to readers and to Google. The editing pass is where a post becomes worth ranking.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-START FOR UNDER $100 / NO CODING REQUIRED / FREE TOOLS FOR MOST OF IT / REALISTIC TIME EXPECTATIONS
+SUPPORTING TEXT: as a loose vertical list, each line a slightly different size so the block reads as hand-set rather than templated:
+Pick one narrow niche
+WordPress or Next.js
+AI for outlines and drafts
+Human edit on every post
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+How to edit properly at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 48B · Template B · `ai-affiliate-marketing-for-beginners`
+### 48B · `ai-affiliate-marketing-for-beginners`
+
+*Layout: circle cutout*
 
 **Title**
 ```
-Passive Income Through Affiliate Content
+You Still Have to Actually Use the Product
 ```
 
 **Description**
 ```
-How affiliate marketing works for beginners with no audience, and how long it realistically takes to earn. Tested, not hyped.
+The fastest way to fail at affiliate marketing is to let AI write recommendations for products you have never touched. Readers notice, and so does Google. AI is genuinely useful for structure, research and first drafts. The judgement about whether something is worth buying has to be yours, and the disclosure is a legal requirement rather than a courtesy.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and affiliate income points
+Pin about honest affiliate reviews over a photo of a notebook with a pen
 ```
 
 **Board**
@@ -2491,47 +2582,58 @@ https://www.topuseai.com/blog/ai-affiliate-marketing-for-beginners
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A large circular photo crop, 78% of the canvas width, sits slightly above centre, bleeding off the right edge. The rest is flat a deep muted teal #1E3A38. The headline wraps around the circle rather than sitting in a neat block. Stack the composition tight to the bottom edge, leaving the top open.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "NO AUDIENCE".
+PHOTOGRAPH: a receipt curling on a wooden table. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"STEPS TO YOUR
-FIRST AFFILIATE
-COMMISSION"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"AI WRITES
+THE DRAFT.
+YOU DO THE REST."
+The words "YOU DO THE REST" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Honest reviews convert better than hype."
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+The recommendation has to be real. AI can structure a review in minutes, and it cannot tell you whether the tool is any good, which is the only thing readers are there for.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-START WITH NO AUDIENCE / FREE TO JOIN PROGRAMMES / HONEST CONTENT CONVERTS / RECURRING BEATS ONE OFF
+SUPPORTING TEXT: as a single run-on paragraph with lime bullet dots between phrases:
+Pick products you have used
+Verify every claim yourself
+Disclose affiliate links clearly
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+How to start properly at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 23
 
-### 37C · Template C · `how-to-make-money-with-ai`
+### 37C · `how-to-make-money-with-ai`
+
+*Layout: ticket stub*
 
 **Title**
 ```
-Side Hustle Ideas Using Free AI Tools
+The Methods That Look Easy and Aren't
 ```
 
 **Description**
 ```
-Which AI income paths are genuinely realistic for a beginner, and which need skills or money you may not have yet. Tested, not hyped.
+Some AI income methods are far harder than the guides suggest. Print-on-demand and AI stock imagery both genuinely work and both need sustained volume before returning anything, which is exactly the part left out of most lists. We rate each of the twelve methods on realistic effort and time to first income, with no earnings promises.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with AI side hustle options in an icon grid
+Pin about realistic AI income expectations set as a plain statement
 ```
 
 **Board**
@@ -2546,43 +2648,50 @@ https://www.topuseai.com/blog/how-to-make-money-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The layout borrows a receipt or ticket: a narrow vertical panel with a perforated edge, monospace line items, and one figure circled in lime by hand. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"SIDE HUSTLE IDEAS
-USING FREE AI
-TOOLS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "FREE TO START".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"SOME OF THESE
+SOUND EASIER
+THAN THEY ARE."
+The words "THAN THEY ARE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Writing / Design / Video / Voice / Products / Services
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Print-on-demand and stock imagery are the two most oversold. Both work, and both need volume and patience that the guides never mention.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "READ FIRST", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Honest assessments at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 38C · Template B · `sell-ai-art-on-etsy`
+### 38C · `sell-ai-art-on-etsy`
+
+*Layout: hero numeral*
 
 **Title**
 ```
-Digital Products to Sell on Etsy in 2026
+Where Sellers Get Their Listings Removed
 ```
 
 **Description**
 ```
-Start an Etsy shop with digital downloads made using free tools. Pricing, formats and the licence rules that apply. Tested, not hyped.
+The most common way AI art sellers lose listings on Etsy is uploading generated images with no creative direction of their own, which the policy specifically prohibits. Writing your own prompts and disclosing AI use in the listing keeps you compliant. We set out what Etsy actually requires and how the disclosure should be worded.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and Etsy digital product benefits
+Pin about Etsy compliance set as a handwritten checklist
 ```
 
 **Board**
@@ -2597,45 +2706,50 @@ https://www.topuseai.com/blog/sell-ai-art-on-etsy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits in the upper third at a fraction of its size. Extreme scale contrast is the whole design. Leave the top 20% almost empty; let the composition sit low.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "NO SHIPPING".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THE RULE
+PEOPLE MISS.
+AND REGRET."
+The words "AND REGRET" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"DIGITAL PRODUCTS
-TO SELL ON ETSY
-IN 2026"
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Uploading generated images with no creative direction of your own is the line Etsy enforces. Your own prompts, plus disclosure, keeps you inside it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Make once. Sell many times."
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BEFORE YOU LIST", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-NO STOCK OR SHIPPING / MADE WITH FREE TOOLS / SELLS WHILE YOU SLEEP / CHECK YOUR LICENCE FIRST
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Stay compliant, at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 39C · Template C · `sell-digital-products-with-ai`
+### 39C · `sell-digital-products-with-ai`
+
+*Layout: oversized punctuation*
 
 **Title**
 ```
-Digital Product Ideas to Sell Online
+Test the Idea Before You Build the Thing
 ```
 
 **Description**
 ```
-Which digital products actually sell, which platform suits each, and how AI speeds up making them. Tested, not hyped.
+The advantage AI gives digital product sellers is not speed of production, it is speed of testing. A first version costs an afternoon instead of a fortnight, so you can find out whether anyone will pay before committing properly. Prompt packs, printables and templates are the easiest formats to test this way.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with digital product categories in an icon grid
+Pin about testing product ideas set as a handwritten index card
 ```
 
 **Board**
@@ -2650,94 +2764,50 @@ https://www.topuseai.com/blog/sell-digital-products-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 62% of the canvas height. The headline sits over it. Let one element break its container and overlap the element beside it.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"DIGITAL PRODUCT
-IDEAS TO SELL
-ONLINE"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "SELL ONLINE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"BUILD SMALL.
+SELL ONE.
+THEN SCALE."
+The words "SELL ONE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Printables / Templates / Presets / Ebooks / Courses / Prompts
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+AI makes a first version cheap enough that you can find out whether anyone wants it before spending a fortnight on the full product.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "START SMALL", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The full beginner guide at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 40C · Template C · `chatgpt-prompts-to-make-money`
+### 40C · `chatgpt-prompts-to-make-money`
+
+*Layout: numbered rows*
 
 **Title**
 ```
-Money Making Prompt Ideas for Beginners
+Add Your Details or the Output Is Worthless
 ```
 
 **Description**
 ```
-Prompts that help with the practical parts of earning online: outreach, pricing, listings and content. Tested, not hyped.
+The difference between a prompt that earns and one that wastes ten minutes is the detail you add. Name your audience, your actual offer and the tone you write in, and the output becomes usable. Paste it unchanged and you get the same generic paragraph every other person using that prompt received. Fifty prompts, each with the slots marked.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with prompt use cases in an icon grid
-```
-
-**Board**
-```
-Free AI Tools
-```
-
-**Link**
-```
-https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
-```
-
-**Image prompt**
-```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
-
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
-
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"MONEY MAKING
-PROMPT IDEAS FOR
-BEGINNERS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "BEGINNER READY".
-
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Outreach / Pricing / Listings / Content / Emails / Offers
-
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
-
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
-
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
-```
-
----
-
-### 41C · Template C · `faceless-ai-side-hustles`
-
-**Title**
-```
-Work From Home Ideas With No Experience
-```
-
-**Description**
-```
-Faceless income paths that need no camera, no audience and no prior experience. What each actually involves. Tested, not hyped.
-```
-
-**Alt text**
-```
-Split diagonal pin with faceless work options in an icon grid
+Pin about prompt customisation set as a plain typographic statement
 ```
 
 **Board**
@@ -2747,48 +2817,113 @@ Passive Income Ideas
 
 **Link**
 ```
+https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: Content set as numbered rows with the numerals oversized in lime and the text small beside them, the whole block pushed to one side rather than centred. Set the type unusually small against a lot of empty space.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"GENERIC PROMPT.
+GENERIC ANSWER.
+EVERY TIME."
+The words "EVERY TIME" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+The prompts that work name your audience, your offer and your tone. Pasting one unchanged gets you the same bland paragraph everyone else got.
+
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "MAKE IT YOURS", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Fifty prompts to adapt at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### 41C · `faceless-ai-side-hustles`
+
+*Layout: index card*
+
+**Title**
+```
+Faceless Does Not Mean Effortless
+```
+
+**Description**
+```
+Faceless side hustles remove the camera, not the work. Every option here takes consistent effort over weeks or months before it earns meaningfully, and the ones promising otherwise are selling something. What they genuinely offer is privacy and low startup cost. We are specific about the time each one actually takes.
+```
+
+**Alt text**
+```
+Pin about side hustle expectations set as a bold typographic statement
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
 https://www.topuseai.com/blog/faceless-ai-side-hustles
 ```
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"WORK FROM HOME
-IDEAS WITH NO
-EXPERIENCE"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "NO EXPERIENCE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO CAMERA.
+STILL REAL
+WORK."
+The words "STILL REAL WORK" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Video / Voice / Writing / Design / Products / Admin
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Every one of these takes consistent hours before it pays anything. The camera is what you avoid, not the effort.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "NO HYPE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Honest expectations at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 42C · Template B · `make-money-with-ai-art`
+### 42C · `make-money-with-ai-art`
+
+*Layout: annotated diagram*
 
 **Title**
 ```
-Passive Income Ideas Using AI Art
+Raw Output Won't Sell. Direction Will.
 ```
 
 **Description**
 ```
-Turn generated images into products that sell repeatedly. What works, what does not, and the licence rules. Tested, not hyped.
+The reason most AI art listings never sell is that anyone can generate the same thing in thirty seconds. What sells is a coherent series with a consistent point of view, sized and formatted properly for its use, aimed at a specific buyer. AI supplies the pixels. The direction, curation and finishing are still yours, and they are the whole product.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and AI art income benefits
+Pin about AI art quality set as a bold typographic statement
 ```
 
 **Board**
@@ -2803,47 +2938,53 @@ https://www.topuseai.com/blog/make-money-with-ai-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Introduce one hard right-angled shape that interrupts the layout.
 
-Top left: a large numeral "7" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "NO DESIGN SKILLS".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ANYONE CAN
+GENERATE IT.
+THAT'S THE PROBLEM."
+The words "THE PROBLEM" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"WAYS TO EARN
-FROM AI ART
-WITHOUT DESIGNING"
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+The market is flooded with unedited output. What sells is a coherent series with a point of view, which is the part AI cannot supply for you.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Make it once. List it everywhere."
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "DO THE WORK", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-NO DESIGN EXPERIENCE NEEDED / FREE TOOLS TO CREATE / SELLS ON MULTIPLE PLATFORMS / CHECK THE MODEL LICENCE
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+What actually sells at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 24
 
-### 43C · Template C · `faceless-youtube-cost`
+### 43C · `faceless-youtube-cost`
+
+*Layout: split contrast*
 
 **Title**
 ```
-Faceless YouTube Ideas for Any Budget
+What You Can Genuinely Skip
 ```
 
 **Description**
 ```
-What you can build with zero budget versus a small monthly spend, and where paying actually helps. Tested, not hyped.
+Most faceless YouTube cost guides pad the list with tools you do not need. CapCut is free and genuinely good. Stock footage is frequently free. Thumbnail tools, scriptwriting subscriptions and course bundles are usually skippable. What you actually need is a licensed voice and one video tool, which is why a realistic budget is $20 to $60 rather than $200.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with faceless channel cost categories in an icon grid
+Pin about unnecessary tool costs set as a receipt with items crossed out
 ```
 
 **Board**
@@ -2858,48 +2999,55 @@ https://www.topuseai.com/blog/faceless-youtube-cost
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in graphite #22202E and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Stack the composition tight to the bottom edge, leaving the top open.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"FACELESS YOUTUBE
-IDEAS FOR ANY
-BUDGET"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "ANY BUDGET".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU DON'T NEED
+HALF OF WHAT
+THEY SELL YOU."
+The words "HALF" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Tools / Voice / Footage / Music / Thumbnails / Hosting
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+CapCut is free and good. Stock footage is often free. The paid tools worth buying are few, and we name which ones and why.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "SKIP THESE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Honest budget guide at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 44C · Template B · `best-ai-image-generators-pinterest`
+### 44C · `best-ai-image-generators-pinterest`
+
+*Layout: comparison columns*
 
 **Title**
 ```
-Pinterest Design Ideas Using AI Tools
+Why Most AI Images Make Bad Pins
 ```
 
 **Description**
 ```
-Ten tools compared for making pins, with honest notes on text rendering and free tier limits. Tested, not hyped.
+Most AI images fail as pins for one reason: they are viewed at about 200px wide on a phone. Fine detail disappears, low-contrast type becomes unreadable, and busy compositions turn to mush. The tools that work best for Pinterest are the ones that handle text well, which is why Ideogram and Canva AI beat prettier generators here.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and pin design tool benefits
+Pin about pin design principles set as a bold typographic statement
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -2909,45 +3057,50 @@ https://www.topuseai.com/blog/best-ai-image-generators-pinterest
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
-Top left: a large numeral "10" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COMPARED".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"BEAUTIFUL IMAGE.
+TERRIBLE PIN.
+HERE'S WHY."
+The words "TERRIBLE PIN" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"AI IMAGE TOOLS
-TESTED FOR MAKING
-PINTEREST PINS"
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Pins are read at thumbnail size on a phone. A gorgeous, busy image becomes an unreadable smudge, and the headline is what actually earns the click.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Text rendering is where most of them fail."
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "THUMBNAIL TEST", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-ONE HANDLES TEXT BEST / SEVERAL ARE FREE TO USE / CHECK COMMERCIAL RIGHTS / VERTICAL FORMAT MATTERS
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+What works on Pinterest at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 45C · Template B · `midjourney-prompts-for-wall-art`
+### 45C · `midjourney-prompts-for-wall-art`
+
+*Layout: stacked type*
 
 **Title**
 ```
-Wall Art Ideas You Can Make and Sell
+Thirty Prompts You Can Sell From
 ```
 
 **Description**
 ```
-Thirty ready prompts for printable art, with the technical settings that make prints usable. Tested, not hyped.
+Thirty Midjourney prompts written specifically for printable wall art, each with the correct aspect ratio and resolution settings named. They are written to produce coherent series rather than one-off images, which is what actually sells on Etsy. Check licensing before selling, and we cover which models permit it.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and wall art creation benefits
+Pin listing wall art prompts as a printed index card
 ```
 
 **Board**
@@ -2962,50 +3115,55 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: Pure typography: the headline broken across 4 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
-Top left: a large numeral "30" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "READY PROMPTS".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THIRTY PROMPTS.
+PRINT SIZES.
+READY TO GO."
+The words "READY TO GO" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"WALL ART PROMPTS
-YOU CAN MAKE
-AND SELL"
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Each one is written for print: correct aspect ratio, resolution settings named, and a style specific enough to produce a coherent series.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Copy the prompt. Check the licence. List it."
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "COPY AND PASTE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-THIRTY READY PROMPTS / PRINT READY SETTINGS / SELLS AS DIGITAL DOWNLOAD / CHECK YOUR MODEL LICENCE
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Copy them all at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 46C · Template C · `chatgpt-prompts-for-small-business`
+### 46C · `chatgpt-prompts-for-small-business`
+
+*Layout: margin note*
 
 **Title**
 ```
-Small Business Prompt Ideas for Every Task
+Review Every Output Before a Customer Sees It
 ```
 
 **Description**
 ```
-Prompts organised by job: marketing, service, admin and content. Written for owners, not prompt engineers. Tested, not hyped.
+ChatGPT drafts a polite customer email in seconds, and it has no memory of what you promised that customer last month, no knowledge of your refund policy, and no stake in your reputation. Use the prompts for speed, and read every output before it leaves your outbox. That single habit is what separates useful from embarrassing.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with business task categories in an icon grid
+Pin about reviewing AI output set as a handwritten index card
 ```
 
 **Board**
 ```
-Free AI Tools
+Work From Home Ideas
 ```
 
 **Link**
@@ -3015,43 +3173,50 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-small-business
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The headline occupies only the left 42% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"SMALL BUSINESS
-PROMPT IDEAS FOR
-EVERY TASK"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "BY TASK".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FAST DRAFT.
+STILL YOUR
+REPUTATION."
+The words "YOUR REPUTATION" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Marketing / Emails / Social / Products / Admin / Support
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+AI writes a good customer email in seconds and has no idea what you promised last week. Read it before you send it, every time.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BEFORE YOU SEND", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Prompts plus the caveats at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 47C · Template C · `how-to-start-an-ai-blog`
+### 47C · `how-to-start-an-ai-blog`
+
+*Layout: hero numeral*
 
 **Title**
 ```
-Blogging Ideas for Complete Beginners
+Pick a Niche Narrow Enough to Actually Win
 ```
 
 **Description**
 ```
-What to do first when starting a blog, from niche choice to your first ten posts. Tested, not hyped.
+The single decision that determines whether a new blog works is niche width. Broad topics are owned by sites with years of authority and no new blog displaces them. A narrow niche with real search demand and few serious competitors is the only realistic entry point, and it is where most beginners go wrong before writing a word.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with blogging startup steps in an icon grid
+Pin about niche selection set as a bold typographic statement
 ```
 
 **Board**
@@ -3066,43 +3231,50 @@ https://www.topuseai.com/blog/how-to-start-an-ai-blog
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: One enormous numeral or short word occupies 55% of the canvas height in lime, and the headline sits in the bottom-left corner at a fraction of its size. Extreme scale contrast is the whole design. Set the type unusually small against a lot of empty space.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"BLOGGING IDEAS
-FOR COMPLETE
-BEGINNERS"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "START HERE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NARROW BEATS
+BIG. EVERY
+SINGLE TIME."
+The words "EVERY SINGLE TIME" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Niche / Hosting / Design / Writing / SEO / Money
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+A new blog cannot outrank established sites on broad topics. A narrow niche with genuine search demand is the only realistic way in.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "START HERE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+How to choose one at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 48C · Template C · `ai-affiliate-marketing-for-beginners`
+### 48C · `ai-affiliate-marketing-for-beginners`
+
+*Layout: stamp block*
 
 **Title**
 ```
-Affiliate Income Ideas That Work in 2026
+Where Beginners Actually Get Stuck
 ```
 
 **Description**
 ```
-Which content formats convert for affiliate income, and which programmes actually accept new sites. Tested, not hyped.
+Beginners assume affiliate marketing is hard because writing is hard. It is not. The genuinely difficult parts are choosing a niche narrow enough that you can rank in it, and finding programmes that pay recurring rather than one-off commission. AI helps enormously with the drafting and not at all with either of those decisions.
 ```
 
 **Alt text**
 ```
-Split diagonal pin with affiliate content types in an icon grid
+Pin about affiliate marketing basics set as a handwritten index card
 ```
 
 **Board**
@@ -3117,45 +3289,53 @@ https://www.topuseai.com/blog/ai-affiliate-marketing-for-beginners
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat geometric infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Composition: the canvas is divided by a single clean diagonal line running from the lower-left to the upper-right. The upper-left region is deep graphite #22202E. The lower-right region is warm off-white #FBFAF6.
+LAYOUT: The headline set inside a heavy solid a deep muted teal #1E3A38 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Leave the top 20% almost empty; let the composition sit low.
 
-Upper-left dark region: headline in chunky geometric sans-serif, off-white #FBFAF6, 3 lines, tight leading:
-"AFFILIATE INCOME
-IDEAS THAT WORK
-IN 2026"
-A small electric lime #D6FF3F pill-shaped tag above the headline with tiny uppercase monospace graphite text "BEGINNER READY".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THE HARD PART
+ISN'T THE
+WRITING."
+The words "ISN'T THE WRITING" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Lower-right light region: a 2x3 grid of six small flat icon cards, each a rounded square with a thin graphite outline, containing a simple line icon in graphite and a one-or-two-word label beneath in small graphite text:
-Reviews / Comparisons / Tutorials / Roundups / Lists / Guides
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Most people stall on picking a niche narrow enough to rank in and finding programmes that pay recurring commission. The content is the easy half.
 
-An electric lime #D6FF3F circle roughly 120px across sits on the diagonal boundary, overlapping both regions, containing the graphite numeral "6".
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "START HERE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Bottom-right corner: small uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The full beginner guide at topuseai.com
 
-Style: bold geometric, editorial, high contrast, strong silhouette at thumbnail size. No photos, no people, no 3D, no gradients, no drop shadows.
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 25
 
-### 49A · Template A · `best-ai-voice-generators`
+### 49A · `best-ai-voice-generators`
+
+*Layout: screenshot device*
 
 **Title**
 ```
-AI Voices That Actually Sound Human
+The Voice That Actually Carries Emotion
 ```
 
 **Description**
 ```
-Which AI voice tools pass as human in long-form narration, tested on real scripts. Free and paid options compared. Tested, not hyped.
+The most natural-sounding AI voice generator in 2026 is ElevenLabs, thanks to genuine emotion and intonation rather than flat delivery, which makes it the right pick for faceless video and audiobooks. Murf is better for business voiceover because of its editor, and Speechify is built for reading and accessibility rather than production.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five AI voice quality factors
+Pin about AI voice quality over a photo of a condenser microphone against black
 ```
 
 **Board**
@@ -3170,41 +3350,52 @@ https://www.topuseai.com/blog/best-ai-voice-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits slightly above centre, bleeding off the right edge. Flat electric lime #D6FF3F around it, headline above. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"AI VOICES THAT
-ACTUALLY SOUND
-HUMAN"
-The words "ACTUALLY" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a pair of headphones resting on a mixing desk. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Natural Pacing / Emotion Range / Breath Sounds / Long Form / Multiple Accents
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"IT SOUNDS
+LIKE SOMEONE
+MEANT IT."
+The words "MEANT IT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+ElevenLabs leads on emotion and intonation, which is why it suits faceless video and audiobooks. Murf is better when you need a proper editor, Speechify for reading aloud.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "TESTED", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Three tools compared at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 50A · Template A · `best-ai-video-tools-faceless-youtube`
+### 50A · `best-ai-video-tools-faceless-youtube`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-Best Video Tools for Faceless YouTube
+Scripts to Finished Video, No Editing Skills Needed
 ```
 
 **Description**
 ```
-The tools that actually work for faceless content, compared on output quality, cost and how much editing they still need. Tested, not hyped.
+For most faceless YouTube channels, Pictory is the best AI video tool because it turns scripts and blog posts into stock-footage videos with no editing skills required. Choose Synthesia or HeyGen for AI-presenter video, Fliki for the cheapest text-to-video, and Runway for original AI-generated visuals. Pair any of them with ElevenLabs for natural voiceover.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five faceless video tool features
+Pin about faceless video tools over a photo of a laptop showing a video timeline
 ```
 
 **Board**
@@ -3219,41 +3410,52 @@ https://www.topuseai.com/blog/best-ai-video-tools-faceless-youtube
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Stack the composition tight to the bottom edge, leaving the top open.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"BEST VIDEO TOOLS
-FOR FACELESS
-YOUTUBE"
-The words "FACELESS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a microphone arm casting a hard shadow on a wall. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Script to Video / Stock Footage / Auto Subtitles / Voice Sync / Batch Export
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO EDITING
+SKILLS.
+STILL WORKS."
+The words "STILL WORKS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Pictory turns scripts and blog posts into stock-footage videos without you touching a timeline. Pair it with ElevenLabs for a voice that does not sound synthetic.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BEGINNER FRIENDLY", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Five tools compared at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 51A · Template A · `best-free-ai-writing-tools`
+### 51A · `best-free-ai-writing-tools`
+
+*Layout: collage stack*
 
 **Title**
 ```
-Best Free AI Writing Tools With No Credit Card
+No Credit Card, No Trial, Genuinely Free
 ```
 
 **Description**
 ```
-Which writing tools have genuinely useful free tiers, what each limits, and when the free plan stops being enough. Tested, not hyped.
+The best free AI writing tool overall is ChatGPT's free tier: flexible, high quality, and no credit card needed. For long-form drafting, Claude's free tier is stronger. For fast short marketing copy, Rytr and Copy.ai lead on speed and templates. All four are genuinely free rather than trials with a countdown.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five free AI writing tools
+Pin about free writing tools over a photo of a keyboard by a window
 ```
 
 **Board**
@@ -3268,46 +3470,57 @@ https://www.topuseai.com/blog/best-free-ai-writing-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a warm clay #C9603F behind. Headline sits in the clearest corner. Introduce one hard right-angled shape that interrupts the layout.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"BEST FREE AI
-WRITING TOOLS
-NO CREDIT CARD"
-The words "NO CREDIT CARD" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a keyboard lit by a single window. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Long Form Drafts / Rewriting / Outlines / Headlines / Editing
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FREE.
+NO CARD.
+NO COUNTDOWN."
+The words "NO CARD" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+ChatGPT's free tier is the best all-rounder. Claude's free tier handles long-form drafts better. Rytr and Copy.ai lead on fast short marketing copy.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "NO TRIAL", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Four tools compared at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 52A · Template D · `midjourney-prompts-for-pinterest-pins`
+### 52A · `midjourney-prompts-for-pinterest-pins`
+
+*Layout: circle cutout*
 
 **Title**
 ```
-20 Midjourney Prompts for Pinterest Pins
+Leave Room for the Headline
 ```
 
 **Description**
 ```
-Twenty prompts for pin graphics, plus the aspect ratio and text settings that make them work at thumbnail size. Tested, not hyped.
+To write Midjourney prompts for Pinterest pins, name the subject, style, composition, lighting and mood in plain language, then add a vertical aspect ratio like --ar 2:3. Keep prompts specific and deliberately leave negative space for a text headline, because a beautiful image with no room for words makes a poor pin. Twenty prompts included, ready to paste.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated pin graphic designs
+Pin about Midjourney prompting over a photo of a phone showing a Pinterest feed
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -3317,46 +3530,57 @@ https://www.topuseai.com/blog/midjourney-prompts-for-pinterest-pins
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A large circular photo crop, 55% of the canvas width, sits in the lower-left, bleeding off the bottom. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"20 PROMPTS FOR
-PINTEREST PINS"
-The word "20 PROMPTS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a gallery wall of small prints in mismatched frames. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "READY TO USE".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"BEAUTIFUL PIN.
+NOWHERE TO PUT
+THE WORDS."
+The words "NOWHERE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated social graphic designs: a bold gradient card, a minimal typographic layout, an abstract shape composition, and a soft textured background, cohesive in a muted warm palette so the grid reads as one design set.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Name the subject, style, composition, lighting and mood, add --ar 2:3, and deliberately leave negative space where the headline will sit.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "--AR 2:3", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Twenty prompts ready to copy at topuseai.com
+
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 53A · Template D · `how-to-make-ai-influencer`
+### 53A · `how-to-make-ai-influencer`
+
+*Layout: photo strip band*
 
 **Title**
 ```
-How to Create an AI Influencer Step by Step
+Consistency Is the Whole Difficulty
 ```
 
 **Description**
 ```
-Building a consistent AI persona: face consistency, posting workflow and the disclosure rules that apply. Tested, not hyped.
+To create an AI influencer in 2026, design a persona with a fixed look, lock the face using a consistent image tool like Higgsfield, Flux.2 or Nano Banana Pro, add lip-sync video and a cloned voice, then post on TikTok or Instagram with clear AI labels. The hard part is consistency across dozens of images, and it takes real ongoing work rather than one clever prompt.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated portrait style images in consistent styling
+Pin about AI influencers over a photo of a phone on a tripod
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Faceless YouTube Ideas
 ```
 
 **Link**
@@ -3366,41 +3590,52 @@ https://www.topuseai.com/blog/how-to-make-ai-influencer
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A horizontal photographic band, 38% of canvas height, sits across the upper third. Flat a deep muted teal #1E3A38 above and below, headline in the larger of the two areas. Let one element break its container and overlap the element beside it.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"HOW TO CREATE AN
-AI INFLUENCER"
-The word "CREATE" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: three framed abstract prints leaning against a white wall. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "STEP BY STEP".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ANYONE CAN
+MAKE ONE FACE.
+TWENTY IS HARD."
+The words "TWENTY IS HARD" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated stylised portrait illustrations of the same fictional character in different settings, consistent in styling and lighting, cohesive in a muted warm palette so the grid reads as one character sheet.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Design a persona with a fixed look, then lock the face using a consistent image tool. Higgsfield, Flux.2 and Nano Banana Pro all handle this differently.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "ONGOING WORK", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Step by step at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 54A · Template A · `best-ai-social-media-tools`
+### 54A · `best-ai-social-media-tools`
+
+*Layout: full bleed photo*
 
 **Title**
 ```
-Best AI Tools for Social Media Content
+Free AI Assistant on Every Plan, Including the Free One
 ```
 
 **Description**
 ```
-Thirteen social tools compared on free tiers, AI features and real pricing. Which suit a solo creator and which need a team. Tested, not hyped.
+Buffer is the best all-around AI social media tool in 2026, with its AI Assistant included on every plan including the free tier, which covers up to 3 channels. Publer has the cheapest genuinely free plan. Predis.ai is strongest for visual content, and SocialBee offers unlimited AI generation with no credit metering at all.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five social media tool features
+Pin about social media tools over a photo of a phone showing an app grid
 ```
 
 **Board**
@@ -3415,48 +3650,60 @@ https://www.topuseai.com/blog/best-ai-social-media-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"BEST AI TOOLS
-FOR SOCIAL MEDIA
-CONTENT"
-The words "BEST" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a home office corner shot from the doorway. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Caption Writing / Post Scheduling / Image Creation / Analytics / Recycling
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"AI ON THE
+FREE PLAN.
+NO CATCH."
+The words "NO CATCH" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Buffer includes its AI Assistant on every tier including free, which covers up to 3 channels. Publer has the cheapest genuinely free plan beyond that.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "FREE TIER", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Four tools compared at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 26
 
-### 55A · Template A · `best-ai-logo-generators`
+### 55A · `best-ai-logo-generators`
+
+*Layout: text top photo bottom*
 
 **Title**
 ```
-Best AI Logo Makers Free and Paid
+One Free Logo Tool Passes the Licence Check
 ```
 
 **Description**
 ```
-Thirteen logo tools compared on download rights, vector files and commercial terms. Which are genuinely free to use. Tested, not hyped.
+Looka is the most complete AI logo maker for a full brand kit, and Canva is best if you want to edit by hand. For a genuinely free logo, Shopify Logo Maker is the only tool verified as both free to download and free for commercial use, though it exports PNG only with no vector. Microsoft Designer and Recraft's free tier both prohibit commercial use.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five logo maker comparison points
+Pin about AI logo tools over a photo of printed design sheets on a desk
 ```
 
 **Board**
 ```
-Passive Income Ideas
+AI Art & Wall Art
 ```
 
 **Link**
@@ -3466,46 +3713,57 @@ https://www.topuseai.com/blog/best-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: The top 42% is a solid warm off-white #FBFAF6 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Set the type unusually small against a lot of empty space.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"BEST AI LOGO
-MAKERS FREE
-AND PAID"
-The words "FREE" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: an inkjet print half-emerged from a printer. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Download Rights / Vector Files / Commercial Use / Editing Control / Real Pricing
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FOUR TOOLS.
+ONE YOU CAN
+ACTUALLY USE."
+The words "ONE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Shopify Logo Maker is the only one verified free to download and free commercially. Looka is the most complete paid option, Canva the best for hands-on editing.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "LICENCE CHECKED", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All four compared at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 56A · Template A · `chatgpt-prompts-for-bloggers`
+### 56A · `chatgpt-prompts-for-bloggers`
+
+*Layout: photo top text bottom*
 
 **Title**
 ```
-ChatGPT Prompts Every Blogger Should Save
+Prompts for the Parts of Blogging That Drag
 ```
 
 **Description**
 ```
-Copy-and-paste prompts for outlines, drafts, headlines and editing. Written for bloggers, grouped by stage. Tested, not hyped.
+ChatGPT speeds up blogging by handling the slow parts: brainstorming angles, building outlines, drafting sections, tightening SEO and repurposing posts for social. Give each prompt your topic, audience and tone for usable results, then edit every draft into your own voice and fact-check any statistic, date or name before publishing.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five blogging prompt categories
+Pin about blogging prompts over a photo of a paperback open face-down on a desk
 ```
 
 **Board**
 ```
-Free AI Tools
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -3515,41 +3773,52 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-bloggers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: The top 62% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid a warm clay #C9603F panel carries the headline and supporting text. Leave the top 20% almost empty; let the composition sit low.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"CHATGPT PROMPTS
-EVERY BLOGGER
-SHOULD SAVE"
-The words "SHOULD SAVE" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a printed manuscript with lime highlighter marks. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Post Outlines / First Drafts / Headlines / Meta Descriptions / Editing Passes
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"THE SLOW PARTS.
+DONE IN
+MINUTES."
+The words "THE SLOW PARTS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Angles, outlines, section drafts, SEO tightening and repurposing for social. Give each prompt your topic, audience and tone, then edit in your own voice.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "COPY AND PASTE", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every prompt, ready to paste, at topuseai.com
+
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 57A · Template D · `free-alternatives-to-midjourney`
+### 57A · `free-alternatives-to-midjourney`
+
+*Layout: before after*
 
 **Title**
 ```
-Free Alternatives to Midjourney That Work
+Free Almost Always Means Limited. Here's How.
 ```
 
 **Description**
 ```
-Five free image tools compared against Midjourney on quality and commercial rights. Which genuinely compete. Tested, not hyped.
+The best free alternative to Midjourney overall is Google Gemini (Nano Banana), which gives casual users a real daily image allowance with no watermark. Ideogram wins for text inside images and Bing Copilot for the fastest zero-setup start. But free almost always means limited: daily credits, slow queues, public galleries or non-commercial terms. Confirm current limits on each tool's own site.
 ```
 
 **Alt text**
 ```
-Dark navy pin showing four AI generated artworks from free tools
+Pin about free image tool limits over a photo of a gallery wall of prints
 ```
 
 **Board**
@@ -3564,41 +3833,52 @@ https://www.topuseai.com/blog/free-alternatives-to-midjourney
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Editorial layout, flat design frame containing generated imagery.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
-Top: headline in a chunky geometric sans-serif, warm off-white #FBFAF6, 2 lines, tight leading, left-aligned with generous left margin:
-"FREE ALTERNATIVES
-TO MIDJOURNEY"
-The word "FREE" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a stack of art prints on brown paper. Single-source lamp light against near-black surroundings. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below the headline: a small electric lime pill tag with tiny uppercase monospace graphite text "5 TESTED".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FREE, BUT
+CHECK WHAT
+THAT MEANS."
+The words "CHECK WHAT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Middle 55% of the canvas: a clean 2x2 grid of four square images with 12px gaps and 8px rounded corners, showing four distinct AI-generated artworks demonstrating range: a photorealistic still life, a stylised illustration, an abstract composition, and a detailed landscape, cohesive in a muted warm palette so the grid reads as one quality showcase.
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Daily credits, slow queues, public galleries or non-commercial terms. Gemini gives casual users a real daily allowance with no watermark, which is rarer than it sounds.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "READ THE LIMITS", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Style: gallery-like, high contrast, the imagery is the proof and the frame is the brand. No people, no desks, no laptops, no stock-photo scenes.
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Five alternatives compared at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 58A · Template A · `how-to-write-blog-post-with-ai`
+### 58A · `how-to-write-blog-post-with-ai`
+
+*Layout: offset photo card*
 
 **Title**
 ```
-Write a Blog Post With AI in 30 Minutes
+Thirty Minutes, If You Skip the Part Everyone Skips
 ```
 
 **Description**
 ```
-A repeatable workflow from keyword to published post, with the editing steps that keep it from sounding generated. Tested, not hyped.
+To write a blog post with AI in about thirty minutes: pick one keyword, ask for an outline, draft section by section with short specific prompts, then edit hard for your own voice and fact-check every claim. AI gives you a fast first draft. The human edit is what makes it publishable, and the fact-check is what keeps it trustworthy.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five blog writing steps
+Pin about fast blog writing over a photo of a keyboard and open notebook
 ```
 
 **Board**
@@ -3613,41 +3893,52 @@ https://www.topuseai.com/blog/how-to-write-blog-post-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated 2 degrees, casting no shadow. Flat a deep muted teal #1E3A38 behind it. Headline overlaps the card's bottom-left edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"WRITE A BLOG
-POST WITH AI IN
-30 MINUTES"
-The words "30 MINUTES" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a notebook with a pen resting in the gutter. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Pick the Keyword / Build the Outline / Draft in Sections / Add Real Detail / Edit for Voice
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"30 MINUTES.
+FACT-CHECKING
+INCLUDED."
+The words "INCLUDED" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+One keyword, an AI outline, section-by-section drafting with short prompts, then a hard edit. The fact-check is not optional and takes about five of those minutes.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "TESTED", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The full method at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 59A · Template A · `best-ai-productivity-tools`
+### 59A · `best-ai-productivity-tools`
+
+*Layout: screenshot device*
 
 **Title**
 ```
-AI Productivity Tools That Save Real Hours
+Start With the Tool That Fixes Your Worst Hour
 ```
 
 **Description**
 ```
-Which productivity tools genuinely save time versus which just add another app. Tested on real workflows. Tested, not hyped.
+The best AI productivity tools each do one job well: Otter for meeting notes, Notion for an all-in-one workspace, ClickUp for projects, Reclaim and Motion for scheduling, Zapier for automation and Perplexity for research. Most have a free tier. Start with whichever fixes your biggest weekly time sink rather than installing all seven.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five productivity tool categories
+Pin about productivity tools over a photo of a home office corner
 ```
 
 **Board**
@@ -3662,46 +3953,57 @@ https://www.topuseai.com/blog/best-ai-productivity-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits dead centre with even margins. Flat electric lime #D6FF3F around it, headline above. Stack the composition tight to the bottom edge, leaving the top open.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"AI PRODUCTIVITY
-TOOLS THAT SAVE
-REAL HOURS"
-The words "REAL HOURS" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a chair pushed back from a desk. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Meeting Notes / Email Drafts / Task Planning / Document Search / Summaries
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"DON'T INSTALL
+SEVEN. INSTALL
+THE RIGHT ONE."
+The words "THE RIGHT ONE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Otter for meeting notes, Notion for a workspace, ClickUp for projects, Reclaim and Motion for scheduling, Zapier for automation. Most have free tiers.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "PICK ONE", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+All seven explained at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 60A · Template A · `best-ai-meeting-note-takers`
+### 60A · `best-ai-meeting-note-takers`
+
+*Layout: diagonal split*
 
 **Title**
 ```
-Best Meeting Note Takers for Remote Teams
+Unlimited Free Recording, From One Tool Only
 ```
 
 **Description**
 ```
-Which meeting tools produce usable summaries, what each free tier includes, and the privacy question for client calls. Tested, not hyped.
+For most people, Fathom is the best free AI meeting note taker thanks to genuinely unlimited recording on the free plan. Otter suits transcript-heavy users, Fireflies fits teams wanting a searchable archive, tl;dv handles multilingual calls, Fellow adds agendas and action items, and Notion AI wins if your notes already live in Notion.
 ```
 
 **Alt text**
 ```
-Dark navy infographic listing five meeting note taker features
+Pin about meeting note tools over a photo of a laptop and coffee cup
 ```
 
 **Board**
 ```
-Work From Home Ideas
+Faceless YouTube Ideas
 ```
 
 **Link**
@@ -3711,43 +4013,55 @@ https://www.topuseai.com/blog/best-ai-meeting-note-takers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat vector infographic design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: solid deep graphite #22202E, full bleed.
+LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Introduce one hard right-angled shape that interrupts the layout.
 
-Top third: oversized headline in a chunky geometric sans-serif, warm off-white #FBFAF6, tight leading, 3 lines, left-aligned with generous left margin:
-"BEST MEETING
-NOTE TAKERS FOR
-REMOTE TEAMS"
-The words "BEST" highlighted in electric lime #D6FF3F.
+PHOTOGRAPH: a condenser microphone lit from one side against black. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Middle: a vertical list of exactly 5 items with generous vertical spacing between each row, roughly 100px of breathing room. Each row has a flat line-icon in electric lime on the left at 80px, a large lime numeral, and the item label in off-white at about 40% of the headline size. No divider lines between rows, let the whitespace separate them.
-Items: Auto Join Calls / Speaker Labels / Action Items / Search Archive / Free Tiers
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"UNLIMITED.
+FREE.
+ONE TOOL."
+The words "UNLIMITED" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Bottom: a slim horizontal band in electric lime #D6FF3F containing small uppercase graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right, in a monospace font.
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Fathom is the best free meeting note taker because the recording is genuinely unlimited. Otter suits transcript-heavy work, Fireflies suits teams wanting a searchable archive.
 
-Style: editorial, high contrast, generous whitespace, mobile-legible. No photos, no people, no 3D rendering, no drop shadows, no gradients.
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "FREE TIER TESTED", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Six tools compared at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
+
 ## DAY 27
 
-### 49B · Template B · `best-ai-voice-generators`
+### 49B · `best-ai-voice-generators`
+
+*Layout: hero numeral*
 
 **Title**
 ```
-Voiceover Tools Tested for Faceless Video
+Three Voice Tools, Three Different Jobs
 ```
 
 **Description**
 ```
-Which voice tools hold up over a ten minute narration, and which start sounding robotic after a paragraph. Tested, not hyped.
+AI voice tools are usually compared on naturalness alone, which sends people to the wrong one. ElevenLabs is the most expressive and suits narration. Murf has a proper editor with timeline and emphasis controls, which matters for corporate and e-learning work. Speechify is built for reading text aloud rather than producing content.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and voice tool comparison points
+Pin comparing voice tools by use case in columns
 ```
 
 **Board**
@@ -3762,45 +4076,53 @@ https://www.topuseai.com/blog/best-ai-voice-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits across the top edge at a fraction of its size. Extreme scale contrast is the whole design. Let one element break its container and overlap the element beside it.
 
-Top left: a large numeral "7" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "TESTED".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NARRATION.
+BUSINESS.
+READING ALOUD."
+The words "THREE JOBS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"AI VOICE TOOLS
-COMPARED ON REAL
-NARRATION"
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+ElevenLabs for expressive narration, Murf for corporate voiceover with an editor and timeline, Speechify for accessibility. Picking by naturalness alone leads people wrong.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Short clips sound fine. Long form exposes them."
+SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
+ElevenLabs: most natural, narration
+Murf: editor and timeline, business
+Speechify: reading and accessibility
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-TESTED ON LONG SCRIPTS / FREE AND PAID COMPARED / CHECK COMMERCIAL RIGHTS / ACCENTS AND LANGUAGES
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Full comparison at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 50B · Template B · `best-ai-video-tools-faceless-youtube`
+### 50B · `best-ai-video-tools-faceless-youtube`
+
+*Layout: photo strip band*
 
 **Title**
 ```
-Faceless Video Tools Compared for Creators
+Pick by What You're Making, Not by Price
 ```
 
 **Description**
 ```
-Which faceless video tools produce usable output and which need heavy editing afterwards. Free and paid. Tested, not hyped.
+These five AI video tools are not interchangeable. Pictory turns scripts into stock-footage videos, Synthesia and HeyGen produce AI presenters, Fliki is the cheapest text-to-video route and Runway generates original visuals. Choosing by monthly price rather than by what you are actually making is the most common and most expensive mistake.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and video tool comparison
+Pin comparing video tools by use case in a list
 ```
 
 **Board**
@@ -3815,45 +4137,56 @@ https://www.topuseai.com/blog/best-ai-video-tools-faceless-youtube
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A horizontal photographic band, 62% of canvas height, sits across the vertical centre. Flat electric lime #D6FF3F above and below, headline in the larger of the two areas. Set the type unusually small against a lot of empty space.
 
-Top left: a large numeral "6" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "COMPARED".
+PHOTOGRAPH: a ring light switched off on a cluttered desk. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"VIDEO TOOLS TESTED
-FOR FACELESS
-YOUTUBE CHANNELS"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"FIVE TOOLS.
+FIVE DIFFERENT
+JOBS."
+The words "FIVE DIFFERENT JOBS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Output quality varies more than price does."
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Stock-footage explainers, AI presenters, cheap text-to-video and original generated visuals are four different products. The cheapest one is rarely the right one.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-SOME NEED HEAVY EDITING / SOME ARE GENUINELY FREE / CHECK STOCK LICENSING / POLICY APPLIES TO ALL
+SUPPORTING TEXT: each line on its own lime-underlined row:
+Pictory: script to stock footage
+Synthesia or HeyGen: AI presenter
+Fliki: cheapest text-to-video
+Runway: original AI visuals
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Which fits your channel, at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 51B · Template B · `best-free-ai-writing-tools`
+### 51B · `best-free-ai-writing-tools`
+
+*Layout: full bleed photo*
 
 **Title**
 ```
-Free Writing Tools That Do Not Need Payment
+Long Drafts or Quick Copy? Different Tools.
 ```
 
 **Description**
 ```
-Genuinely free AI writing tools compared on output length, quality and what the free tier actually restricts. Tested, not hyped.
+Free AI writing tools are not interchangeable, and using the wrong one is why people decide they are all weak. Claude's free tier holds structure across long drafts. Rytr and Copy.ai produce short marketing copy quickly from templates. ChatGPT's free tier is the most flexible all-rounder. None of them need a credit card.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and free writing tool benefits
+Pin comparing free writing tools in two columns
 ```
 
 **Board**
@@ -3868,50 +4201,60 @@ https://www.topuseai.com/blog/best-free-ai-writing-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
-Top left: a large numeral "7" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "NO CARD NEEDED".
+PHOTOGRAPH: a paperback opened face-down on a desk. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"FREE AI WRITING
-TOOLS THAT NEED
-NO PAYMENT"
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"ONE FOR LENGTH.
+ONE FOR
+SPEED."
+The words "ONE FOR SPEED" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free tiers vary far more than the marketing suggests."
+SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Claude handles long-form structure better. Rytr and Copy.ai turn out short marketing copy faster. Using the wrong one for the job is why people conclude free tools are weak.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-NO CREDIT CARD REQUIRED / REAL WORD LIMITS COMPARED / OUTPUT QUALITY TESTED / KNOW WHEN TO UPGRADE
+SUPPORTING TEXT: in two uneven columns, the left wider than the right:
+ChatGPT free: best all-rounder
+Claude free: long-form drafts
+Rytr and Copy.ai: short copy, fast
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+CLOSING LINE: sitting just above the bottom edge, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Which to use when, at topuseai.com
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+Bottom-right corner: small uppercase monospace text "TOPUSEAI.COM" in lime, no band, sitting directly on the background.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 52B · Template B · `midjourney-prompts-for-pinterest-pins`
+### 52B · `midjourney-prompts-for-pinterest-pins`
+
+*Layout: stacked type*
 
 **Title**
 ```
-Pin Design Prompts That Work at Thumbnail Size
+Five Things Every Good Pin Prompt Names
 ```
 
 **Description**
 ```
-Twenty ready prompts plus the settings that stop pins looking generic. Aspect ratio, contrast and text handling. Tested, not hyped.
+Good Midjourney prompts for pins name five things: subject, style, composition, lighting and mood, plus a vertical aspect ratio like --ar 2:3. Leaving any of them out is why prompts return generic results. Twenty worked examples included, each written for Pinterest's vertical format with negative space reserved for a headline.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and pin design prompt benefits
+Pin listing prompt components as a handwritten notebook page
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Blogging & SEO Tips
 ```
 
 **Link**
@@ -3921,50 +4264,61 @@ https://www.topuseai.com/blog/midjourney-prompts-for-pinterest-pins
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: Pure typography: the headline broken across 3 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
-Top left: a large numeral "20" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "READY PROMPTS".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"SUBJECT. STYLE.
+COMPOSITION.
+LIGHT. MOOD."
+The words "FIVE THINGS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"PIN PROMPTS THAT
-WORK AT THUMBNAIL
-SIZE"
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Vague prompts produce generic images. Naming all five, plus the aspect ratio, is the difference between something usable and another pretty square.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Most pins fail because nobody can read them."
+SUPPORTING TEXT: as a loose vertical list, each line a slightly different size so the block reads as hand-set rather than templated:
+Subject
+Style
+Composition
+Lighting
+Mood
+--ar 2:3
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-TWENTY READY PROMPTS / CORRECT ASPECT RATIO / HIGH CONTRAST BY DEFAULT / READS AT SMALL SIZE
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Twenty worked examples at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 53B · Template B · `how-to-make-ai-influencer`
+### 53B · `how-to-make-ai-influencer`
+
+*Layout: torn edge*
 
 **Title**
 ```
-Build a Virtual Persona That Stays Consistent
+Platforms Require Clear AI Labels Now
 ```
 
 **Description**
 ```
-The hard part of AI personas is consistency across images. How to solve it, plus the platform disclosure rules. Tested, not hyped.
+AI influencer accounts now need clear AI labels on TikTok and Instagram, and building an audience without them risks the account. Beyond disclosure, the real work is consistency: keeping one face recognisable across dozens of posts using tools like Higgsfield, Flux.2 or Nano Banana Pro, then adding lip-sync video and a cloned voice.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and AI persona creation points
+Pin about AI influencer disclosure set as a bold typographic statement
 ```
 
 **Board**
 ```
-AI Art & Wall Art
+Faceless YouTube Ideas
 ```
 
 **Link**
@@ -3974,45 +4328,50 @@ https://www.topuseai.com/blog/how-to-make-ai-influencer
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: Two flat colour fields meeting along a rough torn-paper edge rather than a straight line. Headline on the larger field. Leave the top 20% almost empty; let the composition sit low.
 
-Top left: a large numeral "5" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "CONSISTENCY".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"LABEL IT.
+THE PLATFORMS
+REQUIRE IT."
+The words "REQUIRE IT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"STEPS TO BUILD AN
-AI PERSONA THAT
-STAYS CONSISTENT"
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+TikTok and Instagram both expect AI-generated personas to be disclosed. Building an audience on a hidden one risks losing the account entirely.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Consistency is the whole challenge."
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "DISCLOSURE", placed so it does not align neatly with the headline. Offset it deliberately.
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-LOCK THE FACE FIRST / KEEP LIGHTING CONSISTENT / BUILD A PROMPT TEMPLATE / DISCLOSE WHERE REQUIRED
+CLOSING LINE: just above the logo, centred to the text block above it. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+The rules and the method at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
 
 ---
 
-### 54B · Template B · `best-ai-social-media-tools`
+### 54B · `best-ai-social-media-tools`
+
+*Layout: oversized punctuation*
 
 **Title**
 ```
-Social Media Tools Compared on Real Pricing
+Unlimited AI Generation, No Credits Counted
 ```
 
 **Description**
 ```
-Thirteen tools with verified 2026 pricing, free tier limits and which ones genuinely include AI. Tested, not hyped.
+Credit metering is the hidden cost in AI social tools: generate a few posts and the allowance is gone. SocialBee offers unlimited AI generation with no credit meter at all. Buffer includes its AI Assistant free on every plan for up to 3 channels, Publer has the cheapest genuine free tier, and Predis.ai leads on visual content.
 ```
 
 **Alt text**
 ```
-Off-white poster with large lime numeral and social tool comparison points
+Pin comparing social tool AI limits in a list
 ```
 
 **Board**
@@ -4027,24 +4386,33 @@ https://www.topuseai.com/blog/best-ai-social-media-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio). Flat minimal editorial poster design, NOT photorealistic, NOT an AI-generated scene.
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 
-Background: warm off-white #FBFAF6, full bleed.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 70% of the canvas height. The headline sits over it. Introduce one hard right-angled shape that interrupts the layout.
 
-Top left: a large numeral "13" occupying roughly 25% of the canvas height, in electric lime #D6FF3F with a 5px graphite #22202E outline. To its right, vertically centred against the numeral, a small electric lime pill tag with tiny uppercase monospace graphite text "VERIFIED PRICING".
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"NO CREDIT
+METER.
+JUST WRITE."
+The words "NO CREDIT METER" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
-Below: headline in a chunky geometric sans-serif, graphite #22202E, tight leading, left-aligned, filling the width:
-"SOCIAL MEDIA TOOLS
-COMPARED ON REAL
-PRICING"
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+SocialBee generates without counting credits, which matters if you post daily. Most rivals ration AI output and quietly upsell you when you run out.
 
-Below the headline: one line of supporting text in warm grey #5C5A68:
-"Free tiers are smaller than the marketing implies."
+SUPPORTING TEXT: as a single run-on paragraph with lime bullet dots between phrases:
+Buffer: free AI on every plan
+Publer: cheapest real free tier
+SocialBee: unlimited AI, no meter
+Predis.ai: best for visuals
 
-Lower 35%: a solid graphite #22202E block spanning full width with rounded top corners, containing four short benefit lines in off-white, each preceded by a small lime checkmark, stacked with even generous spacing:
-VERIFIED 2026 PRICING / REAL FREE TIER LIMITS / AI FEATURES COMPARED / SOLO VERSUS TEAM FIT
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every plan compared at topuseai.com
 
-Bottom edge: thin lime bar with uppercase monospace graphite text "TOPUSEAI.COM".
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left.
 
-Style: Swiss editorial poster, extreme contrast, generous whitespace. No photos, no people, no 3D, no gradients, no shadows.
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
+
+---

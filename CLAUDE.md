@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# Top Use AI — Project Guide for Claude
+# Top Use AI: Project Guide for Claude
 
 ## What This Project Is
 
@@ -22,13 +22,13 @@ The strategic blueprint (categories, sub-niches, affiliate programs) lives in `d
 
 All tables have a `site_id` column. Always filter by `site_id = '7635559c-2c64-4d76-8b3b-1c69e4a412f8'`.
 
-**posts** — title, slug, content (markdown), excerpt, quick_answer, category_id, audience_tags[], status, seo_title, seo_description, faq_items (jsonb), published_at, featured_image_url
+**posts**: title, slug, content (markdown), excerpt, quick_answer, category_id, audience_tags[], status, seo_title, seo_description, faq_items (jsonb), published_at, featured_image_url
 
-**categories** — see slugs/IDs below
+**categories**: see slugs/IDs below
 
 **Status values:** `draft` | `published`
 
-### Category IDs (explained-ai-tools site) — 9 categories
+### Category IDs (explained-ai-tools site): 9 categories
 | slug | name | id |
 |---|---|---|
 | make-money-with-ai | Make Money with AI | d53b793e-2ab6-42dd-bc5d-a72b7894e61e |
@@ -58,12 +58,12 @@ All tables have a `site_id` column. Always filter by `site_id = '7635559c-2c64-4
 ### Site Theme (blog/UI colors)
 | Token | Hex | Use |
 |---|---|---|
-| primary | #0369A1 | Azure — sky blue; nav, buttons |
-| accent | #F59E0B | Signal Amber — highlights |
-| background | #F6FAFD | Sky Paper — light-theme background |
+| primary | #0369A1 | Azure: sky blue; nav, buttons |
+| accent | #F59E0B | Signal Amber: highlights |
+| background | #F6FAFD | Sky Paper: light-theme background |
 | text | #0F1B2A | Deep Navy Ink |
-| muted | #5B7183 | Slate — secondary text |
-| success | #10B981 | Emerald — verified/positive states |
+| muted | #5B7183 | Slate: secondary text |
+| success | #10B981 | Emerald: verified/positive states |
 
 ### Fonts
 | Role | Family |
@@ -84,8 +84,8 @@ techniques that measurably work, internal linking rules, and the pre-publish
 checklist. The core rule: never publish a fact not verified at its source.
 
 Key tooling:
-- `scrapling-py scripts/research/verify_pricing.py <tool>` — verify vendor pricing
-- `node scripts/publishing/publish-due.js --list` — inspect the publish queue
+- `scrapling-py scripts/research/verify_pricing.py <tool>`: verify vendor pricing
+- `node scripts/publishing/publish-due.js --list`: inspect the publish queue
 
 ## Blog Post Structure (GEO + SEO Rules)
 
@@ -93,18 +93,32 @@ Every blog post must follow this structure:
 
 1. **Intro (150 words):** Validate the reader's question or problem. No fluff. No conclusion yet.
 2. **H2 sections:** 4–6 question-based H2s (e.g., "Is Jasper Worth It in 2026?")
-3. **GEO rule:** Each H2 section body must be a **self-contained answer block of 134–167 words** — Google AI Overviews and Perplexity can extract and cite these directly
-4. **Internal links:** Always link to at least 2 other posts — use relative paths like `/blog/<slug>`
+3. **GEO rule:** Each H2 section body must be a **self-contained answer block of 134–167 words**: Google AI Overviews and Perplexity can extract and cite these directly
+4. **Internal links:** Always link to at least 2 other posts: use relative paths like `/blog/<slug>`
 5. **FAQ section:** 5 questions minimum, stored as JSON in `faq_items` field (not in markdown body)
 6. **Schema:** BlogPosting + FAQPage (handled automatically by the app via faq_items)
 7. **FTC affiliate disclosure:** every review/comparison post must carry a visible disclosure; link to `/affiliate-disclosure`
 
 ### Tone Rules
-- Independent, hands-on, honest — "tested, not hyped"
+- Independent, hands-on, honest. "Tested, not hyped."
 - Score tools on output quality, ease of use, speed, and value; always note free/cheaper alternatives
 - Real specifics beat vague claims (actual prices, plan limits, model names, sample outputs)
-- Affiliate relationships never change scores or picks — say so
+- Affiliate relationships never change scores or picks, and we say so
 - Target beginners-to-intermediate users choosing and monetizing AI tools
+
+### Never use em dashes
+
+**No em dashes (—) anywhere.** Not in posts, excerpts, SEO descriptions, FAQ
+answers, commit messages, Pinterest copy, or text set inside pin images.
+Heavy em dash use is one of the clearest tells of AI-written text.
+
+Use a full stop, a comma, a colon, or brackets instead. `Whisper is free. It
+is also unlimited.` never `Whisper is free — and unlimited.` En dashes are
+fine in number ranges (`45–300 minutes`). Hyphens in compound words are
+unaffected.
+
+Verify with `grep -n '—' <file>` before publishing. Full guidance and a
+rewrite table: `docs/WRITING-PLAYBOOK.md`.
 
 ---
 

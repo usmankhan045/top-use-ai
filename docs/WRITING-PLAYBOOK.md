@@ -21,7 +21,7 @@ being right.
 
 That is also what earns AI citations. The peer-reviewed GEO research (Aggarwal
 et al., KDD '24, 10,000 queries) found the highest-performing techniques were
-quotation addition, statistics addition, and citing sources — and that keyword
+quotation addition, statistics addition, and citing sources, and that keyword
 stuffing performed *worse than doing nothing*. Being accurate and specific is
 the optimisation.
 
@@ -55,10 +55,10 @@ scrapling-py scripts/research/verify_pricing.py surfer ahrefs
 
 Flags mean different things:
 
-- `OK` — prices found, safe to publish with a date
-- `QUOTE` — vendor sells by quote only. Write "check current pricing", never a figure from a blog
-- `NONE` — page loaded, nothing matched. Inspect by hand
-- `FAIL` — fetch error
+- `OK`: prices found, safe to publish with a date
+- `QUOTE`: vendor sells by quote only. Write "check current pricing", never a figure from a blog
+- `NONE`: page loaded, nothing matched. Inspect by hand
+- `FAIL`: fetch error
 
 `QUOTE` and `NONE` are **different failures**. Confusing them is how articles
 end up repeating invented MarketMuse prices.
@@ -101,7 +101,7 @@ print(json.loads(Fetcher.get('https://suggestqueries.google.com/complete/search?
 ```
 
 Google autocomplete confirms people actually search a phrasing. Cross-check
-against Search Console impressions for queries we already appear for — those
+against Search Console impressions for queries we already appear for, those
 are the highest-value targets because demand is proven.
 
 ---
@@ -115,9 +115,9 @@ Every post follows the same shape:
 1. **Bold lede paragraph.** The complete answer in 2-4 sentences. Someone who reads only this should have what they came for.
 2. **Key takeaways.** 5 bullets, each a specific verified fact with a number where possible.
 3. **4-8 H2 sections**, each a self-contained answer block of roughly 134-167 words.
-4. **"Which should you choose?"** — concrete recommendations by user situation, not a summary.
+4. **"Which should you choose?"**: concrete recommendations by user situation, not a summary.
 5. **The verdict.** What we actually think, including the honest caveat.
-6. **Related reading** — italic footer with 2 internal links.
+6. **Related reading**: italic footer with 2 internal links.
 
 ### Voice
 
@@ -128,6 +128,32 @@ Every post follows the same shape:
 - No hedging stacks: "it might potentially be somewhat useful".
 - Contractions sparingly; they read as filler in comparison tables.
 
+#### Punctuation: no em dashes
+
+**Never use an em dash (—) or an en dash used as one (–).** Heavy em dash use
+is one of the most recognisable signals of AI-written text, and readers now
+spot it. This applies everywhere: post bodies, excerpts, SEO descriptions,
+FAQ answers, Pinterest titles and descriptions, and the text set inside pin
+images.
+
+Rewrite instead. An em dash is nearly always one of these in disguise:
+
+| Instead of | Use |
+|---|---|
+| `Whisper is free — and unlimited.` | A full stop. `Whisper is free. It is also unlimited.` |
+| `Three tools — Buzz, Whisper, ACE — are MIT.` | Commas, or brackets. `Three tools (Buzz, Whisper, ACE) are MIT.` |
+| `It works — if you have the VRAM.` | A comma. `It works, if you have the VRAM.` |
+| `One thing matters — the licence.` | A colon. `One thing matters: the licence.` |
+
+En dashes stay legal in number ranges (`45–300 minutes`), though a plain
+"to" usually reads better. Hyphens in compound words are unaffected.
+
+Check before publishing:
+
+```bash
+grep -n '—' <file>   # must return nothing
+```
+
 ### What makes a post worth publishing
 
 Every post must carry at least one **verified fact competitors get wrong**.
@@ -136,7 +162,7 @@ we should target a different angle.
 
 Examples from the current queue:
 
-- MusicGen's weights are CC-BY-NC — you cannot sell its output
+- MusicGen's weights are CC-BY-NC: you cannot sell its output
 - X charges $0.200 per link post against $0.015 plain
 - GLM-5.3 is not MIT; only GLM-5.3-Flash is
 - open-seo needs a $50 API deposit before returning a single result
@@ -144,7 +170,7 @@ Examples from the current queue:
 
 ### Say what is wrong with the thing
 
-Every post names real limitations. Not false balance — actual failure modes,
+Every post names real limitations. Not false balance, actual failure modes,
 hidden costs and who should skip it.
 
 A post that only lists strengths reads as marketing and gets treated as such.
@@ -154,9 +180,9 @@ A post that only lists strengths reads as marketing and gets treated as such.
 
 Three permitted forms:
 
-1. **Verified** — state it plainly, dated. "Verified September 2026."
-2. **Attributed** — "Mistral claims 7x more cost-efficient", "its own paper reports"
-3. **Unverified** — "check current pricing" and move on
+1. **Verified**: state it plainly, dated. "Verified September 2026."
+2. **Attributed**: "Mistral claims 7x more cost-efficient", "its own paper reports"
+3. **Unverified**: "check current pricing" and move on
 
 Never a fourth form where an unverified number appears as fact. If a figure
 cannot be verified, the sentence works without it.
@@ -184,7 +210,7 @@ cannot be verified, the sentence works without it.
 5 per post minimum, stored in `faq_items`, not in the markdown body.
 
 Questions must be **phrasings people actually search**, taken from autocomplete
-or Search Console — not invented. Answers are 40-80 words and self-contained.
+or Search Console, not invented. Answers are 40-80 words and self-contained.
 
 Note: Google retired FAQ rich results for all sites on 7 May 2026. We keep
 `faq_items` for AI citation value, not for SERP snippets.
@@ -193,11 +219,11 @@ Note: Google retired FAQ rich results for all sites on 7 May 2026. We keep
 
 From the KDD '24 GEO paper, in order of measured effect:
 
-1. **Quotation addition** (27.2 vs 19.3 baseline) — quote licences, docs and policies verbatim
-2. **Statistics addition** (25.2) — specific verified numbers throughout
-3. **Cite sources** (24.6) — name where each fact came from
-4. **Fluency optimisation** (24.7) — clear readable prose
-5. **Keyword stuffing** (17.7) — **worse than doing nothing**
+1. **Quotation addition** (27.2 vs 19.3 baseline): quote licences, docs and policies verbatim
+2. **Statistics addition** (25.2): specific verified numbers throughout
+3. **Cite sources** (24.6): name where each fact came from
+4. **Fluency optimisation** (24.7): clear readable prose
+5. **Keyword stuffing** (17.7): **worse than doing nothing**
 
 The same paper found citing sources produced a **+115% visibility increase for
 pages ranked #5**, while the #1-ranked page lost 30%. GEO disproportionately
@@ -265,7 +291,7 @@ node scripts/publishing/publish-due.js --dry-run   # what would publish
 ```
 
 **Drafts rather than future dates** because `lib/queries.ts` filters on status
-and only null-checks `published_at` — a future date alone publishes immediately.
+and only null-checks `published_at`, a future date alone publishes immediately.
 
 ### Cadence
 
@@ -298,4 +324,5 @@ blocks deployment.
 - [ ] 3-5 contextual internal links plus Related reading footer
 - [ ] Inbound links added from existing posts (no orphans)
 - [ ] No Tier 4-5 sources cited anywhere
+- [ ] No em dashes anywhere (`grep -n '—' <file>` returns nothing)
 - [ ] Scheduled at the right cadence for current domain authority
