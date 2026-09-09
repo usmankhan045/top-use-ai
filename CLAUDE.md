@@ -50,6 +50,20 @@ All tables have a `site_id` column. Always filter by `site_id = '7635559c-2c64-4
 2. Insert post record into Supabase: `INSERT INTO posts (site_id, slug, title, excerpt, content, quick_answer, category_id, audience_tags, status, seo_title, seo_description, faq_items, published_at) VALUES (...)`
 3. Use dollar-quoting `$BODY$...$BODY$` in SQL to avoid escaping markdown content
 4. A category only appears in the nav dropdown and homepage grid once it has ≥1 published post
+5. **Purge the cache:** `node scripts/publishing/revalidate.js <slug>`
+
+### Editing a post that is already live
+
+Every page is built with `export const revalidate = 3600`. A SQL edit does not
+notify Next.js, so the live site keeps serving the old HTML for up to an hour.
+After any change to a published post, run:
+
+```bash
+node scripts/publishing/revalidate.js best-ai-logo-generators
+```
+
+Needs `REVALIDATION_SECRET` in `.env.local`, matching the Vercel env var. If the
+secret changes in Vercel, redeploy before the new value takes effect.
 
 ---
 
