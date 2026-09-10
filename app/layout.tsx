@@ -63,6 +63,10 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${fonts.variables} h-full`}>
       <head>
+        {/* impact.com media-partner site verification. Their snippet uses value=
+            rather than the standard content=, which Metadata.other cannot emit
+            and React's JSX types reject, hence the spread. */}
+        <meta {...{ name: "impact-site-verification", value: "f43d7613-6c3a-454a-91e8-d21e0242fde5" }} />
         {/* Inject theme CSS vars, change siteConfig.theme.colors to restyle the whole site */}
         <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
         {/* Site-wide entity graph. Emitted on every page so that per-page schema

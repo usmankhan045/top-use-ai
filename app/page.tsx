@@ -373,10 +373,6 @@ export default async function HomePage() {
   return (
     <main className="flex-1">
 
-      {/* impact.com media-partner site verification. Present in the served HTML
-          so impact.com's crawler can read it; visually hidden from visitors. */}
-      <p className="sr-only">Impact-Site-Verification: ac02bb23-2196-4d2d-bd11-2c7dfa9ceb0e</p>
-
       {/* ══════════════════════════════════════════════════════════════════
           § HERO, the page's thesis.
           A first-time visitor learns three things instantly: what this is
