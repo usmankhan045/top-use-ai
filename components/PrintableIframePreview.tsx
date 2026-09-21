@@ -40,6 +40,7 @@ export function PrintableIframePreview({ slug, title, orientation = "portrait" }
       ref={containerRef}
       className="w-full overflow-hidden rounded-2xl"
       style={{ height: scaledHeight }}
+      role="img"
       aria-label={`Preview of ${title}`}
     >
       <iframe

@@ -119,7 +119,7 @@ const REVIEW_ROWS: { label: string; score: number }[] = [
 
 function ScoreDots({ score }: { score: number }) {
   return (
-    <span className="flex items-center gap-1" aria-label={`${score} out of 5`}>
+    <span className="flex items-center gap-1" role="img" aria-label={`${score} out of 5`}>
       {[1, 2, 3, 4, 5].map((n) => (
         <span
           key={n}
