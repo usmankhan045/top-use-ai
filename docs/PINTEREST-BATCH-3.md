@@ -67,10 +67,9 @@ https://www.topuseai.com/blog/whisper-vs-faster-whisper
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at across the top edge carries the headline. No frame, no border, the photo runs to all four edges. Let one element break its container and overlap the element beside it.
 
@@ -130,9 +129,8 @@ https://www.topuseai.com/blog/moneyprinterturbo-vs-paid-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -194,10 +192,9 @@ https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A horizontal photographic band, 62% of canvas height, sits across the upper third. Flat warm off-white #FBFAF6 above and below, headline in the larger of the two areas. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -257,10 +254,9 @@ https://www.topuseai.com/blog/free-seo-tools-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A large circular photo crop, 70% of the canvas width, sits in the upper-right, overlapping the headline. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -325,10 +321,9 @@ https://www.topuseai.com/blog/obsidian-vs-logseq-vs-appflowy
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat graphite #22202E behind it. Headline overlaps the card's bottom-left edge. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -391,10 +386,9 @@ https://www.topuseai.com/blog/postiz-vs-paid-social-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space centred vertically. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
@@ -454,10 +448,9 @@ https://www.topuseai.com/blog/voicebox-vs-elevenlabs-murf
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat electric lime #D6FF3F with the headline on the other. Set the type unusually small against a lot of empty space.
 
@@ -517,9 +510,8 @@ https://www.topuseai.com/blog/free-ai-image-generation-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Let one element break its container and overlap the element beside it. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -580,10 +572,9 @@ https://www.topuseai.com/blog/free-ai-video-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at centred vertically carries the headline. No frame, no border, the photo runs to all four edges. Set the type unusually small against a lot of empty space.
 
@@ -646,9 +637,8 @@ https://www.topuseai.com/blog/open-source-social-media-schedulers
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Let one element break its container and overlap the element beside it. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -711,10 +701,9 @@ https://www.topuseai.com/blog/moneyprinterturbo-vs-paid-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -774,10 +763,9 @@ https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat electric lime #D6FF3F behind. Headline sits in the clearest corner. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -837,10 +825,9 @@ https://www.topuseai.com/blog/free-seo-tools-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated 3 degrees, casting no shadow. Flat electric lime #D6FF3F behind it. Headline overlaps the card's top-right edge. Leave the top 20% almost empty; let the composition sit low.
 
@@ -900,10 +887,9 @@ https://www.topuseai.com/blog/ollama-vs-lm-studio-free-ai-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A horizontal photographic band, 45% of canvas height, sits across the upper third. Flat graphite #22202E above and below, headline in the larger of the two areas. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -966,9 +952,8 @@ https://www.topuseai.com/blog/best-free-seo-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Push the whole composition off-centre to the left, with a wide empty gutter down the right. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -1026,9 +1011,8 @@ https://www.topuseai.com/blog/best-free-ai-voice-tools-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: Two flat colour fields meeting along a rough torn-paper edge rather than a straight line. Headline on the larger field. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -1088,10 +1072,9 @@ https://www.topuseai.com/blog/postiz-vs-paid-social-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -1151,10 +1134,9 @@ https://www.topuseai.com/blog/voicebox-vs-elevenlabs-murf
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: The top 62% is a solid warm off-white #FBFAF6 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -1217,10 +1199,9 @@ https://www.topuseai.com/blog/free-ai-image-generation-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A large circular photo crop, 55% of the canvas width, sits in the upper-right, overlapping the headline. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Leave the top 20% almost empty; let the composition sit low.
 
@@ -1280,10 +1261,9 @@ https://www.topuseai.com/blog/free-ai-video-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at across the lower third carries the headline. No frame, no border, the photo runs to all four edges. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -1343,10 +1323,9 @@ https://www.topuseai.com/blog/open-source-social-media-schedulers
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat electric lime #D6FF3F behind it. Headline overlaps the card's top-right edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -1406,9 +1385,8 @@ https://www.topuseai.com/blog/best-free-ai-image-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 78% of the canvas height. The headline sits over it. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -1471,10 +1449,9 @@ https://www.topuseai.com/blog/best-free-seo-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the upper third carries the headline. No frame, no border, the photo runs to all four edges. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -1534,10 +1511,9 @@ https://www.topuseai.com/blog/best-free-ai-voice-tools-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the lower-left, bleeding off the bottom. Flat graphite #22202E around it, headline above. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
@@ -1597,10 +1573,9 @@ https://www.topuseai.com/blog/best-free-ai-logo-generators
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A horizontal photographic band, 58% of canvas height, sits across the lower third. Flat warm off-white #FBFAF6 above and below, headline in the larger of the two areas. Set the type unusually small against a lot of empty space.
 
@@ -1660,10 +1635,9 @@ https://www.topuseai.com/blog/is-canva-magic-studio-free
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Two photographs side by side with a 24px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
@@ -1727,10 +1701,9 @@ https://www.topuseai.com/blog/predis-ai-vs-socialbee
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A large circular photo crop, 78% of the canvas width, sits slightly above centre, bleeding off the right edge. The rest is flat electric lime #D6FF3F. The headline wraps around the circle rather than sitting in a neat block. Leave the top 20% almost empty; let the composition sit low.
 
@@ -1790,10 +1763,9 @@ https://www.topuseai.com/blog/ai-lead-generation-landing-pages-crm
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat electric lime #D6FF3F with the headline on the other. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -1855,9 +1827,8 @@ https://www.topuseai.com/blog/voicebox-vs-elevenlabs-murf
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in electric lime #D6FF3F and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -1915,10 +1886,9 @@ https://www.topuseai.com/blog/free-ai-image-generation-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: The top 52% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid graphite #22202E panel carries the headline and supporting text. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -1978,10 +1948,9 @@ https://www.topuseai.com/blog/free-ai-video-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Two photographs side by side with a 24px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -2041,10 +2010,9 @@ https://www.topuseai.com/blog/open-source-social-media-schedulers
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: The top 42% is a solid warm off-white #FBFAF6 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
@@ -2104,10 +2072,9 @@ https://www.topuseai.com/blog/best-free-ai-image-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat graphite #22202E with the headline on the other. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -2167,9 +2134,8 @@ https://www.topuseai.com/blog/surfer-seo-alternatives
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The layout borrows a receipt or ticket: a narrow vertical panel with a perforated edge, monospace line items, and one figure circled in lime by hand. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2233,10 +2199,9 @@ https://www.topuseai.com/blog/ollama-vs-lm-studio-free-ai-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat electric lime #D6FF3F behind. Headline sits in the clearest corner. Let one element break its container and overlap the element beside it.
 
@@ -2296,10 +2261,9 @@ https://www.topuseai.com/blog/best-free-seo-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat electric lime #D6FF3F around it, headline above. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -2363,10 +2327,9 @@ https://www.topuseai.com/blog/best-free-ai-voice-tools-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A hard diagonal edge running from top-left to bottom-right splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
@@ -2424,10 +2387,9 @@ https://www.topuseai.com/blog/best-free-ai-logo-generators
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: The top 38% is a solid electric lime #D6FF3F panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Let one element break its container and overlap the element beside it.
 
@@ -2487,9 +2449,8 @@ https://www.topuseai.com/blog/is-canva-magic-studio-free
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: Two flat colour fields meeting along a rough torn-paper edge rather than a straight line. Headline on the larger field. Stack the composition tight to the bottom edge, leaving the top open. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2547,10 +2508,9 @@ https://www.topuseai.com/blog/predis-ai-vs-socialbee
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -4 degrees, casting no shadow. Flat warm off-white #FBFAF6 behind it. Headline overlaps the card's top-left edge. Let one element break its container and overlap the element beside it.
 
@@ -2615,10 +2575,9 @@ https://www.topuseai.com/blog/best-free-ai-image-generators-open-source
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space across the lower third. Leave the top 20% almost empty; let the composition sit low.
 
@@ -2678,10 +2637,9 @@ https://www.topuseai.com/blog/surfer-seo-alternatives
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A horizontal photographic band, 52% of canvas height, sits across the lower third. Flat graphite #22202E above and below, headline in the larger of the two areas. Let one element break its container and overlap the element beside it.
 
@@ -2741,9 +2699,8 @@ https://www.topuseai.com/blog/ai-lead-generation-landing-pages-crm
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The layout borrows a receipt or ticket: a narrow vertical panel with a perforated edge, monospace line items, and one figure circled in lime by hand. Push the whole composition off-centre to the left, with a wide empty gutter down the right. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2801,9 +2758,8 @@ https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Set the type unusually large relative to everything else, to the point it nearly crowds the frame. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2861,9 +2817,8 @@ https://www.topuseai.com/blog/free-seo-tools-vs-paid
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The headline set inside a heavy solid warm off-white #FBFAF6 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Let one element break its container and overlap the element beside it. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2923,9 +2878,8 @@ https://www.topuseai.com/blog/best-free-ai-logo-generators
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The headline occupies only the left 55% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -2986,10 +2940,9 @@ https://www.topuseai.com/blog/is-canva-magic-studio-free
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A large circular photo crop, 55% of the canvas width, sits slightly above centre, bleeding off the right edge. The rest is flat electric lime #D6FF3F. The headline wraps around the circle rather than sitting in a neat block. Let one element break its container and overlap the element beside it.
 
@@ -3049,9 +3002,8 @@ https://www.topuseai.com/blog/predis-ai-vs-socialbee
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in graphite #22202E and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -3109,9 +3061,8 @@ https://www.topuseai.com/blog/ollama-vs-lm-studio-free-ai-tools
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. The type and the flat colour fields are the whole image.
 
 LAYOUT: Content set as numbered rows with the numerals oversized in lime and the text small beside them, the whole block pushed to one side rather than centred. Set the type unusually large relative to everything else, to the point it nearly crowds the frame. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
@@ -3171,10 +3122,9 @@ https://www.topuseai.com/blog/ai-lead-generation-landing-pages-crm
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat electric lime #D6FF3F behind. Headline sits in the clearest corner. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -3237,10 +3187,9 @@ https://www.topuseai.com/blog/surfer-seo-alternatives
 
 **Image prompt**
 ```
-Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
-text-to-image request, not an edit: there is no input image, nothing is being
-uploaded, and you should not ask for one. Generate the photograph described below
-as part of the image, then lay the type over it.
+Generate an original 1000x1500 vertical image, 2:3 ratio, entirely from this
+description. Render the photograph described below as part of the generated
+image, then set the type over it.
 
 LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat graphite #22202E around it, headline above. Mirror the expected arrangement, put what would normally sit left on the right instead.
 

@@ -138,7 +138,7 @@ function check(file) {
     if (p.prompt) {
       // A prompt that opens "Create a pin" reads as an edit instruction, and
       // image tools respond by asking which image to upload. Say generate.
-      if (!/^Generate a brand new/.test(p.prompt.trim()))
+      if (!/^Generate an original/.test(p.prompt.trim()))
         E(`${at}: prompt does not open by asking for a new image`);
 
       // A LAYOUT describing type only, with no PHOTOGRAPH block, must say so
