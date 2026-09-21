@@ -1,22 +1,22 @@
 # Pinterest Batch 1: Days 6 to 30
 
-145 pins across 25 days, six a day. Every pin is written from a verified
+150 pins across 25 days, six a day. Every pin is written from a verified
 fact in the post it links to, and every image prompt is composed individually.
 
 **Days 1 to 5 are already uploaded** and archived in
 `PINTEREST-DONE-DAYS-1-5.md`. Do not re-pin those.
 
-Everything here points at a post that is already live. Upload in this order.
-
 | | |
 |---|---|
-| Pins | 145 |
+| Pins | 150 |
+| Pin numbers | B1-001 to B1-150 |
 | Days | 6 to 30, six per day |
 | Calendar | 2026-09-22 to 2026-10-16 |
 | Posts covered | 50 |
 | Targets not yet published | 0 |
 
-> Every target is published, so none of these can 404. This batch is the safe one to work through first.
+> **Every target here is already published**, so nothing in this batch can 404.
+> This is the safe batch to work through first.
 
 ## How to use this
 
@@ -24,15 +24,15 @@ Each pin has six copy blocks: title, description, alt text, board, link and the
 image prompt. Paste the prompt into your image tool, then paste the other five
 into Pinterest. Nothing needs filling in.
 
-Day numbers are relative. Day 6 is the first day of this schedule, shown in the
-calendar column above. A post's three pins sit two days apart and each takes a
-different angle.
+Pins are numbered B1-001 upward in posting order, so you can track exactly
+where you stopped. Day numbers are relative: day 6 is the first day of the whole
+schedule, and the calendar date is printed on every day heading.
 
 ---
 
 ## DAY 6  ·  2026-09-22
 
-### 39A · `sell-digital-products-with-ai`
+### B1-001 · `sell-digital-products-with-ai`
 
 *Layout: circle cutout*
 
@@ -94,13 +94,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 43A · `faceless-youtube-cost`
+### B1-002 · `faceless-youtube-cost`
 
 *Layout: before after*
 
 **Title**
 ```
-$0 to Start, $20 to $60 to Look Professional
+Start With Nothing. Upgrade Only What Holds You Back.
 ```
 
 **Description**
@@ -132,10 +132,10 @@ LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE a
 PHOTOGRAPH: a phone on a tripod filming an empty chair. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"START FREE.
-$20 TO $60
-TO LOOK GOOD."
-The words "$20 TO $60" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"START WITH
+NOTHING. UPGRADE
+WHAT BLOCKS YOU."
+The words "NOTHING." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 A faceless channel genuinely launches for nothing with free tools, stock footage and CapCut. The monthly cost arrives when you need a commercially licensed voice.
@@ -156,7 +156,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 45A · `midjourney-prompts-for-wall-art`
+### B1-003 · `midjourney-prompts-for-wall-art`
 
 *Layout: diagonal split*
 
@@ -218,7 +218,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 37A · `how-to-make-money-with-ai`
+### B1-004 · `how-to-make-money-with-ai`
 
 *Layout: object on ground*
 
@@ -280,7 +280,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 38A · `sell-ai-art-on-etsy`
+### B1-005 · `sell-ai-art-on-etsy`
 
 *Layout: photo strip band*
 
@@ -342,7 +342,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 40A · `chatgpt-prompts-to-make-money`
+### B1-006 · `chatgpt-prompts-to-make-money`
 
 *Layout: collage stack*
 
@@ -406,7 +406,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 7  ·  2026-09-23
 
-### 41A · `faceless-ai-side-hustles`
+### B1-007 · `faceless-ai-side-hustles`
 
 *Layout: photo top text bottom*
 
@@ -468,7 +468,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 42A · `make-money-with-ai-art`
+### B1-008 · `make-money-with-ai-art`
 
 *Layout: offset photo card*
 
@@ -530,7 +530,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 44A · `best-ai-image-generators-pinterest`
+### B1-009 · `best-ai-image-generators-pinterest`
 
 *Layout: full bleed photo*
 
@@ -592,7 +592,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 46A · `chatgpt-prompts-for-small-business`
+### B1-010 · `chatgpt-prompts-for-small-business`
 
 *Layout: screenshot device*
 
@@ -654,7 +654,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 47A · `how-to-start-an-ai-blog`
+### B1-011 · `how-to-start-an-ai-blog`
 
 *Layout: text top photo bottom*
 
@@ -716,7 +716,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 48A · `ai-affiliate-marketing-for-beginners`
+### B1-012 · `ai-affiliate-marketing-for-beginners`
 
 *Layout: object on ground*
 
@@ -780,7 +780,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 8  ·  2026-09-24
 
-### 39B · `sell-digital-products-with-ai`
+### B1-013 · `sell-digital-products-with-ai`
 
 *Layout: photo top text bottom*
 
@@ -845,7 +845,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 43B · `faceless-youtube-cost`
+### B1-014 · `faceless-youtube-cost`
 
 *Layout: diagonal split*
 
@@ -911,7 +911,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 45B · `midjourney-prompts-for-wall-art`
+### B1-015 · `midjourney-prompts-for-wall-art`
 
 *Layout: before after*
 
@@ -977,7 +977,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 37B · `how-to-make-money-with-ai`
+### B1-016 · `how-to-make-money-with-ai`
 
 *Layout: circle cutout*
 
@@ -1044,7 +1044,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 38B · `sell-ai-art-on-etsy`
+### B1-017 · `sell-ai-art-on-etsy`
 
 *Layout: photo strip band*
 
@@ -1109,7 +1109,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 40B · `chatgpt-prompts-to-make-money`
+### B1-018 · `chatgpt-prompts-to-make-money`
 
 *Layout: offset photo card*
 
@@ -1178,7 +1178,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 9  ·  2026-09-25
 
-### 41B · `faceless-ai-side-hustles`
+### B1-019 · `faceless-ai-side-hustles`
 
 *Layout: collage stack*
 
@@ -1244,7 +1244,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 42B · `make-money-with-ai-art`
+### B1-020 · `make-money-with-ai-art`
 
 *Layout: full bleed photo*
 
@@ -1311,7 +1311,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 44B · `best-ai-image-generators-pinterest`
+### B1-021 · `best-ai-image-generators-pinterest`
 
 *Layout: screenshot device*
 
@@ -1376,7 +1376,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 46B · `chatgpt-prompts-for-small-business`
+### B1-022 · `chatgpt-prompts-for-small-business`
 
 *Layout: object on ground*
 
@@ -1443,7 +1443,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 47B · `how-to-start-an-ai-blog`
+### B1-023 · `how-to-start-an-ai-blog`
 
 *Layout: text top photo bottom*
 
@@ -1509,7 +1509,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 48B · `ai-affiliate-marketing-for-beginners`
+### B1-024 · `ai-affiliate-marketing-for-beginners`
 
 *Layout: circle cutout*
 
@@ -1576,7 +1576,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 10  ·  2026-09-26
 
-### 39C · `sell-digital-products-with-ai`
+### B1-025 · `sell-digital-products-with-ai`
 
 *Layout: oversized punctuation*
 
@@ -1636,7 +1636,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 43C · `faceless-youtube-cost`
+### B1-026 · `faceless-youtube-cost`
 
 *Layout: split contrast*
 
@@ -1696,7 +1696,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 45C · `midjourney-prompts-for-wall-art`
+### B1-027 · `midjourney-prompts-for-wall-art`
 
 *Layout: stacked type*
 
@@ -1756,7 +1756,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 37C · `how-to-make-money-with-ai`
+### B1-028 · `how-to-make-money-with-ai`
 
 *Layout: ticket stub*
 
@@ -1816,7 +1816,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 38C · `sell-ai-art-on-etsy`
+### B1-029 · `sell-ai-art-on-etsy`
 
 *Layout: hero numeral*
 
@@ -1876,7 +1876,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 40C · `chatgpt-prompts-to-make-money`
+### B1-030 · `chatgpt-prompts-to-make-money`
 
 *Layout: numbered rows*
 
@@ -1938,7 +1938,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 11  ·  2026-09-27
 
-### 41C · `faceless-ai-side-hustles`
+### B1-031 · `faceless-ai-side-hustles`
 
 *Layout: index card*
 
@@ -1998,7 +1998,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 42C · `make-money-with-ai-art`
+### B1-032 · `make-money-with-ai-art`
 
 *Layout: annotated diagram*
 
@@ -2058,7 +2058,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 44C · `best-ai-image-generators-pinterest`
+### B1-033 · `best-ai-image-generators-pinterest`
 
 *Layout: comparison columns*
 
@@ -2118,7 +2118,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 46C · `chatgpt-prompts-for-small-business`
+### B1-034 · `chatgpt-prompts-for-small-business`
 
 *Layout: margin note*
 
@@ -2178,7 +2178,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 47C · `how-to-start-an-ai-blog`
+### B1-035 · `how-to-start-an-ai-blog`
 
 *Layout: hero numeral*
 
@@ -2238,7 +2238,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 48C · `ai-affiliate-marketing-for-beginners`
+### B1-036 · `ai-affiliate-marketing-for-beginners`
 
 *Layout: stamp block*
 
@@ -2300,18 +2300,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 12  ·  2026-09-28
 
-### N20 · `sell-digital-products-with-ai`
+### B1-037 · `sell-digital-products-with-ai`
 
 *Layout: comparison columns*
 
 **Title**
 ```
-Etsy Keeps $1.88. Gumroad Keeps $2.00.
+You Keep 88 Pence In Every Pound On Etsy
 ```
 
 **Description**
 ```
-On a $15 digital product the platforms are within twelve cents of each other: Etsy takes $1.88 leaving you $13.12, Gumroad's direct rate takes $2.00 leaving $13.00. Fees are a weak reason to pick between them. The number that should drive the decision is volume, because clearing $1,000 a month at that price means about 76 sales, or two and a half every single day.
+Selling printables and digital downloads keeps far more of the sale price than most people assume. On a $15 product Etsy takes about $1.88 in listing, transaction and payment fees, leaving you $13.12, which is 88 percent. Gumroad's direct rate leaves $13.00. The platforms are within twelve cents of each other, so the choice should come down to where your buyers already are, not to fees.
 ```
 
 **Alt text**
@@ -2338,16 +2338,16 @@ LAYOUT: The lower half is a flat overhead photograph. The upper half is warm off
 PHOTOGRAPH: two small stacks of loose coins on warm off-white paper, deliberately uneven heights, soft window light from the upper right casting short shadows. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"ETSY KEEPS $1.88.
-GUMROAD KEEPS
-$2.00."
-The words "$2.00." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"YOU KEEP 88%
+OF EVERY
+ETSY SALE"
+The words "88%" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 On a $15 product the platforms are within twelve cents. Fees are a weak reason to choose. Volume is the real one: 76 sales a month for $1,000.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
-The full fee maths at topuseai.com
+Fee-by-fee breakdown at topuseai.com
 
 Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
@@ -2358,18 +2358,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N19 · `faceless-youtube-cost`
+### B1-038 · `faceless-youtube-cost`
 
 *Layout: hero numeral*
 
 **Title**
 ```
-$6.75 Per Video At Weekly Uploads
+Start A Faceless Channel Free. Pay Nothing Until You Earn.
 ```
 
 **Description**
 ```
-Monthly pricing hides the number that matters. A faceless YouTube channel costs $0 to start and $27 a month to run legally once monetised, which is an ElevenLabs Starter plan at $6 for the commercial voice licence plus Storyblocks Essentials at $21 for footage. Divided across four uploads that is $6.75 a video, against $30 to $150 for a freelance editor. Year one lands near $270, not the $480 most budgets assume.
+You can launch a faceless YouTube channel for nothing: free AI writing for scripts, a free voice tier to test with, free stock footage and CapCut for editing. Nothing forces a payment until YouTube accepts you into the Partner Program, because that is the point a free AI voice stops being licensed for monetised video. From there a realistic running cost is $27 a month, which works out around $6.75 a video at weekly uploads.
 ```
 
 **Alt text**
@@ -2396,16 +2396,16 @@ LAYOUT: An enormous currency figure fills the upper half on a flat lime ground, 
 PHOTOGRAPH: a tripod leg and a coiled cable on a bare floor, shot flat overhead under harsh flash. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"$6.75 PER VIDEO
-AT WEEKLY
-UPLOADS"
-The words "$6.75" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"START FREE.
+PAY NOTHING
+UNTIL YOU EARN."
+The words "PAY NOTHING" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 A faceless channel costs $0 to start and $27 a month once monetised. Divided across four uploads that is $6.75 a video, against $30 or more for an editor.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
-Year-one costs at topuseai.com
+What it really costs at topuseai.com
 
 Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
@@ -2416,18 +2416,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N21 · `midjourney-prompts-for-wall-art`
+### B1-039 · `midjourney-prompts-for-wall-art`
 
 *Layout: annotated diagram*
 
 **Title**
 ```
-2048 Pixels Prints Sharp At 6.8 Inches. No Further.
+Why Your Printable Wall Art Looks Blurry When It Arrives
 ```
 
 **Description**
 ```
-The constraint that decides whether a wall art prompt is sellable, and almost no prompt list mentions it. Midjourney v8.2 outputs 2048 x 2048 pixel HD images. Divided by the 300 DPI that sharp printing needs, that is 6.8 inches. An 18 by 24 inch poster needs 5400 x 7200 pixels, roughly 3.2 times more, so it requires a third-party upscaler. Match your aspect ratio to the frame before you generate, not after.
+The most common reason a beautiful AI print disappoints once it is framed. Midjourney outputs 2048 pixels square, and sharp printing needs 300 dots per inch, so that file prints crisply at only 6.8 inches. Anything poster-sized needs upscaling first. Match your aspect ratio to the frame before you generate: 4:5 for 8x10, 2:3 for 12x18, and 85:110 for A4.
 ```
 
 **Alt text**
@@ -2454,10 +2454,10 @@ LAYOUT: A photograph sits low in frame with the upper half left as empty wall. T
 PHOTOGRAPH: a small empty picture frame leaning against a plain warm off-white wall, shot straight on in flat even daylight, soft natural shadow beneath it. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"2048 PIXELS PRINTS
-SHARP AT 6.8 INCHES.
-NO FURTHER."
-The words "6.8 INCHES." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"WHY YOUR PRINT
+LOOKS BLURRY
+WHEN IT ARRIVES"
+The words "BLURRY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 Midjourney v8.2 outputs 2048px HD. At the 300 DPI sharp printing needs, that is 6.8 inches. An 18x24 poster needs 5400x7200 and a third-party upscaler.
@@ -2474,7 +2474,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 49A · `best-ai-voice-generators`
+### B1-040 · `best-ai-voice-generators`
 
 *Layout: screenshot device*
 
@@ -2536,7 +2536,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 50A · `best-ai-video-tools-faceless-youtube`
+### B1-041 · `best-ai-video-tools-faceless-youtube`
 
 *Layout: diagonal split*
 
@@ -2598,7 +2598,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 51A · `best-free-ai-writing-tools`
+### B1-042 · `best-free-ai-writing-tools`
 
 *Layout: collage stack*
 
@@ -2662,7 +2662,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 13  ·  2026-09-29
 
-### 52A · `midjourney-prompts-for-pinterest-pins`
+### B1-043 · `midjourney-prompts-for-pinterest-pins`
 
 *Layout: circle cutout*
 
@@ -2724,7 +2724,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 53A · `how-to-make-ai-influencer`
+### B1-044 · `how-to-make-ai-influencer`
 
 *Layout: photo strip band*
 
@@ -2786,7 +2786,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 54A · `best-ai-social-media-tools`
+### B1-045 · `best-ai-social-media-tools`
 
 *Layout: full bleed photo*
 
@@ -2848,7 +2848,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 55A · `best-ai-logo-generators`
+### B1-046 · `best-ai-logo-generators`
 
 *Layout: text top photo bottom*
 
@@ -2910,7 +2910,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 56A · `chatgpt-prompts-for-bloggers`
+### B1-047 · `chatgpt-prompts-for-bloggers`
 
 *Layout: photo top text bottom*
 
@@ -2972,7 +2972,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 57A · `free-alternatives-to-midjourney`
+### B1-048 · `free-alternatives-to-midjourney`
 
 *Layout: before after*
 
@@ -3036,7 +3036,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 14  ·  2026-09-30
 
-### 49B · `best-ai-voice-generators`
+### B1-049 · `best-ai-voice-generators`
 
 *Layout: hero numeral*
 
@@ -3099,7 +3099,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 50B · `best-ai-video-tools-faceless-youtube`
+### B1-050 · `best-ai-video-tools-faceless-youtube`
 
 *Layout: photo strip band*
 
@@ -3165,7 +3165,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 51B · `best-free-ai-writing-tools`
+### B1-051 · `best-free-ai-writing-tools`
 
 *Layout: full bleed photo*
 
@@ -3230,7 +3230,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 58A · `how-to-write-blog-post-with-ai`
+### B1-052 · `how-to-write-blog-post-with-ai`
 
 *Layout: offset photo card*
 
@@ -3292,7 +3292,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 59A · `best-ai-productivity-tools`
+### B1-053 · `best-ai-productivity-tools`
 
 *Layout: screenshot device*
 
@@ -3354,7 +3354,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 60A · `best-ai-meeting-note-takers`
+### B1-054 · `best-ai-meeting-note-takers`
 
 *Layout: diagonal split*
 
@@ -3418,7 +3418,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 15  ·  2026-10-01
 
-### 52B · `midjourney-prompts-for-pinterest-pins`
+### B1-055 · `midjourney-prompts-for-pinterest-pins`
 
 *Layout: stacked type*
 
@@ -3484,7 +3484,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 53B · `how-to-make-ai-influencer`
+### B1-056 · `how-to-make-ai-influencer`
 
 *Layout: torn edge*
 
@@ -3544,7 +3544,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 54B · `best-ai-social-media-tools`
+### B1-057 · `best-ai-social-media-tools`
 
 *Layout: oversized punctuation*
 
@@ -3608,7 +3608,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-logo-g·B · `best-ai-logo-generators`
+### B1-058 · `best-ai-logo-generators`
 
 *Layout: diagonal split*
 
@@ -3673,7 +3673,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### chatgpt-prompt·B · `chatgpt-prompts-for-bloggers`
+### B1-059 · `chatgpt-prompts-for-bloggers`
 
 *Layout: before after*
 
@@ -3740,7 +3740,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### free-alternati·B · `free-alternatives-to-midjourney`
+### B1-060 · `free-alternatives-to-midjourney`
 
 *Layout: photo top text bottom*
 
@@ -3808,7 +3808,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 16  ·  2026-10-02
 
-### best-ai-voice-·C · `best-ai-voice-generators`
+### B1-061 · `best-ai-voice-generators`
 
 *Layout: collage stack*
 
@@ -3870,7 +3870,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-video-·C · `best-ai-video-tools-faceless-youtube`
+### B1-062 · `best-ai-video-tools-faceless-youtube`
 
 *Layout: stamp block*
 
@@ -3930,7 +3930,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-free-ai-w·C · `best-free-ai-writing-tools`
+### B1-063 · `best-free-ai-writing-tools`
 
 *Layout: numbered rows*
 
@@ -3990,7 +3990,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### how-to-write-b·B · `how-to-write-blog-post-with-ai`
+### B1-064 · `how-to-write-blog-post-with-ai`
 
 *Layout: object on ground*
 
@@ -4056,7 +4056,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-produc·B · `best-ai-productivity-tools`
+### B1-065 · `best-ai-productivity-tools`
 
 *Layout: circle cutout*
 
@@ -4123,7 +4123,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-meetin·B · `best-ai-meeting-note-takers`
+### B1-066 · `best-ai-meeting-note-takers`
 
 *Layout: offset photo card*
 
@@ -4191,7 +4191,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 17  ·  2026-10-03
 
-### midjourney-pro·C · `midjourney-prompts-for-pinterest-pins`
+### B1-067 · `midjourney-prompts-for-pinterest-pins`
 
 *Layout: stacked type*
 
@@ -4251,7 +4251,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### how-to-make-ai·C · `how-to-make-ai-influencer`
+### B1-068 · `how-to-make-ai-influencer`
 
 *Layout: circle cutout*
 
@@ -4317,7 +4317,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-social·C · `best-ai-social-media-tools`
+### B1-069 · `best-ai-social-media-tools`
 
 *Layout: photo strip band*
 
@@ -4379,7 +4379,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-logo-g·C · `best-ai-logo-generators`
+### B1-070 · `best-ai-logo-generators`
 
 *Layout: index card*
 
@@ -4439,7 +4439,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### chatgpt-prompt·C · `chatgpt-prompts-for-bloggers`
+### B1-071 · `chatgpt-prompts-for-bloggers`
 
 *Layout: hero numeral*
 
@@ -4499,7 +4499,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### free-alternati·C · `free-alternatives-to-midjourney`
+### B1-072 · `free-alternatives-to-midjourney`
 
 *Layout: ticket stub*
 
@@ -4561,7 +4561,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 18  ·  2026-10-04
 
-### how-to-write-b·C · `how-to-write-blog-post-with-ai`
+### B1-073 · `how-to-write-blog-post-with-ai`
 
 *Layout: torn edge*
 
@@ -4621,7 +4621,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-produc·C · `best-ai-productivity-tools`
+### B1-074 · `best-ai-productivity-tools`
 
 *Layout: annotated diagram*
 
@@ -4681,7 +4681,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### best-ai-meetin·C · `best-ai-meeting-note-takers`
+### B1-075 · `best-ai-meeting-note-takers`
 
 *Layout: oversized punctuation*
 
@@ -4741,7 +4741,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 61A · `surfer-seo-vs-semrush`
+### B1-076 · `surfer-seo-vs-semrush`
 
 *Layout: offset photo card*
 
@@ -4779,10 +4779,10 @@ LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -
 PHOTOGRAPH: sticky notes in a loose grid on a window. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"$99 VS $139.
-BUT THAT'S NOT
-THE POINT."
-The words "NOT THE POINT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"MOST BLOGGERS
+NEED SURFER,
+NOT SEMRUSH"
+The words "NOT SEMRUSH" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 Surfer's on-page editor matches the daily work of blogging. Semrush wins on keyword depth and backlinks, which matters once SEO is your business rather than your blog.
@@ -4803,7 +4803,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 63A · `best-ai-seo-tools`
+### B1-077 · `best-ai-seo-tools`
 
 *Layout: full bleed photo*
 
@@ -4865,7 +4865,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 64A · `notion-ai-vs-chatgpt`
+### B1-078 · `notion-ai-vs-chatgpt`
 
 *Layout: before after*
 
@@ -4929,7 +4929,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 19  ·  2026-10-05
 
-### 65A · `jasper-vs-copyai`
+### B1-079 · `jasper-vs-copyai`
 
 *Layout: photo top text bottom*
 
@@ -4991,7 +4991,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 66A · `elevenlabs-vs-murf`
+### B1-080 · `elevenlabs-vs-murf`
 
 *Layout: text top photo bottom*
 
@@ -5053,7 +5053,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 67A · `midjourney-vs-dalle-vs-ideogram`
+### B1-081 · `midjourney-vs-dalle-vs-ideogram`
 
 *Layout: diagonal split*
 
@@ -5115,7 +5115,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 68A · `canva-ai-review`
+### B1-082 · `canva-ai-review`
 
 *Layout: collage stack*
 
@@ -5177,13 +5177,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 70A · `ai-headshots-for-job-seekers`
+### B1-083 · `ai-headshots-for-job-seekers`
 
 *Layout: object on ground*
 
 **Title**
 ```
-$29 Against $300, With One Real Tradeoff
+Professional Headshots Without Booking A Studio
 ```
 
 **Description**
@@ -5215,10 +5215,10 @@ LAYOUT: One isolated object photographed on a plain surface, centred with genero
 PHOTOGRAPH: a coffee cup beside a closed laptop. Harsh on-camera flash, slight overexposure. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"$29 OR $300.
-ONE LOOKS
-SLIGHTLY OFF."
-The words "SLIGHTLY OFF" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"PROFESSIONAL
+HEADSHOTS WITHOUT
+A STUDIO"
+The words "WITHOUT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 AI headshots cost around $29 to $49 against $150 to $300 for a photographer. The tradeoff is a small loss of likeness accuracy, which matters more for some people than others.
@@ -5239,7 +5239,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 71A · `how-to-clone-your-voice-with-ai`
+### B1-084 · `how-to-clone-your-voice-with-ai`
 
 *Layout: offset photo card*
 
@@ -5303,7 +5303,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 20  ·  2026-10-06
 
-### 61B · `surfer-seo-vs-semrush`
+### B1-085 · `surfer-seo-vs-semrush`
 
 *Layout: numbered rows*
 
@@ -5363,7 +5363,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 63B · `best-ai-seo-tools`
+### B1-086 · `best-ai-seo-tools`
 
 *Layout: full bleed photo*
 
@@ -5423,7 +5423,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 64B · `notion-ai-vs-chatgpt`
+### B1-087 · `notion-ai-vs-chatgpt`
 
 *Layout: photo strip band*
 
@@ -5488,7 +5488,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 72A · `synthesia-vs-heygen`
+### B1-088 · `synthesia-vs-heygen`
 
 *Layout: screenshot device*
 
@@ -5550,7 +5550,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 73A · `best-ai-video-generators`
+### B1-089 · `best-ai-video-generators`
 
 *Layout: diagonal split*
 
@@ -5612,7 +5612,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 74A · `best-ai-music-generators`
+### B1-090 · `best-ai-music-generators`
 
 *Layout: collage stack*
 
@@ -5676,7 +5676,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 21  ·  2026-10-07
 
-### 65B · `jasper-vs-copyai`
+### B1-091 · `jasper-vs-copyai`
 
 *Layout: collage stack*
 
@@ -5741,7 +5741,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 66B · `elevenlabs-vs-murf`
+### B1-092 · `elevenlabs-vs-murf`
 
 *Layout: diagonal split*
 
@@ -5806,7 +5806,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 67B · `midjourney-vs-dalle-vs-ideogram`
+### B1-093 · `midjourney-vs-dalle-vs-ideogram`
 
 *Layout: circle cutout*
 
@@ -5871,7 +5871,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 68B · `canva-ai-review`
+### B1-094 · `canva-ai-review`
 
 *Layout: object on ground*
 
@@ -5936,7 +5936,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 70B · `ai-headshots-for-job-seekers`
+### B1-095 · `ai-headshots-for-job-seekers`
 
 *Layout: text top photo bottom*
 
@@ -6001,7 +6001,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 71B · `how-to-clone-your-voice-with-ai`
+### B1-096 · `how-to-clone-your-voice-with-ai`
 
 *Layout: photo top text bottom*
 
@@ -6069,7 +6069,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 22  ·  2026-10-08
 
-### 61C · `surfer-seo-vs-semrush`
+### B1-097 · `surfer-seo-vs-semrush`
 
 *Layout: full bleed photo*
 
@@ -6135,7 +6135,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 63C · `best-ai-seo-tools`
+### B1-098 · `best-ai-seo-tools`
 
 *Layout: annotated diagram*
 
@@ -6195,7 +6195,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 64C · `notion-ai-vs-chatgpt`
+### B1-099 · `notion-ai-vs-chatgpt`
 
 *Layout: comparison columns*
 
@@ -6255,7 +6255,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 72B · `synthesia-vs-heygen`
+### B1-100 · `synthesia-vs-heygen`
 
 *Layout: offset photo card*
 
@@ -6320,7 +6320,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 73C · `best-ai-video-generators`
+### B1-101 · `best-ai-video-generators`
 
 *Layout: text top photo bottom*
 
@@ -6385,7 +6385,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 74C · `best-ai-music-generators`
+### B1-102 · `best-ai-music-generators`
 
 *Layout: photo strip band*
 
@@ -6452,7 +6452,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 23  ·  2026-10-09
 
-### 65C · `jasper-vs-copyai`
+### B1-103 · `jasper-vs-copyai`
 
 *Layout: quote card*
 
@@ -6512,7 +6512,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 66C · `elevenlabs-vs-murf`
+### B1-104 · `elevenlabs-vs-murf`
 
 *Layout: margin note*
 
@@ -6572,7 +6572,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 67C · `midjourney-vs-dalle-vs-ideogram`
+### B1-105 · `midjourney-vs-dalle-vs-ideogram`
 
 *Layout: stamp block*
 
@@ -6632,7 +6632,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 68C · `canva-ai-review`
+### B1-106 · `canva-ai-review`
 
 *Layout: split contrast*
 
@@ -6692,7 +6692,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 70C · `ai-headshots-for-job-seekers`
+### B1-107 · `ai-headshots-for-job-seekers`
 
 *Layout: hero numeral*
 
@@ -6752,7 +6752,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 71C · `how-to-clone-your-voice-with-ai`
+### B1-108 · `how-to-clone-your-voice-with-ai`
 
 *Layout: oversized punctuation*
 
@@ -6814,7 +6814,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 24  ·  2026-10-10
 
-### 72C · `synthesia-vs-heygen`
+### B1-109 · `synthesia-vs-heygen`
 
 *Layout: stacked type*
 
@@ -6874,7 +6874,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 73B · `best-ai-video-generators`
+### B1-110 · `best-ai-video-generators`
 
 *Layout: torn edge*
 
@@ -6934,7 +6934,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 74B · `best-ai-music-generators`
+### B1-111 · `best-ai-music-generators`
 
 *Layout: margin note*
 
@@ -6994,7 +6994,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 75A · `ai-videos-for-reels-tiktok`
+### B1-112 · `ai-videos-for-reels-tiktok`
 
 *Layout: circle cutout*
 
@@ -7056,7 +7056,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 76A · `best-ai-chatbots-for-websites`
+### B1-113 · `best-ai-chatbots-for-websites`
 
 *Layout: object on ground*
 
@@ -7118,7 +7118,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 77A · `best-ai-lead-generation-tools`
+### B1-114 · `best-ai-lead-generation-tools`
 
 *Layout: photo top text bottom*
 
@@ -7182,7 +7182,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 25  ·  2026-10-11
 
-### 79A · `how-to-use-ai-for-cold-email`
+### B1-115 · `how-to-use-ai-for-cold-email`
 
 *Layout: offset photo card*
 
@@ -7244,7 +7244,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N1 · `run-ai-locally-ollama`
+### B1-116 · `run-ai-locally-ollama`
 
 *Layout: object on ground*
 
@@ -7302,18 +7302,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N4 · `open-seo-review`
+### B1-117 · `open-seo-review`
 
 *Layout: ticket stub*
 
 **Title**
 ```
-MIT Licensed. Genuinely Free. Then A $50 Minimum.
+Free SEO Tool. Until It Asks For A Deposit.
 ```
 
 **Description**
 ```
-open-seo bills itself as an open-source alternative to Semrush and Ahrefs, and the software really is free under an MIT licence. What the marketing skips is that it returns no SEO data at all without a DataForSEO API key, and that project's own documentation sets the minimum top-up at $50. The tool is free. Using it is not. Worth knowing before you spend an evening installing it.
+open-seo is genuinely free software under an MIT licence, and it is genuinely marketed as an alternative to Semrush and Ahrefs. What the pitch skips is that it returns no keyword data at all without a paid DataForSEO key, and that project's own documentation sets the minimum top-up at $50. Worth knowing before you spend an evening installing it.
 ```
 
 **Alt text**
@@ -7340,16 +7340,16 @@ LAYOUT: A warm off-white ticket-stub shape with a perforated right edge sits cen
 PHOTOGRAPH: a curled paper receipt roll on a dark surface, shot flat overhead with harsh flash and a strong shadow. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"MIT LICENSED.
-GENUINELY FREE.
-THEN A $50 MINIMUM."
-The words "THEN A $50 MINIMUM." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"FREE SEO TOOL.
+UNTIL IT ASKS
+FOR A DEPOSIT."
+The words "FOR A DEPOSIT." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 The software really is free under an MIT licence. It returns no SEO data without a DataForSEO key, and the docs set the minimum top-up at $50.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
-Full cost breakdown at topuseai.com
+What it really costs at topuseai.com
 
 Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
@@ -7360,7 +7360,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N7 · `free-ai-image-generation-locally`
+### B1-118 · `free-ai-image-generation-locally`
 
 *Layout: split contrast*
 
@@ -7418,13 +7418,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N10 · `moneyprinterturbo-review`
+### B1-119 · `moneyprinterturbo-review`
 
 *Layout: torn edge*
 
 **Title**
 ```
-Genuinely $0. Genuinely A Problem On YouTube.
+Completely Free. Still Risky On YouTube.
 ```
 
 **Description**
@@ -7456,10 +7456,10 @@ LAYOUT: A rough horizontal torn paper edge crosses the middle, warm off-white ab
 PHOTOGRAPH: an open laptop at an oblique angle showing an out-of-focus video timeline, lit by a single cool screen glow against deep graphite shadow. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"GENUINELY $0.
-GENUINELY A PROBLEM
+"COMPLETELY FREE.
+STILL RISKY
 ON YOUTUBE."
-The words "ON YOUTUBE." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+The words "STILL RISKY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 It turns a keyword into a finished video on a laptop with no GPU, free. YouTube's inauthentic content policy targets exactly what it makes by default.
@@ -7476,18 +7476,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N13 · `postiz-review-self-hosted`
+### B1-120 · `postiz-review-self-hosted`
 
 *Layout: numbered rows*
 
 **Title**
 ```
-$29 Cloud Versus $68 To Host It Yourself
+Hosting It Yourself Costs More Than Paying For It
 ```
 
 **Description**
 ```
-Postiz is free open-source software supporting 14 networks with AI post generation, and self-hosting it costs more than paying for it. Server hosting plus platform API fees, most notably X charging $0.200 for every post containing a URL, typically bring the real monthly figure to around $68. Postiz Cloud is $29. Free software and free to run are different claims, and this is a clean example of the gap.
+A useful reality check before self-hosting anything. Postiz is free open-source software supporting 14 networks with AI post generation, and running it yourself typically lands around $68 a month once server hosting and platform API fees are counted. The managed version is $29. Self-hosting buys data ownership and control, which are real, but it does not buy a smaller bill.
 ```
 
 **Alt text**
@@ -7514,16 +7514,16 @@ LAYOUT: The lower third is a tight macro photograph. The upper two thirds are wa
 PHOTOGRAPH: a server rack's cable bundle, hard directional light raking from the left, colours pulled toward graphite and warm grey. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"$29 CLOUD
-VERSUS $68 TO
-HOST IT YOURSELF"
-The words "$68" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"HOSTING IT YOURSELF
+COSTS MORE THAN
+PAYING FOR IT"
+The words "COSTS MORE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 Server hosting plus platform API fees, notably X charging $0.200 per post with a URL, bring self-hosting to around $68 a month against $29 managed.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
-Line-by-line costs at topuseai.com
+Cloud versus self-hosted at topuseai.com
 
 Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
@@ -7536,7 +7536,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 26  ·  2026-10-12
 
-### 75C · `ai-videos-for-reels-tiktok`
+### B1-121 · `ai-videos-for-reels-tiktok`
 
 *Layout: before after*
 
@@ -7602,7 +7602,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 76C · `best-ai-chatbots-for-websites`
+### B1-122 · `best-ai-chatbots-for-websites`
 
 *Layout: text top photo bottom*
 
@@ -7667,7 +7667,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 77C · `best-ai-lead-generation-tools`
+### B1-123 · `best-ai-lead-generation-tools`
 
 *Layout: object on ground*
 
@@ -7733,13 +7733,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N16 · `voicebox-review-free-ai-voice`
+### B1-124 · `voicebox-review-free-ai-voice`
 
 *Layout: diagonal split*
 
 **Title**
 ```
-Seven Engines, 23 Languages, MIT Licensed
+Seven Voices, 23 Languages, Yours To Sell
 ```
 
 **Description**
@@ -7791,7 +7791,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 7C · `youtube-ai-content-monetization`
+### B1-125 · `youtube-ai-content-monetization`
 
 *Layout: collage stack*
 
@@ -7853,7 +7853,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 8C · `ai-image-commercial-licences`
+### B1-126 · `ai-image-commercial-licences`
 
 *Layout: photo strip band*
 
@@ -7920,7 +7920,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 27  ·  2026-10-13
 
-### 79B · `how-to-use-ai-for-cold-email`
+### B1-127 · `how-to-use-ai-for-cold-email`
 
 *Layout: before after*
 
@@ -7986,13 +7986,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N2 · `run-ai-locally-ollama`
+### B1-128 · `run-ai-locally-ollama`
 
 *Layout: hero numeral*
 
 **Title**
 ```
-8GB of RAM Is Enough to Run AI at Home
+Your Laptop Is Probably Powerful Enough Already
 ```
 
 **Description**
@@ -8024,10 +8024,10 @@ LAYOUT: An enormous numeral fills the upper two thirds on a flat electric lime g
 PHOTOGRAPH: the underside of a laptop showing its vents and screws, shot flat overhead under harsh flash, high contrast, colours drained toward warm grey. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"8GB OF RAM
-IS ENOUGH TO
-RUN AI AT HOME"
-The words "8GB" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"YOUR LAPTOP IS
+PROBABLY POWERFUL
+ENOUGH ALREADY"
+The words "ALREADY" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 A 4GB model runs comfortably on 8GB of RAM, which covers most laptops sold in the last five years. No graphics card needed.
@@ -8044,7 +8044,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N5 · `open-seo-review`
+### B1-129 · `open-seo-review`
 
 *Layout: comparison columns*
 
@@ -8100,7 +8100,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N8 · `free-ai-image-generation-locally`
+### B1-130 · `free-ai-image-generation-locally`
 
 *Layout: stacked type*
 
@@ -8156,7 +8156,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N11 · `moneyprinterturbo-review`
+### B1-131 · `moneyprinterturbo-review`
 
 *Layout: index card*
 
@@ -8214,18 +8214,18 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N14 · `postiz-review-self-hosted`
+### B1-132 · `postiz-review-self-hosted`
 
 *Layout: quote card*
 
 **Title**
 ```
-$0.200 Per Post. If It Contains A Link.
+Adding A Link Makes One Post Thirteen Times Dearer
 ```
 
 **Description**
 ```
-The line item that quietly reshapes social scheduling costs. X charges $0.200 for a post containing a URL against $0.015 for plain text, a difference of more than thirteen times. For anyone scheduling link posts at volume, that single fee outweighs the hosting bill and most of the software decision. It is also the main reason self-hosted Postiz lands near $68 a month rather than near zero.
+A pricing quirk that quietly reshapes social scheduling. X charges $0.200 for a post containing a URL against $0.015 for plain text, more than thirteen times the price. For anyone scheduling link posts in volume, that single fee outweighs hosting costs and most of the software decision, and it is the main reason self-hosted schedulers cost more than they first appear.
 ```
 
 **Alt text**
@@ -8250,10 +8250,10 @@ Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 LAYOUT: Fully typographic, no photograph, on a flat electric lime ground. One oversized opening quotation mark sits in the upper left, cropped by both the top and left edges so only its inner curve shows. The headline sits beneath it with the figure isolated on its own line at triple size and the conditional clause small and set hard right.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"$0.200 PER POST.
-IF IT CONTAINS
-A LINK."
-The words "$0.200" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"ONE LINK.
+THIRTEEN TIMES
+THE PRICE."
+The words "THIRTEEN TIMES" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 X charges $0.200 for a post containing a URL against $0.015 for plain text, more than thirteen times the price. It reshapes the whole hosting maths.
@@ -8272,7 +8272,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 28  ·  2026-10-14
 
-### 75B · `ai-videos-for-reels-tiktok`
+### B1-133 · `ai-videos-for-reels-tiktok`
 
 *Layout: oversized punctuation*
 
@@ -8332,7 +8332,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 76B · `best-ai-chatbots-for-websites`
+### B1-134 · `best-ai-chatbots-for-websites`
 
 *Layout: hero numeral*
 
@@ -8392,7 +8392,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 77B · `best-ai-lead-generation-tools`
+### B1-135 · `best-ai-lead-generation-tools`
 
 *Layout: stamp block*
 
@@ -8452,7 +8452,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N17 · `voicebox-review-free-ai-voice`
+### B1-136 · `voicebox-review-free-ai-voice`
 
 *Layout: before after*
 
@@ -8510,13 +8510,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 9C · `open-source-llm-api-pricing`
+### B1-137 · `open-source-llm-api-pricing`
 
 *Layout: torn edge*
 
 **Title**
 ```
-Your $20 AI Plan Isn't the Expensive Option
+Your Monthly AI Plan Is Not The Expensive Part
 ```
 
 **Description**
@@ -8546,10 +8546,10 @@ Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
 LAYOUT: Two flat colour fields meeting along a rough torn-paper edge rather than a straight line. Headline on the larger field. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
-"YOUR $20 PLAN
-ISN'T THE
-EXPENSIVE OPTION"
-The words "ISN'T" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+"YOUR MONTHLY PLAN
+IS NOT THE
+EXPENSIVE PART"
+The words "NOT THE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
 Open-model APIs are 50x cheaper per token, but $20 already buys around 200 million tokens. Unless you're running high-volume API work, the subscription is the cheaper side of that trade.
@@ -8574,7 +8574,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### 10C · `free-ai-transcription-tools`
+### B1-138 · `free-ai-transcription-tools`
 
 *Layout: text top photo bottom*
 
@@ -8638,7 +8638,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 29  ·  2026-10-15
 
-### 79C · `how-to-use-ai-for-cold-email`
+### B1-139 · `how-to-use-ai-for-cold-email`
 
 *Layout: hero numeral*
 
@@ -8698,7 +8698,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N3 · `run-ai-locally-ollama`
+### B1-140 · `run-ai-locally-ollama`
 
 *Layout: margin note*
 
@@ -8756,13 +8756,13 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N6 · `open-seo-review`
+### B1-141 · `open-seo-review`
 
 *Layout: annotated diagram*
 
 **Title**
 ```
-Before You Install It, Read The API Line
+Install It, Then Discover It Needs A Deposit
 ```
 
 **Description**
@@ -8814,7 +8814,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N9 · `free-ai-image-generation-locally`
+### B1-142 · `free-ai-image-generation-locally`
 
 *Layout: circle cutout*
 
@@ -8872,7 +8872,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N12 · `moneyprinterturbo-review`
+### B1-143 · `moneyprinterturbo-review`
 
 *Layout: oversized punctuation*
 
@@ -8928,7 +8928,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
-### N15 · `postiz-review-self-hosted`
+### B1-144 · `postiz-review-self-hosted`
 
 *Layout: photo strip band*
 
@@ -8988,7 +8988,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ## DAY 30  ·  2026-10-16
 
-### N18 · `voicebox-review-free-ai-voice`
+### B1-145 · `voicebox-review-free-ai-voice`
 
 *Layout: stamp block*
 
@@ -9034,6 +9034,293 @@ Most free AI voice tiers forbid commercial use, and the upgrade is the point. Th
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
 Free voice tools compared at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B1-146 · `ai-image-commercial-licences`
+
+*Layout: margin note*
+
+**Title**
+```
+Hosted Free Tiers Are Where The Catches Hide
+```
+
+**Description**
+```
+Running a model yourself and using someone's free hosted tier are different bargains. The hosted version is easier and frequently takes something in return: rights over the images you generate, a public gallery by default, or terms that quietly exclude commercial use. None of that is hidden, but none of it is on the button you clicked either. Read the tier terms before a paid project depends on one.
+```
+
+**Alt text**
+```
+Pin about the catches in free hosted image tiers, set as a margin note beside small print
+```
+
+**Board**
+```
+AI Art & Wall Art
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/ai-image-commercial-licences
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: The headline runs vertically up the narrow left margin, rotated ninety degrees and set too large for its column. The right two thirds carry a tight macro photograph.
+
+PHOTOGRAPH: a dense page of terms and conditions shot at an angle under a desk lamp, most of it falling out of focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"HOSTED FREE TIERS
+ARE WHERE THE
+CATCHES HIDE"
+The words "THE CATCHES" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Rights over your images, a public gallery by default, or terms that exclude commercial use. Easier is rarely free of conditions.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Every licence compared at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B1-147 · `best-ai-chatbots-for-websites`
+
+*Layout: hero numeral*
+
+**Title**
+```
+A Chatbot Cannot Fix A Traffic Problem
+```
+
+**Description**
+```
+Worth checking before you buy one. A website chatbot converts visitors who already arrived; it creates none. If enquiries are coming in and going cold, a bot helps. If nobody is visiting, a bot changes nothing and will feel like progress while the actual problem sits untouched. Diagnose which of those is true before choosing any tool in this category.
+```
+
+**Alt text**
+```
+Pin about diagnosing before buying a chatbot, built around a hero numeral zero
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/best-ai-chatbots-for-websites
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: Fully typographic, no photograph, on a flat lime ground. An enormous numeral zero fills the upper two thirds, cropped so its curve runs off the right edge. The headline nests inside its counter.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"A CHATBOT CANNOT
+FIX A TRAFFIC
+PROBLEM"
+The words "CANNOT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+It converts visitors who already arrived and creates none. If nobody is visiting, it will feel like progress while nothing changes.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Which tool fits which leak, at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B1-148 · `best-ai-image-generators-pinterest`
+
+*Layout: before after*
+
+**Title**
+```
+Midjourney For The Background, Something Else For The Words
+```
+
+**Description**
+```
+A workflow worth knowing if your pins keep coming out beautiful but unreadable. Midjourney makes the loveliest backgrounds of any generator and still struggles with text inside the image. The fix is to stop asking it to do both: generate the background there, then add your headline in Canva or any editor. Ideogram is the exception if you want the words baked in from the start.
+```
+
+**Alt text**
+```
+Pin about splitting pin design between two tools, shown as two stacked photographic panels
+```
+
+**Board**
+```
+AI Art & Wall Art
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/best-ai-image-generators-pinterest
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: Two stacked photographic panels of unequal height showing the same object twice, the change between them carrying the argument. One lime hairline separates them.
+
+PHOTOGRAPH: the same framed poster photographed twice, once blank and once with a paper headline laid over it, flat overhead in soft daylight. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"MIDJOURNEY FOR
+THE BACKGROUND.
+SOMETHING ELSE
+FOR THE WORDS."
+The words "FOR THE WORDS." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+It makes the prettiest backgrounds and still fumbles text. Generate there, add the headline elsewhere, and stop fighting it.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Twelve tools compared at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B1-149 · `best-ai-logo-generators`
+
+*Layout: oversized punctuation*
+
+**Title**
+```
+You Cannot Trademark What Anyone Else Can Generate
+```
+
+**Description**
+```
+The question most logo guides avoid. A logo produced entirely by AI with no human authorship sits on shaky ground for copyright, and trademark protection depends on distinctive use in commerce rather than on who drew it. In practice that means AI is a fine starting point and a poor finishing point: the more you edit, arrange and make it yours, the firmer the ground you are standing on.
+```
+
+**Alt text**
+```
+Pin about trademarking AI logos, built around an oversized question mark on warm paper
+```
+
+**Board**
+```
+AI Art & Wall Art
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/best-ai-logo-generators
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: Fully typographic, no photograph. An enormous slab question mark fills the left half, cropped by the top and left edges so only part of its curve shows. The headline sits to its right, hard against the margin.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"YOU CANNOT
+TRADEMARK WHAT
+ANYONE CAN GENERATE"
+The words "ANYONE CAN GENERATE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+AI output with no human authorship sits on shaky copyright ground. Edit it, arrange it, make it yours before it carries your name.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+What you can actually protect, at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B1-150 · `best-ai-productivity-tools`
+
+*Layout: circle cutout*
+
+**Title**
+```
+Let Something Else Defend Your Focus Time
+```
+
+**Description**
+```
+The productivity problem most tools ignore is that your calendar fills with other people's priorities. Reclaim and Motion both attack that directly: they build your day around the work that matters and block the time before someone else claims it. That is a different job from note-taking or project tracking, and it is the one worth solving if your week disappears into meetings.
+```
+
+**Alt text**
+```
+Pin about AI scheduling tools, over a photograph of a wall clock in hard side light
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/best-ai-productivity-tools
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: One large circular photographic cutout sits high and left, part of it bleeding off the top edge, on a graphite ground. The headline occupies the lower half with a ragged right edge.
+
+PHOTOGRAPH: a plain wall clock face in hard directional side light, deep shadow across one half, colours drained to warm neutral. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"LET SOMETHING ELSE
+DEFEND YOUR
+FOCUS TIME"
+The words "DEFEND" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Reclaim and Motion build your day around the work that matters and block the time before someone else claims it.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Seven tools, seven time sinks, at topuseai.com
 
 Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
 
