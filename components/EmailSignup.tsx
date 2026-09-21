@@ -85,8 +85,8 @@ export function EmailSignup({
     "transition-colors duration-150",
     "focus:outline-2 focus:outline-offset-0",
     isDark
-      ? "bg-white/10 border border-white/25 text-white placeholder:text-white/45 focus:outline-white focus:bg-white/15"
-      : "bg-white border border-black/15 text-text placeholder:text-muted/60 focus:outline-primary"
+      ? "bg-white/10 border border-white/25 text-white placeholder:text-white/65 focus:outline-white focus:bg-white/15"
+      : "bg-white border border-black/15 text-text placeholder:text-muted focus:outline-primary"
   );
 
   const buttonClasses = cn(
@@ -156,8 +156,11 @@ export function EmailSignup({
 
       <p
         className={cn(
+          // Opacity below these values drops under the 4.5:1 AA threshold for
+          // normal-size text: /40 on the dark panel is 3.7:1 and muted/60 on
+          // warm paper is only 2.7:1.
           "mt-2 text-xs",
-          isDark ? "text-white/40" : "text-muted/60"
+          isDark ? "text-white/65" : "text-muted"
         )}
       >
         No spam. Unsubscribe anytime.

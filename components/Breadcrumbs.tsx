@@ -27,7 +27,11 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
                   {item.name}
                 </Link>
               )}
-              {!isLast && <span className="text-muted/50">/</span>}
+              {!isLast && (
+                <span className="text-muted/50" aria-hidden>
+                  /
+                </span>
+              )}
             </li>
           );
         })}

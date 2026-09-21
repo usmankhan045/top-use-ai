@@ -1,6 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Tailwind emits ~11KB for this whole site, and that one stylesheet was the
+    // only render-blocking request on the page: 150ms of the 1,137ms critical
+    // path. Inlining it into <head> removes the round trip entirely.
+    //
+    // The tradeoff is that inlined CSS cannot be cached separately, so repeat
+    // visitors re-download it with each HTML response. That is the right trade
+    // here: almost all traffic is first-time visitors arriving from search, and
+    // 11KB gzipped costs them far less than an extra round trip.
+    inlineCss: true,
+  },
+
   images: {
     // Serve modern, much smaller formats. AVIF is tried first, WebP as fallback.
     // This is the single biggest LCP win for post hero images.

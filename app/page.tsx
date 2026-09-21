@@ -427,7 +427,7 @@ export default async function HomePage() {
                 </Button>
               </div>
 
-              <p className="mt-6 stamp text-muted/80 flex flex-wrap items-center gap-x-3 gap-y-1">
+              <p className="mt-6 stamp text-muted flex flex-wrap items-center gap-x-3 gap-y-1">
                 <span>Hands-on tested</span>
                 <span className="text-muted/40" aria-hidden>·</span>
                 <span>No signup to read</span>
@@ -541,7 +541,7 @@ export default async function HomePage() {
           </div>
 
           {posts.length === 0 && (
-            <p className="mt-6 text-center text-xs font-mono text-muted/50 uppercase tracking-widest">
+            <p className="mt-6 text-center text-xs font-mono text-muted uppercase tracking-widest">
               Showing placeholder content. Connect Supabase to display real posts
             </p>
           )}

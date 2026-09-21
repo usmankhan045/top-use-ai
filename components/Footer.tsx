@@ -70,7 +70,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
 
           {/* Column 2: Navigation */}
           <div>
-            <p className="stamp text-white/40 mb-3">
+            <p className="stamp text-white/65 mb-3">
               Navigation
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
@@ -94,7 +94,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
               balances the row and gives every category an internal link from
               every page. */}
           <div>
-            <p className="stamp text-white/40 mb-3">
+            <p className="stamp text-white/65 mb-3">
               Browse
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
@@ -136,7 +136,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
         </div>
 
         {/* ── Bottom bar ─────────────────────────────────────────────────── */}
-        <div className="border-t border-white/10 py-3 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-white/35">
+        <div className="border-t border-white/10 py-3 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-white/60">
           <p>© {year} {siteConfig.name}. All rights reserved.</p>
           <p>{siteConfig.legal.disclaimer}</p>
         </div>
