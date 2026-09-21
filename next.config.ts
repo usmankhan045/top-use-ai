@@ -90,6 +90,29 @@ const nextConfig: NextConfig = {
           { key: "X-DNS-Prefetch-Control", value: "on" },
         ],
       },
+      {
+        // Cover images never change once published: a new post gets a new
+        // filename rather than a new version of an old one. Vercel serves
+        // everything in public/ with max-age=0 by default, so each one was
+        // being revalidated on every page view despite being ~200KB and
+        // immutable. A year of immutable caching is the honest lifetime.
+        source: "/covers/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Same reasoning for the site icons and the IndexNow key file, which
+        // are static by definition. Short enough that replacing one is not a
+        // week-long wait, long enough to stop the repeat requests.
+        source: "/:file(icon.svg|icon.png|apple-icon.png|favicon.ico)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=86400" },
+        ],
+      },
     ];
   },
 };

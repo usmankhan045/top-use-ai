@@ -62,12 +62,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let categoryRoutes: MetadataRoute.Sitemap = [];
   let printableRoutes: MetadataRoute.Sitemap = [];
 
-  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.updated_at,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  // Declaring the cover image lets Google Images discover it without having to
+  // render the page, and image search is a realistic traffic source for a site
+  // whose posts are mostly comparisons and how-tos.
+  const postRoutes: MetadataRoute.Sitemap = posts.map((post) => {
+    const cover = post.featured_image_url;
+    return {
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.updated_at,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+      ...(cover
+        ? {
+            images: [
+              cover.startsWith("http") ? cover : `${BASE_URL}${cover}`,
+            ],
+          }
+        : {}),
+    };
+  });
 
   // A category page changes when one of its own posts does, not when any post
   // anywhere does, so date each one from its newest member.
