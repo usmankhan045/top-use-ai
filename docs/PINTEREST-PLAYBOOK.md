@@ -62,6 +62,18 @@ Everything. Each pin composes its own image prompt from:
 - **Body text style.** Loose list, run-on with lime dots, uneven columns,
   stamped block, lime-underlined rows.
 
+### Prompts must ask for a new image
+
+Every image prompt opens by saying it is a text-to-image request with no input
+image. A prompt that begins "Create a 1000x1500 Pinterest pin" and then
+describes a photograph reads as an *edit* instruction, and image tools respond
+by asking which file you want to upload. They will not generate the photograph
+unless told to.
+
+A layout that carries no `PHOTOGRAPH:` block must say **"fully typographic, no
+photograph"** in its `LAYOUT:` line, or the tool invents a photograph nobody
+asked for.
+
 ### Hard constraints
 
 - **No layout may repeat within a single day's six pins.**

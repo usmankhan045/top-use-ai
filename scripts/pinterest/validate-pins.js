@@ -136,6 +136,30 @@ function check(file) {
     }
 
     if (p.prompt) {
+      // A prompt that opens "Create a pin" reads as an edit instruction, and
+      // image tools respond by asking which image to upload. Say generate.
+      if (!/^Generate a brand new/.test(p.prompt.trim()))
+        E(`${at}: prompt does not open by asking for a new image`);
+
+      // A LAYOUT describing type only, with no PHOTOGRAPH block, must say so
+      // explicitly or the tool invents a photograph that was never wanted.
+      {
+        const layout = (p.prompt.match(/LAYOUT: ([^\n]+)/) || [])[1] || "";
+        const hasPhoto = /PHOTOGRAPH:/.test(p.prompt);
+        const saysNone = /no photograph|fully typographic/i.test(layout);
+        if (!hasPhoto && !saysNone)
+          E(`${at}: layout implies a photo but no PHOTOGRAPH block is given`);
+        if (hasPhoto && saysNone)
+          E(`${at}: layout says no photograph but a PHOTOGRAPH block is given`);
+      }
+
+      // The four brand colours are the whole palette. Anything else is a
+      // leftover from the retired template system.
+      for (const hex of new Set(p.prompt.match(/#[0-9A-Fa-f]{6}/g) || [])) {
+        if (!["#22202E", "#D6FF3F", "#FBFAF6", "#5C5A68"].includes(hex.toUpperCase()))
+          E(`${at}: off-palette colour ${hex}`);
+      }
+
       if (!/SUBHEAD:/.test(p.prompt)) E(`${at}: prompt has no SUBHEAD`);
       if (!/CLOSING LINE:/.test(p.prompt)) E(`${at}: prompt has no CLOSING LINE`);
       if (!/1000x1500/.test(p.prompt)) E(`${at}: prompt does not set 1000x1500`);

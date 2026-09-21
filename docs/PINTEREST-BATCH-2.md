@@ -67,7 +67,10 @@ https://www.topuseai.com/blog/youtube-ai-content-monetization
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A plain card photographed flat overhead sits low in frame, rotated four degrees, its bottom edge cropped by the canvas. Branding sits on the bare surface above it.
 
@@ -125,7 +128,10 @@ https://www.topuseai.com/blog/elevenlabs-vs-murf
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A hard diagonal edge running from top-left to bottom-right splits the canvas: photograph on one side, flat electric lime #D6FF3F with the headline on the other. Set the type unusually small against a lot of empty space.
 
@@ -190,7 +196,10 @@ https://www.topuseai.com/blog/best-ai-voice-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat graphite #22202E behind. Headline sits in the clearest corner. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
@@ -250,9 +259,12 @@ https://www.topuseai.com/blog/synthesia-vs-heygen
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits dead centre with even margins. Flat a deep muted teal #1E3A38 around it, headline above. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits dead centre with even margins. Flat graphite #22202E around it, headline above. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
 PHOTOGRAPH: a microphone arm casting a hard shadow on a wall. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -310,7 +322,10 @@ https://www.topuseai.com/blog/sell-digital-products-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The lower half is a flat overhead photograph. The upper half is warm off-white carrying two narrow columns of type, each sitting directly above one object in the photograph below.
 
@@ -368,7 +383,10 @@ https://www.topuseai.com/blog/best-ai-social-media-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A horizontal photographic band, 52% of canvas height, sits across the lower third. Flat warm off-white #FBFAF6 above and below, headline in the larger of the two areas. Set the type unusually small against a lot of empty space.
 
@@ -428,9 +446,12 @@ https://www.topuseai.com/blog/free-alternatives-to-midjourney
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: The top 55% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid a warm clay #C9603F panel carries the headline and supporting text. Let one element break its container and overlap the element beside it.
+LAYOUT: The top 55% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Let one element break its container and overlap the element beside it.
 
 PHOTOGRAPH: an inkjet print half-emerged from a printer. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -492,9 +513,11 @@ https://www.topuseai.com/blog/best-ai-lead-generation-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline set inside a heavy solid warm off-white #FBFAF6 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Set the type unusually small against a lot of empty space.
+LAYOUT: The headline set inside a heavy solid warm off-white #FBFAF6 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "MORE CONTACTS.
@@ -552,7 +575,10 @@ https://www.topuseai.com/blog/ai-videos-for-reels-tiktok
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat electric lime #D6FF3F. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -616,7 +642,10 @@ https://www.topuseai.com/blog/canva-ai-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space across the top edge. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -679,7 +708,10 @@ https://www.topuseai.com/blog/postiz-review-self-hosted
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A single horizontal band across the middle third holds three small square photographs butted edge to edge with no gaps, on a graphite ground. A pill tag overlaps the band's left end, tilted six degrees.
 
@@ -737,7 +769,10 @@ https://www.topuseai.com/blog/moneyprinterturbo-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A rough horizontal torn paper edge crosses the middle, warm off-white above, photograph below. A small pill tag straddles the tear, tilted five degrees.
 
@@ -795,9 +830,11 @@ https://www.topuseai.com/blog/best-ai-music-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline occupies only the left 55% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: The headline occupies only the left 55% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "YOU MADE IT.
@@ -853,7 +890,10 @@ https://www.topuseai.com/blog/open-seo-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Three thin lime leader lines run from points on a photograph out to short annotations placed at irregular heights along the left edge. The headline sits across the top third.
 
@@ -913,9 +953,11 @@ https://www.topuseai.com/blog/best-ai-social-media-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 70% of the canvas height. The headline sits over it. Introduce one hard right-angled shape that interrupts the layout.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 70% of the canvas height. The headline sits over it. Introduce one hard right-angled shape that interrupts the layout. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "NO CREDIT
@@ -975,9 +1017,11 @@ https://www.topuseai.com/blog/elevenlabs-vs-murf
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline occupies only the left 38% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: The headline occupies only the left 38% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "IF YOU NEED
@@ -1033,7 +1077,10 @@ https://www.topuseai.com/blog/ai-affiliate-marketing-for-beginners
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space in the bottom-left corner. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
@@ -1093,9 +1140,11 @@ https://www.topuseai.com/blog/best-ai-seo-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
+LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Push the whole composition off-centre to the left, with a wide empty gutter down the right. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "EVERY PRICE
@@ -1151,9 +1200,12 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat a deep muted teal #1E3A38 with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat graphite #22202E with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
 
 PHOTOGRAPH: a stack of art prints on brown paper. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -1211,7 +1263,10 @@ https://www.topuseai.com/blog/best-free-ai-writing-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -1276,7 +1331,10 @@ https://www.topuseai.com/blog/best-ai-music-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat warm off-white #FBFAF6 behind. Headline sits in the clearest corner. Set the type unusually small against a lot of empty space.
 
@@ -1336,7 +1394,10 @@ https://www.topuseai.com/blog/how-to-use-ai-for-cold-email
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat electric lime #D6FF3F. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -1400,9 +1461,11 @@ https://www.topuseai.com/blog/best-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "NO VECTOR FILE.
@@ -1458,9 +1521,11 @@ https://www.topuseai.com/blog/synthesia-vs-heygen
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: Pure typography: the headline broken across 3 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
+LAYOUT: Pure typography: the headline broken across 3 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Push the whole composition off-centre to the left, with a wide empty gutter down the right. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "YOUR FACE.
@@ -1516,7 +1581,10 @@ https://www.topuseai.com/blog/sell-digital-products-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 42% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Set the type unusually small against a lot of empty space.
 
@@ -1579,7 +1647,9 @@ https://www.topuseai.com/blog/moneyprinterturbo-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
 LAYOUT: Fully typographic, no photograph. An enormous slab-weight question mark occupies nearly the full height, pushed hard against the right edge and cropped so its curve runs off the canvas. The headline nests inside the open counter of the question mark. The closing line runs along the bottom margin in a single unbroken line.
 
@@ -1637,9 +1707,11 @@ https://www.topuseai.com/blog/ai-affiliate-marketing-for-beginners
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline set inside a heavy solid a deep muted teal #1E3A38 rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: The headline set inside a heavy solid graphite #22202E rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "THE HARD PART
@@ -1695,7 +1767,10 @@ https://www.topuseai.com/blog/make-money-with-ai-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Several photographic elements overlap at slight angles as if dropped on a surface, occupying the lower half. The headline sits above them on flat ground, its last line overlapping the topmost element.
 
@@ -1753,7 +1828,10 @@ https://www.topuseai.com/blog/best-ai-seo-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at in the bottom-left corner carries the headline. No frame, no border, the photo runs to all four edges. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -1813,7 +1891,10 @@ https://www.topuseai.com/blog/how-to-clone-your-voice-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 52% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -1877,7 +1958,10 @@ https://www.topuseai.com/blog/best-ai-meeting-note-takers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated -2 degrees, casting no shadow. Flat graphite #22202E behind it. Headline overlaps the card's bottom-right edge. Let one element break its container and overlap the element beside it.
 
@@ -1941,7 +2025,10 @@ https://www.topuseai.com/blog/voicebox-review-free-ai-voice
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two stacked horizontal panels of unequal height, the upper taking two thirds, separated by a single lime hairline. The upper panel is bright and clean, the lower dark and grainy.
 
@@ -2001,9 +2088,11 @@ https://www.topuseai.com/blog/faceless-youtube-cost
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in graphite #22202E and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Stack the composition tight to the bottom edge, leaving the top open.
+LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in graphite #22202E and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Stack the composition tight to the bottom edge, leaving the top open. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "YOU DON'T NEED
@@ -2059,9 +2148,11 @@ https://www.topuseai.com/blog/best-ai-productivity-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "SIX TRIALS.
@@ -2117,7 +2208,10 @@ https://www.topuseai.com/blog/free-ai-transcription-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A single object photographed flat overhead sits low and slightly right, the type carried on flat ground above it. Leave the top third almost empty.
 
@@ -2175,7 +2269,9 @@ https://www.topuseai.com/blog/best-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
 LAYOUT: Fully typographic, no photograph. An enormous slab question mark fills the left half, cropped by the top and left edges so only part of its curve shows. The headline sits to its right, hard against the margin.
 
@@ -2231,9 +2327,11 @@ https://www.topuseai.com/blog/sell-ai-art-on-etsy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits in the upper third at a fraction of its size. Extreme scale contrast is the whole design. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits in the upper third at a fraction of its size. Extreme scale contrast is the whole design. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "THE RULE
@@ -2289,7 +2387,10 @@ https://www.topuseai.com/blog/free-alternatives-to-midjourney
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two photographs side by side with a 16px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -2351,7 +2452,10 @@ https://www.topuseai.com/blog/ai-headshots-for-job-seekers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space in the upper third. Set the type unusually small against a lot of empty space.
 
@@ -2411,9 +2515,11 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: Pure typography: the headline broken across 4 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: Pure typography: the headline broken across 4 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "THIRTY PROMPTS.
@@ -2469,7 +2575,10 @@ https://www.topuseai.com/blog/how-to-make-money-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A large circular photo crop, 70% of the canvas width, sits in the upper-right, overlapping the headline. The rest is flat graphite #22202E. The headline wraps around the circle rather than sitting in a neat block. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -2534,9 +2643,12 @@ https://www.topuseai.com/blog/chatgpt-prompts-to-make-money
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a deep muted teal #1E3A38 behind. Headline sits in the clearest corner. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat graphite #22202E behind. Headline sits in the clearest corner. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
 PHOTOGRAPH: coins stacked in uneven columns on concrete. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -2594,9 +2706,11 @@ https://www.topuseai.com/blog/best-ai-voice-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits across the top edge at a fraction of its size. Extreme scale contrast is the whole design. Let one element break its container and overlap the element beside it.
+LAYOUT: One enormous numeral or short word occupies 38% of the canvas height in lime, and the headline sits across the top edge at a fraction of its size. Extreme scale contrast is the whole design. Let one element break its container and overlap the element beside it. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "NARRATION.
@@ -2655,7 +2769,9 @@ https://www.topuseai.com/blog/ai-image-commercial-licences
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
 LAYOUT: Fully typographic, no photograph. Two columns of sharply unequal width, the left barely a third of the right, divided by a hairline rule that stops well short of the top margin. The headline spans both and breaks mid-word across the divider. A single lime square sits in the empty lower left.
 
@@ -2713,7 +2829,10 @@ https://www.topuseai.com/blog/best-ai-chatbots-for-websites
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space across the top edge. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -2773,7 +2892,10 @@ https://www.topuseai.com/blog/voicebox-review-free-ai-voice
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A steep diagonal from the lower left corner to the upper right splits the canvas. The photograph fills the lower right triangle, a flat lime ground the upper left. The headline follows the diagonal's angle; the subhead deliberately does not.
 
@@ -2831,7 +2953,10 @@ https://www.topuseai.com/blog/make-money-with-ai-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A photograph fills the upper two thirds edge to edge. The lower third is flat warm off-white carrying the headline and subhead, the type crowded deliberately toward the bottom margin.
 
@@ -2889,7 +3014,10 @@ https://www.topuseai.com/blog/best-ai-image-generators-pinterest
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two stacked photographic panels of unequal height showing the same object twice, the change between them carrying the argument. One lime hairline separates them.
 
@@ -2948,9 +3076,11 @@ https://www.topuseai.com/blog/best-ai-meeting-note-takers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 70% of the canvas height. The headline sits over it. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 70% of the canvas height. The headline sits over it. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "WHO ELSE
@@ -3006,7 +3136,10 @@ https://www.topuseai.com/blog/free-ai-image-generation-locally
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One large circular photographic cutout sits low and right, half bleeding off the bottom edge, on a graphite ground. The headline occupies the upper half with a ragged right edge.
 
@@ -3066,9 +3199,12 @@ https://www.topuseai.com/blog/best-free-ai-writing-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a warm clay #C9603F behind. Headline sits in the clearest corner. Introduce one hard right-angled shape that interrupts the layout.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat electric lime #D6FF3F behind. Headline sits in the clearest corner. Introduce one hard right-angled shape that interrupts the layout.
 
 PHOTOGRAPH: a keyboard lit by a single window. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -3126,7 +3262,10 @@ https://www.topuseai.com/blog/best-ai-logo-generators
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat graphite #22202E with the headline on the other. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -3189,7 +3328,10 @@ https://www.topuseai.com/blog/midjourney-prompts-for-wall-art
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A photograph sits low in frame with the upper half left as empty wall. Thin lime measurement lines with end ticks run along the object's width and height, each labelled in small type.
 
@@ -3247,7 +3389,9 @@ https://www.topuseai.com/blog/free-ai-music-commercial-rights
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
 LAYOUT: Fully typographic, no photograph. Two columns set at different type sizes rather than different widths, the left small and dense, the right large and sparse, with no rule between them at all. The headline runs across the top, its baseline tilted two degrees. One lime dot sits between the columns.
 
@@ -3303,9 +3447,11 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-bloggers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: One enormous numeral or short word occupies 62% of the canvas height in lime, and the headline sits in the bottom-left corner at a fraction of its size. Extreme scale contrast is the whole design. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
+LAYOUT: One enormous numeral or short word occupies 62% of the canvas height in lime, and the headline sits in the bottom-left corner at a fraction of its size. Extreme scale contrast is the whole design. Push the whole composition off-centre to the left, with a wide empty gutter down the right. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "AI INVENTS
@@ -3361,7 +3507,10 @@ https://www.topuseai.com/blog/best-ai-video-tools-faceless-youtube
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A horizontal photographic band, 62% of canvas height, sits across the vertical centre. Flat electric lime #D6FF3F above and below, headline in the larger of the two areas. Set the type unusually small against a lot of empty space.
 
@@ -3427,9 +3576,12 @@ https://www.topuseai.com/blog/how-to-write-blog-post-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated 2 degrees, casting no shadow. Flat a deep muted teal #1E3A38 behind it. Headline overlaps the card's bottom-left edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
+LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated 2 degrees, casting no shadow. Flat graphite #22202E behind it. Headline overlaps the card's bottom-left edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
 PHOTOGRAPH: a notebook with a pen resting in the gutter. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -3487,9 +3639,11 @@ https://www.topuseai.com/blog/midjourney-prompts-for-pinterest-pins
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: Pure typography: the headline broken across 5 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Stack the composition tight to the bottom edge, leaving the top open.
+LAYOUT: Pure typography: the headline broken across 5 lines at wildly different sizes, each line a different weight, filling the canvas edge to edge with almost no margin. Stack the composition tight to the bottom edge, leaving the top open. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "FIRST RESULT
@@ -3545,7 +3699,10 @@ https://www.topuseai.com/blog/open-source-llm-api-pricing
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A tight device crop fills the lower two thirds at an oblique angle. The headline sits on flat ground above it, its final line overlapping the device edge.
 
@@ -3603,7 +3760,10 @@ https://www.topuseai.com/blog/best-ai-chatbots-for-websites
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 38% is a solid warm off-white #FBFAF6 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -3666,9 +3826,12 @@ https://www.topuseai.com/blog/faceless-youtube-cost
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat a deep muted teal #1E3A38 with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: A hard diagonal edge running from the left edge to the bottom-right corner splits the canvas: photograph on one side, flat graphite #22202E with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
 
 PHOTOGRAPH: an audio waveform on a dark screen, photographed close. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -3730,7 +3893,10 @@ https://www.topuseai.com/blog/how-to-make-ai-influencer
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A large circular photo crop, 78% of the canvas width, sits in the lower-left, bleeding off the bottom. The rest is flat electric lime #D6FF3F. The headline wraps around the circle rather than sitting in a neat block. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -3796,7 +3962,10 @@ https://www.topuseai.com/blog/chatgpt-prompts-for-small-business
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space across the top edge. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -3861,7 +4030,9 @@ https://www.topuseai.com/blog/best-local-coding-model-vram
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
 LAYOUT: Fully typographic, no photograph. Three narrow columns of identical width but staggered vertically, each starting lower than the one before so the block descends left to right. The headline sits above all three, its final line dropping into the first column. Thin lime rules cap each column.
 
@@ -3917,7 +4088,10 @@ https://www.topuseai.com/blog/best-open-source-llms-2026
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A hard diagonal edge running from top-left to bottom-right splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Leave the top 20% almost empty; let the composition sit low.
 
@@ -3977,7 +4151,10 @@ https://www.topuseai.com/blog/n8n-review-pricing
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 62% is a solid graphite #22202E panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
@@ -4040,9 +4217,12 @@ https://www.topuseai.com/blog/n8n-vs-zapier-make
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat a deep muted teal #1E3A38. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat graphite #22202E. Leave the top 20% almost empty; let the composition sit low.
 
 PHOTOGRAPH: a home office corner shot from the doorway. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -4100,7 +4280,10 @@ https://www.topuseai.com/blog/free-notion-alternatives
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 52% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid graphite #22202E panel carries the headline and supporting text. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -4162,7 +4345,10 @@ https://www.topuseai.com/blog/how-to-write-blog-post-with-ai
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space centred vertically. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -4226,7 +4412,10 @@ https://www.topuseai.com/blog/free-zapier-alternatives-compared
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Two photographs side by side with a 12px gap, the left labelled BEFORE and the right AFTER in small monospace caps. Headline above on flat warm off-white #FBFAF6. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
@@ -4286,9 +4475,12 @@ https://www.topuseai.com/blog/whisper-vs-otter-fireflies
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat a deep muted teal #1E3A38 around it, headline above. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat graphite #22202E around it, headline above. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
 PHOTOGRAPH: a pair of headphones resting on a mixing desk. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -4349,7 +4541,10 @@ https://www.topuseai.com/blog/is-ai-voice-cloning-legal
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A horizontal photographic band, 52% of canvas height, sits across the upper third. Flat graphite #22202E above and below, headline in the larger of the two areas. Let one element break its container and overlap the element beside it.
 
@@ -4409,9 +4604,11 @@ https://www.topuseai.com/blog/ace-step-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline occupies only the left 45% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
+LAYOUT: The headline occupies only the left 45% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Tilt the entire layout 2-3 degrees so nothing sits perfectly square. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "ONE IS MIT.
@@ -4467,9 +4664,11 @@ https://www.topuseai.com/blog/x-api-pricing-social-schedulers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline set inside a heavy solid electric lime #D6FF3F rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Introduce one hard right-angled shape that interrupts the layout.
+LAYOUT: The headline set inside a heavy solid electric lime #D6FF3F rectangle that does not reach the canvas edges, like a rubber stamp pressed onto the background. Everything else sits outside it. Introduce one hard right-angled shape that interrupts the layout. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "SCHEDULING LINKS
@@ -4530,7 +4729,10 @@ https://www.topuseai.com/blog/best-local-coding-model-vram
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A photograph sits inside an offset rectangular card placed low and right, its corner running off the canvas. The headline occupies the upper left on flat ground.
 
@@ -4588,9 +4790,11 @@ https://www.topuseai.com/blog/best-open-source-llms-2026
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The headline occupies only the left 42% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: The headline occupies only the left 42% of the canvas in a narrow column, with the whole right side left deliberately empty except for one small lime mark. Leave the top 20% almost empty; let the composition sit low. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "SAME MODEL.
@@ -4648,9 +4852,12 @@ https://www.topuseai.com/blog/n8n-review-pricing
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: The top 55% is a solid a warm clay #C9603F panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: The top 55% is a solid electric lime #D6FF3F panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Mirror the expected arrangement, put what would normally sit left on the right instead.
 
 PHOTOGRAPH: a chair pushed back from a desk. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -4708,9 +4915,12 @@ https://www.topuseai.com/blog/n8n-vs-zapier-make
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the lower-left, bleeding off the bottom. Flat a deep muted teal #1E3A38 around it, headline above. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the lower-left, bleeding off the bottom. Flat graphite #22202E around it, headline above. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
 PHOTOGRAPH: a chair pushed back from a desk. Cool blue evening light through a window. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -4768,9 +4978,11 @@ https://www.topuseai.com/blog/free-notion-alternatives
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in electric lime #D6FF3F and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Set the type unusually small against a lot of empty space.
+LAYOUT: The canvas divided into two solid blocks of unequal height, the upper in electric lime #D6FF3F and the lower in a contrasting brand colour. The headline straddles the boundary so it reads across both. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "THE APP IS FREE.
@@ -4829,9 +5041,11 @@ https://www.topuseai.com/blog/whisper-vs-faster-whisper
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
+LAYOUT: Two vertical columns of unequal width divided by a single hairline. Each column headed by one word. Headline spans both above. Set the type unusually large relative to everything else, to the point it nearly crowds the frame. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "IT ISN'T YOUR
@@ -4892,7 +5106,10 @@ https://www.topuseai.com/blog/free-zapier-alternatives-compared
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A photograph sits in a rounded rectangle inset from the edges, rotated 4 degrees, casting no shadow. Flat warm off-white #FBFAF6 behind it. Headline overlaps the card's top-right edge. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
 
@@ -4952,7 +5169,10 @@ https://www.topuseai.com/blog/whisper-vs-otter-fireflies
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat electric lime #D6FF3F around it, headline above. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
@@ -5012,9 +5232,12 @@ https://www.topuseai.com/blog/is-ai-voice-cloning-legal
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A large circular photo crop, 78% of the canvas width, sits slightly above centre, bleeding off the right edge. The rest is flat a warm clay #C9603F. The headline wraps around the circle rather than sitting in a neat block. Let one element break its container and overlap the element beside it.
+LAYOUT: A large circular photo crop, 78% of the canvas width, sits slightly above centre, bleeding off the right edge. The rest is flat electric lime #D6FF3F. The headline wraps around the circle rather than sitting in a neat block. Let one element break its container and overlap the element beside it.
 
 PHOTOGRAPH: an audio waveform on a dark screen, photographed close. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -5072,7 +5295,10 @@ https://www.topuseai.com/blog/ace-step-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat warm off-white #FBFAF6 behind. Headline sits in the clearest corner. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -5135,7 +5361,10 @@ https://www.topuseai.com/blog/x-api-pricing-social-schedulers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A horizontal photographic band, 52% of canvas height, sits across the vertical centre. Flat graphite #22202E above and below, headline in the larger of the two areas. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -5195,9 +5424,11 @@ https://www.topuseai.com/blog/obsidian-vs-logseq-vs-appflowy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Stack the composition tight to the bottom edge, leaving the top open.
+LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Stack the composition tight to the bottom edge, leaving the top open. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "CHOOSE CAREFULLY.
@@ -5255,7 +5486,10 @@ https://www.topuseai.com/blog/best-local-coding-model-vram
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space in the upper third. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -5320,7 +5554,10 @@ https://www.topuseai.com/blog/best-open-source-llms-2026
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 42% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
@@ -5380,9 +5617,11 @@ https://www.topuseai.com/blog/n8n-review-pricing
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
+LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Tilt the entire layout 2-3 degrees so nothing sits perfectly square. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "FAIR-CODE
@@ -5438,9 +5677,11 @@ https://www.topuseai.com/blog/n8n-vs-zapier-make
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 55% of the canvas height. The headline sits over it. Tilt the entire layout 2-3 degrees so nothing sits perfectly square.
+LAYOUT: A single enormous punctuation mark, a question mark or an exclamation, sits behind the type at low contrast, 55% of the canvas height. The headline sits over it. Tilt the entire layout 2-3 degrees so nothing sits perfectly square. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "100 TASKS
@@ -5499,7 +5740,10 @@ https://www.topuseai.com/blog/whisper-vs-faster-whisper
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: A hard diagonal edge running from bottom-left to top-right splits the canvas: photograph on one side, flat warm off-white #FBFAF6 with the headline on the other. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
 
@@ -5559,9 +5803,12 @@ https://www.topuseai.com/blog/moneyprinterturbo-vs-paid-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat a deep muted teal #1E3A38 around it, headline above. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
+LAYOUT: A single realistic screenshot or interface panel, cropped tight so detail is legible at thumbnail size, sits in the upper-right, overlapping the headline. Flat graphite #22202E around it, headline above. Push the whole composition off-centre to the left, with a wide empty gutter down the right.
 
 PHOTOGRAPH: a laptop screen showing a video timeline, shot over the shoulder. Flat overhead light, shot straight down, everything in focus. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -5621,7 +5868,10 @@ https://www.topuseai.com/blog/free-notion-alternatives
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: One isolated object photographed on a plain surface, centred with generous negative space, treated so it reads instantly at thumbnail size. Headline set in the negative space centred vertically. Stack the composition tight to the bottom edge, leaving the top open.
 
@@ -5681,9 +5931,11 @@ https://www.topuseai.com/blog/free-zapier-alternatives-compared
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Mirror the expected arrangement, put what would normally sit left on the right instead.
+LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Mirror the expected arrangement, put what would normally sit left on the right instead. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "MIT. APACHE.
@@ -5742,9 +5994,12 @@ https://www.topuseai.com/blog/is-ai-voice-cloning-legal
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: The top 52% is a solid a deep muted teal #1E3A38 panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Leave the top 20% almost empty; let the composition sit low.
+LAYOUT: The top 52% is a solid graphite #22202E panel holding the headline. Below it, a photograph fills the remainder to the bottom edge. Leave the top 20% almost empty; let the composition sit low.
 
 PHOTOGRAPH: a condenser microphone lit from one side against black. Soft overcast daylight, low contrast, muted. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -5800,9 +6055,12 @@ https://www.topuseai.com/blog/ace-step-review
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
-LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat a deep muted teal #1E3A38 behind. Headline sits in the clearest corner. Set the type unusually small against a lot of empty space.
+LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat graphite #22202E behind. Headline sits in the clearest corner. Set the type unusually small against a lot of empty space.
 
 PHOTOGRAPH: a cassette tape on a plain concrete surface. Shot on 35mm film, visible grain, slightly warm cast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
 
@@ -5860,7 +6118,10 @@ https://www.topuseai.com/blog/obsidian-vs-logseq-vs-appflowy
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: The top 58% is a photograph with a hard horizontal edge (no fade, no gradient). Below it, a solid electric lime #D6FF3F panel carries the headline and supporting text. Introduce one hard right-angled shape that interrupts the layout.
 
@@ -5920,9 +6181,11 @@ https://www.topuseai.com/blog/postiz-vs-paid-social-tools
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Introduce one hard right-angled shape that interrupts the layout.
+LAYOUT: A single sentence set large in the centre with wide margins, one phrase within it in lime, and everything else stripped away. Reads like a printed quotation, not an infographic. Introduce one hard right-angled shape that interrupts the layout. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "LINK POSTS ARE
@@ -5983,9 +6246,11 @@ https://www.topuseai.com/blog/whisper-vs-otter-fireflies
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one.
 
-LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Set the type unusually small against a lot of empty space.
+LAYOUT: The pin looks like a handwritten index card or notebook page: ruled lines, a slightly off-centre placement, one item ticked in lime. Set the type unusually small against a lot of empty space. Fully typographic, no photograph: the type and the flat colour fields are the whole image.
 
 HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
 "YOUR AUDIO.
@@ -6041,7 +6306,10 @@ https://www.topuseai.com/blog/x-api-pricing-social-schedulers
 
 **Image prompt**
 ```
-Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+Generate a brand new 1000x1500 vertical image (2:3 ratio) from scratch. This is a
+text-to-image request, not an edit: there is no input image, nothing is being
+uploaded, and you should not ask for one. Generate the photograph described below
+as part of the image, then lay the type over it.
 
 LAYOUT: Three photographs of different sizes overlap loosely like prints dropped on a desk, each rotated a few degrees differently. Flat warm off-white #FBFAF6 behind. Headline sits in the clearest corner. Set the type unusually large relative to everything else, to the point it nearly crowds the frame.
 
