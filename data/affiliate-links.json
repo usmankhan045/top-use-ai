@@ -45,9 +45,10 @@
       "name": "ElevenLabs",
       "href": "https://try.elevenlabs.io/gogy4t5w8iwq",
       "affiliate": true,
-      "network": "Impact",
-      "terms": "unverified",
-      "verified": "2026-09-21"
+      "network": "PartnerStack",
+      "terms": "verify in dashboard",
+      "verified": "2026-09-21",
+      "note": "Redirect resolves only for a real browser UA; a plain HTTP client gets 404. Confirmed landing on elevenlabs.io with ps_partner_key and gspk tracking intact."
     },
     "murf": {
       "name": "Murf",

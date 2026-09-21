@@ -29,6 +29,27 @@ const UA =
 /** The query keys affiliate programmes use to attribute a click. */
 const TRACKING_KEYS = ["via", "ref", "fpr", "aff", "atp", "utm_campaign"];
 
+/**
+ * Keys a network adds to the LANDING url when it attributes a click itself,
+ * rather than carrying a parameter through from the href. PartnerStack and
+ * Impact links look bare (try.vendor.com/abc123) and only reveal tracking
+ * after the redirect, so a link with no TRACKING_KEYS of its own still counts
+ * as tracked when the page it lands on carries one of these.
+ */
+const LANDING_TRACKING_KEYS = [
+  "ps_partner_key", "ps_xid", "pscd", "gspk", "gsxid",
+  "irclickid", "utm_source", "aff_id", "ref",
+];
+
+function landingTracking(url) {
+  try {
+    const qs = new URL(url).searchParams;
+    return LANDING_TRACKING_KEYS.filter((k) => qs.has(k));
+  } catch {
+    return [];
+  }
+}
+
 function trackingParams(url) {
   try {
     const qs = new URL(url).searchParams;
@@ -50,7 +71,13 @@ async function check(slug, entry) {
     try {
       res = await fetch(entry.href, {
         redirect: "follow",
-        headers: { "User-Agent": UA },
+        // Some networks (PartnerStack notably) 404 a request that does not look
+        // like a browser, so send the headers a browser would.
+        headers: {
+          "User-Agent": UA,
+          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "Accept-Language": "en-US,en;q=0.9",
+        },
         signal: AbortSignal.timeout(25000),
       });
       lastErr = null;
@@ -81,6 +108,26 @@ async function check(slug, entry) {
       };
     }
     return { slug, ok: true, note: `HTTP 200, tracking intact (${expected.join(", ")})` };
+  }
+
+  // A network-hosted link carries no parameter of its own, so look at where it
+  // landed instead. Without this, a working PartnerStack link reads as an
+  // untracked fallback.
+  const landedKeys = landingTracking(res.url);
+  if (landedKeys.length) {
+    return {
+      slug,
+      ok: true,
+      note: `HTTP 200, network tracking applied on landing (${landedKeys.join(", ")})`,
+    };
+  }
+
+  if (entry.affiliate) {
+    return {
+      slug,
+      ok: false,
+      note: `HTTP 200 but no tracking found in href or landing url (${res.url})`,
+    };
   }
 
   return { slug, ok: true, note: `HTTP 200 (fallback, no tracking)` };
