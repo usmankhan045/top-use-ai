@@ -1,19 +1,20 @@
-# Pinterest Batch 3: Days 48 to 65
+# Pinterest Batch 3: Pins B3-001 to B3-051
 
-48 pins across 18 days, six a day. Every pin is written from a verified
-fact in the post it links to, and every image prompt is composed individually.
+51 pins across days 47 to 65, six a day. Every pin is written from a
+verified fact in the post it links to, and every image prompt is composed
+individually.
 
 **Days 1 to 5 are already uploaded** and archived in
 `PINTEREST-DONE-DAYS-1-5.md`. Do not re-pin those.
 
 | | |
 |---|---|
-| Pins | 48 |
-| Pin numbers | B3-001 to B3-048 |
-| Days | 48 to 65, six per day |
-| Calendar | 2026-11-03 to 2026-11-20 |
-| Posts covered | 18 |
-| Targets not yet published | 18 |
+| Pins | 51 |
+| Pin numbers | B3-001 to B3-051 |
+| Days | 47 to 65, six per day |
+| Calendar | 2026-11-02 to 2026-11-20 |
+| Posts covered | 19 |
+| Targets not yet published | 19 |
 
 > **Every pin below is dated after its post goes live.** Pinning a URL that
 > 404s makes Pinterest demote the link, so do not pull these forward.
@@ -24,15 +25,198 @@ Each pin has six copy blocks: title, description, alt text, board, link and the
 image prompt. Paste the prompt into your image tool, then paste the other five
 into Pinterest. Nothing needs filling in.
 
-Pins are numbered B3-001 upward in posting order, so you can track exactly
-where you stopped. Day numbers are relative: day 6 is the first day of the whole
-schedule, and the calendar date is printed on every day heading.
+Pins are numbered B3-001 upward in posting order, so a half-finished session
+can be resumed exactly. The calendar date is printed on every day heading.
+
+---
+
+## DAY 47  ·  2026-11-02
+
+### B3-001 · `whisper-vs-faster-whisper`
+
+*Layout: full bleed photo*
+
+**Title**
+```
+Same Transcript, Barely Half The Memory
+```
+
+**Description**
+```
+On a 13-minute file, faster-whisper uses 2.9GB and finishes in 59 seconds. The original implementation uses 4.7GB and takes 2 minutes 23 for the same transcript. On an older or lower-memory machine that gap decides whether local transcription is usable at all. Same model, same output, different build.
+```
+
+**Alt text**
+```
+Pin about transcription memory use over a photo of a laptop on a desk
+```
+
+**Board**
+```
+Work From Home Ideas
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/whisper-vs-faster-whisper
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: A single full-bleed photograph fills the entire canvas. A graphite scrim at across the top edge carries the headline. No frame, no border, the photo runs to all four edges. Let one element break its container and overlap the element beside it.
+
+PHOTOGRAPH: a pair of headphones resting on a mixing desk. Shallow depth of field, only the nearest object sharp. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"LESS MEMORY.
+LESS TIME.
+SAME OUTPUT."
+The words "SAME OUTPUT" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+faster-whisper produces identical transcripts using 62% of the memory and 41% of the time. On an older laptop that is the difference between workable and not.
+
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BENCHMARKED", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Setup guide at topuseai.com
+
+Bottom edge: a slim band in electric lime #D6FF3F with small uppercase monospace graphite text "TOPUSEAI.COM" on the left and "TESTED, NOT HYPED" on the right.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B3-002 · `moneyprinterturbo-vs-paid-tools`
+
+*Layout: annotated diagram*
+
+**Title**
+```
+What Paying For AI Video Actually Gets You
+```
+
+**Description**
+```
+Free and paid AI video tools differ less on output than on everything around it. Paid plans from Pictory, InVideo and Synthesia include properly licensed stock footage and support when a render fails. MoneyPrinterTurbo costs nothing and hands you a pipeline to maintain. We price both honestly, including what the free route costs in hours.
+```
+
+**Alt text**
+```
+Pin comparing AI video tool pricing in a list
+```
+
+**Board**
+```
+Faceless YouTube Ideas
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/moneyprinterturbo-vs-paid-tools
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: A simple flat diagram (boxes, arrows, a flow) with handwritten-style lime annotations pointing at parts of it. Headline top-left. Set the type unusually small against a lot of empty space.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"LICENSED STOCK.
+REAL SUPPORT.
+SOMEONE TO ASK."
+The words "SOMEONE TO ASK" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: beneath the headline, set in a slightly narrower column so it does not run the full width. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+The difference between free and paid AI video is rarely output quality. It is licensed footage, support when something breaks, and not having to maintain the pipeline yourself.
+
+SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
+MoneyPrinterTurbo: $0, self-run
+InVideo: $17/mo
+Synthesia: $18/mo annually
+Pictory: $25/mo
+
+CLOSING LINE: immediately under the supporting text, aligned left. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Side by side at topuseai.com
+
+Bottom-left: "TOPUSEAI.COM" in tiny lime monospace caps, rotated 90 degrees to run vertically up the left edge.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
+
+---
+
+### B3-003 · `local-ai-vs-paid-subscriptions`
+
+*Layout: photo strip band*
+
+**Title**
+```
+Unlimited And Free Sounds Simple. It Is Not.
+```
+
+**Description**
+```
+Running AI locally with Ollama is free, unlimited and completely private, against ChatGPT Plus at $20 a month, Claude Pro at $17 annually and Google AI Pro at $19.99. Local wins outright on cost and privacy. A Stanford study of one million queries found local models handled 88.7% successfully, and frontier models remain clearly better at hard reasoning.
+```
+
+**Alt text**
+```
+Pin comparing local and paid AI over a photo of a laptop open at night
+```
+
+**Board**
+```
+Free AI Tools
+```
+
+**Link**
+```
+https://www.topuseai.com/blog/local-ai-vs-paid-subscriptions
+```
+
+**Image prompt**
+```
+Create a 1000x1500 vertical Pinterest pin (2:3 ratio).
+
+LAYOUT: A horizontal photographic band, 62% of canvas height, sits across the upper third. Flat warm off-white #FBFAF6 above and below, headline in the larger of the two areas. Crop far tighter than feels comfortable. Let the subject run out of frame on two sides.
+
+PHOTOGRAPH: a graphics card held against a plain background. Hard directional light with deep shadows, high contrast. Real photography, not an illustration and not a 3D render. No people's faces, no hands in frame. The image must still read clearly as a 200px-wide thumbnail, so favour one strong shape over busy detail.
+
+HEADLINE: set in a chunky geometric sans-serif, tight leading, broken exactly as written:
+"LOCAL IS FREE.
+PAID IS BETTER
+AT HARD THINGS."
+The words "AT HARD THINGS" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
+
+SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
+Ollama costs nothing and never sends your data anywhere. ChatGPT Plus is $20, Claude Pro $17 annually, Google AI Pro $19.99. Frontier models are still clearly better at difficult reasoning.
+
+KICKER: a small lime pill tag with tiny uppercase monospace graphite text "BOTH SIDES", placed so it does not align neatly with the headline. Offset it deliberately.
+
+CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
+Honest comparison at topuseai.com
+
+Top-right corner: a small lime dot followed by "TOPUSEAI.COM" in tiny monospace caps, the only branding on the pin.
+
+PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, warm off-white #FBFAF6, warm grey #5C5A68. Use no other colours except within the photograph itself.
+
+Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
+```
 
 ---
 
 ## DAY 48  ·  2026-11-03
 
-### B3-001 · `obsidian-vs-logseq-vs-appflowy`
+### B3-004 · `obsidian-vs-logseq-vs-appflowy`
 
 *Layout: annotated diagram*
 
@@ -90,9 +274,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-002 · `postiz-vs-paid-social-tools`
+### B3-005 · `postiz-vs-paid-social-tools`
 
 *Layout: quote card*
 
@@ -153,9 +335,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-003 · `free-seo-tools-vs-paid`
+### B3-006 · `free-seo-tools-vs-paid`
 
 *Layout: offset photo card*
 
@@ -215,11 +395,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 49  ·  2026-11-04
 
-### B3-004 · `moneyprinterturbo-vs-paid-tools`
+### B3-007 · `moneyprinterturbo-vs-paid-tools`
 
 *Layout: screenshot device*
 
@@ -279,9 +457,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-005 · `local-ai-vs-paid-subscriptions`
+### B3-008 · `local-ai-vs-paid-subscriptions`
 
 *Layout: index card*
 
@@ -339,9 +515,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-006 · `voicebox-vs-elevenlabs-murf`
+### B3-009 · `voicebox-vs-elevenlabs-murf`
 
 *Layout: diagonal split*
 
@@ -401,11 +575,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 50  ·  2026-11-05
 
-### B3-007 · `postiz-vs-paid-social-tools`
+### B3-010 · `postiz-vs-paid-social-tools`
 
 *Layout: before after*
 
@@ -465,9 +637,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-008 · `free-seo-tools-vs-paid`
+### B3-011 · `free-seo-tools-vs-paid`
 
 *Layout: circle cutout*
 
@@ -530,9 +700,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-009 · `free-ai-image-generation-vs-paid`
+### B3-012 · `free-ai-image-generation-vs-paid`
 
 *Layout: photo top text bottom*
 
@@ -592,11 +760,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 51  ·  2026-11-06
 
-### B3-010 · `local-ai-vs-paid-subscriptions`
+### B3-013 · `local-ai-vs-paid-subscriptions`
 
 *Layout: collage stack*
 
@@ -656,9 +822,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-011 · `voicebox-vs-elevenlabs-murf`
+### B3-014 · `voicebox-vs-elevenlabs-murf`
 
 *Layout: text top photo bottom*
 
@@ -721,9 +885,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-012 · `free-ai-video-generators-open-source`
+### B3-015 · `free-ai-video-generators-open-source`
 
 *Layout: before after*
 
@@ -783,11 +945,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 52  ·  2026-11-07
 
-### B3-013 · `free-seo-tools-vs-paid`
+### B3-016 · `free-seo-tools-vs-paid`
 
 *Layout: stamp block*
 
@@ -845,9 +1005,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-014 · `free-ai-image-generation-vs-paid`
+### B3-017 · `free-ai-image-generation-vs-paid`
 
 *Layout: comparison columns*
 
@@ -908,9 +1066,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-015 · `open-source-social-media-schedulers`
+### B3-018 · `open-source-social-media-schedulers`
 
 *Layout: text top photo bottom*
 
@@ -970,11 +1126,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 53  ·  2026-11-08
 
-### B3-016 · `voicebox-vs-elevenlabs-murf`
+### B3-019 · `voicebox-vs-elevenlabs-murf`
 
 *Layout: split contrast*
 
@@ -1032,9 +1186,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-017 · `free-ai-video-generators-open-source`
+### B3-020 · `free-ai-video-generators-open-source`
 
 *Layout: full bleed photo*
 
@@ -1097,9 +1249,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-018 · `ollama-vs-lm-studio-free-ai-tools`
+### B3-021 · `ollama-vs-lm-studio-free-ai-tools`
 
 *Layout: collage stack*
 
@@ -1159,11 +1309,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 54  ·  2026-11-09
 
-### B3-019 · `free-ai-image-generation-vs-paid`
+### B3-022 · `free-ai-image-generation-vs-paid`
 
 *Layout: circle cutout*
 
@@ -1223,9 +1371,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-020 · `open-source-social-media-schedulers`
+### B3-023 · `open-source-social-media-schedulers`
 
 *Layout: quote card*
 
@@ -1286,9 +1432,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-021 · `best-free-seo-tools`
+### B3-024 · `best-free-seo-tools`
 
 *Layout: full bleed photo*
 
@@ -1348,11 +1492,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 55  ·  2026-11-10
 
-### B3-022 · `free-ai-video-generators-open-source`
+### B3-025 · `free-ai-video-generators-open-source`
 
 *Layout: full bleed photo*
 
@@ -1412,9 +1554,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-023 · `ollama-vs-lm-studio-free-ai-tools`
+### B3-026 · `ollama-vs-lm-studio-free-ai-tools`
 
 *Layout: photo strip band*
 
@@ -1477,9 +1617,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-024 · `best-free-ai-voice-tools-open-source`
+### B3-027 · `best-free-ai-voice-tools-open-source`
 
 *Layout: screenshot device*
 
@@ -1539,11 +1677,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 56  ·  2026-11-11
 
-### B3-025 · `open-source-social-media-schedulers`
+### B3-028 · `open-source-social-media-schedulers`
 
 *Layout: offset photo card*
 
@@ -1603,9 +1739,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-026 · `best-free-seo-tools`
+### B3-029 · `best-free-seo-tools`
 
 *Layout: screenshot device*
 
@@ -1669,9 +1803,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-027 · `best-free-ai-image-generators-open-source`
+### B3-030 · `best-free-ai-image-generators-open-source`
 
 *Layout: object on ground*
 
@@ -1731,11 +1863,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 57  ·  2026-11-12
 
-### B3-028 · `ollama-vs-lm-studio-free-ai-tools`
+### B3-031 · `ollama-vs-lm-studio-free-ai-tools`
 
 *Layout: numbered rows*
 
@@ -1793,9 +1923,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-029 · `best-free-ai-voice-tools-open-source`
+### B3-032 · `best-free-ai-voice-tools-open-source`
 
 *Layout: diagonal split*
 
@@ -1853,9 +1981,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-030 · `best-free-ai-logo-generators`
+### B3-033 · `best-free-ai-logo-generators`
 
 *Layout: photo strip band*
 
@@ -1915,11 +2041,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 58  ·  2026-11-13
 
-### B3-031 · `best-free-seo-tools`
+### B3-034 · `best-free-seo-tools`
 
 *Layout: comparison columns*
 
@@ -1977,9 +2101,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-032 · `best-free-ai-image-generators-open-source`
+### B3-035 · `best-free-ai-image-generators-open-source`
 
 *Layout: oversized punctuation*
 
@@ -2040,9 +2162,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-033 · `surfer-seo-alternatives`
+### B3-036 · `surfer-seo-alternatives`
 
 *Layout: screenshot device*
 
@@ -2102,11 +2222,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 59  ·  2026-11-14
 
-### B3-034 · `best-free-ai-voice-tools-open-source`
+### B3-037 · `best-free-ai-voice-tools-open-source`
 
 *Layout: torn edge*
 
@@ -2164,9 +2282,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-035 · `best-free-ai-logo-generators`
+### B3-038 · `best-free-ai-logo-generators`
 
 *Layout: margin note*
 
@@ -2227,9 +2343,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-036 · `is-canva-magic-studio-free`
+### B3-039 · `is-canva-magic-studio-free`
 
 *Layout: circle cutout*
 
@@ -2289,11 +2403,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 60  ·  2026-11-15
 
-### B3-037 · `best-free-ai-image-generators-open-source`
+### B3-040 · `best-free-ai-image-generators-open-source`
 
 *Layout: diagonal split*
 
@@ -2353,9 +2465,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-038 · `surfer-seo-alternatives`
+### B3-041 · `surfer-seo-alternatives`
 
 *Layout: ticket stub*
 
@@ -2417,9 +2527,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-039 · `predis-ai-vs-socialbee`
+### B3-042 · `predis-ai-vs-socialbee`
 
 *Layout: circle cutout*
 
@@ -2479,11 +2587,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 61  ·  2026-11-16
 
-### B3-040 · `best-free-ai-logo-generators`
+### B3-043 · `best-free-ai-logo-generators`
 
 *Layout: text top photo bottom*
 
@@ -2543,9 +2649,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-041 · `is-canva-magic-studio-free`
+### B3-044 · `is-canva-magic-studio-free`
 
 *Layout: before after*
 
@@ -2609,9 +2713,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-042 · `ai-lead-generation-landing-pages-crm`
+### B3-045 · `ai-lead-generation-landing-pages-crm`
 
 *Layout: diagonal split*
 
@@ -2671,11 +2773,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 62  ·  2026-11-17
 
-### B3-043 · `surfer-seo-alternatives`
+### B3-046 · `surfer-seo-alternatives`
 
 *Layout: photo strip band*
 
@@ -2735,9 +2835,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-044 · `predis-ai-vs-socialbee`
+### B3-047 · `predis-ai-vs-socialbee`
 
 *Layout: offset photo card*
 
@@ -2800,11 +2898,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 63  ·  2026-11-18
 
-### B3-045 · `is-canva-magic-studio-free`
+### B3-048 · `is-canva-magic-studio-free`
 
 *Layout: torn edge*
 
@@ -2862,9 +2958,7 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
-### B3-046 · `ai-lead-generation-landing-pages-crm`
+### B3-049 · `ai-lead-generation-landing-pages-crm`
 
 *Layout: collage stack*
 
@@ -2927,11 +3021,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 64  ·  2026-11-19
 
-### B3-047 · `predis-ai-vs-socialbee`
+### B3-050 · `predis-ai-vs-socialbee`
 
 *Layout: split contrast*
 
@@ -2989,11 +3081,9 @@ Do not centre everything. Do not use drop shadows, gradients, glows or bevels. D
 
 ---
 
----
-
 ## DAY 65  ·  2026-11-20
 
-### B3-048 · `ai-lead-generation-landing-pages-crm`
+### B3-051 · `ai-lead-generation-landing-pages-crm`
 
 *Layout: ticket stub*
 
@@ -3048,7 +3138,5 @@ PALETTE (fixed, this is the brand): graphite #22202E, electric lime #D6FF3F, war
 
 Do not centre everything. Do not use drop shadows, gradients, glows or bevels. Do not add stock-photo people. Do not fill empty space, let it breathe.
 ```
-
----
 
 ---
