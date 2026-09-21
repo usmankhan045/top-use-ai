@@ -110,6 +110,20 @@ Key tooling:
 - `scrapling-py scripts/research/verify_pricing.py <tool>`: verify vendor pricing
 - `node scripts/publishing/publish-due.js --list`: inspect the publish queue
 
+## Affiliate Links
+
+**Never put an affiliate URL in a post.** Posts link to `/go/<slug>`; the URL
+lives in `data/affiliate-links.json` and nowhere else. This way a changed or
+suspended link is a one-line edit instead of a hunt through every post.
+
+Before adding or changing any affiliate URL, read `docs/AFFILIATE-LINKS.md`,
+then verify with `node scripts/publishing/verify-affiliate-links.js`.
+
+Only add a `/go/` link where the post genuinely discusses the tool. A forced
+mention costs more in reader trust than it returns in commission.
+
+---
+
 ## Blog Post Structure (GEO + SEO Rules)
 
 Every blog post must follow this structure:
@@ -184,6 +198,9 @@ Full 24-tool program table with rates/cookies: `docs/AI-Tools-Site-Blueprint.md`
 | components/MarkdownContent.tsx | Renders post content |
 | supabase/migrations/ | DB schema |
 | docs/AI-Tools-Site-Blueprint.md | Category architecture, sub-niches, affiliate programs |
+| data/affiliate-links.json | Affiliate URLs (source of truth; never hardcode a URL elsewhere) |
+| docs/AFFILIATE-LINKS.md | How affiliate links work (read before touching any affiliate URL) |
+| scripts/publishing/verify-affiliate-links.js | Checks every affiliate link still resolves with tracking |
 | docs/WRITING-PLAYBOOK.md | Research + writing standards (read before writing) |
 | docs/PINTEREST-PLAYBOOK.md | Pin design + copy standards (read before making pins) |
 | scripts/pinterest/validate-pins.js | Enforces the pin rules; run before publishing |

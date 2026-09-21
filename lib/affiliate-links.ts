@@ -4,27 +4,35 @@
 // that references it updates instantly, so you can publish now and add real
 // affiliate links later.
 //
+// The URLs themselves live in data/affiliate-links.json, which is the single
+// source of truth. Do NOT hardcode an affiliate URL here or in a post. Adding or
+// changing a link is a JSON edit; this file only types and re-exports it.
+// See docs/AFFILIATE-LINKS.md for the workflow and verification steps.
+//
 // `href`      = the affiliate URL when you have one, else the tool's official
 //               homepage as a safe fallback (links still work pre-approval).
-// `affiliate` = true once a real affiliate link is in place (flip it when you add one).
+// `affiliate` = true once a real affiliate link is in place.
 //
 // Pins must NEVER use these links, affiliate links live in blog posts only.
 
-export type AffiliateLink = { name: string; href: string; affiliate: boolean };
+import linkData from "@/data/affiliate-links.json";
 
-export const AFFILIATE_LINKS: Record<string, AffiliateLink> = {
-  // ✅ live affiliate link
-  elevenlabs:  { name: "ElevenLabs",  href: "https://try.elevenlabs.io/gogy4t5w8iwq", affiliate: true },
-
-  // ⏳ fallbacks (official sites) until you add affiliate links, just swap href
-  murf:        { name: "Murf",        href: "https://murf.ai",                 affiliate: false },
-  synthesia:   { name: "Synthesia",   href: "https://www.synthesia.io",        affiliate: false },
-  pictory:     { name: "Pictory",     href: "https://pictory.ai",              affiliate: false },
-  speechify:   { name: "Speechify",   href: "https://speechify.com",           affiliate: false },
-  writesonic:  { name: "Writesonic",  href: "https://writesonic.com",          affiliate: false },
-  rytr:        { name: "Rytr",        href: "https://rytr.me",                 affiliate: false },
-  copyai:      { name: "Copy.ai",     href: "https://www.copy.ai",             affiliate: false },
-  headshotpro: { name: "HeadshotPro", href: "https://www.headshotpro.com",     affiliate: false },
-  surfer:      { name: "Surfer SEO",  href: "https://surferseo.com",           affiliate: false },
-  semrush:     { name: "Semrush",     href: "https://www.semrush.com",         affiliate: false },
+export type AffiliateLink = {
+  name: string;
+  href: string;
+  affiliate: boolean;
+  /** Network running the programme ("Direct", "Rewardful", "applied", "none"). */
+  network?: string | null;
+  /** Commission terms as recorded in the master sheet, for reference only. */
+  terms?: string | null;
+  /** ISO date the href was last confirmed to resolve with its tracking param. */
+  verified?: string | null;
 };
+
+export const AFFILIATE_LINKS: Record<string, AffiliateLink> = linkData.links;
+
+/** Slugs with a real affiliate link in place (not a homepage fallback). */
+export const activeAffiliateSlugs = (): string[] =>
+  Object.entries(AFFILIATE_LINKS)
+    .filter(([, l]) => l.affiliate)
+    .map(([slug]) => slug);

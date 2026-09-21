@@ -1,0 +1,62 @@
+{
+  "$comment": "SOURCE OF TRUTH for affiliate URLs. lib/affiliate-links.ts imports this file; nothing else should hardcode an affiliate URL. Posts link to /go/<slug>, never to a URL here. See docs/AFFILIATE-LINKS.md before editing.",
+  "links": {
+    "rytr": {
+      "name": "Rytr",
+      "href": "https://rytr.me/?via=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "30% recurring",
+      "verified": "2026-09-21"
+    },
+    "headshotpro": {
+      "name": "HeadshotPro",
+      "href": "https://www.headshotpro.com/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30% lifetime",
+      "verified": "2026-09-21"
+    },
+    "originality": {
+      "name": "Originality AI",
+      "href": "https://originality.ai/?via=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "25% for 12 months",
+      "verified": "2026-09-21"
+    },
+    "aragon": {
+      "name": "Aragon AI",
+      "href": "https://www.aragon.ai/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30%",
+      "verified": "2026-09-21"
+    },
+    "soundraw": {
+      "name": "SOUNDRAW",
+      "href": "https://soundraw.io/?ref=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "$25 per sale",
+      "verified": "2026-09-21"
+    },
+    "elevenlabs": {
+      "name": "ElevenLabs",
+      "href": "https://try.elevenlabs.io/gogy4t5w8iwq",
+      "affiliate": true,
+      "network": "Impact",
+      "terms": "unverified",
+      "verified": "2026-09-21"
+    },
+
+    "murf": { "name": "Murf", "href": "https://murf.ai", "affiliate": false, "network": "applied", "terms": "20% for 24 months", "verified": null },
+    "synthesia": { "name": "Synthesia", "href": "https://www.synthesia.io", "affiliate": false, "network": "applied", "terms": "25% for 12 months", "verified": null },
+    "pictory": { "name": "Pictory", "href": "https://pictory.ai", "affiliate": false, "network": "applied", "terms": "Up to 50% recurring", "verified": null },
+    "writesonic": { "name": "Writesonic", "href": "https://writesonic.com", "affiliate": false, "network": "applied", "terms": "20% for 12 months", "verified": null },
+    "surfer": { "name": "Surfer SEO", "href": "https://surferseo.com", "affiliate": false, "network": "applied", "terms": "Up to 125% first month", "verified": null },
+    "speechify": { "name": "Speechify", "href": "https://speechify.com", "affiliate": false, "network": "none", "terms": null, "verified": null },
+    "copyai": { "name": "Copy.ai", "href": "https://www.copy.ai", "affiliate": false, "network": "none", "terms": null, "verified": null },
+    "semrush": { "name": "Semrush", "href": "https://www.semrush.com", "affiliate": false, "network": "none", "terms": null, "verified": null }
+  }
+}
