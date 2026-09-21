@@ -49,14 +49,222 @@
       "terms": "unverified",
       "verified": "2026-09-21"
     },
-
-    "murf": { "name": "Murf", "href": "https://murf.ai", "affiliate": false, "network": "applied", "terms": "20% for 24 months", "verified": null },
-    "synthesia": { "name": "Synthesia", "href": "https://www.synthesia.io", "affiliate": false, "network": "applied", "terms": "25% for 12 months", "verified": null },
-    "pictory": { "name": "Pictory", "href": "https://pictory.ai", "affiliate": false, "network": "applied", "terms": "Up to 50% recurring", "verified": null },
-    "writesonic": { "name": "Writesonic", "href": "https://writesonic.com", "affiliate": false, "network": "applied", "terms": "20% for 12 months", "verified": null },
-    "surfer": { "name": "Surfer SEO", "href": "https://surferseo.com", "affiliate": false, "network": "applied", "terms": "Up to 125% first month", "verified": null },
-    "speechify": { "name": "Speechify", "href": "https://speechify.com", "affiliate": false, "network": "none", "terms": null, "verified": null },
-    "copyai": { "name": "Copy.ai", "href": "https://www.copy.ai", "affiliate": false, "network": "none", "terms": null, "verified": null },
-    "semrush": { "name": "Semrush", "href": "https://www.semrush.com", "affiliate": false, "network": "none", "terms": null, "verified": null }
+    "murf": {
+      "name": "Murf",
+      "href": "https://murf.ai",
+      "affiliate": false,
+      "network": "applied",
+      "terms": "20% for 24 months",
+      "verified": null
+    },
+    "synthesia": {
+      "name": "Synthesia",
+      "href": "https://www.synthesia.io",
+      "affiliate": false,
+      "network": "applied",
+      "terms": "25% for 12 months",
+      "verified": null
+    },
+    "pictory": {
+      "name": "Pictory",
+      "href": "https://pictory.ai",
+      "affiliate": false,
+      "network": "applied",
+      "terms": "Up to 50% recurring",
+      "verified": null
+    },
+    "writesonic": {
+      "name": "Writesonic",
+      "href": "https://writesonic.com",
+      "affiliate": false,
+      "network": "applied",
+      "terms": "20% for 12 months",
+      "verified": null
+    },
+    "surfer": {
+      "name": "Surfer SEO",
+      "href": "https://surferseo.com",
+      "affiliate": false,
+      "network": "applied",
+      "terms": "Up to 125% first month",
+      "verified": null
+    },
+    "speechify": {
+      "name": "Speechify",
+      "href": "https://speechify.com",
+      "affiliate": false,
+      "network": "none",
+      "terms": null,
+      "verified": null
+    },
+    "copyai": {
+      "name": "Copy.ai",
+      "href": "https://www.copy.ai",
+      "affiliate": false,
+      "network": "none",
+      "terms": null,
+      "verified": null
+    },
+    "semrush": {
+      "name": "Semrush",
+      "href": "https://www.semrush.com",
+      "affiliate": false,
+      "network": "none",
+      "terms": null,
+      "verified": null
+    },
+    "simplified": {
+      "name": "Simplified",
+      "href": "https://simplified.com?fpr=topuseai",
+      "affiliate": true,
+      "network": "FirstPromoter",
+      "terms": "40% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "submagic": {
+      "name": "Submagic",
+      "href": "https://submagic.co/?via=muhammad-b33922",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "vizard": {
+      "name": "Vizard AI",
+      "href": "https://vizard.ai/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "25% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "crayo": {
+      "name": "Crayo",
+      "href": "https://crayo.ai/?ref=muhammad6y",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "20% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "goenhance": {
+      "name": "GoEnhance AI",
+      "href": "https://www.goenhance.ai/?aff=muhammadkz",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "10% for 12 months",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "podsqueeze": {
+      "name": "Podsqueeze",
+      "href": "https://podsqueeze.com/?ref=muhammad",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "25% for 15 months",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "palettefm": {
+      "name": "Palette.fm",
+      "href": "https://palette.fm/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30% for 18 months",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "voicegenie": {
+      "name": "VoiceGenie",
+      "href": "https://voicegenie.ai/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "33% first year",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "speakai": {
+      "name": "Speak AI",
+      "href": "https://speakai.co/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "pickaxe": {
+      "name": "Pickaxe",
+      "href": "https://pickaxe.co/?utm_campaign=AFFILIATE_595E9WB",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "40% for 12 months",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "quickchat": {
+      "name": "Quickchat AI",
+      "href": "https://quickchat.ai/?ref=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "20% for 12 months",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "sitespeak": {
+      "name": "SiteSpeakAI",
+      "href": "https://sitespeak.ai/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "20% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "scisummary": {
+      "name": "SciSummary",
+      "href": "https://scisummary.com/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "80% first 2 payments",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "paperguide": {
+      "name": "Paperguide",
+      "href": "https://paperguide.ai/?ref=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "25% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "postnitro": {
+      "name": "PostNitro",
+      "href": "https://postnitro.ai/?atp=topuseai",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "20% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "magicslides": {
+      "name": "MagicSlides",
+      "href": "https://www.magicslides.app/?via=topuseai",
+      "affiliate": true,
+      "network": "Rewardful",
+      "terms": "30% lifetime",
+      "verified": "2026-09-21",
+      "unused": true
+    },
+    "lovo": {
+      "name": "LOVO AI",
+      "href": "https://lovo.ai",
+      "affiliate": false,
+      "network": "suspended",
+      "terms": "20% for 24 months",
+      "verified": null,
+      "note": "Affiliate link suspended in the master sheet. Homepage fallback until reinstated."
+    }
   }
 }

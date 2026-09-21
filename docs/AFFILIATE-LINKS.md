@@ -52,6 +52,11 @@ the JSON.
   in and you are waiting for the link, or `"none"`.
 - **verified**: ISO date the href was last confirmed to resolve with its
   tracking parameter intact. `null` for homepage fallbacks.
+- **unused** (optional): `true` when the link works but no post links to it
+  yet, so it earns nothing. This is the content backlog. The verifier lists
+  these separately and never fails on them.
+- **note** (optional): free-text caveat, for example why a programme is
+  suspended.
 
 ## Adding a link
 
@@ -90,6 +95,31 @@ request does not execute. A link can return 200 with the parameter intact and
 still not track, if the programme has lapsed. Confirm a new link by clicking it
 in a private window and checking the click registers in the programme's own
 dashboard. Do this once per link, when you add it.
+
+## Links with no post yet
+
+Sixteen registered links are marked `unused`: the link works, but no post
+mentions the tool, so it earns nothing. Adding a link is cheap; earning from it
+needs content. Run the verifier to list them.
+
+Write about a tool because it belongs in a post you would publish anyway. A
+review written to justify a link reads like one, and the credibility it costs
+is worth more than the commission.
+
+## Three links use a non-brand referral code
+
+Submagic (`via=muhammad-b33922`), Crayo (`ref=muhammad6y`) and GoEnhance
+(`aff=muhammadkz`) were issued against a personal handle rather than
+`topuseai`. They track and pay normally. If you later re-register these under
+the brand account, the old code keeps paying for existing cookies, so change
+the JSON but expect a tail of commission on the old one.
+
+## A suspended programme
+
+LOVO AI is recorded with `affiliate: false` and its homepage as the href,
+because the master sheet lists its link as suspended. It is kept in the file so
+the status is not rediscovered later. If it is reinstated, add the real URL and
+flip `affiliate` to `true`.
 
 ## Do not
 

@@ -27,6 +27,10 @@ export type AffiliateLink = {
   terms?: string | null;
   /** ISO date the href was last confirmed to resolve with its tracking param. */
   verified?: string | null;
+  /** True when no post links to this tool yet, so the link earns nothing. */
+  unused?: boolean;
+  /** Free-text caveat, e.g. why a programme is suspended. */
+  note?: string;
 };
 
 export const AFFILIATE_LINKS: Record<string, AffiliateLink> = linkData.links;
@@ -35,4 +39,14 @@ export const AFFILIATE_LINKS: Record<string, AffiliateLink> = linkData.links;
 export const activeAffiliateSlugs = (): string[] =>
   Object.entries(AFFILIATE_LINKS)
     .filter(([, l]) => l.affiliate)
+    .map(([slug]) => slug);
+
+/**
+ * Slugs that have a working affiliate link but no post linking to them yet.
+ * These earn nothing until content mentions the tool, so this is the content
+ * backlog ranked by opportunity rather than a list of problems.
+ */
+export const unusedAffiliateSlugs = (): string[] =>
+  Object.entries(AFFILIATE_LINKS)
+    .filter(([, l]) => l.affiliate && l.unused)
     .map(([slug]) => slug);

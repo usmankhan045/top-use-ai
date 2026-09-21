@@ -41,15 +41,27 @@ function trackingParams(url) {
 async function check(slug, entry) {
   const expected = trackingParams(entry.href);
 
+  // A single network blip should not read as a dead affiliate link: a false
+  // alarm here sends you hunting through a programme dashboard for nothing.
+  // Retry before believing a failure.
   let res;
-  try {
-    res = await fetch(entry.href, {
-      redirect: "follow",
-      headers: { "User-Agent": UA },
-      signal: AbortSignal.timeout(25000),
-    });
-  } catch (err) {
-    return { slug, ok: false, note: `unreachable (${err.message})` };
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      res = await fetch(entry.href, {
+        redirect: "follow",
+        headers: { "User-Agent": UA },
+        signal: AbortSignal.timeout(25000),
+      });
+      lastErr = null;
+      break;
+    } catch (err) {
+      lastErr = err;
+      if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 1000));
+    }
+  }
+  if (lastErr) {
+    return { slug, ok: false, note: `unreachable after 3 tries (${lastErr.message})` };
   }
 
   if (!res.ok) {
@@ -100,5 +112,18 @@ async function check(slug, entry) {
     `\n${results.length - failed}/${results.length} passed.` +
       (failed ? ` ${failed} need attention.` : "")
   );
+
+  // A working link on a tool no post mentions earns nothing. That is a content
+  // gap, not a broken link, so report it separately and never fail on it.
+  const unused = entries
+    .filter(([, e]) => e.affiliate && e.unused)
+    .map(([slug]) => slug);
+  if (unused.length) {
+    console.log(
+      `\n${unused.length} link(s) work but no post links to them yet:\n  ` +
+        unused.join(", ")
+    );
+  }
+
   if (failed) process.exitCode = 1;
 })();
