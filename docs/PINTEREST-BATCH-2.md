@@ -2246,7 +2246,7 @@ ANYONE CAN GENERATE"
 The words "ANYONE CAN GENERATE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
-AI output with no human authorship sits on shaky copyright ground. Edit it, arrange it, make it yours before it carries your name.
+AI output with no human authorship sits on shaky copyright ground. Your own reworking and arrangement is what makes it yours.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
 What you can actually protect, at topuseai.com
@@ -2983,7 +2983,7 @@ FOR THE WORDS."
 The words "FOR THE WORDS." in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline, separated by a short lime rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
-It makes the prettiest backgrounds and still fumbles text. Generate there, add the headline elsewhere, and stop fighting it.
+It makes the prettiest backgrounds and still fumbles text. Use it for the background, add the headline elsewhere, and stop fighting it.
 
 CLOSING LINE: in the lower-right, aligned right. Small, around 18-20% of the headline size, in warm grey #5C5A68 or a muted off-white. Sentence case. It should read as a quiet aside, never as a button or a banner. No arrow, no box, no underline:
 Twelve tools compared at topuseai.com

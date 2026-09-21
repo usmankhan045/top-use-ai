@@ -74,6 +74,18 @@ A layout that carries no `PHOTOGRAPH:` block must say **"fully typographic, no
 photograph"** in its `LAYOUT:` line, or the tool invents a photograph nobody
 asked for.
 
+### No command verbs in on-image text
+
+A headline, subhead or closing line that opens a sentence with **Edit**,
+**Generate**, **Upload** or **Render** reads to an image tool as an instruction
+addressed to it rather than as copy to typeset. One pin whose subhead said
+"edit everything yourself" made ChatGPT reply "I can generate this from
+scratch, please resend" instead of producing anything.
+
+Describing an editor, an upload or a generator is fine. Commanding one is not.
+Reword so the verb is not the first word of a clause: "your own reworking"
+rather than "Edit it".
+
 ### Hard constraints
 
 - **No layout may repeat within a single day's six pins.**

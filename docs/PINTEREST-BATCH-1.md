@@ -452,7 +452,7 @@ TWELVE MONTHS."
 The words "SIX TO TWELVE" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: beneath the headline, indented in from the headline's left edge. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
-Pick a narrow niche, set up WordPress or Next.js, use AI for outlines and drafts, and edit everything yourself. Traffic comes from SEO and Pinterest, slowly.
+Pick a narrow niche, use AI for outlines and drafts, then rewrite every post in your own words. Traffic builds through SEO and Pinterest, slowly.
 
 KICKER: a small lime pill tag with tiny uppercase monospace graphite text "REALISTIC TIMELINE", placed so it does not align neatly with the headline. Offset it deliberately.
 
@@ -3238,7 +3238,7 @@ FONTS, SIZES."
 The words "ONE EDITOR" in electric lime #D6FF3F; the rest in warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast against what sits behind it.
 
 SUBHEAD: directly beneath the headline with a clear gap, no rule. Set in a clean sans-serif at roughly 30-35% of the headline's size. Clearly secondary, but still comfortably readable on a phone. Sentence case, not caps. In warm off-white #FBFAF6 or graphite #22202E, whichever holds contrast:
-Canva AI is the best free pick for pins because everything happens in one place. Generate, drop in a template, set the type, resize to 2:3 and export.
+Canva AI is the best free pick for pins because everything happens in one place: images, templates, type, resizing to 2:3 and export.
 
 SUPPORTING TEXT: stacked tight with no spacing, like a stamped list:
 Ideogram: best text rendering

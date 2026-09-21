@@ -160,6 +160,27 @@ function check(file) {
           E(`${at}: off-palette colour ${hex}`);
       }
 
+      // A trigger verb used as a command inside text the generator must
+      // typeset reads as an instruction addressed to the tool. One pin whose
+      // subhead said "edit everything yourself" made ChatGPT answer "I can
+      // generate this from scratch, please resend" instead of producing the
+      // image. Describing an editor or an upload is fine; commanding one is not.
+      {
+        const rendered = [];
+        const h = p.prompt.match(/broken exactly as written:\n"([^"]+)"/);
+        if (h) rendered.push(h[1].replace(/\n/g, " "));
+        for (const label of ["SUBHEAD", "CLOSING LINE"]) {
+          const m = p.prompt.match(
+            new RegExp(label + ":(?:[^\\n]*\\n)*?([^\\n]*[a-z][^\\n]*)\\n\\n")
+          );
+          if (m) rendered.push(m[1]);
+        }
+        for (const text of rendered) {
+          const bad = text.match(/(?:^|[.:;]\s+)(Edit|Generate|Upload|Render)\b/);
+          if (bad) E(`${at}: "${bad[1]}" used as a command in on-image text`);
+        }
+      }
+
       if (!/SUBHEAD:/.test(p.prompt)) E(`${at}: prompt has no SUBHEAD`);
       if (!/CLOSING LINE:/.test(p.prompt)) E(`${at}: prompt has no CLOSING LINE`);
       if (!/1000x1500/.test(p.prompt)) E(`${at}: prompt does not set 1000x1500`);
