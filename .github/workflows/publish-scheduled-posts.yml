@@ -107,3 +107,18 @@ jobs:
             -H 'Content-Type: application/json' \
             -d "{\"secret\":\"$SECRET\",\"paths\":[$paths]}"
           echo "  Revalidated."
+
+      # Tell Bing, Yandex and Naver directly rather than waiting for a recrawl.
+      # Google does not use IndexNow, so this does nothing for Google Search,
+      # but Bing's index feeds ChatGPT and Copilot. Never fail the publish over
+      # it: the post is already live either way.
+      - name: Submit new URLs to IndexNow
+        if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
+        continue-on-error: true
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://www.topuseai.com' }}
+          SLUGS: ${{ steps.publish.outputs.slugs }}
+        shell: bash
+        run: |
+          IFS=',' read -ra slug_list <<< "$SLUGS"
+          node scripts/publishing/indexnow.js "${slug_list[@]}"

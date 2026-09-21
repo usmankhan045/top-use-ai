@@ -65,6 +65,20 @@ node scripts/publishing/revalidate.js best-ai-logo-generators
 Needs `REVALIDATION_SECRET` in `.env.local`, matching the Vercel env var. If the
 secret changes in Vercel, redeploy before the new value takes effect.
 
+### Telling search engines about a new post
+
+The publish workflow pings IndexNow automatically. To do it by hand:
+
+```bash
+node scripts/publishing/indexnow.js <slug>
+node scripts/publishing/indexnow.js --all     # resubmit everything in the sitemap
+```
+
+This reaches Bing, Yandex, Naver and Seznam, not Google, which does not
+participate. It still matters: Bing's index is what ChatGPT and Copilot search.
+The key lives at `public/<hex>.txt` and the filename *is* the key, so do not
+rename or delete that file.
+
 ---
 
 ## Brand & Design System
@@ -209,6 +223,7 @@ Full 24-tool program table with rates/cookies: `docs/AI-Tools-Site-Blueprint.md`
 | docs/PINTEREST-BATCH-3.md | Pins for days 28-40 (78 pins) |
 | scripts/research/verify_pricing.py | Verify vendor pricing before publishing |
 | scripts/publishing/publish-due.js | Scheduled publishing queue |
+| scripts/publishing/indexnow.js | Ping Bing/Yandex/Naver about new URLs (Google does not use IndexNow) |
 
 ---
 
