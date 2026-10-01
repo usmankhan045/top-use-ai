@@ -250,6 +250,24 @@
       "terms": "20% for 24 months",
       "verified": null,
       "note": "Affiliate link suspended in the master sheet. Homepage fallback until reinstated."
+    },
+    "surfshark": {
+      "name": "Surfshark VPN",
+      "href": "https://get.surfshark.net/SH5lL",
+      "affiliate": true,
+      "network": "Direct",
+      "terms": "verify in dashboard",
+      "verified": "2026-10-01",
+      "note": "Short link returns 200 and redirects client-side, so the verifier cannot see the tracking parameter. Confirm clicks in the Surfshark partner dashboard."
+    },
+    "muse": {
+      "name": "Muse by Meta",
+      "href": "https://muse.ai/join",
+      "affiliate": false,
+      "network": "referral",
+      "terms": "Referral code XW1QGO: both sides get 1 billion Muse tokens if redeemed within 48 hours of joining. No cash commission.",
+      "verified": "2026-10-01",
+      "note": "The code is entered in Muse Settings, not carried in the URL, so posts print the code itself. Each code has a limited number of uses; swap the code in the posts when it runs out."
     }
   }
 }
