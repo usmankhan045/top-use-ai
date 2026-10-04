@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/lib/site.config";
 import { getSiteFonts } from "@/lib/fonts";
@@ -11,6 +12,7 @@ import { getCategoriesWithPostCounts } from "@/lib/queries";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
+const GOOGLE_ANALYTICS_ID = "G-H1H6X4EK0K";
 
 export const metadata: Metadata = {
   title: {
@@ -63,6 +65,18 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${fonts.variables} h-full`}>
       <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GOOGLE_ANALYTICS_ID}');
+          `}
+        </Script>
         {/* impact.com media-partner site verification. Their snippet uses value=
             rather than the standard content=, which Metadata.other cannot emit
             and React's JSX types reject, hence the spread. */}
