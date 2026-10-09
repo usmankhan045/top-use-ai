@@ -72,6 +72,10 @@ export default function CookiePolicyPage() {
               most popular and how people move through our content, so we can improve it.
               The information is collected in an aggregated, anonymized form.
             </p>
+            <p className="mb-6 text-sm">
+              Google Analytics uses analytics cookies. Vercel Web Analytics provides
+              anonymous, aggregated traffic measurements without using third-party cookies.
+            </p>
 
             <h3 className="font-semibold text-text text-sm mb-2">Advertising cookies</h3>
             <p className="text-sm">

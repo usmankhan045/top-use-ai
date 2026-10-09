@@ -85,6 +85,10 @@ export default function PrivacyPolicyPage() {
                   body: "We use Google Analytics to understand how visitors use our site. It collects data such as pages viewed, session duration, and approximate location through browser cookies. You can opt out at tools.google.com/dlpage/gaoptout.",
                 },
                 {
+                  name: "Vercel Web Analytics",
+                  body: "We use Vercel Web Analytics for anonymous, aggregated page-view and traffic measurements. It does not use third-party cookies or collect personal identifiers that track visitors across websites.",
+                },
+                {
                   name: "Google AdSense",
                   body: "We display advertisements served by Google AdSense. Google may use cookies to serve ads based on your prior visits to our site and other sites on the internet. You can manage ad personalization settings at adssettings.google.com. For more details, see Google's Privacy & Terms.",
                 },

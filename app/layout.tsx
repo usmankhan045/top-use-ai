@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { siteConfig } from "@/lib/site.config";
 import { getSiteFonts } from "@/lib/fonts";
@@ -92,6 +93,7 @@ export default async function RootLayout({
         <Header categories={categories} />
         {children}
         <Footer categories={categories} />
+        <Analytics />
       </body>
     </html>
   );
