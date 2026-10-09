@@ -50,11 +50,13 @@ function readLinkData(): AffiliateLinkData {
   );
 }
 
-export const AFFILIATE_LINKS: Record<string, AffiliateLink> = readLinkData().links;
+export function getAffiliateLinks(): Record<string, AffiliateLink> {
+  return readLinkData().links;
+}
 
 /** Slugs with a real affiliate link in place (not a homepage fallback). */
 export const activeAffiliateSlugs = (): string[] =>
-  Object.entries(AFFILIATE_LINKS)
+  Object.entries(getAffiliateLinks())
     .filter(([, l]) => l.affiliate)
     .map(([slug]) => slug);
 
@@ -64,6 +66,6 @@ export const activeAffiliateSlugs = (): string[] =>
  * backlog ranked by opportunity rather than a list of problems.
  */
 export const unusedAffiliateSlugs = (): string[] =>
-  Object.entries(AFFILIATE_LINKS)
+  Object.entries(getAffiliateLinks())
     .filter(([, l]) => l.affiliate && l.unused)
     .map(([slug]) => slug);

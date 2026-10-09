@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { AFFILIATE_LINKS } from "@/lib/affiliate-links";
+import { getAffiliateLinks } from "@/lib/affiliate-links";
 
 // Affiliate/outbound redirect. Posts link to `/go/<tool>`; this 302-redirects to
 // the URL in lib/affiliate-links.ts (affiliate link if set, else the tool's site).
@@ -14,7 +14,17 @@ export async function GET(
   { params }: { params: Promise<{ tool: string }> }
 ) {
   const { tool } = await params;
-  const entry = AFFILIATE_LINKS[(tool ?? "").toLowerCase()];
+  let entry;
+  try {
+    const links = getAffiliateLinks();
+    entry = links[(tool ?? "").toLowerCase()];
+  } catch (error) {
+    console.error("Affiliate link registry unavailable:", error);
+    return new NextResponse("Affiliate links are temporarily unavailable", {
+      status: 503,
+      headers: { "X-Robots-Tag": "noindex, nofollow" },
+    });
+  }
 
   // An unregistered slug is a broken link, not a redirect. Sending it to the
   // homepage hid typos and looked like a soft 404 to crawlers, so fail loudly.
