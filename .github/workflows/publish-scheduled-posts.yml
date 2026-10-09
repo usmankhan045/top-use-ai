@@ -92,7 +92,7 @@ jobs:
           fi
 
           # The post pages themselves, plus the listings that index them.
-          paths='"/","/blog"'
+          paths='"/","/blog","/sitemap.xml"'
           # read -a splits on IFS reliably; a bare `for x in $VAR` does not.
           IFS=',' read -ra slug_list <<< "$SLUGS"
           for slug in "${slug_list[@]}"; do

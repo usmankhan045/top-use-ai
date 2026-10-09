@@ -7,7 +7,7 @@
  * editing a published post directly in Supabase.
  *
  *   node scripts/publishing/revalidate.js best-ai-logo-generators
- *   node scripts/publishing/revalidate.js --path /blog /category/ai-image-design
+ *   node scripts/publishing/revalidate.js --path /blog /sitemap.xml /category/ai-image-design
  *
  * Needs REVALIDATION_SECRET (same value as the Vercel env var) in .env.local.
  */
