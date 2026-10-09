@@ -16,7 +16,8 @@ name: Publish scheduled posts
 # Required repository secrets (Settings → Secrets and variables → Actions):
 #   SUPABASE_URL
 #   SUPABASE_SERVICE_ROLE_KEY
-#   REVALIDATION_SECRET   (optional — without it, pages lag until ISR expires)
+#   REVALIDATION_SECRET   (optional — without it, pages stay stale until the
+#                          next deployment or a manual revalidation)
 
 on:
   schedule:
@@ -69,10 +70,10 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node scripts/publishing/check-internal-links.js
 
-      # Next.js caches pages, so a DB change alone stays invisible until the
-      # page regenerates. On-demand revalidation touches only the handful of
-      # paths a new post affects — a deploy hook would rebuild all ~675 pages
-      # and burn ISR quota for no gain.
+      # Next.js statically generates public pages, so a DB change alone stays
+      # invisible until the page is explicitly invalidated. On-demand
+      # revalidation touches only the handful of paths a new post affects.
+      # A deploy hook would rebuild every page for no gain.
       - name: Revalidate affected pages
         if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
         env:
@@ -85,8 +86,8 @@ jobs:
         run: |
           if [ -z "$SECRET" ]; then
             echo "No REVALIDATION_SECRET set; skipping revalidation."
-            echo "Posts are published in the DB but pages may lag by up to an"
-            echo "hour until ISR expires. Add the secret in Settings > Secrets."
+            echo "Posts are published in the DB but pages stay stale until the"
+            echo "next deployment or a manual revalidation."
             exit 0
           fi
 

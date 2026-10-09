@@ -17,7 +17,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { digitalDocumentSchema, breadcrumbSchema } from "@/lib/schema";
 import { cn } from "@/lib/utils";
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 export async function generateStaticParams() {
   if (!siteConfig.features.printables) return [];

@@ -20,7 +20,7 @@ import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 export async function generateStaticParams() {
   try {

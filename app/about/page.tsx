@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: { url: "/about", type: "website" },
 };
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 const DEFAULT_INTRO =
   `${siteConfig.name} exists because there's a new AI tool every week, endless hype, and very little honest, hands-on testing. I use the tools myself, score them fairly, and tell you which ones are actually worth your time and money.`;

@@ -13,9 +13,9 @@ import {
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site.config";
 
-// Statically prerender the homepage but refresh it hourly so newly published
-// posts and categories appear without a redeploy (ISR).
-export const revalidate = 3600;
+// Statically prerender the homepage. On-demand revalidation via /api/revalidate
+// updates it when posts publish, avoiding wasteful hourly ISR writes.
+export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 export default async function BlogIndexPage() {
   // No searchParams: fetch every published post once so this route can be

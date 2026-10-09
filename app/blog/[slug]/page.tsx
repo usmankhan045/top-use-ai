@@ -23,7 +23,7 @@ import { articleSchema, faqSchema, breadcrumbSchema, itemListSchema } from "@/li
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 export async function generateStaticParams() {
   try {

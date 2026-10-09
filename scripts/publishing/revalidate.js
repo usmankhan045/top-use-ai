@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Purge the Next.js static cache for one or more paths.
+ * Purge the Next.js cache for one or more paths after database content changes.
  *
- * Blog pages are built with `export const revalidate = 3600`, so a post edited
- * directly in Supabase keeps serving stale HTML for up to an hour. Writing to
- * the database does not tell Next.js anything. Run this after any SQL edit.
+ * Public content is statically generated and does not poll Supabase on a timer.
+ * Writing to the database does not tell Next.js anything, so run this after
+ * editing a published post directly in Supabase.
  *
  *   node scripts/publishing/revalidate.js best-ai-logo-generators
  *   node scripts/publishing/revalidate.js --path /blog /category/ai-image-design

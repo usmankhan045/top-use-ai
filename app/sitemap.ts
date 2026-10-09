@@ -13,7 +13,7 @@ const BASE_URL = `https://${siteConfig.domain}`;
 // current time here would re-date them every hour for no reason.
 const STATIC_PAGE_UPDATED = "2026-09-21T00:00:00.000Z";
 
-export const revalidate = 3600;
+export const revalidate = false;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Fetch first: the newest post's timestamp is the honest lastModified for
