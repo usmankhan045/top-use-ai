@@ -32,6 +32,8 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.affiliate-links.local.json
+/data/affiliate-links.json
 
 # vercel
 .vercel
@@ -39,3 +41,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private business records
+TopUseAI_AI_Affiliate_Master_Sheet*.xlsx

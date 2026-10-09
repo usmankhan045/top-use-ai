@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Verify every affiliate link in data/affiliate-links.json still resolves and
+ * Verify every affiliate link in the private affiliate registry still resolves and
  * still carries its tracking parameter after the redirect chain.
  *
  * Affiliate links die quietly. A programme lapses, a tracking parameter is
@@ -19,7 +19,15 @@
  *   node scripts/publishing/verify-affiliate-links.js --all   # include fallbacks
  */
 
-const { links } = require("../../data/affiliate-links.json");
+const fs = require("fs");
+const path = require("path");
+
+const registry = process.env.AFFILIATE_LINKS_JSON
+  ? JSON.parse(process.env.AFFILIATE_LINKS_JSON)
+  : JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), ".affiliate-links.local.json"), "utf8")
+    );
+const { links } = registry;
 
 const includeAll = process.argv.includes("--all");
 const UA =

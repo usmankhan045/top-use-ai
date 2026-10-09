@@ -20,10 +20,14 @@ affiliate links never leak into the crawl as canonical URLs.
 
 | File | Role |
 |---|---|
-| `data/affiliate-links.json` | **Source of truth.** Every URL, its network, terms and verification date. |
+| `.affiliate-links.local.json` | **Private local source of truth.** Every URL, its network, terms and verification date. This file is ignored by Git. |
 | `lib/affiliate-links.ts` | Types and re-exports the JSON. No URLs here. |
 | `app/go/[tool]/route.ts` | The redirect. Unknown slug 404s rather than silently going to the homepage. |
 | `scripts/publishing/verify-affiliate-links.js` | Checks every link still resolves with its tracking parameter. |
+
+The deployment receives the same JSON object through the server-only
+`AFFILIATE_LINKS_JSON` environment variable. Never put the registry or the
+master spreadsheet in a public repository.
 
 The master spreadsheet (`TopUseAI_AI_Affiliate_Master_Sheet.xlsx`) is the record
 of applications and commission terms. It is **not** the source of truth for the
@@ -63,7 +67,7 @@ the JSON.
 1. Copy the URL from the master sheet **exactly**, including the query string.
    `?via=topuseai` and `?ref=topuseai` are not interchangeable, and a link with
    the parameter stripped pays nobody.
-2. Add or update the entry in `data/affiliate-links.json`. Set `affiliate` to
+2. Add or update the entry in `.affiliate-links.local.json`. Set `affiliate` to
    `true` and `verified` to today.
 3. Run the verifier:
 
@@ -136,7 +140,7 @@ flip `affiliate` to `true`.
 Run this for a live count:
 
 ```bash
-node -e "const l=require('./data/affiliate-links.json').links; \
+node -e "const l=require('./.affiliate-links.local.json').links; \
 const a=Object.entries(l).filter(([,v])=>v.affiliate); \
 console.log(a.length+'/'+Object.keys(l).length+' active'); \
 Object.entries(l).filter(([,v])=>!v.affiliate).forEach(([k,v])=>console.log('  pending:',k,'('+v.network+')'))"

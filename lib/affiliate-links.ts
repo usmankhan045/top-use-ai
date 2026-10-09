@@ -15,7 +15,8 @@
 //
 // Pins must NEVER use these links, affiliate links live in blog posts only.
 
-import linkData from "@/data/affiliate-links.json";
+import fs from "node:fs";
+import path from "node:path";
 
 export type AffiliateLink = {
   name: string;
@@ -33,7 +34,23 @@ export type AffiliateLink = {
   note?: string;
 };
 
-export const AFFILIATE_LINKS: Record<string, AffiliateLink> = linkData.links;
+type AffiliateLinkData = { links: Record<string, AffiliateLink> };
+
+function readLinkData(): AffiliateLinkData {
+  const raw = process.env.AFFILIATE_LINKS_JSON;
+  if (raw) return JSON.parse(raw) as AffiliateLinkData;
+
+  const localPath = path.join(process.cwd(), ".affiliate-links.local.json");
+  if (fs.existsSync(localPath)) {
+    return JSON.parse(fs.readFileSync(localPath, "utf8")) as AffiliateLinkData;
+  }
+
+  throw new Error(
+    "Affiliate links are not configured. Set AFFILIATE_LINKS_JSON in the deployment environment."
+  );
+}
+
+export const AFFILIATE_LINKS: Record<string, AffiliateLink> = readLinkData().links;
 
 /** Slugs with a real affiliate link in place (not a homepage fallback). */
 export const activeAffiliateSlugs = (): string[] =>
