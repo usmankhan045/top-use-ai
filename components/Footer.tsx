@@ -89,7 +89,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
 
           {/* Column 3: Browse. Previously an "Explore" list that rendered a
               single "Blog" link, because printables are off and there are no
-              audience segments — one live link next to a seven-link column,
+              audience segments - one live link next to a seven-link column,
               which is what left the dead space. Carrying the categories here
               balances the row and gives every category an internal link from
               every page. */}

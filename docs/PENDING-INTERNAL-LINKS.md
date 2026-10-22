@@ -2,7 +2,7 @@
 
 These 15 internal links were removed on 2026-09-03 because their target posts
 were still scheduled drafts, so every one was a live 404. The drafts were left
-on their original publish dates deliberately — the schedule is the point, and
+on their original publish dates deliberately - the schedule is the point, and
 publishing early to satisfy a link is the wrong trade.
 
 **Restore each link on or after its target's publish date.** Nothing does this
@@ -33,7 +33,7 @@ rewritten to stand alone.
 ## Why the links were cut rather than unwrapped
 
 Unwrapping to plain text would have left sentences promising content that does
-not exist — "read our honest assessment of AI lead generation tools with
+not exist - "read our honest assessment of AI lead generation tools with
 landing pages and CRM" with nothing to read. That reads worse than a 404.
 
 ## Check for regressions

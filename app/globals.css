@@ -110,3 +110,69 @@ code, pre, kbd, samp {
   opacity: 0.25;
   margin-top: 0.25rem;
 }
+
+/* Tool finder experience: intentionally scoped so the editorial site keeps its
+   quieter paper-and-ledger rhythm. */
+.tool-lab {
+  background:
+    linear-gradient(rgba(34, 32, 46, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 32, 46, 0.025) 1px, transparent 1px),
+    var(--color-background);
+  background-size: 32px 32px;
+}
+
+.tool-hero {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 107, 87, 0.16), transparent 28%),
+    linear-gradient(135deg, #17151f 0%, #23202f 100%);
+}
+
+.tool-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(1px);
+  opacity: 0.85;
+  pointer-events: none;
+  animation: tool-float 9s ease-in-out infinite;
+}
+
+.tool-orb-one {
+  width: 18rem;
+  height: 18rem;
+  right: 8%;
+  top: -9rem;
+  border: 3rem solid color-mix(in srgb, var(--color-accent) 28%, transparent);
+}
+
+.tool-orb-two {
+  width: 11rem;
+  height: 11rem;
+  right: 35%;
+  bottom: -8rem;
+  background: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  animation-delay: -4s;
+}
+
+.tool-scrollbar { scrollbar-width: none; }
+.tool-scrollbar::-webkit-scrollbar { display: none; }
+
+.tool-skeleton {
+  background-image: linear-gradient(100deg, transparent 20%, rgba(34, 32, 46, 0.045) 40%, transparent 60%);
+  background-size: 220% 100%;
+  animation: tool-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes tool-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(1rem, 1.5rem, 0) rotate(7deg); }
+}
+
+@keyframes tool-shimmer {
+  from { background-position: 130% 0; }
+  to { background-position: -130% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-orb { animation: none; }
+  .tool-card, .tool-niche-card { transition: none; }
+}

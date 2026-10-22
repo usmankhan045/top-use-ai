@@ -46,8 +46,8 @@ Each line is flagged:
 | Flag | Meaning |
 |---|---|
 | `OK` | Prices found on the vendor page |
-| `QUOTE` | Page loads but sells by quote only (MarketMuse, Canva) — no number to publish |
-| `NONE` | Page loaded, no prices matched — inspect by hand |
+| `QUOTE` | Page loads but sells by quote only (MarketMuse, Canva) - no number to publish |
+| `NONE` | Page loaded, no prices matched - inspect by hand |
 | `FAIL` | Fetch error |
 
 `QUOTE` and `NONE` are different failures. `QUOTE` means the vendor publishes

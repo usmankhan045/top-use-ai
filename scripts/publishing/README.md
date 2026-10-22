@@ -6,7 +6,7 @@ Action flips them to `published` once that date arrives.
 ## Why drafts rather than future dates
 
 `lib/queries.ts` filters on `status = 'published'` and only checks that
-`published_at` is not null — it never compares the date to now. Setting a
+`published_at` is not null - it never compares the date to now. Setting a
 future date alone would publish the post immediately. Keeping posts as drafts
 until due works with the existing queries instead of requiring a rewrite.
 
@@ -40,5 +40,4 @@ post actually published.
 
 ## Scheduling cadence
 
-Current queue publishes every 2 days. For a young domain, steady beats fast —
-a large batch landing at once is what a content farm looks like.
+Current queue publishes every 2 days. For a young domain, steady beats fast - a large batch landing at once is what a content farm looks like.

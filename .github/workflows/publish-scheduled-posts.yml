@@ -4,27 +4,26 @@ name: Publish scheduled posts
 # published once that date arrives. Site queries filter on status only, so a
 # draft stays invisible until this runs.
 #
-# The publisher is idempotent — status='draft' is itself the guard, so a post
+# The publisher is idempotent - status='draft' is itself the guard, so a post
 # already published can never be picked up twice. A run that finds nothing due
 # is a no-op, and a re-run after a failure is safe.
 #
-# Every queued post is scheduled for 13:00 UTC, so this runs once daily at
-# 13:15. The earlier 13:00 cron raced the posts it was meant to publish and
-# lost. If post times ever change, move this cron to match — it must stay
-# strictly LATER than the post time, never equal to it.
+# Existing review posts are scheduled for 13:00 UTC, while the Tool Finder
+# series is scheduled for 16:00 UTC. Runs at 13:15 and 16:15 publish each lane
+# after its due time. A cron must stay strictly later than the post time.
 #
 # Required repository secrets (Settings → Secrets and variables → Actions):
 #   SUPABASE_URL
 #   SUPABASE_SERVICE_ROLE_KEY
-#   REVALIDATION_SECRET   (optional — without it, pages stay stale until the
+#   REVALIDATION_SECRET   (optional - without it, pages stay stale until the
 #                          next deployment or a manual revalidation)
 
 on:
   schedule:
-    # Posts are all scheduled for 13:00 UTC. This fires at 13:15 — 15 minutes
-    # of slack absorbs GitHub's scheduling delay, so the post is always due by
-    # the time the run starts. One run a day, not 96.
+    # Keep separate publication lanes for existing reviews and the Tool Finder
+    # series. Fifteen minutes of slack prevents a run from racing its post.
     - cron: "15 13 * * *"
+    - cron: "15 16 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -61,7 +60,7 @@ jobs:
       # while it was still a draft (see docs/PENDING-INTERNAL-LINKS.md), and a
       # newly published post can itself link to something still scheduled. Run
       # after publishing so either case surfaces here rather than in an audit.
-      # Reports only — a broken link should not fail an otherwise good publish.
+      # Reports only - a broken link should not fail an otherwise good publish.
       - name: Check internal links
         if: always()
         continue-on-error: true

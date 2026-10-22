@@ -83,6 +83,7 @@ export const siteConfig = {
   nav: [
     { label: "Home", href: "/" },
     { label: "Blog", href: "/blog" },
+    { label: "AI Tool Finder", href: "/tools" },
     { label: "About", href: "/about" },
   ],
 

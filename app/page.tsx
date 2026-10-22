@@ -420,6 +420,11 @@ export default async function HomePage() {
                     Explore AI tools
                   </Link>
                 </Button>
+                <Button variant="accent" size="lg">
+                  <Link href="/tools/content-creation" className="contents">
+                    Find my tool →
+                  </Link>
+                </Button>
                 <Button variant="outline" size="lg">
                   <Link href="/category/make-money-with-ai" className="contents">
                     Make money with AI

@@ -5,15 +5,15 @@ Write and publish a new Explained AI Tools blog post (a review, comparison, or h
 ## How to use
 
 ```
-/write-post "Jasper vs Copy.ai — jasper vs copy.ai — ai-tool-reviews"
-/write-post "Best AI Art Generators in 2026 — best ai art generator — ai-image-design"
+/write-post "Jasper vs Copy.ai - jasper vs copy.ai - ai-tool-reviews"
+/write-post "Best AI Art Generators in 2026 - best ai art generator - ai-image-design"
 ```
 
-Brief format: `title — primary keyword — category-slug`. Valid category slugs are in
+Brief format: `title - primary keyword - category-slug`. Valid category slugs are in
 CLAUDE.md → "Category IDs". Need ideas? See `docs/AI-Tools-Site-Blueprint.md` (sub-niche
 priority tiers and the affiliate program map).
 
-This is a **blog-only** site — there are no printables. Do not create PDFs or use a
+This is a **blog-only** site - there are no printables. Do not create PDFs or use a
 `{{printable:}}` shortcode.
 
 ## Steps
@@ -27,7 +27,7 @@ Follow the Blog Post Structure rules in CLAUDE.md:
 - Internal links to at least 2 other published posts (`/blog/<slug>`)
 - One natural affiliate mention per CLAUDE.md rules (only tools you'd recommend)
 - For any review/comparison post, add a visible FTC affiliate disclosure and link to `/affiliate-disclosure`
-- No FAQ in the markdown body — put 5+ FAQ items in `faq_items` JSON
+- No FAQ in the markdown body - put 5+ FAQ items in `faq_items` JSON
 - `quick_answer`: a 1–3 sentence plain-English answer to the post's core question (renders as a callout, primary AI-Overview target)
 
 ### 2. Insert the post into Supabase
@@ -43,7 +43,7 @@ ON CONFLICT (site_id, slug) DO NOTHING;
 END $$;
 ```
 
-`audience_tags` is unused on this site (no audience hubs) — leave it an empty array.
+`audience_tags` is unused on this site (no audience hubs) - leave it an empty array.
 
 ### 3. Done
 

@@ -68,8 +68,7 @@ Flags mean different things:
 end up repeating invented MarketMuse prices.
 
 When `StealthyFetcher` still fails, a plain web search across several
-independent outlets is acceptable for widely published consumer pricing —
-label it as secondary-sourced and date it.
+independent outlets is acceptable for widely published consumer pricing - label it as secondary-sourced and date it.
 
 **Geolocation warning.** This connection egresses from Pakistan, so vendors
 that localise pricing (OpenAI notably) serve non-USD figures. Locale headers do
@@ -134,7 +133,7 @@ Every post follows the same shape:
 
 #### Punctuation: no em dashes
 
-**Never use an em dash (—) or an en dash used as one (–).** Heavy em dash use
+**Never use an em dash ( - ) or an en dash used as one (–).** Heavy em dash use
 is one of the most recognisable signals of AI-written text, and readers now
 spot it. This applies everywhere: post bodies, excerpts, SEO descriptions,
 FAQ answers, Pinterest titles and descriptions, and the text set inside pin
@@ -144,10 +143,10 @@ Rewrite instead. An em dash is nearly always one of these in disguise:
 
 | Instead of | Use |
 |---|---|
-| `Whisper is free — and unlimited.` | A full stop. `Whisper is free. It is also unlimited.` |
-| `Three tools — Buzz, Whisper, ACE — are MIT.` | Commas, or brackets. `Three tools (Buzz, Whisper, ACE) are MIT.` |
-| `It works — if you have the VRAM.` | A comma. `It works, if you have the VRAM.` |
-| `One thing matters — the licence.` | A colon. `One thing matters: the licence.` |
+| `Whisper is free - and unlimited.` | A full stop. `Whisper is free. It is also unlimited.` |
+| `Three tools - Buzz, Whisper, ACE - are MIT.` | Commas, or brackets. `Three tools (Buzz, Whisper, ACE) are MIT.` |
+| `It works - if you have the VRAM.` | A comma. `It works, if you have the VRAM.` |
+| `One thing matters - the licence.` | A colon. `One thing matters: the licence.` |
 
 En dashes stay legal in number ranges (`45–300 minutes`), though a plain
 "to" usually reads better. Hyphens in compound words are unaffected.
@@ -155,7 +154,7 @@ En dashes stay legal in number ranges (`45–300 minutes`), though a plain
 Check before publishing:
 
 ```bash
-grep -n '—' <file>   # must return nothing
+grep -n ' - ' <file>   # must return nothing
 ```
 
 ### What makes a post worth publishing
@@ -328,5 +327,5 @@ blocks deployment.
 - [ ] 3-5 contextual internal links plus Related reading footer
 - [ ] Inbound links added from existing posts (no orphans)
 - [ ] No Tier 4-5 sources cited anywhere
-- [ ] No em dashes anywhere (`grep -n '—' <file>` returns nothing)
+- [ ] No em dashes anywhere (`grep -n ' - ' <file>` returns nothing)
 - [ ] Scheduled at the right cadence for current domain authority

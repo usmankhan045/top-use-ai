@@ -101,7 +101,7 @@ function check(file) {
   const emLines = src
     .split("\n")
     .map((l, i) => [i + 1, l])
-    .filter(([, l]) => l.includes("—"));
+    .filter(([, l]) => l.includes(" - "));
   for (const [n, l] of emLines) {
     E(`line ${n}: em dash present -> ${l.trim().slice(0, 60)}`);
   }

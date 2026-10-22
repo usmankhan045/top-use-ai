@@ -220,7 +220,7 @@ export function itemListSchema(post: Post): object | null {
     //   "Kling: best free AI video generator"   (colon)
     //   "Surfer SEO, best overall for bloggers" (comma)
     //   "Apollo"                                (bare)
-    const name = heading.split(/\s*[:,–—]\s*/)[0].trim();
+    const name = heading.split(/\s*[:,– - ]\s*/)[0].trim();
     // Product names are short. Anything longer is a sentence.
     if (!name || name.length > 40) continue;
     // A bare heading of many words is prose, not a product name.

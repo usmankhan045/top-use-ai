@@ -10,7 +10,7 @@ Write and publish a batch of Explained AI Tools blog posts (reviews, comparisons
 /publish-all-posts 02 03 05   # publish specific ones
 ```
 
-This is a **blog-only** site — no printables. Each post is content-only.
+This is a **blog-only** site - no printables. Each post is content-only.
 
 ## Starter queue
 
@@ -29,7 +29,7 @@ planner (US/CA/UK) before committing**, then edit titles/slugs and add rows as y
 
 ## Process for each post
 
-For each pending queue item, run `/write-post "<title> — <keyword> — <category-slug>"`, which:
+For each pending queue item, run `/write-post "<title> - <keyword> - <category-slug>"`, which:
 1. Writes the full blog post content (answer-first, GEO blocks, FAQ, affiliate disclosure)
 2. Publishes it to Supabase (site_id `7635559c-2c64-4d76-8b3b-1c69e4a412f8`)
 

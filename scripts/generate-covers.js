@@ -26,7 +26,7 @@
  * Type is set in the site's own three faces, embedded here as woff2 so a cover
  * rendered on any machine is byte-identical.
  *
- * The motif is one constant graphic shared by every cover — a radial scorecard,
+ * The motif is one constant graphic shared by every cover - a radial scorecard,
  * four concentric arcs at different sweeps standing in for the criteria this
  * site rates a tool on. One arc is lime and the rest are dim, so there is a
  * single place for the eye to land. The hub sits near the right edge and the
@@ -35,7 +35,7 @@
  * forty one-off illustrations.
  *
  * The headline is intentionally repeated in the cover art and in the card's
- * markup — the card's copy is visually hidden (sr-only) rather than removed,
+ * markup - the card's copy is visually hidden (sr-only) rather than removed,
  * because text baked into a PNG is invisible to search engines and screen
  * readers. Do not "clean that up" by deleting the heading.
  *
@@ -83,7 +83,7 @@ const FONTS = {
 /**
  * The badge names the *format* of the post, which is what a reader most wants
  * from a thumbnail: is this a verdict, a matchup, or a walkthrough. Order
- * matters — the first match wins, so the most specific patterns come first.
+ * matters - the first match wins, so the most specific patterns come first.
  */
 function badgeFor(title) {
   const t = title.toLowerCase();
@@ -121,7 +121,7 @@ const nbHyphen = s => s.replace(/(\w)-(\w)/g, '$1‑$2');
 
 // ── The motif ────────────────────────────────────────────────────────────────
 // A radial scorecard: four concentric arcs at different sweeps, the way this
-// site actually rates a tool — ease of use, output quality, value, speed. One
+// site actually rates a tool - ease of use, output quality, value, speed. One
 // arc is lime and the rest are dim, so there is a single place for the eye to
 // land. The hub sits near the right edge and the rings run off it, so the plate
 // reads as a crop of a larger dial rather than a self-contained badge.

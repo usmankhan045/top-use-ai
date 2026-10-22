@@ -311,7 +311,7 @@ Upload a file to Supabase Storage. Files are organized under `{site_slug}/{times
 ```
 
 - `data`: Full data URI or raw base64 string. The `data:image/...;base64,` prefix is stripped automatically.
-- `content_type`: Optional — inferred from the filename extension if omitted (jpg, png, gif, webp, svg, pdf supported).
+- `content_type`: Optional - inferred from the filename extension if omitted (jpg, png, gif, webp, svg, pdf supported).
 
 ```bash
 B64=$(base64 -i image.jpg)
@@ -465,7 +465,7 @@ POST_RESPONSE=$(curl -s -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "Test Post — Admin API Smoke Test",
+    "title": "Test Post - Admin API Smoke Test",
     "slug": "test-post-smoke",
     "content": "## Hello\nThis is a test post created via the admin API.",
     "status": "published",

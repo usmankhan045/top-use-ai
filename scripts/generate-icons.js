@@ -7,8 +7,8 @@
  *   npm i -D playwright && npx playwright install chromium
  *
  * Writes:
- *   app/icon.png        512x512, rounded — the general-purpose icon
- *   app/apple-icon.png  180x180, square  — iOS applies its own squircle mask,
+ *   app/icon.png        512x512, rounded - the general-purpose icon
+ *   app/apple-icon.png  180x180, square - iOS applies its own squircle mask,
  *                                          so rounding it here double-rounds it
  *   app/favicon.ico     16/32/48 multi-size, via the Pillow step printed at the end
  *
@@ -53,7 +53,7 @@ async function render(page, svg, size, out) {
   // through Pillow. Printed rather than shelled out so the dependency stays
   // optional and visible.
   console.log(`
-Final step — build the multi-size .ico from the 256px render:
+Final step - build the multi-size .ico from the 256px render:
 
   python3 -c "from PIL import Image; im=Image.open('app/_ico-source.png').convert('RGBA'); im.save('app/favicon.ico', format='ICO', sizes=[(16,16),(32,32),(48,48)])"
   rm app/_ico-source.png

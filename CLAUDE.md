@@ -159,16 +159,16 @@ Every blog post must follow this structure:
 
 ### Never use em dashes
 
-**No em dashes (—) anywhere.** Not in posts, excerpts, SEO descriptions, FAQ
+**No em dashes ( - ) anywhere.** Not in posts, excerpts, SEO descriptions, FAQ
 answers, commit messages, Pinterest copy, or text set inside pin images.
 Heavy em dash use is one of the clearest tells of AI-written text.
 
 Use a full stop, a comma, a colon, or brackets instead. `Whisper is free. It
-is also unlimited.` never `Whisper is free — and unlimited.` En dashes are
+is also unlimited.` never `Whisper is free - and unlimited.` En dashes are
 fine in number ranges (`45–300 minutes`). Hyphens in compound words are
 unaffected.
 
-Verify with `grep -n '—' <file>` before publishing. Full guidance and a
+Verify with `grep -n ' - ' <file>` before publishing. Full guidance and a
 rewrite table: `docs/WRITING-PLAYBOOK.md`.
 
 ---

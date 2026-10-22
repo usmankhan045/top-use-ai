@@ -1,11 +1,11 @@
 -- ═══════════════════════════════════════════════════════════════════════════
--- GENERATED SEED — Explained AI Tools
+-- GENERATED SEED - Explained AI Tools
 -- ═══════════════════════════════════════════════════════════════════════════
 -- Run this ONCE against the shared Supabase project (ruucexzgebbehjcrinhj) via
 -- the Supabase SQL editor or psql. It registers the site + its 6 categories.
 --
 -- The `slug` below ('explained-ai-tools') MUST match siteConfig.slug in
--- lib/site.config.ts — that is how the running app looks up its site_id.
+-- lib/site.config.ts - that is how the running app looks up its site_id.
 --
 -- (Auto-seeding over PostgREST was attempted during /new-site but this
 -- environment had no network access, so this file is the fallback.)
@@ -22,7 +22,7 @@ values (
 )
 on conflict (slug) do nothing;
 
--- ── 2. Seed categories (9 clusters — see docs/CONTENT-STRATEGY.md) ──────────
+-- ── 2. Seed categories (9 clusters - see docs/CONTENT-STRATEGY.md) ──────────
 insert into categories (site_id, slug, name, description)
 select
   s.id,

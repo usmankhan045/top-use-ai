@@ -261,11 +261,11 @@ the platform focuses on:
 
 # 🔗 Links
 
-🌐 TopUseAI — topuseai.com
+🌐 TopUseAI - topuseai.com
 
-💻 GitHub — github.com/usmankhan045
+💻 GitHub - github.com/usmankhan045
 
-💼 LinkedIn — Muhammad Usman
+💼 LinkedIn - Muhammad Usman
 
 ---
 

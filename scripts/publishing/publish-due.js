@@ -8,13 +8,13 @@
  *
  * Idempotent: the database is the source of truth. A post already published is
  * never touched again, so re-runs, delayed runs and overlapping runs are safe.
- * The workflow cron therefore runs every 30 minutes rather than once a day — a
+ * The workflow cron therefore runs every 30 minutes rather than once a day - a
  * missed tick self-corrects on the next one instead of slipping a full day.
  *
  * Env:
  *   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY  (required)
- *   DRY_RUN=1        optional — log what would publish, change nothing
- *   MAX_PER_RUN=12   optional — safety cap on publishes per run (default 12)
+ *   DRY_RUN=1        optional - log what would publish, change nothing
+ *   MAX_PER_RUN=12   optional - safety cap on publishes per run (default 12)
  *
  * Usage:
  *   node scripts/publishing/publish-due.js            # publish anything due

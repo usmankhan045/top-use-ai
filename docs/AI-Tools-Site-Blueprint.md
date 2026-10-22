@@ -1,4 +1,4 @@
-# AI Tools Site — Build Blueprint
+# AI Tools Site - Build Blueprint
 
 **Audience:** US / Canada / UK
 **Spine:** "Make money with AI" + AI tool reviews/comparisons
@@ -7,20 +7,20 @@
 
 ---
 
-## PART 1 — SITE CATEGORY ARCHITECTURE
+## PART 1 - SITE CATEGORY ARCHITECTURE
 
 Six top-level categories. Each = a main nav item, an SEO topic cluster, AND a group of Pinterest boards. Keep the nav to these six so the site reads as organized to both users and Google.
 
 **Traffic-source tag:** `[PIN]` = strong Pinterest fit · `[SEO]` = ranks better on Google / AI-chat · `[BOTH]` = works on both.
 
-### 1. Make Money with AI  `[PIN]` — your traffic magnet + homepage promise
+### 1. Make Money with AI  `[PIN]` - your traffic magnet + homepage promise
 - AI side hustles
 - Passive income with AI
-- Sell digital products with AI (ebooks, prompt packs, mini-courses, templates — NOT planners/printables)
+- Sell digital products with AI (ebooks, prompt packs, mini-courses, templates - NOT planners/printables)
 - AI freelancing & services
 - Faceless content / faceless YouTube with AI
 
-### 2. AI Tool Reviews & Comparisons  `[BOTH]` — your affiliate money engine
+### 2. AI Tool Reviews & Comparisons  `[BOTH]` - your affiliate money engine
 - Best AI tool for [use case]
 - [Tool A] vs [Tool B]
 - Free alternatives to [expensive tool]
@@ -31,7 +31,7 @@ Six top-level categories. Each = a main nav item, an SEO topic cluster, AND a gr
 - AI blogging & SEO tools
 - AI for social media content
 
-### 4. AI Image & Design  `[PIN]` — highest visual/save potential
+### 4. AI Image & Design  `[PIN]` - highest visual/save potential
 - AI art generators
 - AI design tools
 - AI headshots & photo tools
@@ -41,7 +41,7 @@ Six top-level categories. Each = a main nav item, an SEO topic cluster, AND a gr
 - Faceless video creation
 - AI voice / text-to-speech
 
-### 6. AI Guides & How-Tos  `[BOTH]` — beginner traffic + trust/E-E-A-T
+### 6. AI Guides & How-Tos  `[BOTH]` - beginner traffic + trust/E-E-A-T
 - AI for beginners
 - AI for students
 - AI for small business
@@ -49,11 +49,11 @@ Six top-level categories. Each = a main nav item, an SEO topic cluster, AND a gr
 
 ---
 
-## PART 2 — SUB-NICHE PRIORITY (by demand + Pinterest fit + money)
+## PART 2 - SUB-NICHE PRIORITY (by demand + Pinterest fit + money)
 
 Ranked into tiers. **Validate every seed keyword** in `trends.pinterest.com` (filter to US/CA/UK) and the Pinterest Ads keyword planner before committing. Keep rising/stable terms; drop flat ones.
 
-### TIER 1 — Start here (highest demand × best Pinterest fit × strong monetization)
+### TIER 1 - Start here (highest demand × best Pinterest fit × strong monetization)
 | Sub-niche | Seed keywords to validate | Why it's Tier 1 |
 |---|---|---|
 | AI side hustles | ai side hustle, make money with ai, side hustle ideas 2026 | Huge evergreen money category; January surge |
@@ -61,7 +61,7 @@ Ranked into tiers. **Validate every seed keyword** in `trends.pinterest.com` (fi
 | AI art / image generation | ai art, ai art prompts, ai generated art | The pin IS the art → high saves & engagement |
 | Faceless YouTube with AI | faceless youtube, faceless channel ideas, ai video | High volume; frame as funnel to a product |
 
-### TIER 2 — Add once Tier 1 is live
+### TIER 2 - Add once Tier 1 is live
 | Sub-niche | Seed keywords to validate | Notes |
 |---|---|---|
 | Sell digital products with AI | digital products to sell, sell ai products, ai passive income | Route planner/printable angles to old site |
@@ -69,16 +69,16 @@ Ranked into tiers. **Validate every seed keyword** in `trends.pinterest.com` (fi
 | AI productivity / Notion AI | ai productivity tools, notion ai, ai tools to get organized | Screenshots pin okay; high-value tool |
 | AI voice / text-to-speech | ai voice generator, text to speech ai, ai voiceover | Feeds faceless-video content |
 
-### TIER 3 — Later / mainly Google & AI-chat traffic (weak on Pinterest)
+### TIER 3 - Later / mainly Google & AI-chat traffic (weak on Pinterest)
 - AI automation & agents (ai automation, ai agents, no-code ai)
 - AI for specific professions (ai for teachers, ai for real estate, ai for freelancers)
-- AI coding tools (ai coding assistant) — very low Pinterest fit, high Google fit
+- AI coding tools (ai coding assistant) - very low Pinterest fit, high Google fit
 
 ---
 
-## PART 3 — HIGH-PAYING AFFILIATE PROGRAMS (24 tools)
+## PART 3 - HIGH-PAYING AFFILIATE PROGRAMS (24 tools)
 
-Mapped to your categories. **Verify current terms on each program's own affiliate page before applying** — rates, cookies, and caps change. Prioritize RECURRING over one-time. Many are reachable through two networks — join **PartnerStack** and **Impact.com** first and you unlock a large share of these in one place.
+Mapped to your categories. **Verify current terms on each program's own affiliate page before applying** - rates, cookies, and caps change. Prioritize RECURRING over one-time. Many are reachable through two networks - join **PartnerStack** and **Impact.com** first and you unlock a large share of these in one place.
 
 ### Writing & Content (Category 3)
 | Tool | Commission | Cookie / Notes | Best for |
@@ -104,7 +104,7 @@ Mapped to your categories. **Verify current terms on each program's own affiliat
 |---|---|---|---|
 | Synthesia | ~25% | AI avatars/training video | HR / L&D / training |
 | Pictory | ~30% lifetime recurring | Self-serve, converts on content | Video repurposing |
-| InVideo AI | ~50% first payment | — | Short-form video |
+| InVideo AI | ~50% first payment | - | Short-form video |
 | ElevenLabs | ~22% recurring 12 mo (11% business) | 90-day cookie, $5 min, PartnerStack | Voiceovers/podcasts |
 | Murf AI | ~20% recurring for 24 mo (longest window) | 90-day cookie | E-learning voiceovers |
 | Speechify | ~50% | 90-day cookie | TTS / accessibility |
@@ -123,13 +123,13 @@ Mapped to your categories. **Verify current terms on each program's own affiliat
 |---|---|---|---|
 | Surfer SEO | ~25% lifetime recurring | 60-day cookie | Bloggers/SEO |
 | Semrush | ~$200–450 FLAT per sale | 120-day cookie | Big-bounty balance to recurring |
-| TubeBuddy | up to ~50% recurring | — | YouTube creators |
+| TubeBuddy | up to ~50% recurring | - | YouTube creators |
 
-**Portfolio rule:** pick 5–8 to start (2 per active category), mix recurring + one flat-fee bounty (Semrush) so you're not fully exposed to churn, and only promote tools you'd actually recommend — audience fit beats commission rate every time.
+**Portfolio rule:** pick 5–8 to start (2 per active category), mix recurring + one flat-fee bounty (Semrush) so you're not fully exposed to churn, and only promote tools you'd actually recommend - audience fit beats commission rate every time.
 
 ---
 
-## PART 4 — SETUP CHECKLIST
+## PART 4 - SETUP CHECKLIST
 - [ ] Separate Pinterest business account for THIS domain only (never mix niches on one account)
 - [ ] Verify domain + enable Rich Pins
 - [ ] Create 6 category sections + matching Pinterest board groups
@@ -140,4 +140,4 @@ Mapped to your categories. **Verify current terms on each program's own affiliat
 - [ ] Seed "make money / side hustle" pins 4–6 weeks before the January surge
 
 ---
-*Commission figures reflect publicly reported terms as of mid-2026 and can change — confirm on each program's official affiliate page before relying on them.*
+*Commission figures reflect publicly reported terms as of mid-2026 and can change - confirm on each program's official affiliate page before relying on them.*

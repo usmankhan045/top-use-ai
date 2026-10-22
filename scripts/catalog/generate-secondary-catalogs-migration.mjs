@@ -1,0 +1,262 @@
+import { createHash } from "node:crypto";
+import { readFile, writeFile } from "node:fs/promises";
+
+const paths = {
+  aifoxx: process.argv[2] ?? "/tmp/aifoxx-tools.json",
+  autoventure: process.argv[3] ?? "/tmp/autoventure-tools.json",
+  verified: process.argv[4] ?? "/tmp/divjangid-tools.json",
+  freeAtlas: process.argv[5] ?? "/tmp/free-ai-atlas.json",
+};
+const output = process.argv[6] ?? "supabase/migrations/006_secondary_catalog_sources.sql";
+const siteId = "7635559c-2c64-4d76-8b3b-1c69e4a412f8";
+const importedAt = "2026-10-20T00:00:00.000Z";
+
+const readJson = async (path) => JSON.parse(await readFile(path, "utf8"));
+const [base, autoventureFile, verified, freeAtlas] = await Promise.all([
+  readJson(paths.aifoxx),
+  readJson(paths.autoventure),
+  readJson(paths.verified),
+  readJson(paths.freeAtlas),
+]);
+const autoventure = autoventureFile.tools;
+
+if (base.length < 900 || autoventure.length < 400 || verified.length < 40 || freeAtlas.length < 70) {
+  throw new Error("Refusing to generate from an unexpectedly incomplete source snapshot.");
+}
+
+function domain(url) {
+  try {
+    return new URL(url).hostname.toLowerCase().replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+}
+
+const slugMap = new Map(base.map((tool) => [tool.slug, tool.slug]));
+const domainMap = new Map(base.map((tool) => [domain(tool.url), tool.slug]).filter(([host]) => host));
+const newAutoSlugs = new Set();
+
+// AutoVenture is the broad secondary discovery source. Its genuinely new tools
+// become canonical records; other secondary catalogs only enrich or await review.
+for (const tool of autoventure) {
+  const existing = slugMap.get(tool.slug) ?? domainMap.get(domain(tool.website));
+  const canonical = existing ?? tool.slug;
+  if (!existing) newAutoSlugs.add(tool.slug);
+  slugMap.set(tool.slug, canonical);
+  const host = domain(tool.website);
+  if (host && !domainMap.has(host)) domainMap.set(host, canonical);
+}
+
+const sources = [
+  {
+    key: "autoventure",
+    name: "AutoVenture Free AI Tools Dataset",
+    url: "https://github.com/autoventure-projects/ai-tools-dataset",
+    license: "CC BY 4.0",
+    trust: 0.8,
+    priority: 20,
+    rows: autoventure.map((tool) => ({
+      source_record_id: tool.slug,
+      name: tool.name,
+      slug: tool.slug,
+      canonical_slug: slugMap.get(tool.slug) ?? domainMap.get(domain(tool.website)) ?? null,
+      website_url: tool.website,
+      category: tool.category,
+      pricing_model: String(tool.pricing).toLowerCase().replaceAll(" ", "-"),
+      is_free: true,
+      last_verified: autoventureFile.updated,
+      raw_data: tool,
+    })),
+  },
+  {
+    key: "verified-ai-tools",
+    name: "Awesome AI Tools 2026",
+    url: "https://github.com/DivJangid/AI-tools",
+    license: "CC BY 4.0",
+    trust: 0.9,
+    priority: 30,
+    rows: verified.map((tool) => ({
+      source_record_id: tool.id,
+      name: tool.name,
+      slug: tool.id,
+      canonical_slug: slugMap.get(tool.id) ?? domainMap.get(domain(tool.url)) ?? null,
+      website_url: tool.url,
+      category: tool.category,
+      pricing_model: tool.free_tier ? "freemium" : tool.open_source ? "open-source" : "paid",
+      is_free: Boolean(tool.free_tier || tool.open_source),
+      last_verified: tool.verified,
+      raw_data: tool,
+    })),
+  },
+  {
+    key: "free-ai-atlas",
+    name: "Free AI Atlas",
+    url: "https://github.com/ArthureCodage/free-ai-atlas",
+    license: "CC0 1.0",
+    trust: 0.9,
+    priority: 40,
+    rows: freeAtlas.map((tool) => ({
+      source_record_id: tool.id,
+      name: tool.name,
+      slug: tool.id,
+      canonical_slug: slugMap.get(tool.id) ?? domainMap.get(domain(tool.homepage)) ?? null,
+      website_url: tool.homepage,
+      category: tool.category,
+      pricing_model: tool.free_type,
+      is_free: true,
+      last_verified: tool.last_verified,
+      raw_data: tool,
+    })),
+  },
+];
+
+for (const source of sources) {
+  const ids = new Set();
+  for (const row of source.rows) {
+    if (!row.source_record_id || !row.name || !row.website_url) {
+      throw new Error(`${source.key} contains a record missing its identity or URL.`);
+    }
+    if (ids.has(row.source_record_id)) throw new Error(`${source.key} duplicate: ${row.source_record_id}`);
+    ids.add(row.source_record_id);
+  }
+}
+
+const sourceManifest = sources.map(({ rows, ...source }) => ({
+  ...source,
+  record_count: rows.length,
+  snapshot_sha256: createHash("sha256").update(JSON.stringify(rows)).digest("hex"),
+}));
+const rows = sources.flatMap((source) => source.rows.map((row) => ({ source_key: source.key, ...row })));
+const json = JSON.stringify(rows).replaceAll("$records$", "$records_split$");
+const manifestJson = JSON.stringify(sourceManifest).replaceAll("$sources$", "$sources_split$");
+const newAutoTools = autoventure.filter((tool) => newAutoSlugs.has(tool.slug));
+const autoJson = JSON.stringify(newAutoTools).replaceAll("$auto$", "$auto_split$");
+
+const sql = `-- Generated by scripts/catalog/generate-secondary-catalogs-migration.mjs.
+-- Stores every upstream record independently so conflicts remain auditable.
+
+create table if not exists catalog_data_sources (
+  key text primary key,
+  name text not null,
+  url text not null,
+  license text not null,
+  trust_score numeric(3,2) not null check (trust_score between 0 and 1),
+  priority integer not null,
+  record_count integer not null,
+  snapshot_sha256 text not null,
+  imported_at timestamptz not null,
+  created_at timestamptz not null default now()
+);
+
+create table if not exists catalog_source_records (
+  id uuid primary key default gen_random_uuid(),
+  site_id uuid references sites(id) not null,
+  source_key text references catalog_data_sources(key) not null,
+  source_record_id text not null,
+  tool_id uuid references tool_catalog(id) on delete set null,
+  name text not null,
+  slug text not null,
+  canonical_slug text,
+  website_url text not null,
+  category text,
+  pricing_model text,
+  is_free boolean,
+  last_verified date,
+  raw_data jsonb not null,
+  match_method text check (match_method in ('slug', 'domain', 'new-canonical', 'unmatched')),
+  match_status text not null default 'automatic' check (match_status in ('automatic', 'reviewed', 'rejected')),
+  imported_at timestamptz not null,
+  unique(site_id, source_key, source_record_id)
+);
+
+create index if not exists idx_catalog_source_records_tool on catalog_source_records(tool_id);
+create index if not exists idx_catalog_source_records_lookup on catalog_source_records(site_id, source_key, canonical_slug);
+create index if not exists idx_catalog_source_records_free on catalog_source_records(site_id, is_free, category);
+create index if not exists idx_catalog_source_records_raw_gin on catalog_source_records using gin(raw_data);
+
+insert into catalog_data_sources
+  (key, name, url, license, trust_score, priority, record_count, snapshot_sha256, imported_at)
+select key, name, url, license, trust, priority, record_count, snapshot_sha256, '${importedAt}'
+from jsonb_to_recordset($sources$${manifestJson}$sources$::jsonb) as x(
+  key text, name text, url text, license text, trust numeric, priority integer,
+  record_count integer, snapshot_sha256 text
+)
+on conflict (key) do update set
+  name=excluded.name, url=excluded.url, license=excluded.license,
+  trust_score=excluded.trust_score, priority=excluded.priority,
+  record_count=excluded.record_count, snapshot_sha256=excluded.snapshot_sha256,
+  imported_at=excluded.imported_at;
+
+-- Publish only AutoVenture records not already represented in the primary catalog.
+with source_rows as (
+  select * from jsonb_to_recordset($auto$${autoJson}$auto$::jsonb) as x(
+    name text, slug text, category text, category_id text, pricing text,
+    description text, website text, review_url text
+  )
+)
+insert into tool_catalog (
+  site_id, slug, name, category, summary, best_for, audience, strengths,
+  limitations, free_plan, paid_plans, quality_score, ease_score, value_score,
+  related_post_slugs, status, verification_status, last_reviewed_at,
+  source_record_id, source_category, website_url, pricing_model,
+  pricing_details, source_dataset, source_imported_at
+)
+select '${siteId}', x.slug, x.name,
+  lower(regexp_replace(x.category, '[^a-zA-Z0-9]+', '-', 'g')),
+  x.description, x.category, array['beginner']::text[], '{}'::text[],
+  array['Catalog description and pricing should be checked against the official site'],
+  'yes', x.pricing <> 'Free', 3, 3, 5, '{}'::text[], 'published',
+  'needs-review', '${autoventureFile.updated}'::timestamptz, x.slug, x.category,
+  x.website,
+  case lower(x.pricing) when 'free' then 'free' when 'freemium' then 'freemium'
+    when 'free trial' then 'free-trial' else 'unknown' end,
+  jsonb_build_object('source_pricing', x.pricing), 'autoventure', '${importedAt}'
+from source_rows x
+on conflict (site_id, slug) do nothing;
+
+insert into catalog_source_records (
+  site_id, source_key, source_record_id, name, slug, canonical_slug,
+  website_url, category, pricing_model, is_free, last_verified, raw_data,
+  match_method, imported_at
+)
+select '${siteId}', source_key, source_record_id, name, slug, canonical_slug,
+  website_url, category, pricing_model, is_free, nullif(last_verified, '')::date,
+  raw_data,
+  case when canonical_slug is null then 'unmatched'
+       when canonical_slug=slug then 'slug' else 'domain' end,
+  '${importedAt}'
+from jsonb_to_recordset($records$${json}$records$::jsonb) as x(
+  source_key text, source_record_id text, name text, slug text,
+  canonical_slug text, website_url text, category text, pricing_model text,
+  is_free boolean, last_verified text, raw_data jsonb
+)
+on conflict (site_id, source_key, source_record_id) do update set
+  name=excluded.name, slug=excluded.slug, canonical_slug=excluded.canonical_slug,
+  website_url=excluded.website_url, category=excluded.category,
+  pricing_model=excluded.pricing_model, is_free=excluded.is_free,
+  last_verified=excluded.last_verified, raw_data=excluded.raw_data,
+  match_method=excluded.match_method, imported_at=excluded.imported_at;
+
+update catalog_source_records r set tool_id=t.id,
+  match_method=case when r.source_key='autoventure' and t.source_dataset='autoventure'
+    then 'new-canonical' else r.match_method end
+from tool_catalog t
+where r.site_id=t.site_id and r.canonical_slug=t.slug and r.site_id='${siteId}';
+
+insert into tool_sources (site_id, tool_id, source_type, url, label, retrieved_at, reliability)
+select r.site_id, r.tool_id, 'dataset', s.url, s.name || ' (' || s.license || ')',
+  r.imported_at, s.trust_score
+from catalog_source_records r join catalog_data_sources s on s.key=r.source_key
+where r.tool_id is not null and not exists (
+  select 1 from tool_sources ts
+  where ts.tool_id=r.tool_id and ts.source_type='dataset' and ts.url=s.url
+);
+
+analyze catalog_source_records;
+analyze tool_catalog;
+`;
+
+await writeFile(output, sql);
+console.log(`Wrote ${output}: ${rows.length} source records from ${sources.length} catalogs.`);
+console.log(`AutoVenture canonical additions: ${newAutoTools.length}`);
+for (const source of sourceManifest) console.log(`${source.key}: ${source.record_count} (${source.license})`);

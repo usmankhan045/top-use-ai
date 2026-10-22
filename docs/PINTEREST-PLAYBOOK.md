@@ -283,7 +283,7 @@ node scripts/pinterest/validate-pins.js docs/PINTEREST-BATCH-2.md
 - [ ] Description 290 to 500 characters, carrying specifics
 - [ ] Alt text describes the image, not the title
 - [ ] Title under 100 characters
-- [ ] No em dashes anywhere (`grep -n '—'` returns nothing)
+- [ ] No em dashes anywhere (`grep -n ' - '` returns nothing)
 - [ ] No layout repeated within the day's six pins
 - [ ] No layout paragraph used in any previous batch
 - [ ] Roughly two thirds of pins photo-led

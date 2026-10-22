@@ -1,4 +1,4 @@
-# Content Guidelines — Explained AI Tools
+# Content Guidelines - Explained AI Tools
 
 These guidelines keep every article consistent, scannable, and optimised for both readers and AI discovery tools (Google AI Overviews, ChatGPT, Perplexity).
 
@@ -8,17 +8,17 @@ These guidelines keep every article consistent, scannable, and optimised for bot
 
 ### One H1 per page
 
-Every page has exactly **one `<h1>`** — the article title. Never add a second H1 in the body copy.
+Every page has exactly **one `<h1>`** - the article title. Never add a second H1 in the body copy.
 
 ### Heading hierarchy
 
 Use headings to express genuine content structure, not to add visual variety:
 
 ```
-H1 — Article title (rendered by the page template automatically)
-H2 — Major sections
-H3 — Sub-topics within a section
-H4 — Use sparingly; prefer restructuring as H3 sub-sections
+H1 - Article title (rendered by the page template automatically)
+H2 - Major sections
+H3 - Sub-topics within a section
+H4 - Use sparingly; prefer restructuring as H3 sub-sections
 ```
 
 Do not skip levels (H2 → H4). Screen readers and AI parsers depend on a logical hierarchy.
@@ -33,7 +33,7 @@ Each H2 section covers one idea completely before moving to the next. If you fin
 
 ### Lead with the answer
 
-Open every article — and every section — with the direct answer to the question the reader came with. Explanation, context, and caveats follow.
+Open every article - and every section - with the direct answer to the question the reader came with. Explanation, context, and caveats follow.
 
 **Good:**
 > Jasper is best for teams that need on-brand marketing copy at scale, and its output quality justifies the price. Solo creators on a budget should start with Rytr or Copy.ai's free plan instead.
@@ -133,7 +133,7 @@ Example: `Jasper vs Copy.ai: Which AI Writer Wins? | Explained AI Tools`
 
 Lead with what the reader gets. Include the primary keyword. End with a benefit or call to action.
 
-Example: `We tested Jasper and Copy.ai on the same brief — here's which AI writer produced better copy, and which is the better value.`
+Example: `We tested Jasper and Copy.ai on the same brief - here's which AI writer produced better copy, and which is the better value.`
 
 ### slug format
 
@@ -146,16 +146,16 @@ Example: `We tested Jasper and Copy.ai on the same brief — here's which AI wri
 
 ## Categories, not audience hubs
 
-This site is organized by tool category, not audience, so there are **no audience hub pages** (`audienceSegments` is empty in `lib/site.config.ts`). The `audience_tags` field is therefore unused — assign every post a `category_id` instead. See the 6 categories in `CLAUDE.md` and the topic architecture in `docs/AI-Tools-Site-Blueprint.md`.
+This site is organized by tool category, not audience, so there are **no audience hub pages** (`audienceSegments` is empty in `lib/site.config.ts`). The `audience_tags` field is therefore unused - assign every post a `category_id` instead. See the 6 categories in `CLAUDE.md` and the topic architecture in `docs/AI-Tools-Site-Blueprint.md`.
 
 ---
 
-## Quick Answer component — developer notes
+## Quick Answer component - developer notes
 
 The Quick Answer renders when `post.quick_answer` is non-null. It appears as a green left-bordered callout at the top of the article body, before the main content.
 
-Location: [app/blog/[slug]/page.tsx](../app/blog/[slug]/page.tsx) — the `{post.quick_answer && (...)}` block.
+Location: [app/blog/[slug]/page.tsx](../app/blog/[slug]/page.tsx) - the `{post.quick_answer && (...)}` block.
 
 It is styled with role="note" and aria-label="Quick answer" for accessibility. The label uses the `.stamp` utility class (IBM Plex Mono, uppercase, off-register shadow).
 
-The content of this box is also what AI systems are most likely to excerpt when answering a user's question — keep it factually precise and self-contained.
+The content of this box is also what AI systems are most likely to excerpt when answering a user's question - keep it factually precise and self-contained.
