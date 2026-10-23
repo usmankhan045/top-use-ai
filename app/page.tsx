@@ -414,22 +414,29 @@ export default async function HomePage() {
                 budget.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
-                <Button size="lg">
-                  <Link href="/blog" className="contents">
-                    Explore AI tools
-                  </Link>
-                </Button>
-                <Button variant="accent" size="lg">
+              <div className="mt-7 flex flex-col items-stretch gap-3 sm:items-start">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  className="w-full px-10 py-4 text-xl sm:w-auto sm:min-w-[22rem]"
+                >
                   <Link href="/tools/content-creation" className="contents">
                     Find my tool →
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg">
-                  <Link href="/category/make-money-with-ai" className="contents">
-                    Make money with AI
-                  </Link>
-                </Button>
+
+                <div className="grid w-full grid-cols-1 gap-3 sm:w-auto sm:grid-cols-2">
+                  <Button size="lg" className="w-full">
+                    <Link href="/blog" className="contents">
+                      Explore AI tools
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="lg" className="w-full">
+                    <Link href="/category/make-money-with-ai" className="contents">
+                      Make money with AI
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
               <p className="mt-6 stamp text-muted flex flex-wrap items-center gap-x-3 gap-y-1">
