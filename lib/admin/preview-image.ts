@@ -29,9 +29,8 @@ export interface PreviewImageSource {
 export function previewImageUrl(
   post: PreviewImageSource,
   /**
-   * "card" draws the image at 16:10, the shape the on-site post card renders
-   * it in. The default 1200x630 is for meta tags, where scrapers expect it;
-   * letting the card crop that ratio cut the first character off every title.
+   * "card" draws the image at 16:9, the shape the on-site post card renders it
+   * in. The default 1200x630 is for meta tags, where scrapers expect it.
    */
   ratio: "og" | "card" = "og"
 ): string {

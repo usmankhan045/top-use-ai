@@ -22,6 +22,10 @@ import { AuthorByline, AuthorBio } from "@/components/Author";
 import { articleSchema, faqSchema, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
+import {
+  absolutePreviewImageUrl,
+  previewImageUrl,
+} from "@/lib/admin/preview-image";
 
 export const revalidate = false;
 
@@ -47,9 +51,7 @@ export async function generateMetadata({
     if (!post) return {};
     const title = post.seo_title ?? post.title;
     const description = post.seo_description ?? post.excerpt ?? undefined;
-    // Always resolve a share image: the post's featured image, else the site OG
-    // default, so every post has a non-generic og:image/twitter:image.
-    const shareImage = post.featured_image_url ?? "/og-default.jpg";
+    const shareImage = absolutePreviewImageUrl(post);
     return {
       title,
       description,
@@ -62,7 +64,12 @@ export async function generateMetadata({
         publishedTime: post.published_at ?? undefined,
         modifiedTime: post.updated_at,
         authors: [siteConfig.name],
-        images: [{ url: shareImage, width: 1200, height: 630, alt: title }],
+        images: [{
+          url: shareImage,
+          width: 1200,
+          height: 630,
+          alt: post.featured_image_alt ?? title,
+        }],
       },
       twitter: {
         card: "summary_large_image",
@@ -90,6 +97,8 @@ export default async function BlogPostPage({
     notFound();
   }
   if (!post) notFound();
+
+  const featuredImage = previewImageUrl(post);
 
   let relatedPosts: Awaited<ReturnType<typeof getRelatedPosts>> = [];
   try {
@@ -197,20 +206,18 @@ export default async function BlogPostPage({
       </section>
 
       {/* ── Featured image ─────────────────────────────────────────────────── */}
-      {post.featured_image_url && (
-        <Container width="narrow" className="mt-2">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[var(--radius)] border-2 border-text hard-ink bg-primary/[0.05]">
-            <Image
-              src={post.featured_image_url}
-              alt={post.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-              priority
-            />
-          </div>
-        </Container>
-      )}
+      <Container width="narrow" className="mt-2">
+        <div className="relative w-full aspect-[1200/630] overflow-hidden rounded-[var(--radius)] border-2 border-text hard-ink bg-primary/[0.05]">
+          <Image
+            src={featuredImage}
+            alt={post.featured_image_alt ?? post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+            priority
+          />
+        </div>
+      </Container>
 
       {/* ── Article body ───────────────────────────────────────────────────── */}
       <article className="py-12 sm:py-16">
@@ -291,10 +298,19 @@ export default async function BlogPostPage({
                 >
                   <Card
                     className={cn(
-                      "h-full flex flex-col",
+                      "h-full flex flex-col overflow-hidden",
                       "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
                     )}
                   >
+                    <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+                      <Image
+                        src={previewImageUrl(related, "card")}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 100vw, 33vw"
+                        className="object-cover"
+                      />
+                    </div>
                     {related.categories && (
                       <Tag variant="default" className="mb-3 self-start">
                         {related.categories.name}
@@ -302,7 +318,7 @@ export default async function BlogPostPage({
                     )}
                     <CardTitle
                       as="h3"
-                      className="text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
+                      className="sr-only"
                     >
                       {related.title}
                     </CardTitle>

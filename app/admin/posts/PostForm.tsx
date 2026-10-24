@@ -70,16 +70,17 @@ export default function PostForm({
   const slug = slugOverride ?? slugify(title);
 
   const [imageUrl, setImageUrl] = useState(post?.featured_image_url ?? "");
+  const [categoryId, setCategoryId] = useState(post?.category_id ?? "");
   const [faq, setFaq] = useState<FaqItem[]>(post?.faq_items ?? []);
 
   // Live preview of the auto-generated card, so it's obvious what will be used
   // when no image is supplied.
   const generatedPreview = useMemo(() => {
     const params = new URLSearchParams({ title: title || "Untitled post" });
-    const cat = categories.find((c) => c.id === post?.category_id);
+    const cat = categories.find((c) => c.id === categoryId);
     if (cat) params.set("label", cat.name);
     return `/api/og?${params.toString()}`;
-  }, [title, categories, post?.category_id]);
+  }, [title, categories, categoryId]);
 
   const [content, setContent] = useState(post?.content ?? "");
   const bodyRef = useRef<HTMLTextAreaElement>(null);
@@ -300,7 +301,8 @@ export default function PostForm({
               <select
                 id="category_id"
                 name="category_id"
-                defaultValue={post?.category_id ?? ""}
+                value={categoryId}
+                onChange={(event) => setCategoryId(event.target.value)}
                 className={inputClass}
               >
                 <option value="">No category</option>

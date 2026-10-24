@@ -12,6 +12,7 @@ import {
 } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site.config";
+import { previewImageUrl } from "@/lib/admin/preview-image";
 
 // Statically prerender the homepage. On-demand revalidation via /api/revalidate
 // updates it when posts publish, avoiding wasteful hourly ISR writes.
@@ -284,6 +285,7 @@ function CategoryCard({
 function PostCard({ post }: { post: Post }) {
   const isPlaceholder = post.id.startsWith("ph-");
   const href = isPlaceholder ? "/blog" : post.slug.startsWith("#") ? post.slug : `/blog/${post.slug}`;
+  const cover = previewImageUrl(post, "card");
   return (
     <Link
       href={href}
@@ -296,17 +298,15 @@ function PostCard({ post }: { post: Post }) {
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
         )}
       >
-        {post.featured_image_url && (
-          <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
-            <Image
-              src={post.featured_image_url}
-              alt=""
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw"
-              className="object-cover"
-            />
-          </div>
-        )}
+        <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+          <Image
+            src={cover}
+            alt=""
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw"
+            className="object-cover"
+          />
+        </div>
         {/* Category stamp */}
         {post.categories && (
           <Tag variant="default" className="mb-3 self-start">
@@ -318,11 +318,7 @@ function PostCard({ post }: { post: Post }) {
             DOM so search engines and screen readers still get the headline. */}
         <CardTitle
           as="h3"
-          className={cn(
-            post.featured_image_url
-              ? "sr-only"
-              : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
-          )}
+          className="sr-only"
         >
           {post.title}
         </CardTitle>

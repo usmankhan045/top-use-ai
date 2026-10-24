@@ -5,6 +5,7 @@ import {
   getCategoriesWithPostCounts,
   getPrintables,
 } from "@/lib/queries";
+import { absolutePreviewImageUrl } from "@/lib/admin/preview-image";
 
 const BASE_URL = `https://${siteConfig.domain}`;
 
@@ -66,19 +67,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // render the page, and image search is a realistic traffic source for a site
   // whose posts are mostly comparisons and how-tos.
   const postRoutes: MetadataRoute.Sitemap = posts.map((post) => {
-    const cover = post.featured_image_url;
+    const cover = absolutePreviewImageUrl(post);
     return {
       url: `${BASE_URL}/blog/${post.slug}`,
       lastModified: post.updated_at,
       changeFrequency: "weekly" as const,
       priority: 0.8,
-      ...(cover
-        ? {
-            images: [
-              cover.startsWith("http") ? cover : `${BASE_URL}${cover}`,
-            ],
-          }
-        : {}),
+      images: [cover],
     };
   });
 

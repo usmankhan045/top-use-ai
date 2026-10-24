@@ -83,7 +83,7 @@ export default async function AdminDashboard() {
         <Panel title="Needs attention">
           <div className="mb-4 grid grid-cols-2 gap-3">
             <StatCard
-              label="Missing image"
+              label="Using generated image"
               value={stats.missingImage}
               tone={stats.missingImage > 0 ? "warn" : "default"}
             />

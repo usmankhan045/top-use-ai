@@ -20,6 +20,13 @@ const nextConfig: NextConfig = {
     // Blog images are effectively immutable, so cache optimized variants for a
     // week to avoid re-optimizing on every cold cache.
     minimumCacheTTL: 604800,
+    localPatterns: [
+      // Generated covers need title/category query parameters. Keep that broad
+      // query allowance pinned to the one image route; every other local image
+      // remains query-string-free.
+      { pathname: "/api/og" },
+      { pathname: "/**", search: "" },
+    ],
     remotePatterns: [
       {
         protocol: "https",

@@ -1,5 +1,6 @@
 import { siteConfig } from "./site.config";
 import type { Post, FaqItem } from "./queries";
+import { absolutePreviewImageUrl } from "./admin/preview-image";
 
 const BASE_URL = `https://${siteConfig.domain}`;
 
@@ -86,18 +87,12 @@ export function organizationSchema() {
   };
 }
 
-/** Resolve any image reference to an absolute URL. Google's structured data
- *  guidelines require absolute URLs; a stored value like "/covers/x.png" fails
- *  Article image eligibility silently, so relative paths get the origin added. */
-function absoluteUrl(path: string): string {
-  return /^https?:\/\//i.test(path) ? path : `${BASE_URL}${path}`;
-}
-
 export function articleSchema(post: Post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
-  // Always emit an image (required for article rich results). Falls back to the
-  // site OG default when a post has no featured image of its own.
-  const image = absoluteUrl(post.featured_image_url ?? "/og-default.jpg");
+  // The same resolver drives visible cards, the article hero, social metadata,
+  // and structured data. A post therefore has an image even when no custom
+  // upload was supplied by the API or dashboard.
+  const image = absolutePreviewImageUrl(post);
   const wordCount = post.content
     ? post.content.trim().split(/\s+/).length
     : undefined;

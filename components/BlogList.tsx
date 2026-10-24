@@ -15,7 +15,7 @@ export interface BlogListPost {
   excerpt: string | null;
   publishedAt: string | null;
   categoryName: string | null;
-  featuredImage: string | null;
+  featuredImage: string;
 }
 
 const PAGE_SIZE = 12;
@@ -46,17 +46,15 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
                 "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
               )}
             >
-              {post.featuredImage && (
-                <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
-                  <Image
-                    src={post.featuredImage}
-                    alt=""
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                  />
-                </div>
-              )}
+              <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+                <Image
+                  src={post.featuredImage}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
               {post.categoryName && (
                 <Tag variant="default" className="mb-3 self-start">
                   {post.categoryName}
@@ -69,11 +67,7 @@ export function BlogList({ posts }: { posts: BlogListPost[] }) {
                   Text baked into a PNG is invisible to both. */}
               <CardTitle
                 as="h2"
-                className={cn(
-                  post.featuredImage
-                    ? "sr-only"
-                    : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
-                )}
+                className="sr-only"
               >
                 {post.title}
               </CardTitle>

@@ -4,6 +4,7 @@ import { Container, Tag } from "@/components/ui";
 import { BlogList, type BlogListPost } from "@/components/BlogList";
 import { JsonLd } from "@/components/JsonLd";
 import { collectionPageSchema, breadcrumbSchema } from "@/lib/schema";
+import { previewImageUrl } from "@/lib/admin/preview-image";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -38,7 +39,7 @@ export default async function BlogIndexPage() {
     excerpt: p.excerpt,
     publishedAt: p.published_at,
     categoryName: p.categories?.name ?? null,
-    featuredImage: p.featured_image_url ?? null,
+    featuredImage: previewImageUrl(p, "card"),
   }));
 
   return (

@@ -19,6 +19,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
+import { previewImageUrl } from "@/lib/admin/preview-image";
 
 export const revalidate = false;
 
@@ -171,26 +172,20 @@ export default async function CategoryArchivePage({
                       "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-text"
                       )}
                     >
-                      {post.featured_image_url && (
-                        <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
-                          <Image
-                            src={post.featured_image_url}
-                            alt=""
-                            fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            className="object-cover"
-                          />
-                        </div>
-                      )}
+                      <div className="relative -mx-6 -mt-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+                        <Image
+                          src={previewImageUrl(post, "card")}
+                          alt=""
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover"
+                        />
+                      </div>
                       {/* Hidden visually when the cover art carries the headline,
                           but kept in the DOM for search and screen readers. */}
                       <CardTitle
                         as="h2"
-                        className={cn(
-                          post.featured_image_url
-                            ? "sr-only"
-                            : "text-base leading-snug mb-2 line-clamp-3 group-hover:underline group-hover:decoration-accent decoration-2 underline-offset-4 transition"
-                        )}
+                        className="sr-only"
                       >
                         {post.title}
                       </CardTitle>
