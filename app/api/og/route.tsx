@@ -18,10 +18,14 @@ const GRAPHITE = "#22202E";
 const PAPER = "#FBFAF6";
 const LIME = "#D6FF3F";
 
-// ImageResponse does not support the variable WOFF2 files used by the offline
-// cover script. Geist keeps the same compact editorial feel and is bundled as
-// a static TTF so the route works without a network request.
-const coverFont = readFile(join(process.cwd(), "scripts/fonts/og-geist.ttf"));
+// ImageResponse cannot read the variable WOFF2 files used by Chromium in the
+// offline cover script. These static TTF instances were generated from those
+// exact files at the exact weights used there, keeping both cover paths aligned.
+const fonts = Promise.all([
+  readFile(join(process.cwd(), "scripts/fonts/bricolage-800.ttf")),
+  readFile(join(process.cwd(), "scripts/fonts/hanken-600.ttf")),
+  readFile(join(process.cwd(), "scripts/fonts/geist-mono-500.ttf")),
+]);
 
 function badgeFor(title: string): string {
   const value = title.toLowerCase();
@@ -145,7 +149,7 @@ export async function GET(request: NextRequest) {
   const label = (params.get("label")?.trim() || "AI Tools").slice(0, 48);
   const kicker = params.get("kicker")?.trim().slice(0, 32);
   const size = params.get("ratio") === "card" ? sizes.card : sizes.og;
-  const fontData = await coverFont;
+  const [displayFont, bodyFont, monoFont] = await fonts;
 
   return new ImageResponse(
     (
@@ -158,7 +162,7 @@ export async function GET(request: NextRequest) {
           overflow: "hidden",
           background: GRAPHITE,
           color: PAPER,
-          fontFamily: "Cover",
+          fontFamily: "Hanken",
         }}
       >
         <div
@@ -195,7 +199,7 @@ export async function GET(request: NextRequest) {
                 alignItems: "center",
                 gap: 14,
                 color: LIME,
-                fontFamily: "Cover",
+                fontFamily: "GeistMono",
                 fontSize: 19,
                 fontWeight: 500,
                 letterSpacing: "0.14em",
@@ -207,7 +211,7 @@ export async function GET(request: NextRequest) {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <BrandMark />
-              <span style={{ fontFamily: "Cover", fontSize: 27, fontWeight: 800 }}>
+              <span style={{ fontFamily: "Bricolage", fontSize: 27, fontWeight: 800 }}>
                 {siteConfig.name}
               </span>
             </div>
@@ -227,7 +231,7 @@ export async function GET(request: NextRequest) {
             <div
               style={{
                 display: "flex",
-                fontFamily: "Cover",
+                fontFamily: "Bricolage",
                 fontSize: titleSize(title),
                 fontWeight: 800,
                 lineHeight: 0.99,
@@ -264,7 +268,7 @@ export async function GET(request: NextRequest) {
               justifyContent: "space-between",
               gap: 24,
               color: "rgba(251,250,246,0.72)",
-              fontFamily: "Cover",
+              fontFamily: "GeistMono",
               fontSize: 19,
               fontWeight: 500,
             }}
@@ -278,7 +282,9 @@ export async function GET(request: NextRequest) {
     {
       ...size,
       fonts: [
-        { name: "Cover", data: fontData, style: "normal", weight: 400 },
+        { name: "Bricolage", data: displayFont, style: "normal", weight: 800 },
+        { name: "Hanken", data: bodyFont, style: "normal", weight: 600 },
+        { name: "GeistMono", data: monoFont, style: "normal", weight: 500 },
       ],
     }
   );
