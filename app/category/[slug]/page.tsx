@@ -22,13 +22,13 @@ import { cn } from "@/lib/utils";
 
 export const revalidate = false;
 
+// Categories are a finite build-time catalog. Do not create durable ISR cache
+// entries for arbitrary slugs requested by crawlers.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  try {
-    const categories = await getCategories();
-    return categories.map((c) => ({ slug: c.slug }));
-  } catch {
-    return [];
-  }
+  const categories = await getCategories();
+  return categories.map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({

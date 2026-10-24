@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  getAllPostSlugs,
   getPostBySlug,
-  getPublishedPosts,
   getRelatedPosts,
 } from "@/lib/queries";
 import {
@@ -25,13 +25,15 @@ import { cn } from "@/lib/utils";
 
 export const revalidate = false;
 
+// The complete post catalog is generated at build time. Without this, Next's
+// default fallback renders every unknown slug on demand and Vercel persists the
+// resulting 404 as a separate ISR entry. Bot-generated URLs can therefore
+// create an unbounded number of ISR writes.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  try {
-    const posts = await getPublishedPosts();
-    return posts.map((p) => ({ slug: p.slug }));
-  } catch {
-    return [];
-  }
+  const slugs = await getAllPostSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({

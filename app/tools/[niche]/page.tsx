@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import { NicheFinder } from "@/components/tools/NicheFinder";
 import { NICHE_BY_SLUG, NICHES } from "@/lib/tool-finder/niches";
 
+// NICHES is the exhaustive catalog. Disabling the default runtime fallback
+// prevents random /tools/* requests from generating persistent ISR 404s.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return NICHES.map((niche) => ({ niche: niche.slug }));
 }

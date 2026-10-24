@@ -99,6 +99,25 @@ export async function getPublishedPosts(options?: {
   return (data ?? []) as Post[];
 }
 
+/**
+ * Return every reserved post slug, including drafts and scheduled posts.
+ *
+ * `generateStaticParams` uses this list to keep `dynamicParams = false` while
+ * still allowing a known draft URL to be revalidated when it is published.
+ * The page query continues to filter to published posts, so drafts remain 404.
+ */
+export async function getAllPostSlugs(): Promise<string[]> {
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("posts")
+    .select("slug")
+    .eq("site_id", siteId);
+
+  if (error) throw error;
+  return (data ?? []).map(({ slug }) => slug as string);
+}
+
 export async function getPostBySlug(slug: string): Promise<Post | null> {
   const siteId = await getCurrentSiteId();
 

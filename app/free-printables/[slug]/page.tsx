@@ -17,14 +17,14 @@ import { cn } from "@/lib/utils";
 
 export const revalidate = false;
 
+// Printables are fully enumerated at build time. Unknown slugs must use the
+// shared static 404 instead of being rendered and stored as ISR entries.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   if (!siteConfig.features.printables) return [];
-  try {
-    const printables = await getPrintables();
-    return printables.map((p) => ({ slug: p.slug }));
-  } catch {
-    return [];
-  }
+  const printables = await getPrintables();
+  return printables.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
