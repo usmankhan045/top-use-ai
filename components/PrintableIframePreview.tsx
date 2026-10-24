@@ -31,7 +31,7 @@ export function PrintableIframePreview({ slug, title, orientation = "portrait" }
     const ro = new ResizeObserver(update);
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [CONTENT_WIDTH]);
 
   const scaledHeight = CONTENT_HEIGHT * scale;
 

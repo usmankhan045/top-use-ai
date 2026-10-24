@@ -71,6 +71,10 @@ export const siteConfig = {
       text:       "#17161F", // Graphite Ink, one step darker than primary so links stay legible
       muted:      "#5C5A68", // Slate, warm-leaning grey for secondary text and rules
       success:    "#2F8F5B", // Deep Green, kept away from the accent so it still reads as a signal
+      primaryDark: "#17161F",
+      surface:     "#FFFFFF",
+      line:        "#D9D7DF",
+      accentInk:   "#586A00",
     },
     fonts: {
       display: "Bricolage Grotesque", // chunky variable grotesque; carries the oversized headlines

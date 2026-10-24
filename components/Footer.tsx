@@ -2,6 +2,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site.config";
 import { Container } from "@/components/ui";
 import { BrandMark } from "@/components/BrandMark";
+import type { NavItem } from "@/lib/settings";
 
 // Pinterest SVG, inlined to avoid package dependency.
 function PinterestIcon({ className }: { className?: string }) {
@@ -21,7 +22,19 @@ function PinterestIcon({ className }: { className?: string }) {
 
 type CategoryLink = { slug: string; name: string };
 
-export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
+export function Footer({
+  categories = [],
+  name = siteConfig.name,
+  tagline = siteConfig.tagline,
+  social = siteConfig.social,
+  footerLinks = [...siteConfig.footerLinks],
+}: {
+  categories?: CategoryLink[];
+  name?: string;
+  tagline?: string;
+  social?: { pinterest?: string; x?: string; instagram?: string };
+  footerLinks?: NavItem[];
+}) {
   const year = new Date().getFullYear();
 
   return (
@@ -45,21 +58,21 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
                   graphite ground. */}
               <BrandMark size={26} ground="dark" className="shrink-0" />
               <span className="font-display text-2xl font-extrabold text-white tracking-tight">
-                {siteConfig.name}
+                {name}
               </span>
             </Link>
             <p className="text-white/65 text-sm leading-relaxed mb-4">
-              {siteConfig.tagline}
+              {tagline}
             </p>
 
             {/* Social links */}
             <div className="flex items-center gap-3">
-              {siteConfig.social.pinterest && (
+              {social.pinterest && (
                 <a
-                  href={siteConfig.social.pinterest}
+                  href={social.pinterest}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${siteConfig.name} on Pinterest`}
+                  aria-label={`${name} on Pinterest`}
                   className="p-2 rounded-lg bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors"
                 >
                   <PinterestIcon />
@@ -74,7 +87,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
               Navigation
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
-              {siteConfig.footerLinks.map((link) => (
+              {footerLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -137,7 +150,7 @@ export function Footer({ categories = [] }: { categories?: CategoryLink[] }) {
 
         {/* ── Bottom bar ─────────────────────────────────────────────────── */}
         <div className="border-t border-white/10 py-3 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-white/60">
-          <p>© {year} {siteConfig.name}. All rights reserved.</p>
+          <p>© {year} {name}. All rights reserved.</p>
           <p>{siteConfig.legal.disclaimer}</p>
         </div>
 

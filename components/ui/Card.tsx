@@ -44,7 +44,7 @@ export function Card({
 
 // ── Compound sub-components ───────────────────────────────────────────────────
 
-interface CardHeaderProps extends HTMLAttributes<HTMLDivElement> {}
+type CardHeaderProps = HTMLAttributes<HTMLDivElement>;
 
 export function CardHeader({ className, children, ...props }: CardHeaderProps) {
   return (
@@ -72,7 +72,7 @@ export function CardTitle({ as: Tag = "h3", className, children, ...props }: Car
   );
 }
 
-interface CardBodyProps extends HTMLAttributes<HTMLDivElement> {}
+type CardBodyProps = HTMLAttributes<HTMLDivElement>;
 
 export function CardBody({ className, children, ...props }: CardBodyProps) {
   return (
@@ -82,7 +82,7 @@ export function CardBody({ className, children, ...props }: CardBodyProps) {
   );
 }
 
-interface CardFooterProps extends HTMLAttributes<HTMLDivElement> {}
+type CardFooterProps = HTMLAttributes<HTMLDivElement>;
 
 export function CardFooter({ className, children, ...props }: CardFooterProps) {
   return (

@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteSchema, organizationSchema, personSchema } from "@/lib/schema";
 import { getCategoriesWithPostCounts } from "@/lib/queries";
+import { getSiteSettings } from "@/lib/settings";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -53,6 +54,7 @@ export default async function RootLayout({
   // Drives the navbar "Categories" dropdown. Only categories with at least one
   // published post, so the nav never links to an empty archive page. Falls back
   // to [] if the DB is unconfigured.
+  const settings = await getSiteSettings();
   let categories: { slug: string; name: string }[] = [];
   try {
     categories = (await getCategoriesWithPostCounts()).map(({ slug, name }) => ({
@@ -83,16 +85,22 @@ export default async function RootLayout({
             and React's JSX types reject, hence the spread. */}
         <meta {...{ name: "impact-site-verification", value: "f43d7613-6c3a-454a-91e8-d21e0242fde5" }} />
         {/* Inject theme CSS vars, change siteConfig.theme.colors to restyle the whole site */}
-        <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
+        <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS(settings.themeColors)} }` }} />
         {/* Site-wide entity graph. Emitted on every page so that per-page schema
             (BlogPosting author/publisher/isPartOf) can reference these by @id
             instead of duplicating them. */}
         <JsonLd data={[websiteSchema(), organizationSchema(), personSchema()]} />
       </head>
       <body className="flex flex-col min-h-full antialiased bg-background text-text">
-        <Header categories={categories} />
+        <Header categories={categories} nav={settings.nav} name={settings.name} />
         {children}
-        <Footer categories={categories} />
+        <Footer
+          categories={categories}
+          name={settings.name}
+          tagline={settings.tagline}
+          social={settings.social}
+          footerLinks={settings.footerLinks}
+        />
         <Analytics />
       </body>
     </html>

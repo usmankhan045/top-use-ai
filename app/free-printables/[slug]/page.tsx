@@ -7,9 +7,7 @@ import { siteConfig } from "@/lib/site.config";
 import {
   Container,
   Tag,
-  Card,
   CardTitle,
-  CardBody,
   SectionDivider,
 } from "@/components/ui";
 import { PrintableIframePreview } from "@/components/PrintableIframePreview";

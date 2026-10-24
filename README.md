@@ -193,6 +193,27 @@ with the TopUseAI platform.
 
 The project is actively maintained as the publication evolves.
 
+## Admin dashboard
+
+The private dashboard is available at `/admin`. In addition to the existing
+Supabase variables, configure these server-only values in `.env.local` and in
+the deployment environment:
+
+```bash
+ADMIN_PASSWORD=<a strong dashboard password>
+ADMIN_SESSION_SECRET=<at least 32 random bytes>
+```
+
+Generate the session secret with:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
+```
+
+Never expose either value with a `NEXT_PUBLIC_` prefix. The existing
+`ADMIN_API_TOKEN` remains separate and is only for `/api/admin/*` bearer-token
+requests.
+
 ---
 
 # 🌐 Visit TopUseAI

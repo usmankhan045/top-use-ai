@@ -17,6 +17,10 @@ export function generateThemeCSS(colors: ThemeColors = siteConfig.theme.colors):
     --color-text: ${colors.text};
     --color-muted: ${colors.muted};
     --color-success: ${colors.success};
+    --color-primary-dark: ${colors.primaryDark};
+    --color-surface: ${colors.surface};
+    --color-line: ${colors.line};
+    --color-accent-ink: ${colors.accentInk};
     --radius: ${siteConfig.theme.radius};
   `.trim();
 }

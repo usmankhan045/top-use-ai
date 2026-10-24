@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig, navLinks } from "@/lib/site.config";
+import type { NavItem } from "@/lib/settings";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui";
 import { BrandMark } from "@/components/BrandMark";
@@ -56,7 +57,15 @@ function ChevronIcon({ className }: { className?: string }) {
   );
 }
 
-export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
+export function Header({
+  categories = [],
+  nav = [...navLinks],
+  name = siteConfig.name,
+}: {
+  categories?: CategoryLink[];
+  nav?: NavItem[];
+  name?: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [catOpen, setCatOpen] = useState(false);          // desktop dropdown
   const [mobileCatOpen, setMobileCatOpen] = useState(false); // mobile accordion
@@ -70,9 +79,12 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
 
   // Close everything on route change
   useEffect(() => {
-    setIsOpen(false);
-    setCatOpen(false);
-    setMobileCatOpen(false);
+    const timer = window.setTimeout(() => {
+      setIsOpen(false);
+      setCatOpen(false);
+      setMobileCatOpen(false);
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, [pathname]);
 
   // Close on Escape
@@ -117,18 +129,18 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
           <Link
             href="/"
             className="flex items-center gap-2.5 shrink-0 hover:opacity-80 transition-opacity"
-            aria-label={`${siteConfig.name} home`}
+            aria-label={`${name} home`}
           >
             {/* Purely decorative: the site name beside it carries the label. */}
             <BrandMark size={28} ground="light" className="shrink-0" />
             <span className="font-display text-xl font-extrabold text-text tracking-tight">
-              {siteConfig.name}
+              {name}
             </span>
           </Link>
 
           {/* ── Desktop nav ──────────────────────────────────────────────── */}
           <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
-            {navLinks.map((link) => {
+            {nav.map((link) => {
               const isActive =
                 link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
               const navLink = (
@@ -245,7 +257,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
               className="py-4 flex flex-col gap-0.5"
               aria-label="Mobile navigation"
             >
-              {navLinks.map((link) => {
+              {nav.map((link) => {
                 const isActive =
                   link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                 const navLink = (

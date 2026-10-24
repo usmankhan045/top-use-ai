@@ -15,6 +15,7 @@ export interface Post {
   content: string | null;
   quick_answer: string | null;
   featured_image_url: string | null;
+  featured_image_alt?: string | null;
   category_id: string | null;
   audience_tags: string[];
   status: string;
@@ -22,6 +23,7 @@ export interface Post {
   seo_description: string | null;
   faq_items: FaqItem[];
   published_at: string | null;
+  publish_at?: string | null;
   created_at: string;
   updated_at: string;
   categories?: { slug: string; name: string } | null;
@@ -32,6 +34,7 @@ export interface Category {
   slug: string;
   name: string;
   description: string | null;
+  parent_id?: string | null;
 }
 
 export interface Printable {
