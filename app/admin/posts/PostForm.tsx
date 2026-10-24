@@ -11,6 +11,7 @@ import { siteConfig } from "@/lib/site.config";
 import { ErrorBanner, Field, SuccessBanner, inputClass } from "../ui";
 import { PrintablePicker } from "./PrintablePicker";
 import { adminCategoryLabel } from "@/lib/admin/category-label";
+import { GENERATED_PREVIEW_VERSION } from "@/lib/admin/preview-image";
 
 const initialState: ActionState = {};
 
@@ -76,7 +77,10 @@ export default function PostForm({
   // Live preview of the auto-generated card, so it's obvious what will be used
   // when no image is supplied.
   const generatedPreview = useMemo(() => {
-    const params = new URLSearchParams({ title: title || "Untitled post" });
+    const params = new URLSearchParams({
+      title: title || "Untitled post",
+      v: GENERATED_PREVIEW_VERSION,
+    });
     const cat = categories.find((c) => c.id === categoryId);
     if (cat) params.set("label", cat.name);
     return `/api/og?${params.toString()}`;

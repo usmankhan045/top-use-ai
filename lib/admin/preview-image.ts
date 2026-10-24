@@ -1,5 +1,8 @@
 import { siteConfig } from "@/lib/site.config";
 
+/** Bump when the generated artwork changes so Next/CDN image caches refresh. */
+export const GENERATED_PREVIEW_VERSION = "2";
+
 /**
  * Automatic preview images.
  *
@@ -36,7 +39,10 @@ export function previewImageUrl(
 ): string {
   if (post.featured_image_url) return post.featured_image_url;
 
-  const params = new URLSearchParams({ title: post.title });
+  const params = new URLSearchParams({
+    title: post.title,
+    v: GENERATED_PREVIEW_VERSION,
+  });
   const label = post.categories?.name;
   if (label) params.set("label", label);
   // The category slug is included so the preview route can evolve category-
