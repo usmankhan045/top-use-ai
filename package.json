@@ -10,7 +10,8 @@
     "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
     "catalog:generate": "node scripts/catalog/generate-aifoxx-migration.mjs",
     "catalog:generate-secondary": "node scripts/catalog/generate-secondary-catalogs-migration.mjs",
-    "catalog:validate": "node scripts/catalog/validate-finders.mjs"
+    "catalog:validate": "node scripts/catalog/validate-finders.mjs",
+    "test:publishing": "node --test scripts/publishing/publish-due.test.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.1",

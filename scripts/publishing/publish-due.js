@@ -2,19 +2,18 @@
 /**
  * Publish posts whose scheduled date has arrived.
  *
- * Posts are written as status='draft' with a future published_at. Site queries
- * filter on status='published' only (they do not compare published_at to now),
- * so a draft stays invisible until this script flips it.
+ * Admin-scheduled posts use status='scheduled' with a future publish_at. Older
+ * queued posts use status='draft' with a future published_at. Site queries
+ * filter on status='published' only, so both stay invisible until this script
+ * flips them.
  *
  * Idempotent: the database is the source of truth. A post already published is
  * never touched again, so re-runs, delayed runs and overlapping runs are safe.
- * The workflow cron therefore runs every 30 minutes rather than once a day - a
- * missed tick self-corrects on the next one instead of slipping a full day.
  *
  * Env:
  *   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY  (required)
  *   DRY_RUN=1        optional - log what would publish, change nothing
- *   MAX_PER_RUN=12   optional - safety cap on publishes per run (default 12)
+ *   MAX_PER_RUN=50   optional - safety cap on publishes per run (default 50)
  *
  * Usage:
  *   node scripts/publishing/publish-due.js            # publish anything due
@@ -39,7 +38,7 @@ const KEY = (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
 
 const dryRun = process.argv.includes("--dry-run") || process.env.DRY_RUN === "1";
 const listOnly = process.argv.includes("--list");
-const MAX_PER_RUN = Number(process.env.MAX_PER_RUN || 12);
+const MAX_PER_RUN = Number(process.env.MAX_PER_RUN || 50);
 
 if (!BASE || !KEY) {
   console.error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY");
@@ -52,6 +51,10 @@ try {
     `SUPABASE_URL is not a valid URL after normalization: "${BASE}". ` +
       `It should look like https://<project-ref>.supabase.co`
   );
+  process.exit(1);
+}
+if (!Number.isInteger(MAX_PER_RUN) || MAX_PER_RUN < 1) {
+  console.error("MAX_PER_RUN must be a positive integer");
   process.exit(1);
 }
 
@@ -73,29 +76,64 @@ async function sb(path, init = {}) {
   return body ? JSON.parse(body) : null;
 }
 
+function byDueAt(a, b) {
+  return a.dueAt.localeCompare(b.dueAt);
+}
+
+async function getQueue(now, dueOnly) {
+  const scheduledFilter = dueOnly ? `&publish_at=lte.${now}` : "";
+  const legacyFilter = dueOnly ? `&published_at=lte.${now}` : "";
+  const select = dueOnly
+    ? "id,slug,title,publish_at,published_at,categories(slug)"
+    : "slug,title,publish_at,published_at";
+
+  const [scheduled, legacy] = await Promise.all([
+    sb(
+      `posts?site_id=eq.${SITE_ID}&status=eq.scheduled${scheduledFilter}` +
+        `&select=${select}&order=publish_at.asc`
+    ),
+    sb(
+      `posts?site_id=eq.${SITE_ID}&status=eq.draft${legacyFilter}` +
+        `&select=${select}&order=published_at.asc`
+    ),
+  ]);
+
+  return [
+    ...scheduled.map((post) => ({
+      ...post,
+      queueStatus: "scheduled",
+      dueAt: post.publish_at,
+    })),
+    ...legacy.map((post) => ({
+      ...post,
+      queueStatus: "draft",
+      dueAt: post.published_at,
+    })),
+  ]
+    .filter((post) => post.dueAt)
+    .sort(byDueAt);
+}
+
 (async () => {
   const now = new Date().toISOString();
 
   if (listOnly) {
-    const queue = await sb(
-      `posts?site_id=eq.${SITE_ID}&status=eq.draft&select=slug,title,published_at&order=published_at.asc`
-    );
+    const queue = await getQueue(now, false);
     if (!queue.length) return console.log("Queue is empty.");
-    console.log(`Scheduled drafts (${queue.length}):`);
+    console.log(`Queued posts (${queue.length}):`);
     for (const p of queue) {
-      const due = p.published_at && p.published_at <= now ? "DUE" : "   ";
-      console.log(`  ${due}  ${(p.published_at || "no date").slice(0, 10)}  ${p.slug}`);
+      const due = p.dueAt <= now ? "DUE" : "   ";
+      console.log(
+        `  ${due}  ${p.dueAt.slice(0, 10)}  ${p.queueStatus.padEnd(9)}  ${p.slug}`
+      );
     }
     return;
   }
 
-  // status=draft is itself the idempotency guard: anything already published
-  // has left this set and cannot be picked up twice. categories is joined so
-  // revalidation can refresh the archive a post lands in, not just the post.
-  const due = await sb(
-    `posts?site_id=eq.${SITE_ID}&status=eq.draft&published_at=lte.${now}` +
-      `&select=id,slug,title,published_at,categories(slug)&order=published_at.asc`
-  );
+  // The current status is the idempotency guard: anything already published
+  // has left both queue sets and cannot be picked up twice. Categories are
+  // joined so revalidation can refresh the archive a post lands in.
+  const due = await getQueue(now, true);
 
   if (!due.length) {
     console.log("Nothing due to publish.");
@@ -106,7 +144,9 @@ async function sb(path, init = {}) {
   console.log(
     `${due.length} post(s) due (cap ${MAX_PER_RUN})${dryRun ? " [DRY RUN]" : ""}:`
   );
-  for (const p of batch) console.log(`  - ${p.slug} (${p.published_at})`);
+  for (const p of batch) {
+    console.log(`  - ${p.slug} (${p.dueAt}, ${p.queueStatus})`);
+  }
   if (due.length > batch.length) {
     console.log(`  ...${due.length - batch.length} more, next run will catch up.`);
   }
@@ -122,11 +162,24 @@ async function sb(path, init = {}) {
   const errors = [];
   for (const p of batch) {
     try {
-      await sb(`posts?id=eq.${p.id}&status=eq.draft`, {
-        method: "PATCH",
-        body: JSON.stringify({ status: "published" }),
-        headers: { Prefer: "return=minimal" },
-      });
+      const payload =
+        p.queueStatus === "scheduled"
+          ? { status: "published", published_at: now, publish_at: null }
+          : { status: "published" };
+      const updated = await sb(
+        `posts?id=eq.${p.id}&site_id=eq.${SITE_ID}` +
+          `&status=eq.${p.queueStatus}&select=id`,
+        {
+          method: "PATCH",
+          body: JSON.stringify(payload),
+          headers: { Prefer: "return=representation" },
+        }
+      );
+      if (!Array.isArray(updated) || updated.length !== 1) {
+        throw new Error(
+          "conditional update matched no row; it may have been published by another run"
+        );
+      }
       console.log(`published: ${p.slug}`);
       publishedPosts.push(p);
     } catch (err) {
