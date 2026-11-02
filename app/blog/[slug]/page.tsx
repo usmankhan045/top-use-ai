@@ -1,13 +1,8 @@
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  getAllPostSlugs,
-  getPostBySlug,
-  getRelatedPosts,
-} from "@/lib/queries";
+import { getPostBySlug, getRelatedPosts } from "@/lib/queries";
 import {
   Container,
   Tag,
@@ -28,18 +23,11 @@ import {
   previewImageUrl,
 } from "@/lib/admin/preview-image";
 
-export const revalidate = false;
-
-// Pre-render the known catalog, but allow posts created after the latest deploy
-// to render on demand. Unknown slugs call connection() before notFound() below,
-// keeping bot-generated 404s request-time rather than persisting each one as a
-// separate ISR entry.
-export const dynamicParams = true;
-
-export async function generateStaticParams() {
-  const slugs = await getAllPostSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
+// Posts can be created between deployments. Request rendering makes those
+// slugs immediately available when the publisher flips them live, and prevents
+// arbitrary bot-generated 404 paths from becoming persistent ISR entries.
+// Listings remain static and are refreshed by the revalidation webhook.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -95,13 +83,9 @@ export default async function BlogPostPage({
   try {
     post = await getPostBySlug(slug);
   } catch {
-    await connection();
     notFound();
   }
-  if (!post) {
-    await connection();
-    notFound();
-  }
+  if (!post) notFound();
 
   const featuredImage = previewImageUrl(post);
 
