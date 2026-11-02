@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,11 +30,11 @@ import {
 
 export const revalidate = false;
 
-// The complete post catalog is generated at build time. Without this, Next's
-// default fallback renders every unknown slug on demand and Vercel persists the
-// resulting 404 as a separate ISR entry. Bot-generated URLs can therefore
-// create an unbounded number of ISR writes.
-export const dynamicParams = false;
+// Pre-render the known catalog, but allow posts created after the latest deploy
+// to render on demand. Unknown slugs call connection() before notFound() below,
+// keeping bot-generated 404s request-time rather than persisting each one as a
+// separate ISR entry.
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs();
@@ -94,9 +95,13 @@ export default async function BlogPostPage({
   try {
     post = await getPostBySlug(slug);
   } catch {
+    await connection();
     notFound();
   }
-  if (!post) notFound();
+  if (!post) {
+    await connection();
+    notFound();
+  }
 
   const featuredImage = previewImageUrl(post);
 

@@ -102,9 +102,10 @@ export async function getPublishedPosts(options?: {
 /**
  * Return every reserved post slug, including drafts and scheduled posts.
  *
- * `generateStaticParams` uses this list to keep `dynamicParams = false` while
- * still allowing a known draft URL to be revalidated when it is published.
- * The page query continues to filter to published posts, so drafts remain 404.
+ * `generateStaticParams` uses this list to pre-render the known catalog. The
+ * page route also allows posts created after the latest deploy to render on
+ * demand. Its page query continues to filter to published posts, so drafts and
+ * scheduled posts remain 404.
  */
 export async function getAllPostSlugs(): Promise<string[]> {
   const siteId = await getCurrentSiteId();
