@@ -69,34 +69,27 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node scripts/publishing/check-internal-links.js
 
-      # Next.js statically generates public pages, so a DB change alone stays
-      # invisible until the page is explicitly invalidated. On-demand
-      # revalidation touches only the handful of paths a new post affects.
-      # A deploy hook would rebuild every page for no gain.
+      # Post pages render from the current database state, while the homepage,
+      # blog index, category archives, and sitemap are static. Refresh only
+      # those affected listing surfaces after publishing.
       - name: Revalidate affected pages
         if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
         env:
           SECRET: ${{ secrets.REVALIDATION_SECRET }}
           SITE: ${{ vars.SITE_URL || 'https://www.topuseai.com' }}
-          SLUGS: ${{ steps.publish.outputs.slugs }}
           CATEGORIES: ${{ steps.publish.outputs.categories }}
         # Explicit: the path-building below uses bash arrays.
         shell: bash
         run: |
           if [ -z "$SECRET" ]; then
             echo "No REVALIDATION_SECRET set; skipping revalidation."
-            echo "Posts are published in the DB but pages stay stale until the"
-            echo "next deployment or a manual revalidation."
+            echo "Post pages are live, but listings stay stale until the next"
+            echo "deployment or a manual revalidation."
             exit 0
           fi
 
-          # The post pages themselves, plus the listings that index them.
+          # The static listings that index newly published posts.
           paths='"/","/blog","/sitemap.xml"'
-          # read -a splits on IFS reliably; a bare `for x in $VAR` does not.
-          IFS=',' read -ra slug_list <<< "$SLUGS"
-          for slug in "${slug_list[@]}"; do
-            [ -n "$slug" ] && paths="$paths,\"/blog/$slug\""
-          done
           IFS=',' read -ra cat_list <<< "$CATEGORIES"
           for cat in "${cat_list[@]}"; do
             [ -n "$cat" ] && paths="$paths,\"/category/$cat\""
