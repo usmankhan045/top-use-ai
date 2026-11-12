@@ -15,8 +15,8 @@ name: Publish scheduled posts
 # Required repository secrets (Settings → Secrets and variables → Actions):
 #   SUPABASE_URL
 #   SUPABASE_SERVICE_ROLE_KEY
-#   REVALIDATION_SECRET   (optional - without it, pages stay stale until the
-#                          next deployment or a manual revalidation)
+#   REVALIDATION_SECRET   (required - publishing must refresh the prerendered
+#                          article path and affected listings)
 
 on:
   schedule:
@@ -48,6 +48,18 @@ jobs:
         with:
           node-version: "22"
 
+      # Fail before changing Supabase. With a finite prerendered route catalog,
+      # publishing without revalidation could leave the database row published
+      # while its existing static 404 remains live.
+      - name: Validate publishing configuration
+        env:
+          SECRET: ${{ secrets.REVALIDATION_SECRET }}
+        run: |
+          if [ -z "$SECRET" ]; then
+            echo "REVALIDATION_SECRET is required; refusing to publish."
+            exit 1
+          fi
+
       - name: Publish due posts
         id: publish
         env:
@@ -69,9 +81,9 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node scripts/publishing/check-internal-links.js
 
-      # Post pages render from the current database state, while the homepage,
-      # blog index, category archives, and sitemap are static. Refresh only
-      # those affected listing surfaces after publishing.
+      # Post pages and listings are cached. Refresh the newly published post
+      # plus the affected listing surfaces; this preserves instant publishing
+      # without making every article request execute a server function.
       - name: Revalidate affected pages
         if: steps.publish.outputs.published && steps.publish.outputs.published != '0'
         env:
@@ -81,22 +93,19 @@ jobs:
         # Explicit: the path-building below uses bash arrays.
         shell: bash
         run: |
-          if [ -z "$SECRET" ]; then
-            echo "No REVALIDATION_SECRET set; skipping revalidation."
-            echo "Post pages are live, but listings stay stale until the next"
-            echo "deployment or a manual revalidation."
-            exit 0
-          fi
-
           # The static listings that index newly published posts.
           paths='"/","/blog","/sitemap.xml"'
+          IFS=',' read -ra slug_list <<< "${{ steps.publish.outputs.slugs }}"
+          for slug in "${slug_list[@]}"; do
+            [ -n "$slug" ] && paths="$paths,\"/blog/$slug\""
+          done
           IFS=',' read -ra cat_list <<< "$CATEGORIES"
           for cat in "${cat_list[@]}"; do
             [ -n "$cat" ] && paths="$paths,\"/category/$cat\""
           done
 
           echo "Revalidating: $paths"
-          curl -fsS -X POST "$SITE/api/revalidate" \
+          curl -fsS --retry 5 --retry-delay 5 --retry-all-errors -X POST "$SITE/api/revalidate" \
             -H 'Content-Type: application/json' \
             -d "{\"secret\":\"$SECRET\",\"paths\":[$paths]}"
           echo "  Revalidated."

@@ -1,36 +1,27 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    // Tailwind emits ~11KB for this whole site, and that one stylesheet was the
-    // only render-blocking request on the page: 150ms of the 1,137ms critical
-    // path. Inlining it into <head> removes the round trip entirely.
-    //
-    // The tradeoff is that inlined CSS cannot be cached separately, so repeat
-    // visitors re-download it with each HTML response. That is the right trade
-    // here: almost all traffic is first-time visitors arriving from search, and
-    // 11KB gzipped costs them far less than an extra round trip.
-    inlineCss: true,
-  },
-
   images: {
-    // Serve modern, much smaller formats. AVIF is tried first, WebP as fallback.
-    // This is the single biggest LCP win for post hero images.
-    formats: ["image/avif", "image/webp"],
+    // One modern output format avoids creating both AVIF and WebP copies of
+    // every width. On the Hobby plan each copy is a billed transformation;
+    // WebP keeps broad support and fast encoding while roughly halving variants.
+    formats: ["image/webp"],
+    // The widest rendered content is 1200px. Removing unused 16px/2048px/3840px
+    // candidates bounds the number of width variants a crawler can request.
+    deviceSizes: [640, 750, 828, 1080, 1200],
+    imageSizes: [32, 48, 64, 96, 128, 256, 384],
     // Blog images are effectively immutable, so cache optimized variants for a
     // week to avoid re-optimizing on every cold cache.
-    minimumCacheTTL: 604800,
+    minimumCacheTTL: 31536000,
     localPatterns: [
-      // Generated covers need title/category query parameters. Keep that broad
-      // query allowance pinned to the one image route; every other local image
-      // remains query-string-free.
-      { pathname: "/api/og" },
+      // Public images are static and query-free. In particular, never let the
+      // optimizer proxy arbitrary query variants of the admin OG renderer.
       { pathname: "/**", search: "" },
     ],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.supabase.co",
+        hostname: "ruucexzgebbehjcrinhj.supabase.co",
         pathname: "/storage/v1/object/public/**",
       },
     ],

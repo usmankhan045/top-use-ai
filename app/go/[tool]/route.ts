@@ -22,7 +22,10 @@ export async function GET(
     console.error("Affiliate link registry unavailable:", error);
     return new NextResponse("Affiliate links are temporarily unavailable", {
       status: 503,
-      headers: { "X-Robots-Tag": "noindex, nofollow" },
+      headers: {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "public, s-maxage=60",
+      },
     });
   }
 
@@ -31,7 +34,10 @@ export async function GET(
   if (!entry) {
     return new NextResponse("Unknown tool", {
       status: 404,
-      headers: { "X-Robots-Tag": "noindex, nofollow" },
+      headers: {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "public, s-maxage=3600",
+      },
     });
   }
 
@@ -39,6 +45,9 @@ export async function GET(
   // an explicit signal here rather than following the link out.
   return NextResponse.redirect(entry.href, {
     status: 302,
-    headers: { "X-Robots-Tag": "noindex, nofollow" },
+    headers: {
+      "X-Robots-Tag": "noindex, nofollow",
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+    },
   });
 }

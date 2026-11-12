@@ -5,6 +5,20 @@
  */
 import { supabaseAdmin, getCurrentSiteId } from "./supabase";
 
+const POST_CARD_SELECT =
+  "id,slug,title,excerpt,featured_image_url,featured_image_alt,category_id,audience_tags,status,published_at,created_at,updated_at,categories(slug,name)" as const;
+
+function asPostCards(rows: unknown[] | null): Post[] {
+  return (rows ?? []).map((row) => ({
+    ...(row as Omit<Post, "content" | "quick_answer" | "seo_title" | "seo_description" | "faq_items">),
+    content: null,
+    quick_answer: null,
+    seo_title: null,
+    seo_description: null,
+    faq_items: [],
+  }));
+}
+
 // ── Type definitions ─────────────────────────────────────────────────────────
 
 export interface Post {
@@ -77,7 +91,7 @@ export async function getPublishedPosts(options?: {
 
   let query = supabaseAdmin
     .from("posts")
-    .select("*, categories(slug, name)")
+    .select(POST_CARD_SELECT)
     .eq("site_id", siteId)
     .eq("status", "published")
     .not("published_at", "is", null)
@@ -96,7 +110,26 @@ export async function getPublishedPosts(options?: {
 
   const { data, error } = await query;
   if (error) throw error;
-  return (data ?? []) as Post[];
+  return asPostCards(data);
+}
+
+/**
+ * Return every reserved post slug, including drafts and scheduled posts.
+ *
+ * The build can safely reserve unpublished routes because getPostBySlug still
+ * filters to published rows. Including scheduled slugs also lets the publisher
+ * revalidate their exact path the moment they go live without a redeploy.
+ */
+export async function getAllPostSlugs(): Promise<string[]> {
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("posts")
+    .select("slug")
+    .eq("site_id", siteId);
+
+  if (error) throw error;
+  return (data ?? []).map(({ slug }) => slug as string);
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
@@ -312,7 +345,7 @@ export async function getRelatedPosts(params: {
   const makeBase = () =>
     supabaseAdmin
       .from("posts")
-      .select("*, categories(slug, name)")
+      .select(POST_CARD_SELECT)
       .eq("site_id", siteId)
       .eq("status", "published")
       .not("published_at", "is", null)
@@ -323,7 +356,7 @@ export async function getRelatedPosts(params: {
     const { data } = await makeBase()
       .eq("category_id", params.categoryId)
       .limit(limit);
-    for (const p of (data ?? []) as Post[]) {
+    for (const p of asPostCards(data)) {
       if (!seen.has(p.slug)) { seen.add(p.slug); results.push(p); }
     }
   }
@@ -333,7 +366,7 @@ export async function getRelatedPosts(params: {
     const { data } = await makeBase()
       .contains("audience_tags", [tag])
       .limit(limit);
-    for (const p of (data ?? []) as Post[]) {
+    for (const p of asPostCards(data)) {
       if (!seen.has(p.slug) && results.length < limit) {
         seen.add(p.slug);
         results.push(p);

@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { addSubscriber } from "@/lib/queries";
+import {
+  parseBoundedJson,
+  rejectRateLimitedPost,
+  rejectUnsafePublicPost,
+} from "@/lib/public-api";
 
 export const dynamic = "force-dynamic";
 
@@ -9,17 +14,18 @@ const SubscribeSchema = z.object({
     .string()
     .min(1, "Email is required.")
     .email("Please enter a valid email address."),
-  source: z.string().optional(),
+  source: z.string().trim().max(100).optional(),
 });
 
 export async function POST(request: NextRequest) {
-  let body: unknown;
+  const rejection = rejectUnsafePublicPost(request, 4_096);
+  if (rejection) return rejection;
+  const rateLimit = rejectRateLimitedPost(request, "subscribe", 10, 60 * 60 * 1000);
+  if (rateLimit) return rateLimit;
 
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
-  }
+  const parsedBody = await parseBoundedJson(request, 4_096);
+  if (parsedBody.error) return parsedBody.error;
+  const body = parsedBody.data;
 
   const result = SubscribeSchema.safeParse(body);
 
@@ -30,7 +36,8 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { email, source } = result.data;
+  const { source } = result.data;
+  const email = result.data.email.trim().toLowerCase();
 
   try {
     await addSubscriber(email, source);

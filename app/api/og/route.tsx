@@ -5,6 +5,7 @@ import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
 import { siteConfig } from "@/lib/site.config";
+import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/admin/session";
 
 export const runtime = "nodejs";
 export const contentType = "image/png";
@@ -144,6 +145,14 @@ function BrandMark() {
 }
 
 export async function GET(request: NextRequest) {
+  // This renderer is an admin editing aid, not a public image service. Leaving
+  // it anonymous lets attackers vary the title query forever, forcing costly
+  // Satori/resvg renders and downstream image transformations.
+  const token = request.cookies.get(SESSION_COOKIE_NAME)?.value;
+  if (!verifySessionToken(token)) {
+    return new Response("Not found", { status: 404 });
+  }
+
   const params = request.nextUrl.searchParams;
   const title = (params.get("title")?.trim() || siteConfig.name).slice(0, 160);
   const label = (params.get("label")?.trim() || "AI Tools").slice(0, 48);
@@ -281,6 +290,13 @@ export async function GET(request: NextRequest) {
     ),
     {
       ...size,
+      // Every input that changes the artwork is encoded in the URL (including
+      // the explicit design version), so generated covers are immutable. This
+      // prevents repeat crawls and image-optimizer width variants from paying
+      // the Satori/resvg CPU cost again at origin.
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
       fonts: [
         { name: "Bricolage", data: displayFont, style: "normal", weight: 800 },
         { name: "Hanken", data: bodyFont, style: "normal", weight: 600 },

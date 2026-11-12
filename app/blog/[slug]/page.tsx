@@ -2,7 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { getPostBySlug, getRelatedPosts } from "@/lib/queries";
+import {
+  getAllPostSlugs,
+  getPostBySlug,
+  getRelatedPosts,
+} from "@/lib/queries";
 import {
   Container,
   Tag,
@@ -23,11 +27,17 @@ import {
   previewImageUrl,
 } from "@/lib/admin/preview-image";
 
-// Posts can be created between deployments. Request rendering makes those
-// slugs immediately available when the publisher flips them live, and prevents
-// arbitrary bot-generated 404 paths from becoming persistent ISR entries.
-// Listings remain static and are refreshed by the revalidation webhook.
-export const dynamic = "force-dynamic";
+// The route catalog is finite. This prevents arbitrary bot-generated slugs from
+// creating ISR entries OR invoking a server render. Draft/scheduled slugs are
+// included by getAllPostSlugs, so normal scheduled publishing still works.
+// A brand-new slug created after a deployment requires a new deployment.
+export const revalidate = false;
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const slugs = await getAllPostSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({
   params,

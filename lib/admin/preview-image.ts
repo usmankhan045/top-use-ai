@@ -37,20 +37,12 @@ export function previewImageUrl(
    */
   ratio: "og" | "card" = "og"
 ): string {
+  void ratio; // Kept for call-site compatibility; the static fallback has one ratio.
   if (post.featured_image_url) return post.featured_image_url;
 
-  const params = new URLSearchParams({
-    title: post.title,
-    v: GENERATED_PREVIEW_VERSION,
-  });
-  const label = post.categories?.name;
-  if (label) params.set("label", label);
-  // The category slug is included so the preview route can evolve category-
-  // specific treatments without changing the editor contract.
-  if (post.categories?.slug) params.set("category", post.categories.slug);
-  if (ratio === "card") params.set("ratio", "card");
-
-  return `/api/og?${params.toString()}`;
+  // Missing DB URLs resolve to committed immutable assets, never the CPU-heavy
+  // admin preview renderer. Cover generation is a pre-publish/build step.
+  return `/covers/${post.slug}.png`;
 }
 
 /** Absolute variant, required by Open Graph / Twitter meta tags. */
@@ -80,12 +72,7 @@ export interface PrintableThumbnailSource {
 export function printableThumbnail(printable: PrintableThumbnailSource): string {
   if (printable.thumbnail_url) return printable.thumbnail_url;
 
-  const params = new URLSearchParams({ title: printable.title });
-  params.set("label", printable.categories?.name ?? "Printable");
-  params.set("kicker", "Free download");
-  if (printable.categories?.slug) params.set("category", printable.categories.slug);
-
-  return `/api/og?${params.toString()}`;
+  return "/og-default.jpg";
 }
 
 export function absolutePrintableThumbnail(

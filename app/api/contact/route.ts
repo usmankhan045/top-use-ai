@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { saveContactMessage } from "@/lib/queries";
+import {
+  parseBoundedJson,
+  rejectRateLimitedPost,
+  rejectUnsafePublicPost,
+} from "@/lib/public-api";
 
 export const dynamic = "force-dynamic";
 
@@ -17,13 +22,14 @@ const ContactSchema = z.object({
 });
 
 export async function POST(request: NextRequest) {
-  let body: unknown;
+  const rejection = rejectUnsafePublicPost(request);
+  if (rejection) return rejection;
+  const rateLimit = rejectRateLimitedPost(request, "contact", 5, 60 * 60 * 1000);
+  if (rateLimit) return rateLimit;
 
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
-  }
+  const parsedBody = await parseBoundedJson(request);
+  if (parsedBody.error) return parsedBody.error;
+  const body = parsedBody.data;
 
   const result = ContactSchema.safeParse(body);
   if (!result.success) {

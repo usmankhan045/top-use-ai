@@ -1,27 +1,36 @@
 import { getCurrentSiteId, getSupabaseAdmin } from "@/lib/supabase";
 import { WRITING_TOOLS } from "@/lib/tool-finder/writing-catalog";
+import { NICHES, categorySlug } from "@/lib/tool-finder/niches";
 
 export const dynamic = "force-dynamic";
 
-const MAX_LIMIT = 250;
-
-function positiveInteger(value: string | null, fallback: number, max: number) {
-  const parsed = Number.parseInt(value ?? "", 10);
-  return Number.isFinite(parsed) && parsed > 0 ? Math.min(parsed, max) : fallback;
-}
+const PAGE_LIMIT = 250;
+const ALLOWED_CATEGORIES = new Set(NICHES.map((niche) => categorySlug(niche.category)));
+const CACHE_HEADERS = {
+  "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+};
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const category = url.searchParams.get("category")?.trim() || null;
-  const pricing = url.searchParams.get("pricing")?.trim() || null;
-  const search = url.searchParams.get("q")?.trim() || null;
-  const limit = positiveInteger(url.searchParams.get("limit"), 48, MAX_LIMIT);
-  const page = positiveInteger(url.searchParams.get("page"), 1, 10_000);
-  const from = (page - 1) * limit;
+  const category = url.searchParams.get("category")?.trim() || "";
+  const allowedParams = new Set(["category", "limit"]);
+  const hasUnsupportedParam = [...url.searchParams.keys()].some(
+    (key) => !allowedParams.has(key)
+  );
+  if (
+    hasUnsupportedParam ||
+    !ALLOWED_CATEGORIES.has(category) ||
+    (url.searchParams.has("limit") && url.searchParams.get("limit") !== String(PAGE_LIMIT))
+  ) {
+    return Response.json(
+      { error: "Unsupported catalog query." },
+      { status: 400, headers: { "Cache-Control": "public, s-maxage=300" } }
+    );
+  }
 
   try {
     const siteId = await getCurrentSiteId();
-    let query = getSupabaseAdmin()
+    const query = getSupabaseAdmin()
       .from("tool_catalog")
       .select("*, tool_sources(label, url, source_type)", { count: "exact" })
       .eq("site_id", siteId)
@@ -29,16 +38,8 @@ export async function GET(request: Request) {
       .order("featured", { ascending: false })
       .order("popular", { ascending: false })
       .order("name")
-      .range(from, from + limit - 1);
-
-    if (category) query = query.eq("category", category);
-    if (pricing) query = query.eq("pricing_model", pricing);
-    if (search) {
-      query = query.textSearch("search_document", search, {
-        config: "english",
-        type: "websearch",
-      });
-    }
+      .eq("category", category)
+      .limit(PAGE_LIMIT);
 
     const catalogCountQuery = getSupabaseAdmin()
       .from("tool_catalog")
@@ -103,12 +104,12 @@ export async function GET(request: Request) {
         nicheTotal: count ?? tools.length,
       },
       pagination: {
-        page,
-        limit,
+        page: 1,
+        limit: PAGE_LIMIT,
         total: count ?? tools.length,
-        pages: Math.ceil((count ?? tools.length) / limit),
+        pages: 1,
       },
-    });
+    }, { headers: CACHE_HEADERS });
   } catch (error) {
     console.warn("[GET /api/tools] catalog fallback:", error);
     const fallbackCategory = category === "content-creation" || category === "ai-writing-content";
@@ -126,6 +127,6 @@ export async function GET(request: Request) {
         pages: fallbackCategory ? 1 : 0,
       },
       warning: "The local development catalog is being used until migration 005 is applied.",
-    });
+    }, { headers: CACHE_HEADERS });
   }
 }
